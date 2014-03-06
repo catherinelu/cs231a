@@ -2,7 +2,7 @@ clear all;
 close all;
 
 % read all images
-image_paths = {'smaller-images/1.jpg', 'smaller-images/2.jpg', 'smaller-images/3.jpg'};
+image_paths = {'smaller-images/1.jpg', 'smaller-images/2.jpg', 'smaller-images/3.jpg', 'smaller-images/4.jpg', 'smaller-images/5.jpg', 'smaller-images/6.jpg'};
 num_images = length(image_paths);
 
 images = {};
@@ -24,7 +24,7 @@ for i = 2 : num_images
   [matches, scores] = vl_ubcmatch(descriptor1, descriptor2);
 
   % filter to best keypoints
-  best_matches = matches;
+  best_matches = matches(:, scores < 10000);
   best_features1 = features1(:, best_matches(1, :));
   best_features2 = features2(:, best_matches(2, :));
   num_features = size(best_matches, 2)
@@ -46,6 +46,7 @@ for i = 2 : num_images
     % We can convert this to best_features1' * H' = best_features2'. Hence,
     % H = (best_features1' \ best_features2')'.
     H = (best_features1_subset' \ best_features2_subset')';
+    H = H / H(3, 3);
 
     % determine score and inliers
     score = (H * best_features1 - best_features2) .^ 2;
@@ -57,8 +58,8 @@ for i = 2 : num_images
 
     % TODO: improve this: for the same number of inliers, take transform w/ lowest error
     if num_inliers > best_num_inliers || (num_inliers == best_num_inliers && total_score < best_total_score)
-      best_H = H;
-      best_total_score = total_score;
+      best_H = H
+      best_total_score = total_score
       best_num_inliers = num_inliers
     end
   end
@@ -90,14 +91,16 @@ super_size = image_size * super_scale;
 super_image = single(zeros(super_size));
 
 % proportional gain to multiply error by (similar to PID controller)
-c = 5;
+c = length(image_paths);
 iterations = 5;
 
-psf = 1 / 15 * [1 2 1; 2 3 2; 1 2 1];
+point_spread_filter = 1 / 15 * [1 2 1; 2 3 2; 1 2 1];
+averaging_filter = 1 / 5 * [0 1 0; 1 1 1; 0 1 0];
 
 for i = 1 : iterations
-  super_image_after_psf = conv2(super_image, psf, 'same');
-  downsampled_image = super_image_after_psf(1 : super_scale : end, 1 : super_scale : end);
+  super_image_after_psf = conv2(super_image, point_spread_filter, 'same');
+  averaged_super_image = conv2(super_image_after_psf, averaging_filter, 'same');
+  downsampled_image = averaged_super_image(1 : super_scale : end, 1 : super_scale : end);
 
   % on each iteration, update super_image(j, k) based on the error of sampled images
   for j = 1 : super_size(1)
@@ -107,33 +110,33 @@ for i = 1 : iterations
       zero_k = k - 1;
 
       downsampled_center = [floor(zero_k / super_scale) + 1; floor(zero_j / super_scale) + 1; 1];
-      downsampled_points = [];
-      valid_points = [];
-      weights = reshape(psf, 1, 9);
+      % downsampled_points = [];
+      % valid_points = [];
+      % weights = reshape(psf, 1, 9);
 
-      for l = -1 : 1
-        for m = -1 : 1
-          new_point = downsampled_center + [m; l; 0];
-          downsampled_points = [downsampled_points, new_point];
-          if new_point(1) > 0 && new_point(1) <= image_size(2) && new_point(2) > 0 && new_point(2) <= image_size(1)
-            valid_points = [valid_points true];
-          else
-            valid_points = [valid_points false];
-          end
-        end
-      end
+      % for l = -1 : 1
+      %   for m = -1 : 1
+      %     new_point = downsampled_center + [m; l; 0];
+      %     downsampled_points = [downsampled_points, new_point];
+      %     if new_point(1) > 0 && new_point(1) <= image_size(2) && new_point(2) > 0 && new_point(2) <= image_size(1)
+      %       valid_points = [valid_points true];
+      %     else
+      %       valid_points = [valid_points false];
+      %     end
+      %   end
+      % end
 
-      valid_points = valid_points & 1;
-      downsampled_points = downsampled_points(:, valid_points);
-      num_downsampled_points = size(downsampled_points, 2);
+      % valid_points = valid_points & 1;
+      % downsampled_points = downsampled_points(:, valid_points);
+      % num_downsampled_points = size(downsampled_points, 2);
 
-      weights = weights(valid_points);
+      % weights = weights(valid_points);
+      % sum_root_weights = sqrt(sum(weights));
+
+      num_downsampled_points = 1;
+      downsampled_points = [downsampled_center];
+      weights = [1];
       sum_root_weights = sqrt(sum(weights));
-
-      % num_downsampled_points = 1;
-      % downsampled_points = [downsampled_center];
-      % weights = [1];
-      % sum_weights = sum(weights);
 
       for l = 1 : num_images
         for m = 1 : num_downsampled_points
