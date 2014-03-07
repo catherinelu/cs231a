@@ -2,7 +2,7 @@ clear all;
 close all;
 
 % read all images
-image_paths = {'smaller-images/1.jpg', 'smaller-images/2.jpg', 'smaller-images/3.jpg', 'smaller-images/4.jpg', 'smaller-images/5.jpg', 'smaller-images/6.jpg'};
+image_paths = {'smaller-images/1.jpg', 'smaller-images/2.jpg', 'smaller-images/6.jpg'};
 num_images = length(image_paths);
 
 images = {};
@@ -92,7 +92,7 @@ super_image = single(zeros(super_size));
 
 % proportional gain to multiply error by (similar to PID controller)
 c = length(image_paths);
-iterations = 5;
+iterations = 10;
 
 point_spread_filter = 1 / 15 * [1 2 1; 2 3 2; 1 2 1];
 averaging_filter = 1 / 5 * [0 1 0; 1 1 1; 0 1 0];
