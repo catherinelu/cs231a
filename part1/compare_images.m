@@ -6,7 +6,7 @@ clear all;
 % prefixes = {'adam', 'ahmed', 'alp', 'andy', 'arushi', 'brett'};
 
 page_dir = '/Users/karthikv/Active/scoryst/scraped';
-prefixes = {'adam_weitz_goldberg' 'ai_jiang', 'alfred_zong', 'alice_su-chin_yeh', 'allen_chen', 'ana_klimovic', 'andrew_dotey_jr', 'andrew_yoo_mah', 'anil_das', 'anthony_joseph_mainero', 'aparna_guruprasad_bhat', 'apekshit_sharma', 'arjun_gopalan', 'ashish_gupta', 'ashley_jin', 'ba_quan_truong', 'benjamin_au', 'blank', 'bonnie_joyce_mclindon'};
+prefixes = {'adam_weitz_goldberg', 'ai_jiang', 'alfred_zong', 'alice_su-chin_yeh', 'allen_chen', 'ana_klimovic', 'andrew_dotey_jr', 'andrew_yoo_mah', 'anil_das', 'anthony_joseph_mainero', 'aparna_guruprasad_bhat', 'apekshit_sharma', 'arjun_gopalan', 'ashish_gupta', 'ashley_jin', 'ba_quan_truong', 'benjamin_au', 'blank', 'bonnie_joyce_mclindon'};
 num_prefixes = length(prefixes);
 
 % page suffixes
@@ -74,6 +74,8 @@ true_negatives = 0;
 
 for i = 1 : num_prefixes
   for j = 1 : num_pages
+    consideration_set = zeros(1, num_pages);
+
     for k = 1 : num_pages
       blank_features = blank_image_features{k};
       blank_descriptors = blank_image_descriptors{k};
@@ -108,8 +110,28 @@ for i = 1 : num_prefixes
       % num_features
       % num_inliers
 
-      % if scale is close to 1 and rotation is close to 0, we've found a valid match
+      % if scale is close to 1 and rotation is close to 0, we've found a valid match;
+      % add it to the consideration set
       if abs(scale - 1) < 0.3 && abs(rotation) < 0.3 && num_inliers > 0
+        % Index represents the blank page index. Value represents how closely the
+        % blank page matches the current image. Notice how we weight the proportion
+        % of inliers captured by the number of inliers itself. This ensures that a
+        % higher number of inliers in a larger set is more valuable (e.g. 10/60
+        % inliers should be more valuable than 1/1 inliers).
+        consideration_set(k) = num_inliers * (num_inliers / num_features);
+      end
+    end
+
+    % find the best score and page in the consideration set
+    [best_score, best_page] = max(consideration_set);
+    if best_score == 0
+      % no best score because nothing matched; invalidate the best page
+      best_page = -1;
+    end
+
+    % report results
+    for k = 1 : num_pages
+      if k == best_page
         if j ~= k
           % failed test if pages are actually different
           result = 'FAIL';
