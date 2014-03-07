@@ -6,7 +6,8 @@ clear all;
 % prefixes = {'adam', 'ahmed', 'alp', 'andy', 'arushi', 'brett'};
 
 page_dir = '/Users/karthikv/Active/scoryst/scraped';
-prefixes = {'adam_weitz_goldberg', 'ai_jiang', 'alfred_zong', 'alice_su-chin_yeh', 'allen_chen', 'ana_klimovic', 'andrew_dotey_jr', 'andrew_yoo_mah', 'anil_das', 'anthony_joseph_mainero', 'aparna_guruprasad_bhat', 'apekshit_sharma', 'arjun_gopalan', 'ashish_gupta', 'ashley_jin', 'ba_quan_truong', 'benjamin_au', 'blank', 'bonnie_joyce_mclindon'};
+% prefixes = {'adam_weitz_goldberg', 'ai_jiang', 'alfred_zong', 'alice_su-chin_yeh', 'allen_chen', 'ana_klimovic', 'andrew_dotey_jr', 'andrew_yoo_mah', 'anil_das', 'anthony_joseph_mainero', 'aparna_guruprasad_bhat', 'apekshit_sharma', 'arjun_gopalan', 'ashish_gupta', 'ashley_jin', 'ba_quan_truong', 'benjamin_au', 'blank', 'bonnie_joyce_mclindon'};
+prefixes = {'adam_weitz_goldberg', 'adriano_quiroga_garafulic', 'ai_jiang', 'alfred_zong', 'alice_su-chin_yeh', 'allen_chen', 'ana_klimovic', 'andrew_dotey_jr', 'andrew_yoo_mah', 'anil_das', 'anthony_joseph_mainero', 'aparna_guruprasad_bhat', 'apekshit_sharma', 'arjun_gopalan', 'ashish_gupta', 'ashley_jin', 'ba_quan_truong', 'benjamin_au', 'blank', 'bonnie_joyce_mclindon', 'brett_cooley', 'brian_lam', 'brian_lao', 'bryan_michael_lewandowski', 'bryson_kalani_mcfeeley', 'cheng_chen', 'chiara_hordatt_brosco', 'chinmay_kulkarni', 'chinmayee_yogesh_shah', 'chirag_rajesh_sangani', 'chris_stephan_van_harmelen', 'chuan_huang', 'clarence_wen_han_chio', 'clint_john_riley', 'collin_shing-tsi_lee', 'conrad_chan', 'curran_hong_kaushik', 'dan_li', 'dan_thompson', 'daniel_benjamin_jackoway', 'dave_andrew_dolben', 'diego_rafael_moreno_ferrer', 'divya_konda', 'elmer_le', 'emad_elwany', 'eric_michael_yurko', 'evan_samuel_plotkin', 'forrest_ray_browning', 'haowei_zhang', 'haoxiang_zhao', 'haozhun_jin', 'heng_xiao', 'hsin_fang_wu', 'hung_tan_tran', 'ian_walsh', 'iru_wang', 'jagadish_venkatraman', 'james_abraham_shapiro', 'jeff_wheeler', 'jeffrey_ericson', 'jessica_michelle_tai', 'jiaji_hu', 'jiayuan_ma', 'jim_zichao_zheng', 'jimmy_du', 'joanna_kim', 'john_carl_burke', 'johnson_anoop_kochummen', 'jona_babi', 'jonathan_grey_swenson', 'jonathan_yi_hung', 'jorge_aguirre_jr.', 'joseph_baena', 'joseph_tsai', 'juliana_marie_cook', 'kate_christine_stuckman', 'ken_kao', 'kevin_andrew_smith', 'kevin_thomas_durfee', 'khalil_shambe_griffin', 'kristi_elisabeth_bohl', 'kunle_michael_oyedele', 'laura_garrity', 'laura_jade_griffiths', 'lauren_rachel_moser', 'laza_upatising', 'lennon_keagan_jk_chimbumu', 'ling-ling_samantha_zhang', 'lisa_yan', 'lu_yuan', 'lynne_schleiffarth_burks', 'm.j._ma', 'mahmoud_a_r_aly_ragab', 'manni_luca_giovanni_cavalli-sforza', 'marco_antonio_alban-hidalgo', 'marlon_suyo', 'meredith_grace_marks', 'michael_alexander_lublin', 'michael_howard_percy', 'michael_ryan_fitzpatrick', 'mike_logan_jermann', 'narek_tovmasyan', 'nathaniel_jacob_eidelson', 'nicholas_alexandros_platias', 'nicole_hu', 'omar_sebastian_diab', 'omosola_odebunmi_odetunde', 'osbert_bastani', 'pallavi_gupta', 'paul_benigeri', 'perth_charernwattanagul', 'peter_hayes', 'peter_hu', 'peter_william_johnston', 'prachetaa_raghavan', 'quentin_kenneth_moy', 'rajesh_raghavan', 'reid_allen_watson', 'richard_wei_hsu', 'robert_wood_dunlevie', 'roger_chen', 'roneil_parker_rumburg', 'sam_keller', 'sammy_el_ghazzal', 'saurabh_sharan', 'shaurya_saluja', 'sheila_ramaswamy', 'sheta_chatterjee', 'sophia_westwood', 'srinidhi_ramesh_kondaji', 'stephanie_anne_nicholson', 'stephen_michael_barber', 'stephen_walter_trusheim', 'stephen_yang', 'sumedh_rajendra_sawant', 'sumi_narayanan', 'sundaram_ananthanarayanan', 'tejas_shah', 'tina_yu_jin_roh', 'tony_michael_vivoli', 'tony_zhang', 'travis_addair', 'truman_cranor', 'vien_trong_dinh', 'will_henry_thomas_iv', 'xiaofei_fu', 'xiaoye_liu', 'xiaoying_shen', 'xuening_liu', 'xueqian_jiang', 'yao_xiao', 'yeskendir_kassenov', 'yifan_mai', 'yifei_huang', 'yonathan_perez', 'yoon-suk_han', 'yuchi_liu', 'yunfan_yu', 'yutian_liu', 'zheng_wu', 'zi_ling'};
 num_prefixes = length(prefixes);
 
 % page suffixes
@@ -114,11 +115,10 @@ for i = 1 : num_prefixes
       % add it to the consideration set
       if abs(scale - 1) < 0.3 && abs(rotation) < 0.3 && num_inliers > 0
         % Index represents the blank page index. Value represents how closely the
-        % blank page matches the current image. Notice how we weight the proportion
-        % of inliers captured by the number of inliers itself. This ensures that a
-        % higher number of inliers in a larger set is more valuable (e.g. 10/60
-        % inliers should be more valuable than 1/1 inliers).
-        consideration_set(k) = num_inliers * (num_inliers / num_features);
+        % blank page matches the current image. We base the value solely on how
+        % many inliers were captured; the more inliers, the more the blank page
+        % matched the image.
+        consideration_set(k) = num_inliers;
       end
     end
 
