@@ -2,12 +2,15 @@ close all;
 clear all;
 
 % where page JPEGs are located
-page_dir = '/Users/karthikv/Dropbox/Shared/CS231A/scoryst-project/cs221-exams-better';
-prefixes = {'adam', 'ahmed', 'alp', 'andy', 'arushi', 'brett'};
+% page_dir = '/Users/karthikv/Dropbox/Shared/CS231A/scoryst-project/cs221-exams-better';
+% prefixes = {'adam', 'ahmed', 'alp', 'andy', 'arushi', 'brett'};
+
+page_dir = '/Users/karthikv/Active/scoryst/scraped';
+prefixes = {'adam_weitz_goldberg' 'ai_jiang', 'alfred_zong', 'alice_su-chin_yeh', 'allen_chen', 'ana_klimovic', 'andrew_dotey_jr', 'andrew_yoo_mah', 'anil_das', 'anthony_joseph_mainero', 'aparna_guruprasad_bhat', 'apekshit_sharma', 'arjun_gopalan', 'ashish_gupta', 'ashley_jin', 'ba_quan_truong', 'benjamin_au', 'blank', 'bonnie_joyce_mclindon'};
 num_prefixes = length(prefixes);
 
 % page suffixes
-pages = [0 : 5];
+pages = 1 : 11;
 num_pages = length(pages);
 
 images = cell(num_prefixes, num_pages);
@@ -37,14 +40,14 @@ for i = 1 : num_prefixes
   end
 end
 
-blank_suffix = 'blank';
+blank_prefix = 'blank';
 blank_images = cell(num_pages);
 blank_image_features = cell(num_pages);
 blank_image_descriptors = cell(num_pages);
 
 % read blank exam images, compute SIFT keypoints
 for i = 1 : num_pages
-  path = [page_dir '/' int2str(pages(i)) blank_suffix '.jpg'];
+  path = [page_dir '/' blank_prefix int2str(pages(i)) '.jpg'];
   blank_images{i} = im2single(imread(path));
 
   % convert to grayscale if necessary
@@ -106,7 +109,7 @@ for i = 1 : num_prefixes
       % num_inliers
 
       % if scale is close to 1 and rotation is close to 0, we've found a valid match
-      if abs(scale - 1) < 0.3 && abs(rotation) < 0.3
+      if abs(scale - 1) < 0.3 && abs(rotation) < 0.3 && num_inliers > 0
         if j ~= k
           % failed test if pages are actually different
           result = 'FAIL';
