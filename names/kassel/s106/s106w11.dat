@@ -1,0 +1,241 @@
+.VERSION 1.0
+.COMMENT File s106w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 106
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 155
+ Student: No
+ Where educated: ME
+ Home language: English
+ Name: Jeff
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "z"
+.SEGMENT LETTER 5 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "yvur?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2017 1177 0
+2017 1177 5
+2017 1177 10
+2017 1177 16
+2017 1177 21
+2017 1135 26
+2038 1020 31
+2038 906 36
+2048 802 42
+2048 708 47
+2038 645 52
+2038 604 57
+2038 573 62
+2038 562 68
+2027 562 73
+2027 552 78
+2027 552 83
+2027 562 89
+2027 562 94
+2027 562 99
+2027 562 104
+2027 562 109
+2027 562 115
+2027 562 120
+.PEN_UP
+
+.PEN_DOWN
+1944 1125 1209
+1902 1125 1214
+1892 1114 1219
+1902 1125 1225
+1923 1125 1230
+1954 1145 1235
+2017 1198 1240
+2079 1239 1245
+2142 1291 1251
+2194 1333 1256
+2246 1385 1261
+2288 1416 1266
+2308 1427 1272
+2308 1427 1277
+.PEN_UP
+
+.PEN_DOWN
+2058 1010 1538
+2038 968 1543
+2038 948 1548
+2038 948 1554
+2048 958 1559
+2069 968 1564
+2110 979 1569
+2152 1000 1574
+2194 1041 1580
+2235 1083 1585
+2267 1114 1590
+2288 1125 1595
+.PEN_UP
+
+.PEN_DOWN
+2340 1052 1923
+2329 1052 1928
+2329 968 1933
+2340 916 1939
+2360 875 1944
+2381 864 1949
+2433 875 1954
+2475 937 1959
+2506 1010 1965
+2527 1062 1970
+2527 1114 1975
+2517 1135 1980
+2517 1145 1986
+.PEN_UP
+
+.PEN_DOWN
+2642 1166 2966
+2631 1166 2971
+2631 1166 2976
+2631 1166 2982
+2642 1166 2987
+2652 1187 2992
+2683 1218 2997
+2725 1250 3002
+2767 1302 3008
+2798 1323 3013
+2819 1323 3018
+2819 1312 3023
+2808 1260 3028
+2798 1198 3034
+2756 1125 3039
+2725 1062 3044
+2704 1010 3049
+2704 1000 3055
+2704 1010 3060
+2735 1031 3065
+2788 1083 3070
+2829 1125 3075
+2881 1166 3081
+2944 1208 3086
+.PEN_UP
+
+.PEN_DOWN
+3079 1510 3461
+3048 1489 3466
+3027 1468 3471
+3027 1458 3477
+3017 1458 3482
+3017 1458 3487
+3017 1458 3492
+3017 1458 3497
+3017 1458 3503
+3017 1458 3508
+3017 1458 3513
+3017 1458 3518
+3017 1458 3524
+3017 1458 3529
+3017 1458 3534
+3017 1458 3539
+3017 1458 3544
+3038 1468 3550
+3069 1489 3555
+3131 1531 3560
+3204 1604 3565
+3288 1666 3570
+3340 1698 3576
+3371 1708 3581
+3381 1708 3586
+3392 1666 3591
+3381 1614 3596
+3350 1552 3602
+3308 1489 3607
+3235 1395 3612
+3204 1343 3617
+3173 1312 3622
+3173 1302 3628
+3173 1312 3633
+3204 1333 3638
+3256 1364 3643
+3340 1427 3648
+3423 1479 3654
+3517 1573 3659
+3621 1645 3664
+3725 1708 3669
+3777 1718 3675
+.PEN_UP
+
+.COMMENT End of File

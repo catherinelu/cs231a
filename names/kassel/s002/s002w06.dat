@@ -1,0 +1,204 @@
+.VERSION 1.0
+.COMMENT File s002w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 2
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 155
+ Student: Yes
+ Where educated: MA
+ Home language: English & Greek
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Taxi"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "Taxi"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1746 1239 0
+1735 1239 5
+1735 1229 10
+1725 1208 16
+1725 1177 21
+1715 1125 26
+1704 1073 31
+1704 1052 36
+1704 1031 42
+1715 1020 47
+1715 1020 52
+1715 1031 57
+.PEN_UP
+
+.PEN_DOWN
+1600 1208 219
+1569 1218 224
+1569 1229 229
+1558 1229 235
+1569 1229 240
+1569 1218 245
+1621 1208 250
+1673 1198 255
+1735 1198 261
+1777 1208 266
+1829 1218 271
+1840 1229 276
+1850 1229 282
+1850 1239 287
+1850 1239 292
+1840 1229 297
+.PEN_UP
+
+.PEN_DOWN
+1860 1041 604
+1860 1052 609
+1881 1073 614
+1881 1083 620
+1881 1104 625
+1860 1114 630
+1840 1104 635
+1808 1083 640
+1788 1052 646
+1788 1041 651
+1788 1031 656
+1798 1031 661
+1819 1031 666
+1840 1041 672
+1860 1052 677
+1881 1073 682
+1881 1073 687
+1881 1073 693
+1881 1073 698
+1881 1052 703
+1892 1041 708
+1913 1031 713
+1933 1020 719
+1954 1010 724
+.PEN_UP
+
+.PEN_DOWN
+1975 1114 1153
+1975 1114 1158
+1985 1104 1163
+2006 1083 1169
+2038 1062 1174
+2058 1052 1179
+2079 1041 1184
+2100 1031 1189
+2110 1020 1195
+2110 1020 1200
+.PEN_UP
+
+.PEN_DOWN
+2100 1125 1373
+2079 1135 1378
+2058 1135 1383
+2038 1104 1389
+2027 1083 1394
+2006 1052 1399
+1985 1031 1404
+1975 1010 1409
+1975 1000 1415
+1985 1000 1420
+.PEN_UP
+
+.PEN_DOWN
+2183 1104 1647
+2194 1104 1652
+2194 1093 1657
+2194 1083 1663
+2194 1062 1668
+2194 1031 1673
+2204 1010 1678
+2215 1010 1683
+2215 1010 1689
+2235 1020 1694
+2256 1031 1699
+2277 1041 1704
+2298 1062 1710
+.PEN_UP
+
+.PEN_DOWN
+2246 1250 1922
+2235 1270 1927
+2235 1270 1932
+2235 1270 1938
+.PEN_UP
+
+.COMMENT End of File

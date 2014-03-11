@@ -1,0 +1,288 @@
+.VERSION 1.0
+.COMMENT File s031w29
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 31
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 110
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Elizabeth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-11 ? "Fabulously"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4 ? "b"
+.SEGMENT LETTER 5 ? "u"
+.SEGMENT LETTER 6 ? "l"
+.SEGMENT LETTER 7 ? "o"
+.SEGMENT LETTER 8 ? "u"
+.SEGMENT LETTER 9 ? "s"
+.SEGMENT LETTER 10 ? "l"
+.SEGMENT LETTER 11 ? "y"
+
+.COMMENT Prompt string: "Fabulously"
+.COMMENT Recognizer string: "Fabulously"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+902 895 0
+892 906 5
+892 906 10
+892 885 16
+913 854 21
+933 802 26
+944 729 31
+954 698 36
+965 677 42
+965 687 47
+.PEN_UP
+
+.PEN_DOWN
+860 906 275
+860 906 280
+860 916 285
+881 916 291
+954 937 296
+1006 948 301
+1058 958 306
+1100 979 311
+1110 979 317
+.PEN_UP
+
+.PEN_DOWN
+913 823 495
+913 823 500
+913 823 505
+923 823 511
+965 843 516
+1006 854 521
+.PEN_UP
+
+.PEN_DOWN
+1163 823 714
+1163 833 719
+1163 833 724
+1163 843 730
+1163 843 735
+1142 823 740
+1131 791 745
+1110 760 750
+1110 729 756
+1110 718 761
+1121 718 766
+1152 750 771
+1163 781 776
+1173 802 782
+1173 812 787
+1173 802 792
+1173 770 797
+1183 760 803
+1215 750 808
+1256 760 813
+1288 781 818
+.PEN_UP
+
+.PEN_DOWN
+1235 937 1154
+1235 927 1159
+1256 885 1164
+1277 843 1170
+1288 770 1175
+1298 739 1180
+1298 729 1185
+1308 729 1190
+1319 770 1196
+1340 791 1201
+1360 802 1206
+1381 802 1211
+1381 791 1216
+1381 781 1222
+1350 760 1227
+1319 739 1232
+1288 739 1237
+.PEN_UP
+
+.PEN_DOWN
+1371 802 1483
+1371 791 1488
+1381 770 1493
+1392 760 1499
+1433 750 1504
+1444 750 1509
+1465 760 1514
+1475 781 1519
+1475 802 1525
+1465 823 1530
+1454 833 1535
+.PEN_UP
+
+.PEN_DOWN
+1475 958 1758
+1485 916 1763
+1485 875 1768
+1506 812 1774
+1517 770 1779
+1527 739 1784
+1548 729 1789
+.PEN_UP
+
+.PEN_DOWN
+1621 843 1978
+1621 843 1983
+1621 843 1988
+1610 833 1994
+1590 802 1999
+1590 781 2004
+1600 770 2009
+1631 770 2014
+1652 770 2020
+1673 791 2025
+1673 802 2030
+1652 823 2035
+1631 833 2040
+1610 833 2046
+1600 823 2051
+1590 823 2056
+.PEN_UP
+
+.PEN_DOWN
+1715 843 2307
+1715 833 2312
+1715 823 2317
+1725 802 2323
+1735 802 2328
+1767 791 2333
+1798 802 2338
+1808 823 2343
+1808 843 2349
+1808 864 2354
+1788 864 2359
+1767 864 2364
+.PEN_UP
+
+.PEN_DOWN
+1871 875 2582
+1860 875 2587
+1850 864 2592
+1850 854 2598
+1850 843 2603
+1881 833 2608
+1923 833 2613
+1933 833 2618
+1933 833 2624
+1923 812 2629
+1881 791 2634
+1829 781 2639
+1829 770 2644
+1829 781 2650
+1850 802 2655
+.PEN_UP
+
+.PEN_DOWN
+1954 1000 2911
+1944 1000 2916
+1944 979 2921
+1944 948 2927
+1944 895 2932
+1944 833 2937
+1944 791 2942
+1954 770 2947
+1975 770 2953
+1996 802 2958
+.PEN_UP
+
+.PEN_DOWN
+2027 875 3131
+2027 833 3136
+2027 812 3141
+2048 802 3147
+2069 802 3152
+2090 812 3157
+2100 833 3162
+2100 854 3167
+2110 854 3173
+2110 854 3178
+2131 812 3183
+2142 770 3188
+2152 729 3194
+2142 687 3199
+2090 625 3204
+2048 583 3209
+2027 573 3214
+2017 573 3220
+.PEN_UP
+
+.COMMENT End of File

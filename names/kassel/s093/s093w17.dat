@@ -1,0 +1,370 @@
+.VERSION 1.0
+.COMMENT File s093w17
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 93
+.STYLE PRINTED
+.HAND R
+.AGE 28
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 200
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Howard
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-19 ? "Justif&ications"
+.SEGMENT LETTER 0-1 ? "J"
+.SEGMENT LETTER 2 ? "u"
+.SEGMENT LETTER 3 ? "s"
+.SEGMENT LETTER 4-5 ? "t"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8-9:3 ? "f"
+.SEGMENT LETTER 9:4-9:4 ? "&"
+.SEGMENT LETTER 9:5-10 ? "i"
+.SEGMENT LETTER 11 ? "c"
+.SEGMENT LETTER 12 ? "a"
+.SEGMENT LETTER 13-14 ? "t"
+.SEGMENT LETTER 15-16 ? "i"
+.SEGMENT LETTER 17 ? "o"
+.SEGMENT LETTER 18 ? "n"
+.SEGMENT LETTER 19 ? "s"
+
+.COMMENT Prompt string: "Justifications"
+.COMMENT Recognizer string: "Justih?cutions"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+808 823 0
+798 823 5
+788 823 10
+788 802 16
+798 760 21
+808 718 26
+829 677 31
+850 635 36
+860 573 42
+860 531 47
+850 489 52
+840 448 57
+788 416 62
+746 406 68
+694 395 73
+642 385 78
+579 385 83
+.PEN_UP
+
+.PEN_DOWN
+527 812 440
+527 823 445
+538 823 450
+558 833 456
+600 833 461
+663 833 466
+725 843 471
+798 854 476
+860 864 482
+965 885 487
+1006 895 492
+1006 885 497
+.PEN_UP
+
+.PEN_DOWN
+923 562 1044
+923 541 1049
+933 500 1054
+944 479 1060
+985 458 1065
+1017 458 1070
+1048 468 1075
+1069 500 1080
+1079 531 1086
+1079 552 1091
+1069 573 1096
+1048 593 1101
+1038 593 1106
+1027 593 1112
+.PEN_UP
+
+.PEN_DOWN
+1173 625 1428
+1152 625 1433
+1131 614 1438
+1121 604 1444
+1110 573 1449
+1121 562 1454
+1142 541 1459
+1173 520 1464
+1215 510 1470
+1235 500 1475
+1235 479 1480
+1225 468 1485
+1204 448 1490
+1173 437 1496
+1142 437 1501
+1110 437 1506
+1110 448 1511
+.PEN_UP
+
+.PEN_DOWN
+1277 770 1813
+1267 760 1818
+1267 593 1823
+1267 541 1829
+1267 479 1834
+1256 458 1839
+1256 448 1844
+1256 448 1849
+.PEN_UP
+
+.PEN_DOWN
+1204 573 2087
+1204 583 2092
+1215 583 2097
+1225 593 2103
+1246 593 2108
+1277 593 2113
+1298 593 2118
+1319 583 2123
+1329 562 2129
+.PEN_UP
+
+.PEN_DOWN
+1340 500 2252
+1329 479 2257
+1319 468 2262
+1319 458 2268
+.PEN_UP
+
+.PEN_DOWN
+1308 656 2472
+1298 666 2477
+1298 666 2482
+1308 656 2488
+.PEN_UP
+
+.PEN_DOWN
+1569 781 2856
+1548 791 2861
+1517 781 2866
+1485 729 2872
+1465 666 2877
+1454 604 2882
+1454 552 2887
+1465 489 2892
+1475 468 2898
+1475 468 2903
+.PEN_UP
+
+.PEN_DOWN
+1413 562 3131
+1423 562 3136
+1444 573 3141
+1475 573 3147
+1517 562 3152
+1548 552 3157
+1558 531 3162
+1558 510 3167
+1558 500 3173
+1558 489 3178
+.PEN_UP
+
+.PEN_DOWN
+1548 645 3351
+1538 645 3356
+1558 645 3361
+.PEN_UP
+
+.PEN_DOWN
+1715 593 3625
+1694 614 3630
+1673 614 3635
+1652 593 3641
+1631 562 3646
+1610 520 3651
+1610 489 3656
+1610 468 3661
+1621 458 3667
+1652 458 3672
+.PEN_UP
+
+.PEN_DOWN
+1777 573 3845
+1756 562 3850
+1735 531 3855
+1715 510 3861
+1715 489 3866
+1715 489 3871
+1746 489 3876
+1767 500 3881
+1798 531 3887
+1819 541 3892
+1808 520 3897
+1788 500 3902
+1788 489 3908
+1788 489 3913
+.PEN_UP
+
+.PEN_DOWN
+1902 812 4230
+1892 812 4235
+1892 812 4240
+1892 750 4246
+1892 687 4251
+1881 625 4256
+1881 562 4261
+1871 510 4266
+1860 489 4272
+1850 479 4277
+.PEN_UP
+
+.PEN_DOWN
+1788 614 4504
+1788 604 4509
+1808 604 4514
+1819 604 4520
+1850 604 4525
+1892 604 4530
+1923 593 4535
+.PEN_UP
+
+.PEN_DOWN
+1954 593 4669
+1954 583 4674
+1944 562 4679
+1944 541 4685
+1944 520 4690
+1933 500 4695
+1933 500 4700
+.PEN_UP
+
+.PEN_DOWN
+1923 677 4944
+1923 677 4949
+1933 677 4954
+1954 666 4960
+.PEN_UP
+
+.PEN_DOWN
+2079 635 5108
+2048 614 5113
+2017 573 5118
+2006 541 5124
+1996 520 5129
+2006 510 5134
+2038 510 5139
+2069 531 5144
+2100 552 5150
+2121 573 5155
+2121 604 5160
+2110 614 5165
+2090 625 5170
+.PEN_UP
+
+.PEN_DOWN
+2100 531 5383
+2100 531 5388
+2121 562 5393
+2131 583 5399
+2131 604 5404
+2152 635 5409
+2173 656 5414
+2183 656 5419
+2194 645 5425
+2204 614 5430
+2215 573 5435
+2215 552 5440
+2215 520 5446
+2215 510 5451
+2215 500 5456
+.PEN_UP
+
+.PEN_DOWN
+2402 687 5767
+2371 677 5772
+2329 666 5777
+2308 656 5783
+2298 645 5788
+2298 614 5793
+2308 604 5798
+2340 593 5803
+2371 583 5809
+2433 583 5814
+2465 562 5819
+2485 552 5824
+2496 531 5830
+2485 500 5835
+2444 489 5840
+2402 479 5845
+2308 479 5850
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,296 @@
+.VERSION 1.0
+.COMMENT File s061w39
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 61
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Deborah
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-11 ? "Cafeteria"
+.SEGMENT LETTER 0 ? "C"
+.SEGMENT LETTER 1 ? "a"
+.SEGMENT LETTER 2-3 ? "f"
+.SEGMENT LETTER 4 ? "e"
+.SEGMENT LETTER 5-6 ? "t"
+.SEGMENT LETTER 7 ? "e"
+.SEGMENT LETTER 8 ? "r"
+.SEGMENT LETTER 9-10 ? "i"
+.SEGMENT LETTER 11 ? "a"
+
+.COMMENT Prompt string: "Cafeteria"
+.COMMENT Recognizer string: "Latdlrvia"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+590 458 0
+579 468 5
+579 468 10
+569 448 16
+558 416 21
+548 343 26
+548 302 31
+558 270 36
+579 260 42
+631 260 47
+673 270 52
+704 281 57
+.PEN_UP
+
+.PEN_DOWN
+808 458 330
+798 479 335
+788 479 340
+777 479 346
+767 458 351
+756 437 356
+746 385 361
+746 343 366
+746 312 372
+746 291 377
+756 291 382
+767 302 387
+788 323 392
+798 364 398
+808 416 403
+808 448 408
+798 468 413
+798 468 419
+788 468 424
+788 448 429
+788 416 434
+788 385 439
+808 354 445
+829 343 450
+860 343 455
+892 354 460
+933 364 465
+.PEN_UP
+
+.PEN_DOWN
+902 739 879
+881 718 884
+871 677 889
+871 614 895
+881 541 900
+913 479 905
+965 416 910
+996 385 915
+1027 354 921
+1058 343 926
+.PEN_UP
+
+.PEN_DOWN
+881 458 1099
+860 458 1104
+860 458 1109
+881 458 1115
+892 458 1120
+923 468 1125
+965 500 1130
+985 520 1135
+.PEN_UP
+
+.PEN_DOWN
+1048 416 1374
+1048 416 1379
+1048 448 1384
+1048 479 1390
+1058 510 1395
+1048 531 1400
+1038 552 1405
+1038 552 1410
+1027 541 1416
+1017 520 1421
+1017 489 1426
+1017 458 1431
+1038 416 1436
+1058 406 1442
+1090 406 1447
+1121 416 1452
+1152 448 1457
+.PEN_UP
+
+.PEN_DOWN
+1090 791 1703
+1090 781 1708
+1100 718 1713
+1110 645 1719
+1152 562 1724
+1183 510 1729
+1204 479 1734
+1235 448 1739
+1256 437 1745
+1267 437 1750
+.PEN_UP
+
+.PEN_DOWN
+1131 604 1978
+1121 625 1983
+1121 645 1988
+1131 666 1994
+1152 708 1999
+1163 750 2004
+.PEN_UP
+
+.PEN_DOWN
+1225 510 2197
+1215 510 2202
+1215 520 2207
+1225 552 2213
+1235 593 2218
+1235 635 2223
+1235 656 2228
+1225 677 2233
+1215 677 2239
+1215 666 2244
+1215 635 2249
+1215 573 2254
+1215 541 2260
+1225 510 2265
+1246 500 2270
+1277 500 2275
+1308 510 2280
+1329 541 2286
+1329 562 2291
+.PEN_UP
+
+.PEN_DOWN
+1319 656 2527
+1319 645 2532
+1329 593 2537
+1350 562 2543
+1360 531 2548
+1371 520 2553
+1381 510 2558
+1381 510 2563
+1381 520 2569
+1371 552 2574
+1360 604 2579
+1350 645 2584
+1350 677 2590
+1350 698 2595
+1350 718 2600
+1371 718 2605
+.PEN_UP
+
+.PEN_DOWN
+1485 645 2857
+1496 625 2862
+1496 604 2867
+1506 593 2873
+1506 583 2878
+1517 573 2883
+.PEN_UP
+
+.PEN_DOWN
+1423 802 3076
+1413 802 3081
+1413 791 3086
+1413 791 3092
+1413 781 3097
+.PEN_UP
+
+.PEN_DOWN
+1610 770 3296
+1610 770 3301
+1590 760 3306
+1579 729 3312
+1569 698 3317
+1558 666 3322
+1558 635 3327
+1569 614 3332
+1569 614 3338
+1579 614 3343
+1590 625 3348
+1600 635 3353
+1610 656 3358
+1610 677 3364
+1610 708 3369
+1610 739 3374
+1610 750 3379
+1610 750 3385
+1610 739 3390
+1631 708 3395
+1652 677 3400
+1683 656 3405
+1715 645 3411
+1746 635 3416
+1777 635 3421
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,242 @@
+.VERSION 1.0
+.COMMENT File s042w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 42
+.STYLE PRINTED
+.HAND R
+.AGE 34
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 135
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Julie
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "Slliing"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1704 1854 0
+1652 1864 5
+1579 1854 10
+1444 1802 16
+1235 1677 21
+1090 1583 26
+1017 1489 31
+1017 1437 36
+1121 1385 42
+1256 1354 47
+1423 1323 52
+1569 1281 57
+1652 1187 62
+1652 1093 68
+1590 1010 73
+1485 927 78
+1350 875 83
+1277 875 89
+1256 885 94
+1267 948 99
+.PEN_UP
+
+.PEN_DOWN
+1746 1625 440
+1746 1635 445
+1767 1604 450
+1777 1541 456
+1808 1395 461
+1829 1281 466
+1829 1166 471
+1840 1073 476
+1840 989 482
+1829 958 487
+1819 958 492
+.PEN_UP
+
+.PEN_DOWN
+1996 1468 714
+2017 1448 719
+2017 1385 724
+1996 1323 730
+1965 1270 735
+1923 1229 740
+1892 1177 745
+1881 1166 750
+1892 1156 756
+1913 1135 761
+1944 1104 766
+1975 1073 771
+1996 1041 776
+2027 1031 782
+2100 1031 787
+.PEN_UP
+
+.PEN_DOWN
+2288 1198 1044
+2288 1166 1049
+2298 1125 1054
+2298 1052 1060
+2308 1000 1065
+2329 958 1070
+2340 948 1075
+2340 958 1080
+.PEN_UP
+
+.PEN_DOWN
+2277 1343 1264
+2277 1437 1269
+2277 1458 1274
+2267 1458 1280
+.PEN_UP
+
+.PEN_DOWN
+2444 1166 1538
+2465 1114 1543
+2465 1062 1548
+2465 1031 1554
+2465 1000 1559
+2465 1000 1564
+.PEN_UP
+
+.PEN_DOWN
+2465 1468 1703
+2444 1489 1708
+2465 1552 1713
+2465 1583 1719
+.PEN_UP
+
+.PEN_DOWN
+2704 1187 2087
+2704 1156 2092
+2725 1062 2097
+2715 1000 2103
+2704 948 2108
+2704 927 2113
+2704 958 2118
+2715 1010 2123
+2735 1073 2129
+2798 1166 2134
+2860 1208 2139
+2913 1208 2144
+2975 1156 2150
+2985 1083 2155
+2996 1020 2160
+3006 958 2165
+3017 916 2170
+3048 916 2176
+.PEN_UP
+
+.PEN_DOWN
+3256 1135 2472
+3267 1145 2477
+3267 1156 2482
+3256 1166 2488
+3215 1177 2493
+3163 1156 2498
+3110 1125 2503
+3079 1093 2508
+3058 1031 2514
+3069 1010 2519
+3100 1000 2524
+3142 1010 2529
+3194 1052 2534
+3204 1083 2540
+3204 1093 2545
+3204 1104 2550
+3204 1073 2555
+3204 1010 2561
+3204 916 2566
+3183 812 2571
+3173 666 2576
+3152 573 2581
+3110 489 2587
+3038 437 2592
+2923 385 2597
+2808 375 2602
+2735 385 2607
+2694 437 2613
+2704 500 2618
+2756 583 2623
+2850 645 2628
+3006 687 2633
+3121 687 2639
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s127n06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 127
+.STYLE PRINTED
+.HAND L
+.AGE 32
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 150
+ Student: No
+ Where educated: NJ
+ Home language: English & Italian
+ Name: Michele
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "50011"
+.SEGMENT LETTER 0 ? "5"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "0"
+.SEGMENT LETTER 3 ? "1"
+.SEGMENT LETTER 4 ? "1"
+
+.COMMENT Prompt string: "50011"
+.COMMENT Recognizer string: "50011"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1704 2135 0
+1725 2135 5
+1735 2145 10
+1735 2135 16
+1725 2135 21
+1673 2114 26
+1610 2093 31
+1569 2083 36
+1517 2073 42
+1475 2052 47
+1465 2052 52
+1465 2041 57
+1454 2031 62
+1433 2000 68
+1433 1968 73
+1423 1937 78
+1423 1916 83
+1423 1906 89
+1423 1906 94
+1433 1906 99
+1465 1906 104
+1527 1916 109
+1590 1906 115
+1642 1875 120
+1673 1823 125
+1683 1760 130
+1673 1729 135
+1631 1708 141
+1569 1687 146
+1517 1687 151
+1485 1708 156
+1465 1718 161
+1454 1729 167
+1465 1729 172
+1485 1739 177
+1517 1739 182
+.PEN_UP
+
+.PEN_DOWN
+2069 2020 769
+2090 2062 774
+2090 2083 779
+2090 2083 785
+2069 2083 790
+2006 2031 795
+1944 1968 800
+1892 1885 805
+1881 1812 811
+1902 1718 816
+1944 1677 821
+1996 1666 826
+2048 1666 832
+2100 1708 837
+2121 1781 842
+2110 1875 847
+2079 1968 852
+2017 2062 858
+1985 2083 863
+1965 2083 868
+1965 2073 873
+1965 2041 878
+.PEN_UP
+
+.PEN_DOWN
+2381 2083 1264
+2381 2093 1269
+2381 2093 1274
+2350 2073 1280
+2308 2010 1285
+2267 1916 1290
+2246 1812 1295
+2267 1729 1300
+2308 1677 1306
+2360 1656 1311
+2413 1666 1316
+2454 1718 1321
+2465 1802 1326
+2454 1906 1332
+2392 2020 1337
+2340 2093 1342
+2308 2104 1347
+2298 2104 1353
+2277 2083 1358
+2277 2052 1363
+.PEN_UP
+
+.PEN_DOWN
+2610 2073 1978
+2631 2073 1983
+2631 2073 1988
+2642 2031 1994
+2642 1948 1999
+2652 1854 2004
+2663 1770 2009
+2663 1698 2014
+2663 1687 2020
+2663 1677 2025
+2663 1687 2030
+2673 1708 2035
+.PEN_UP
+
+.PEN_DOWN
+2933 2114 2307
+2944 2114 2312
+2944 2093 2317
+2944 2020 2323
+2933 1885 2328
+2933 1791 2333
+2933 1718 2338
+2933 1666 2343
+2933 1666 2349
+2933 1677 2354
+2933 1677 2359
+.PEN_UP
+
+.COMMENT End of File

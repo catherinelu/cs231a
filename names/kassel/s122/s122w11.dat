@@ -1,0 +1,215 @@
+.VERSION 1.0
+.COMMENT File s122w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 122
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 115
+ Student: Yes
+ Where educated: CT
+ Home language: English
+ Name: Lisa
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "z"
+.SEGMENT LETTER 5 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1121 2635 0
+1121 2635 5
+1131 2625 10
+1142 2593 16
+1142 2562 21
+1152 2510 26
+1152 2458 31
+1163 2427 36
+1163 2406 42
+1163 2395 47
+1163 2427 52
+.PEN_UP
+
+.PEN_DOWN
+1069 2635 384
+1069 2635 389
+1079 2635 394
+1110 2645 400
+1152 2656 405
+1204 2666 410
+1235 2666 415
+1256 2666 420
+1277 2666 426
+1277 2666 431
+1277 2666 436
+.PEN_UP
+
+.PEN_DOWN
+1131 2520 714
+1131 2510 719
+1152 2510 724
+1183 2520 730
+1215 2531 735
+1225 2531 740
+1246 2531 745
+1256 2541 750
+1256 2531 756
+.PEN_UP
+
+.PEN_DOWN
+1350 2583 1263
+1340 2583 1268
+1340 2573 1273
+1350 2531 1279
+1350 2500 1284
+1360 2479 1289
+1381 2458 1294
+1402 2458 1299
+1423 2458 1305
+1433 2458 1310
+1444 2479 1315
+1444 2531 1320
+1433 2552 1326
+1433 2583 1331
+1423 2593 1336
+1423 2604 1341
+1413 2614 1346
+.PEN_UP
+
+.PEN_DOWN
+1475 2593 1702
+1475 2593 1707
+1475 2593 1712
+1506 2583 1718
+1538 2583 1723
+1569 2583 1728
+1600 2583 1733
+1610 2583 1738
+1610 2573 1744
+1610 2573 1749
+1610 2573 1754
+1610 2562 1759
+1610 2552 1764
+1600 2531 1770
+1590 2520 1775
+1569 2489 1780
+1558 2479 1785
+1558 2458 1791
+1558 2437 1796
+1569 2437 1801
+1579 2437 1806
+1600 2427 1811
+1621 2427 1817
+1663 2427 1822
+1663 2427 1827
+1673 2427 1832
+1673 2437 1837
+1673 2437 1843
+.PEN_UP
+
+.PEN_DOWN
+1683 2593 2306
+1683 2593 2311
+1694 2593 2316
+1704 2604 2322
+1725 2604 2327
+1767 2625 2332
+1788 2625 2337
+1819 2625 2342
+1819 2625 2348
+1819 2625 2353
+1819 2625 2358
+1819 2614 2363
+1819 2593 2368
+1808 2573 2374
+1788 2552 2379
+1777 2510 2384
+1767 2489 2389
+1756 2479 2395
+1756 2458 2400
+1767 2458 2405
+1777 2458 2410
+1808 2458 2415
+1850 2468 2421
+1892 2468 2426
+1913 2468 2431
+1923 2468 2436
+1923 2458 2441
+.PEN_UP
+
+.COMMENT End of File

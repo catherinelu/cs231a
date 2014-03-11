@@ -1,0 +1,233 @@
+.VERSION 1.0
+.COMMENT File s017w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 17
+.STYLE PRINTED
+.HAND R
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 168
+ Student: Yes
+ Where educated: MI
+ Home language: English
+ Name: Derek
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4-5 ? "z"
+.SEGMENT LETTER 6-7 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fu??z"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1933 1625 0
+1944 1645 5
+1954 1666 10
+1954 1687 16
+1944 1708 21
+1944 1718 26
+1933 1718 31
+1923 1729 36
+1902 1729 42
+1881 1729 47
+1871 1718 52
+1871 1718 57
+1871 1718 62
+1871 1718 68
+1871 1708 73
+1871 1708 78
+1881 1708 83
+1881 1708 89
+1881 1708 94
+1881 1708 99
+1881 1708 104
+1881 1698 109
+1892 1666 115
+1902 1604 120
+1902 1520 125
+1913 1458 130
+1923 1375 135
+1923 1312 141
+1923 1343 146
+.PEN_UP
+
+.PEN_DOWN
+1829 1718 659
+1819 1718 664
+1829 1718 669
+1871 1729 675
+1975 1760 680
+2048 1770 685
+2131 1781 690
+2173 1781 695
+2204 1781 701
+2194 1781 706
+.PEN_UP
+
+.PEN_DOWN
+1881 1552 879
+1892 1552 884
+1923 1552 889
+1996 1573 895
+2048 1583 900
+2090 1604 905
+2121 1604 910
+2131 1604 915
+.PEN_UP
+
+.PEN_DOWN
+2246 1573 1263
+2235 1573 1268
+2235 1573 1273
+2235 1531 1279
+2246 1468 1284
+2267 1416 1289
+2298 1364 1294
+2340 1364 1299
+2360 1375 1305
+2381 1416 1310
+2392 1468 1315
+2392 1520 1320
+2381 1562 1326
+2381 1562 1331
+2381 1531 1336
+2381 1479 1341
+2392 1437 1346
+2402 1395 1352
+2423 1385 1357
+2433 1385 1362
+.PEN_UP
+
+.PEN_DOWN
+2506 1541 1648
+2496 1552 1653
+2506 1552 1658
+2538 1573 1664
+2600 1583 1669
+2663 1583 1674
+2694 1583 1679
+2715 1562 1684
+2715 1531 1690
+2694 1500 1695
+2663 1458 1700
+2642 1416 1705
+2642 1385 1710
+2663 1375 1716
+2694 1364 1721
+2735 1375 1726
+2767 1395 1731
+2777 1406 1737
+.PEN_UP
+
+.PEN_DOWN
+2548 1458 2032
+2538 1458 2037
+2548 1458 2042
+2610 1468 2048
+2663 1479 2053
+2735 1489 2058
+.PEN_UP
+
+.PEN_DOWN
+2819 1552 2197
+2819 1562 2202
+2819 1562 2207
+2860 1573 2213
+2913 1573 2218
+2954 1583 2223
+2996 1573 2228
+2996 1562 2233
+2975 1541 2239
+2923 1479 2244
+2913 1437 2249
+2913 1395 2254
+2944 1375 2260
+2985 1375 2265
+3006 1385 2270
+3027 1395 2275
+3038 1406 2280
+.PEN_UP
+
+.PEN_DOWN
+2829 1448 2526
+2829 1458 2531
+2860 1468 2536
+2913 1479 2542
+2996 1489 2547
+3038 1489 2552
+3069 1489 2557
+.PEN_UP
+
+.COMMENT End of File

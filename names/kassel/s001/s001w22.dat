@@ -1,0 +1,353 @@
+.VERSION 1.0
+.COMMENT File s001w22
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 1
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 190
+ Student: Yes
+ Where educated: OH
+ Home language: English
+ Name: Jim
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-14 ? "Uncomf&ortably"
+.SEGMENT LETTER 0 ? "U"
+.SEGMENT LETTER 1 ? "n"
+.SEGMENT LETTER 2 ? "c"
+.SEGMENT LETTER 3 ? "o"
+.SEGMENT LETTER 4 ? "m"
+.SEGMENT LETTER 5-6:4 ? "f"
+.SEGMENT LETTER 6:5-6:6 ? "&"
+.SEGMENT LETTER 6:7-6 ? "o"
+.SEGMENT LETTER 7 ? "r"
+.SEGMENT LETTER 8-9 ? "t"
+.SEGMENT LETTER 10 ? "a"
+.SEGMENT LETTER 11 ? "b"
+.SEGMENT LETTER 12 ? "l"
+.SEGMENT LETTER 13-14 ? "y"
+
+.COMMENT Prompt string: "Uncomfortably"
+.COMMENT Recognizer string: "Uncoml?ctably"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+538 1020 0
+527 1062 5
+527 1062 10
+527 1010 16
+527 937 21
+527 833 26
+548 729 31
+558 625 36
+579 573 42
+610 552 47
+631 552 52
+663 583 57
+704 656 62
+725 739 68
+725 833 73
+694 958 78
+683 1010 83
+683 979 89
+715 854 94
+725 781 99
+746 708 104
+767 656 109
+819 625 115
+850 625 120
+892 625 125
+.PEN_UP
+
+.PEN_DOWN
+985 635 549
+985 593 554
+985 583 559
+985 573 565
+985 583 570
+1006 625 575
+1058 687 580
+1100 739 585
+1131 770 591
+1163 760 596
+1183 708 601
+1204 656 606
+1215 593 612
+1235 562 617
+1256 552 622
+.PEN_UP
+
+.PEN_DOWN
+1590 739 1098
+1569 750 1103
+1506 739 1108
+1423 698 1114
+1381 645 1119
+1371 614 1124
+1402 573 1129
+1465 552 1134
+1548 541 1140
+1631 552 1145
+.PEN_UP
+
+.PEN_DOWN
+1735 666 1318
+1683 666 1323
+1621 625 1328
+1600 583 1334
+1600 562 1339
+1642 552 1344
+1715 552 1349
+1756 583 1354
+1756 593 1360
+1756 614 1365
+1735 645 1370
+.PEN_UP
+
+.PEN_DOWN
+1850 593 1593
+1840 573 1598
+1840 583 1603
+1850 625 1609
+1892 677 1614
+1902 687 1619
+1923 687 1624
+1954 656 1629
+1975 625 1635
+1985 604 1640
+1985 593 1645
+1985 583 1650
+1985 593 1656
+2006 625 1661
+2048 666 1666
+2079 677 1671
+2100 677 1676
+2121 666 1682
+2142 625 1687
+2152 593 1692
+2152 573 1697
+2152 562 1702
+2163 562 1708
+.PEN_UP
+
+.PEN_DOWN
+2465 854 2307
+2475 895 2312
+2465 916 2317
+2433 937 2323
+2381 937 2328
+2329 895 2333
+2298 854 2338
+2298 791 2343
+2329 698 2349
+2360 604 2354
+2381 562 2359
+2392 531 2364
+2392 531 2370
+2392 552 2375
+.PEN_UP
+
+.PEN_DOWN
+2235 677 2636
+2235 677 2641
+2235 687 2646
+2298 708 2652
+2392 708 2657
+2485 698 2662
+2548 677 2667
+2590 645 2672
+2579 625 2678
+2569 593 2683
+2548 562 2688
+2558 541 2693
+2579 541 2698
+2642 562 2704
+2683 583 2709
+2683 614 2714
+2652 635 2719
+2600 645 2725
+2579 645 2730
+2590 656 2735
+.PEN_UP
+
+.PEN_DOWN
+2756 552 2966
+2756 531 2971
+2756 531 2976
+2756 541 2982
+2767 562 2987
+2767 604 2992
+2767 635 2997
+2777 687 3002
+2798 718 3008
+2850 729 3013
+.PEN_UP
+
+.PEN_DOWN
+3017 895 3570
+3017 906 3575
+3017 906 3580
+3017 875 3586
+3027 812 3591
+3038 739 3596
+3048 666 3601
+3048 583 3606
+3038 531 3612
+3038 500 3617
+.PEN_UP
+
+.PEN_DOWN
+2944 656 3735
+2933 666 3740
+2933 677 3745
+2985 698 3751
+3069 708 3756
+3131 708 3761
+3183 698 3766
+.PEN_UP
+
+.PEN_DOWN
+3288 656 3954
+3246 635 3959
+3194 604 3964
+3173 583 3970
+3173 562 3975
+3194 552 3980
+3235 562 3985
+3277 583 3990
+3308 593 3996
+3308 604 4001
+3308 604 4006
+3308 593 4011
+3329 552 4016
+3360 520 4022
+3381 520 4027
+3413 531 4032
+.PEN_UP
+
+.PEN_DOWN
+3454 875 4284
+3454 854 4289
+3475 760 4294
+3475 677 4300
+3485 625 4305
+3485 583 4310
+3506 573 4315
+3527 583 4320
+3579 614 4326
+3621 645 4331
+3663 645 4336
+3694 625 4341
+3704 593 4346
+3694 562 4352
+3642 541 4357
+3579 531 4362
+3517 531 4367
+3506 541 4373
+3517 541 4378
+.PEN_UP
+
+.PEN_DOWN
+3694 895 4723
+3704 864 4728
+3725 770 4733
+3746 677 4739
+3746 614 4744
+3746 562 4749
+3756 510 4754
+3767 489 4759
+.PEN_UP
+
+.PEN_DOWN
+4110 666 4943
+4110 666 4948
+4079 625 4953
+4027 541 4959
+4006 468 4964
+3975 406 4969
+3954 343 4974
+3944 291 4979
+3954 291 4985
+.PEN_UP
+
+.PEN_DOWN
+3933 604 5163
+3933 614 5168
+3933 604 5173
+3944 573 5179
+3965 531 5184
+4006 500 5189
+4038 468 5194
+.PEN_UP
+
+.COMMENT End of File

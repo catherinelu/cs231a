@@ -1,0 +1,233 @@
+.VERSION 1.0
+.COMMENT File s061n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 61
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Deborah
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10432"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2-3 ? "4"
+.SEGMENT LETTER 4 ? "3"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "lousz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+246 2489 0
+256 2458 5
+277 2375 10
+288 2312 16
+308 2250 21
+319 2187 26
+340 2114 31
+350 2093 36
+350 2083 42
+.PEN_UP
+
+.PEN_DOWN
+402 2552 330
+392 2552 335
+381 2531 340
+381 2500 346
+381 2468 351
+392 2437 356
+413 2406 361
+433 2385 366
+465 2385 372
+485 2385 377
+506 2406 382
+517 2437 387
+517 2448 392
+506 2479 398
+496 2531 403
+475 2562 408
+454 2583 413
+433 2604 419
+413 2604 424
+413 2593 429
+.PEN_UP
+
+.PEN_DOWN
+642 2510 1099
+642 2520 1104
+642 2510 1109
+652 2489 1115
+663 2479 1120
+663 2468 1125
+673 2458 1130
+683 2448 1135
+694 2437 1141
+715 2427 1146
+725 2427 1151
+746 2427 1156
+756 2437 1162
+777 2458 1167
+788 2468 1172
+808 2479 1177
+808 2479 1182
+.PEN_UP
+
+.PEN_DOWN
+808 2562 1428
+808 2562 1433
+808 2395 1438
+808 2364 1444
+819 2333 1449
+829 2312 1454
+840 2302 1459
+.PEN_UP
+
+.PEN_DOWN
+933 2364 1977
+933 2364 1982
+954 2375 1987
+975 2375 1993
+996 2375 1998
+1017 2375 2003
+1038 2364 2008
+1038 2354 2013
+1038 2343 2019
+1027 2312 2024
+1017 2291 2029
+1006 2281 2034
+1006 2281 2040
+1017 2260 2045
+1017 2260 2050
+1038 2250 2055
+1058 2239 2060
+1079 2229 2066
+1090 2208 2071
+1110 2187 2076
+1121 2166 2081
+1110 2135 2086
+1100 2114 2092
+1079 2104 2097
+1058 2083 2102
+1038 2073 2107
+1027 2073 2112
+1027 2062 2118
+1038 2041 2123
+.PEN_UP
+
+.PEN_DOWN
+1225 2145 2966
+1235 2156 2971
+1235 2166 2976
+1246 2177 2982
+1256 2177 2987
+1256 2177 2992
+1267 2177 2997
+1288 2177 3002
+1298 2166 3008
+1319 2156 3013
+1329 2135 3018
+1340 2114 3023
+1360 2083 3028
+1360 2062 3034
+1371 2041 3039
+1360 2010 3044
+1350 1979 3049
+1350 1958 3055
+1329 1948 3060
+1329 1937 3065
+1308 1937 3070
+1308 1937 3075
+1308 1937 3081
+1308 1937 3086
+1319 1937 3091
+1350 1937 3096
+1371 1948 3101
+1381 1948 3107
+1402 1948 3112
+1423 1958 3117
+1444 1958 3122
+1454 1958 3127
+1465 1968 3133
+1485 1968 3138
+1496 1968 3143
+1506 1979 3148
+1517 1979 3154
+1538 1989 3159
+.PEN_UP
+
+.COMMENT End of File

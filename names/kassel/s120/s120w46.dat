@@ -1,0 +1,277 @@
+.VERSION 1.0
+.COMMENT File s120w46
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 120
+.STYLE PRINTED
+.HAND R
+.AGE 56
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 0
+ Student: No
+ Where educated: City
+ Home language: English
+ Name: Rita
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-10 ? "Declaring"
+.SEGMENT LETTER 0-1 ? "D"
+.SEGMENT LETTER 2 ? "e"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "l"
+.SEGMENT LETTER 5 ? "a"
+.SEGMENT LETTER 6 ? "r"
+.SEGMENT LETTER 7,10 ? "i"
+.SEGMENT LETTER 8 ? "n"
+.SEGMENT LETTER 9 ? "g"
+
+.COMMENT Prompt string: "Declaring"
+.COMMENT Recognizer string: "l?e?lailng"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1183 1812 0
+1183 1791 5
+1183 1739 10
+1194 1687 16
+1194 1614 21
+1183 1552 26
+1183 1500 31
+.PEN_UP
+
+.PEN_DOWN
+1142 1823 219
+1142 1843 224
+1152 1843 229
+1183 1833 235
+1246 1823 240
+1340 1781 245
+1381 1718 250
+1392 1666 255
+1392 1614 261
+1350 1541 266
+1288 1510 271
+1235 1510 276
+1183 1510 282
+1142 1531 287
+1121 1541 292
+1121 1562 297
+.PEN_UP
+
+.PEN_DOWN
+1402 1593 604
+1413 1593 609
+1433 1593 614
+1465 1604 620
+1496 1614 625
+1506 1635 630
+1506 1645 635
+1496 1656 640
+1465 1656 646
+1423 1635 651
+1392 1614 656
+1381 1583 661
+1381 1562 666
+1381 1541 672
+1413 1531 677
+1465 1531 682
+.PEN_UP
+
+.PEN_DOWN
+1631 1614 1043
+1631 1625 1048
+1621 1635 1053
+1610 1635 1059
+1590 1635 1064
+1558 1614 1069
+1517 1593 1074
+1506 1573 1079
+1506 1552 1085
+1538 1552 1090
+1569 1552 1095
+1621 1552 1100
+.PEN_UP
+
+.PEN_DOWN
+1704 1750 1318
+1704 1750 1323
+1683 1729 1328
+1673 1687 1334
+1673 1645 1339
+1673 1562 1344
+1673 1531 1349
+.PEN_UP
+
+.PEN_DOWN
+1798 1593 1647
+1788 1604 1652
+1777 1614 1657
+1756 1614 1663
+1746 1604 1668
+1715 1583 1673
+1704 1573 1678
+1704 1552 1683
+1725 1552 1689
+1746 1552 1694
+1767 1562 1699
+1777 1573 1704
+1788 1583 1710
+1788 1593 1715
+1788 1593 1720
+1788 1593 1725
+1788 1583 1730
+1788 1562 1736
+1788 1552 1741
+.PEN_UP
+
+.PEN_DOWN
+1871 1635 2032
+1871 1625 2037
+1871 1614 2042
+1871 1593 2048
+1860 1573 2053
+1860 1552 2058
+1860 1541 2063
+1860 1552 2068
+1871 1562 2074
+1881 1583 2079
+1892 1604 2084
+1913 1614 2089
+1913 1614 2094
+1923 1614 2100
+1933 1604 2105
+1933 1604 2110
+.PEN_UP
+
+.PEN_DOWN
+2027 1625 2581
+2027 1625 2586
+2027 1573 2591
+2027 1552 2597
+2027 1531 2602
+.PEN_UP
+
+.PEN_DOWN
+2142 1625 2856
+2142 1604 2861
+2142 1583 2866
+2142 1573 2872
+2142 1552 2877
+2142 1552 2882
+2142 1552 2887
+2142 1573 2892
+2163 1593 2898
+2173 1614 2903
+2194 1625 2908
+2204 1635 2913
+2215 1625 2918
+2215 1614 2924
+2215 1552 2929
+2215 1541 2934
+2215 1541 2939
+.PEN_UP
+
+.PEN_DOWN
+2371 1604 3295
+2371 1635 3300
+2371 1645 3305
+2360 1645 3311
+2319 1635 3316
+2298 1625 3321
+2288 1614 3326
+2288 1593 3331
+2288 1583 3337
+2298 1583 3342
+2319 1583 3347
+2340 1593 3352
+2360 1593 3358
+2360 1604 3363
+2360 1593 3368
+2371 1593 3373
+2371 1510 3378
+2371 1468 3384
+2371 1427 3389
+2371 1385 3394
+2360 1375 3399
+2329 1375 3404
+2288 1385 3410
+2235 1416 3415
+2215 1437 3420
+2204 1468 3425
+.PEN_UP
+
+.PEN_DOWN
+1985 1875 3899
+1985 1875 3904
+1985 1875 3909
+1985 1875 3915
+.PEN_UP
+
+.COMMENT End of File

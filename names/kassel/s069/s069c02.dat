@@ -1,0 +1,217 @@
+.VERSION 1.0
+.COMMENT File s069c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 69
+.STYLE PRINTED
+.HAND R
+.AGE 30
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 158
+ Student: No
+ Where educated: Peru
+ Home language: Spanish
+ Name: Uri
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Thick"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2-4 ? "h"
+.SEGMENT LETTER 5 ? "i"
+.SEGMENT LETTER 6 ? "c"
+.SEGMENT LETTER 7-8 ? "k"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "THICll"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+590 2666 0
+579 2666 5
+579 2666 10
+590 2666 16
+590 2656 21
+610 2645 26
+631 2645 31
+715 2645 36
+777 2645 42
+829 2645 47
+871 2645 52
+902 2656 57
+933 2666 62
+944 2677 68
+.PEN_UP
+
+.PEN_DOWN
+767 2687 384
+767 2687 389
+767 2656 394
+777 2625 400
+777 2573 405
+777 2510 410
+767 2458 415
+756 2395 420
+746 2343 426
+735 2312 431
+735 2312 436
+746 2312 441
+.PEN_UP
+
+.PEN_DOWN
+965 2312 933
+965 2333 938
+965 2364 943
+975 2406 949
+975 2437 954
+975 2468 959
+985 2500 964
+996 2510 969
+.PEN_UP
+
+.PEN_DOWN
+975 2416 1153
+1006 2416 1158
+1027 2406 1163
+1038 2406 1169
+1058 2406 1174
+.PEN_UP
+
+.PEN_DOWN
+1090 2500 1373
+1069 2479 1378
+1069 2448 1383
+1058 2406 1389
+1058 2354 1394
+1048 2323 1399
+1048 2302 1404
+1058 2302 1409
+.PEN_UP
+
+.PEN_DOWN
+1204 2323 1647
+1204 2312 1652
+1204 2323 1657
+1194 2343 1663
+1215 2395 1668
+1225 2437 1673
+1235 2479 1678
+1246 2500 1683
+1246 2520 1689
+.PEN_UP
+
+.PEN_DOWN
+1465 2510 2032
+1444 2510 2037
+1413 2510 2042
+1392 2500 2048
+1381 2500 2053
+1360 2489 2058
+1350 2479 2063
+1340 2458 2068
+1329 2427 2074
+1329 2395 2079
+1340 2364 2084
+1350 2343 2089
+1381 2343 2094
+1433 2354 2100
+1475 2364 2105
+.PEN_UP
+
+.PEN_DOWN
+1527 2281 2471
+1527 2281 2476
+1517 2312 2481
+1538 2364 2487
+1548 2406 2492
+1558 2489 2497
+1569 2510 2502
+1569 2520 2507
+1579 2510 2513
+1579 2468 2518
+1579 2437 2523
+1590 2406 2528
+1610 2364 2534
+1631 2323 2539
+1663 2302 2544
+1683 2302 2549
+.PEN_UP
+
+.PEN_DOWN
+1538 2385 2911
+1538 2406 2916
+1548 2416 2921
+1590 2448 2927
+1631 2479 2932
+1673 2510 2937
+1725 2552 2942
+1777 2573 2947
+.PEN_UP
+
+.COMMENT End of File

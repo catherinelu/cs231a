@@ -1,0 +1,220 @@
+.VERSION 1.0
+.COMMENT File s063c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 63
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: NJ
+ Home language: English
+ Name: Tarik
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fake"
+.SEGMENT LETTER 0-1 ? "F"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "Fake"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1735 1395 0
+1735 1395 5
+1735 1395 10
+1735 1395 16
+1725 1406 21
+1725 1427 26
+1725 1448 31
+1715 1489 36
+1704 1541 42
+1683 1593 47
+1673 1625 52
+1663 1635 57
+1652 1645 62
+1652 1656 68
+1652 1656 73
+1683 1656 78
+1715 1656 83
+1756 1656 89
+1808 1666 94
+1892 1677 99
+1944 1677 104
+1975 1677 109
+2006 1677 115
+2017 1677 120
+2027 1677 125
+.PEN_UP
+
+.PEN_DOWN
+1694 1531 604
+1704 1531 609
+1715 1531 614
+1756 1531 620
+1777 1531 625
+1798 1531 630
+1829 1531 635
+1840 1531 640
+.PEN_UP
+
+.PEN_DOWN
+1965 1510 1099
+1954 1510 1104
+1944 1510 1109
+1944 1510 1115
+1933 1510 1120
+1923 1500 1125
+1913 1489 1130
+1913 1489 1135
+1913 1479 1141
+1923 1468 1146
+1933 1468 1151
+1944 1468 1156
+1954 1468 1162
+1965 1489 1167
+1965 1500 1172
+1965 1510 1177
+1965 1510 1182
+1965 1489 1188
+1965 1489 1193
+1975 1479 1198
+2017 1479 1203
+2027 1479 1208
+2027 1489 1214
+.PEN_UP
+
+.PEN_DOWN
+2121 1708 1867
+2121 1677 1872
+2121 1645 1877
+2131 1614 1883
+2142 1583 1888
+2152 1531 1893
+2152 1500 1898
+2152 1479 1903
+2163 1458 1909
+2163 1437 1914
+2163 1448 1919
+2163 1448 1924
+.PEN_UP
+
+.PEN_DOWN
+2163 1541 2142
+2173 1531 2147
+2183 1520 2152
+2183 1510 2158
+2194 1500 2163
+2215 1489 2168
+2225 1489 2173
+2225 1489 2178
+.PEN_UP
+
+.PEN_DOWN
+2152 1541 2417
+2152 1541 2422
+2163 1562 2427
+2183 1573 2433
+2204 1593 2438
+2215 1593 2443
+.PEN_UP
+
+.PEN_DOWN
+2308 1541 2801
+2308 1541 2806
+2340 1541 2811
+2360 1552 2817
+2381 1552 2822
+2402 1552 2827
+2413 1552 2832
+2433 1562 2837
+2444 1583 2843
+2444 1593 2848
+2433 1604 2853
+2423 1614 2858
+2402 1614 2864
+2381 1614 2869
+2360 1593 2874
+2329 1562 2879
+2319 1531 2884
+2319 1500 2890
+2329 1468 2895
+2381 1458 2900
+2444 1458 2905
+2506 1458 2910
+2558 1468 2916
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,241 @@
+.VERSION 1.0
+.COMMENT File s113c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 113
+.STYLE PRINTED
+.HAND R
+.AGE 30
+.SEX M
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 195
+ Student: No
+ Where educated: CA
+ Home language: English
+ Name: Bill
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-10 ? "Fake"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3-4 ? "a"
+.SEGMENT LETTER 5-6 ? "k"
+.SEGMENT LETTER 7-10 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "FAKE"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+298 2791 0
+298 2791 5
+298 2791 10
+298 2781 16
+298 2760 21
+288 2729 26
+277 2666 31
+277 2614 36
+277 2573 42
+267 2541 47
+267 2510 52
+267 2510 57
+267 2510 62
+277 2520 68
+.PEN_UP
+
+.PEN_DOWN
+267 2802 439
+267 2802 444
+277 2791 449
+298 2791 455
+329 2781 460
+381 2781 465
+423 2781 470
+444 2781 475
+454 2781 481
+465 2781 486
+465 2770 491
+454 2760 496
+.PEN_UP
+
+.PEN_DOWN
+256 2666 769
+267 2666 774
+288 2666 779
+308 2656 785
+340 2656 790
+371 2656 795
+392 2666 800
+413 2666 805
+.PEN_UP
+
+.PEN_DOWN
+527 2552 1428
+527 2552 1433
+527 2541 1438
+527 2552 1444
+527 2562 1449
+538 2583 1454
+538 2604 1459
+558 2625 1464
+558 2635 1470
+569 2635 1475
+569 2635 1480
+569 2625 1485
+579 2604 1490
+590 2573 1496
+590 2552 1501
+600 2531 1506
+610 2531 1511
+610 2520 1517
+610 2531 1522
+.PEN_UP
+
+.PEN_DOWN
+538 2583 1867
+527 2583 1872
+538 2583 1877
+548 2573 1883
+569 2573 1888
+590 2573 1893
+600 2573 1898
+600 2573 1903
+600 2573 1909
+600 2573 1914
+610 2562 1919
+.PEN_UP
+
+.PEN_DOWN
+673 2645 2252
+673 2645 2257
+683 2625 2262
+694 2583 2268
+694 2573 2273
+694 2552 2278
+694 2541 2283
+.PEN_UP
+
+.PEN_DOWN
+746 2614 2527
+735 2614 2532
+715 2593 2537
+694 2583 2543
+683 2573 2548
+683 2573 2553
+683 2573 2558
+683 2573 2563
+694 2573 2569
+715 2562 2574
+735 2562 2579
+756 2541 2584
+767 2541 2590
+767 2531 2595
+767 2520 2600
+.PEN_UP
+
+.PEN_DOWN
+840 2593 2856
+840 2593 2861
+840 2593 2866
+840 2583 2872
+840 2573 2877
+850 2562 2882
+850 2562 2887
+860 2552 2892
+.PEN_UP
+
+.PEN_DOWN
+860 2635 3076
+860 2635 3081
+860 2635 3086
+871 2635 3092
+892 2635 3097
+913 2635 3102
+933 2635 3107
+944 2635 3112
+.PEN_UP
+
+.PEN_DOWN
+840 2583 3296
+850 2583 3301
+860 2583 3306
+892 2583 3312
+913 2583 3317
+923 2593 3322
+933 2583 3327
+.PEN_UP
+
+.PEN_DOWN
+829 2531 3460
+840 2541 3465
+881 2541 3470
+902 2541 3476
+944 2541 3481
+.PEN_UP
+
+.COMMENT End of File

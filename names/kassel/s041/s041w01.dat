@@ -1,0 +1,328 @@
+.VERSION 1.0
+.COMMENT File s041w01
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 41
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 142.5
+ Student: Yes
+ Where educated: India
+ Home language: Tamil
+ Name: Ravi
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-14 ? "Quizzically"
+.SEGMENT LETTER 0-1 ? "Q"
+.SEGMENT LETTER 2 ? "u"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5 ? "z"
+.SEGMENT LETTER 6 ? "z"
+.SEGMENT LETTER 7-8 ? "i"
+.SEGMENT LETTER 9 ? "c"
+.SEGMENT LETTER 10 ? "a"
+.SEGMENT LETTER 11 ? "l"
+.SEGMENT LETTER 12 ? "l"
+.SEGMENT LETTER 13-14 ? "y"
+
+.COMMENT Prompt string: "Quizzically"
+.COMMENT Recognizer string: "QviZZI?Cally"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+902 1885 0
+892 1895 5
+881 1895 10
+881 1885 16
+860 1864 21
+840 1791 26
+788 1625 31
+746 1468 36
+746 1333 42
+777 1260 47
+850 1218 52
+933 1218 57
+996 1260 62
+1079 1354 68
+1173 1500 73
+1204 1635 78
+1215 1760 83
+1173 1843 89
+1006 1864 94
+860 1843 99
+746 1802 104
+673 1760 109
+673 1708 115
+.PEN_UP
+
+.PEN_DOWN
+944 1448 549
+944 1448 554
+954 1437 559
+975 1427 565
+1006 1375 570
+1027 1302 575
+1027 1239 580
+1027 1177 585
+1038 1114 591
+1048 1093 596
+1058 1083 601
+1069 1083 606
+.PEN_UP
+
+.PEN_DOWN
+1225 1468 824
+1225 1479 829
+1246 1468 834
+1256 1458 840
+1267 1406 845
+1288 1312 850
+1329 1260 855
+1350 1229 860
+1381 1229 866
+1413 1250 871
+1433 1281 876
+1444 1354 881
+1444 1437 886
+1444 1531 892
+1433 1531 897
+.PEN_UP
+
+.PEN_DOWN
+1610 1489 1099
+1610 1489 1104
+1610 1416 1109
+1610 1375 1115
+1610 1333 1120
+1631 1312 1125
+1631 1302 1130
+1631 1302 1135
+.PEN_UP
+
+.PEN_DOWN
+1621 1645 1483
+1600 1656 1488
+1590 1656 1493
+1590 1656 1499
+1590 1666 1504
+1590 1666 1509
+1590 1656 1514
+.PEN_UP
+
+.PEN_DOWN
+1913 1500 1758
+1892 1520 1763
+1892 1520 1768
+1892 1520 1774
+1944 1520 1779
+1996 1510 1784
+2048 1500 1789
+2090 1479 1794
+2090 1458 1800
+2048 1416 1805
+1975 1364 1810
+1913 1312 1815
+1881 1281 1820
+1881 1281 1826
+1892 1270 1831
+1944 1270 1836
+2027 1291 1841
+2110 1302 1847
+2173 1312 1852
+2194 1302 1857
+.PEN_UP
+
+.PEN_DOWN
+2298 1500 2252
+2298 1510 2257
+2308 1510 2262
+2329 1510 2268
+2371 1510 2273
+2402 1500 2278
+2423 1468 2283
+2423 1448 2288
+2413 1416 2294
+2392 1385 2299
+2381 1343 2304
+2381 1333 2309
+2381 1312 2314
+2423 1302 2320
+2475 1312 2325
+2527 1333 2330
+.PEN_UP
+
+.PEN_DOWN
+2631 1468 2582
+2621 1468 2587
+2621 1468 2592
+2642 1448 2598
+2663 1406 2603
+2663 1333 2608
+2652 1291 2613
+2652 1291 2618
+.PEN_UP
+
+.PEN_DOWN
+2673 1604 2801
+2663 1604 2806
+2663 1604 2811
+2673 1604 2817
+2704 1583 2822
+.PEN_UP
+
+.PEN_DOWN
+2892 1541 3021
+2881 1541 3026
+2881 1531 3031
+2850 1510 3037
+2819 1479 3042
+2788 1427 3047
+2777 1375 3052
+2788 1312 3057
+2808 1291 3063
+2860 1291 3068
+2913 1312 3073
+.PEN_UP
+
+.PEN_DOWN
+3183 1489 3351
+3183 1489 3356
+3163 1489 3361
+3131 1489 3367
+3069 1437 3372
+3038 1385 3377
+3038 1343 3382
+3038 1333 3387
+3079 1343 3393
+3121 1375 3398
+3163 1416 3403
+3183 1448 3408
+3194 1489 3414
+3194 1489 3419
+3194 1489 3424
+3204 1458 3429
+3204 1416 3434
+3204 1375 3440
+3204 1333 3445
+.PEN_UP
+
+.PEN_DOWN
+3350 1708 3735
+3350 1739 3740
+3340 1739 3745
+3350 1739 3751
+3360 1687 3756
+3381 1625 3761
+3392 1541 3766
+3402 1448 3771
+3402 1302 3777
+3402 1270 3782
+.PEN_UP
+
+.PEN_DOWN
+3527 1760 4010
+3517 1770 4015
+3517 1770 4020
+3527 1760 4026
+3538 1718 4031
+3569 1656 4036
+3600 1541 4041
+3621 1458 4046
+3631 1395 4052
+3631 1312 4057
+3631 1270 4062
+.PEN_UP
+
+.PEN_DOWN
+3704 1510 4229
+3694 1510 4234
+3694 1510 4239
+3725 1489 4245
+3756 1458 4250
+3798 1427 4255
+3829 1385 4260
+3881 1343 4265
+3892 1333 4271
+.PEN_UP
+
+.PEN_DOWN
+4006 1510 4449
+4006 1500 4454
+4006 1468 4459
+3965 1395 4465
+3871 1291 4470
+3798 1208 4475
+3694 1125 4480
+3610 1052 4485
+.PEN_UP
+
+.COMMENT End of File

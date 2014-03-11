@@ -1,0 +1,302 @@
+.VERSION 1.0
+.COMMENT File s126w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 126
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 145
+ Student: Yes
+ Where educated: OH
+ Home language: English
+ Name: Nika
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "SILs?in?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+923 1916 0
+933 1937 5
+933 1958 10
+913 2000 16
+881 2020 21
+829 2041 26
+725 2031 31
+652 1989 36
+590 1927 42
+548 1843 47
+506 1708 52
+506 1635 57
+527 1573 62
+569 1531 68
+663 1520 73
+756 1520 78
+850 1510 83
+954 1500 89
+1090 1448 94
+1183 1395 99
+1225 1323 104
+1235 1250 109
+1194 1135 115
+1131 1052 120
+1038 968 125
+944 906 130
+829 854 135
+767 823 141
+725 823 146
+694 833 151
+663 864 156
+663 937 161
+.PEN_UP
+
+.PEN_DOWN
+1256 2218 604
+1256 2218 609
+1288 2198 614
+1319 2125 620
+1360 1989 625
+1381 1843 630
+1402 1656 635
+1423 1458 640
+1433 1239 646
+1433 1114 651
+1454 1020 656
+1454 937 661
+1454 916 666
+1444 927 672
+1413 1000 677
+.PEN_UP
+
+.PEN_DOWN
+1538 1604 934
+1548 1635 939
+1558 1635 944
+1558 1625 950
+1517 1562 955
+1475 1489 960
+1423 1427 965
+1371 1354 970
+1340 1291 976
+1340 1291 981
+1360 1291 986
+1392 1291 991
+1465 1291 996
+1517 1281 1002
+1579 1239 1007
+1642 1166 1012
+1715 1062 1017
+1756 989 1023
+1788 927 1028
+1829 895 1033
+1892 885 1038
+1933 895 1043
+1975 937 1049
+1975 1010 1054
+.PEN_UP
+
+.PEN_DOWN
+1933 1250 1318
+1913 1302 1323
+1902 1333 1328
+1902 1333 1334
+1913 1291 1339
+1933 1198 1344
+1944 1093 1349
+1944 1020 1354
+1954 958 1360
+1954 948 1365
+1954 968 1370
+1954 1041 1375
+.PEN_UP
+
+.PEN_DOWN
+1808 1593 1538
+1808 1635 1543
+1808 1656 1548
+1819 1666 1554
+1819 1677 1559
+1819 1687 1564
+1829 1677 1569
+1850 1625 1574
+.PEN_UP
+
+.PEN_DOWN
+2225 1218 1812
+2225 1218 1817
+2246 1229 1822
+2256 1218 1828
+2277 1166 1833
+2288 1104 1838
+2298 1020 1843
+2308 937 1848
+2319 864 1854
+2319 843 1859
+2308 854 1864
+2298 916 1869
+.PEN_UP
+
+.PEN_DOWN
+2173 1635 2032
+2152 1677 2037
+2152 1687 2042
+2163 1708 2048
+2173 1718 2053
+2173 1718 2058
+2183 1687 2063
+.PEN_UP
+
+.PEN_DOWN
+2485 1187 2252
+2485 1187 2257
+2506 1156 2262
+2527 1114 2268
+2579 1020 2273
+2600 937 2278
+2600 854 2283
+2590 802 2288
+2590 781 2294
+2579 802 2299
+2558 875 2304
+2548 1000 2309
+2548 1218 2314
+2558 1333 2320
+2590 1395 2325
+2631 1416 2330
+2694 1395 2335
+2746 1312 2341
+2788 1187 2346
+2829 1041 2351
+2860 895 2356
+2881 833 2361
+2902 791 2367
+2902 791 2372
+2933 812 2377
+.PEN_UP
+
+.PEN_DOWN
+3298 1291 2801
+3277 1312 2806
+3267 1333 2811
+3235 1385 2817
+3204 1385 2822
+3152 1364 2827
+3090 1312 2832
+3027 1208 2837
+2996 1104 2843
+2996 1020 2848
+3027 968 2853
+3100 948 2858
+3173 968 2864
+3246 1041 2869
+3308 1145 2874
+3319 1250 2879
+3319 1323 2884
+3319 1364 2890
+3319 1364 2895
+3319 1364 2900
+3319 1354 2905
+3350 1312 2910
+3402 1250 2916
+3444 1166 2921
+3496 1083 2926
+3548 1000 2931
+3579 895 2936
+3590 823 2942
+3590 729 2947
+3558 645 2952
+3485 552 2957
+3444 531 2962
+3413 531 2968
+3402 562 2973
+3402 677 2978
+3444 802 2983
+3506 937 2988
+3569 1083 2994
+3673 1250 2999
+3777 1343 3004
+3871 1427 3009
+3975 1500 3015
+4079 1573 3020
+4142 1625 3025
+.PEN_UP
+
+.COMMENT End of File

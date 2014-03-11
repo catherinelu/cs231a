@@ -1,0 +1,213 @@
+.VERSION 1.0
+.COMMENT File s051n15
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 51
+.STYLE PRINTED
+.HAND L
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 83
+ Student: Yes
+ Where educated: NY
+ Home language: Gujarati
+ Name: Anuja
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "54331"
+.SEGMENT LETTER 0 ? "5"
+.SEGMENT LETTER 1-2 ? "4"
+.SEGMENT LETTER 3 ? "3"
+.SEGMENT LETTER 4 ? "3"
+.SEGMENT LETTER 5 ? "1"
+
+.COMMENT Prompt string: "54331"
+.COMMENT Recognizer string: "54331"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+913 2375 0
+913 2385 5
+913 2385 10
+913 2385 16
+902 2385 21
+756 2385 26
+756 2385 31
+756 2385 36
+767 2375 42
+767 2343 47
+777 2312 52
+777 2250 57
+777 2239 62
+777 2239 68
+777 2250 73
+798 2260 78
+819 2260 83
+840 2260 89
+881 2229 94
+892 2198 99
+892 2166 104
+871 2145 109
+819 2135 115
+777 2135 120
+756 2166 125
+.PEN_UP
+
+.PEN_DOWN
+954 2364 549
+965 2364 554
+965 2364 559
+965 2354 565
+965 2323 570
+954 2302 575
+965 2281 580
+975 2281 585
+975 2270 591
+1006 2270 596
+1038 2291 601
+1058 2302 606
+.PEN_UP
+
+.PEN_DOWN
+1058 2354 824
+1058 2333 829
+1058 2291 834
+1058 2260 840
+1048 2218 845
+1048 2177 850
+1048 2145 855
+.PEN_UP
+
+.PEN_DOWN
+1142 2333 1044
+1142 2343 1049
+1142 2343 1054
+1152 2354 1060
+1163 2354 1065
+1183 2343 1070
+1194 2333 1075
+1204 2323 1080
+1204 2302 1086
+1194 2281 1091
+1183 2270 1096
+1173 2260 1101
+1173 2250 1106
+1173 2250 1112
+1173 2260 1117
+1183 2260 1122
+1215 2260 1127
+1225 2239 1133
+1235 2229 1138
+1235 2198 1143
+1204 2156 1148
+1183 2135 1153
+1163 2135 1159
+1152 2145 1164
+.PEN_UP
+
+.PEN_DOWN
+1277 2354 1538
+1277 2354 1543
+1288 2364 1548
+1288 2364 1554
+1298 2364 1559
+1308 2364 1564
+1329 2354 1569
+1350 2343 1574
+1350 2333 1580
+1350 2312 1585
+1340 2302 1590
+1329 2281 1595
+1319 2270 1600
+1319 2270 1606
+1319 2270 1611
+1329 2281 1616
+1381 2281 1621
+1402 2270 1627
+1413 2270 1632
+1413 2239 1637
+1402 2198 1642
+1381 2166 1647
+1360 2145 1653
+1329 2145 1658
+1329 2145 1663
+.PEN_UP
+
+.PEN_DOWN
+1538 2395 2032
+1538 2385 2037
+1538 2343 2042
+1527 2302 2048
+1517 2239 2053
+1517 2198 2058
+1517 2166 2063
+.PEN_UP
+
+.COMMENT End of File

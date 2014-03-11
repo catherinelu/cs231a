@@ -1,0 +1,225 @@
+.VERSION 1.0
+.COMMENT File s085n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 85
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 125
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Jane
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10342"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3-4 ? "4"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "10342"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1975 635 0
+1965 635 5
+1965 635 10
+1944 593 16
+1913 520 21
+1871 458 26
+1819 375 31
+1798 343 36
+1788 312 42
+1777 302 47
+1777 302 52
+.PEN_UP
+
+.PEN_DOWN
+2267 614 330
+2256 614 335
+2246 604 340
+2215 593 346
+2173 552 351
+2100 468 356
+2058 406 361
+2058 364 366
+2058 343 372
+2090 323 377
+2131 323 382
+2183 343 387
+2235 375 392
+2288 437 398
+2308 479 403
+2298 520 408
+2277 541 413
+2225 552 419
+2183 541 424
+2142 531 429
+2131 531 434
+.PEN_UP
+
+.PEN_DOWN
+2517 604 824
+2506 614 829
+2527 635 834
+2548 656 840
+2590 666 845
+2631 656 850
+2652 635 855
+2663 614 860
+2663 573 866
+2621 520 871
+2590 489 876
+2548 468 881
+2527 458 886
+2517 458 892
+2527 458 897
+2548 468 902
+2579 468 907
+2631 468 913
+2652 468 918
+2663 448 923
+2663 416 928
+2621 364 933
+2579 333 939
+2506 302 944
+2444 281 949
+2381 281 954
+2371 291 959
+.PEN_UP
+
+.PEN_DOWN
+2923 656 1318
+2923 656 1323
+2923 656 1328
+2902 625 1334
+2881 593 1339
+2850 562 1344
+2808 531 1349
+2798 510 1354
+2798 489 1360
+2819 479 1365
+2850 468 1370
+2892 468 1375
+2923 468 1380
+2954 479 1386
+.PEN_UP
+
+.PEN_DOWN
+3079 666 1648
+3069 666 1653
+3069 635 1658
+3038 593 1664
+3006 541 1669
+2965 479 1674
+2913 416 1679
+2892 364 1684
+2881 343 1690
+2881 323 1695
+2892 323 1700
+.PEN_UP
+
+.PEN_DOWN
+3204 604 1977
+3194 614 1982
+3204 625 1987
+3215 635 1993
+3267 656 1998
+3308 656 2003
+3350 656 2008
+3392 635 2013
+3413 593 2019
+3413 541 2024
+3413 489 2029
+3381 437 2034
+3308 364 2040
+3256 323 2045
+3194 291 2050
+3163 281 2055
+3131 291 2060
+3131 323 2066
+3152 343 2071
+3183 354 2076
+3225 354 2081
+3267 343 2086
+3298 333 2092
+3340 323 2097
+3371 312 2102
+3402 302 2107
+3402 302 2112
+3413 291 2118
+.PEN_UP
+
+.COMMENT End of File

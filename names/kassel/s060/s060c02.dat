@@ -1,0 +1,221 @@
+.VERSION 1.0
+.COMMENT File s060c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 60
+.STYLE PRINTED
+.HAND L
+.AGE 28
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 130
+ Student: Yes
+ Where educated: NE
+ Home language: English
+ Name: Terilynn
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fake"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "F?ke"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+225 2770 0
+225 2770 5
+215 2760 10
+215 2687 16
+215 2656 21
+215 2645 26
+.PEN_UP
+
+.PEN_DOWN
+194 2802 330
+194 2812 335
+194 2802 340
+183 2802 346
+183 2802 351
+194 2802 356
+215 2802 361
+256 2802 366
+298 2812 372
+329 2812 377
+371 2812 382
+392 2823 387
+.PEN_UP
+
+.PEN_DOWN
+215 2729 769
+215 2729 774
+215 2729 779
+215 2729 785
+235 2729 790
+277 2729 795
+308 2729 800
+329 2729 805
+340 2729 811
+340 2739 816
+340 2739 821
+329 2739 826
+.PEN_UP
+
+.PEN_DOWN
+454 2708 1263
+454 2718 1268
+454 2718 1273
+433 2718 1279
+413 2718 1284
+402 2708 1289
+392 2698 1294
+381 2687 1299
+381 2677 1305
+392 2666 1310
+402 2666 1315
+413 2666 1320
+423 2666 1326
+433 2677 1331
+433 2687 1336
+433 2698 1341
+433 2708 1346
+433 2698 1352
+433 2687 1357
+433 2677 1362
+454 2666 1367
+475 2666 1372
+485 2666 1378
+506 2666 1383
+517 2677 1388
+517 2687 1393
+.PEN_UP
+
+.PEN_DOWN
+548 2791 1867
+548 2791 1872
+538 2791 1877
+538 2718 1883
+548 2708 1888
+548 2687 1893
+548 2677 1898
+.PEN_UP
+
+.PEN_DOWN
+621 2760 2142
+621 2760 2147
+621 2760 2152
+610 2750 2158
+590 2739 2163
+569 2729 2168
+548 2718 2173
+548 2718 2178
+548 2718 2184
+558 2729 2189
+579 2729 2194
+600 2718 2199
+610 2708 2204
+621 2708 2210
+631 2698 2215
+631 2698 2220
+631 2698 2225
+631 2698 2231
+.PEN_UP
+
+.PEN_DOWN
+694 2718 2691
+704 2718 2696
+704 2718 2701
+735 2718 2707
+746 2729 2712
+756 2729 2717
+767 2739 2722
+767 2750 2727
+767 2760 2733
+756 2770 2738
+746 2770 2743
+735 2760 2748
+715 2750 2754
+715 2729 2759
+715 2708 2764
+715 2698 2769
+725 2698 2774
+746 2687 2780
+777 2687 2785
+808 2698 2790
+819 2698 2795
+819 2698 2800
+829 2698 2806
+829 2708 2811
+829 2698 2816
+.PEN_UP
+
+.COMMENT End of File

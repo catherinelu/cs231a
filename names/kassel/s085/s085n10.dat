@@ -1,0 +1,244 @@
+.VERSION 1.0
+.COMMENT File s085n10
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 85
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 125
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Jane
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "72898"
+.SEGMENT LETTER 0 ? "7"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "8"
+.SEGMENT LETTER 3 ? "9"
+.SEGMENT LETTER 4 ? "8"
+
+.COMMENT Prompt string: "72898"
+.COMMENT Recognizer string: "72?98"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1288 750 0
+1277 750 5
+1288 739 10
+1288 739 16
+1319 739 21
+1360 750 26
+1402 750 31
+1465 750 36
+1527 739 42
+1548 729 47
+1558 729 52
+1558 718 57
+1558 708 62
+1558 687 68
+1538 666 73
+1506 625 78
+1444 562 83
+1402 520 89
+1371 489 94
+1360 479 99
+1360 458 104
+1350 448 109
+1350 427 115
+1360 427 120
+.PEN_UP
+
+.PEN_DOWN
+1642 656 659
+1631 656 664
+1631 666 669
+1642 677 675
+1673 698 680
+1694 718 685
+1725 729 690
+1767 718 695
+1777 708 701
+1788 687 706
+1788 656 711
+1756 593 716
+1725 541 722
+1683 500 727
+1631 468 732
+1610 458 737
+1600 458 742
+1600 458 748
+1631 458 753
+1673 468 758
+1715 468 763
+1746 458 768
+1777 448 774
+1798 448 779
+1819 416 784
+.PEN_UP
+
+.PEN_DOWN
+2173 698 1263
+2163 698 1268
+2079 698 1273
+2048 698 1279
+2017 687 1284
+1985 666 1289
+1975 645 1294
+1975 614 1299
+1985 593 1305
+2017 573 1310
+2069 552 1315
+2090 531 1320
+2100 510 1326
+2100 489 1331
+2079 458 1336
+2048 448 1341
+2006 437 1346
+1975 448 1352
+1954 458 1357
+1954 458 1362
+1954 479 1367
+1985 520 1372
+2027 562 1378
+2069 614 1383
+2110 656 1388
+2131 687 1393
+2142 687 1398
+2142 687 1404
+.PEN_UP
+
+.PEN_DOWN
+2538 708 1868
+2517 708 1873
+2506 718 1878
+2485 729 1884
+2444 739 1889
+2413 739 1894
+2381 718 1899
+2350 687 1904
+2308 645 1910
+2298 614 1915
+2298 593 1920
+2308 583 1925
+2340 583 1930
+2371 593 1936
+2423 625 1941
+2485 666 1946
+2527 698 1951
+2527 698 1957
+2527 666 1962
+2506 635 1967
+2475 583 1972
+2433 531 1977
+2392 468 1983
+2371 448 1988
+2360 427 1993
+2360 416 1998
+.PEN_UP
+
+.PEN_DOWN
+2829 729 2472
+2819 729 2477
+2808 718 2482
+2777 718 2488
+2725 687 2493
+2694 666 2498
+2673 645 2503
+2673 614 2508
+2683 583 2514
+2715 562 2519
+2746 541 2524
+2767 520 2529
+2788 479 2534
+2788 448 2540
+2777 416 2545
+2746 385 2550
+2715 375 2555
+2683 375 2561
+2652 385 2566
+2642 427 2571
+2642 458 2576
+2663 479 2581
+2694 520 2587
+2735 583 2592
+2777 625 2597
+2788 666 2602
+2798 698 2607
+2808 718 2613
+2798 739 2618
+2788 739 2623
+2767 739 2628
+.PEN_UP
+
+.COMMENT End of File

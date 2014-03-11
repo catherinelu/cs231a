@@ -1,0 +1,216 @@
+.VERSION 1.0
+.COMMENT File s061w37
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 61
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Deborah
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-3 ? "Swab"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1 ? "w"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3 ? "b"
+
+.COMMENT Prompt string: "Swab"
+.COMMENT Recognizer string: "swab"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+715 1270 0
+683 1281 5
+642 1270 10
+610 1250 16
+590 1218 21
+579 1187 26
+590 1145 31
+621 1125 36
+663 1104 42
+715 1093 47
+788 1062 52
+819 1041 57
+840 1020 62
+829 1000 68
+777 937 73
+715 895 78
+652 864 83
+600 864 89
+548 875 94
+538 875 99
+538 885 104
+569 916 109
+631 948 115
+683 968 120
+746 979 125
+.PEN_UP
+
+.PEN_DOWN
+881 1083 934
+881 1041 939
+881 1000 944
+881 948 950
+892 937 955
+913 927 960
+933 927 965
+954 948 970
+965 979 976
+965 1000 981
+975 1020 986
+975 1031 991
+975 1010 996
+985 979 1002
+1006 948 1007
+1027 937 1012
+1048 937 1017
+1079 948 1023
+1110 979 1028
+1142 1000 1033
+1152 1020 1038
+1152 1041 1043
+1152 1073 1049
+1142 1104 1054
+1121 1145 1059
+1110 1166 1064
+1100 1187 1069
+1100 1187 1075
+1110 1177 1080
+.PEN_UP
+
+.PEN_DOWN
+1319 1083 1538
+1319 1093 1543
+1319 1104 1548
+1308 1125 1554
+1288 1125 1559
+1277 1125 1564
+1246 1114 1569
+1215 1073 1574
+1194 1041 1580
+1194 1000 1585
+1194 979 1590
+1215 968 1595
+1225 958 1600
+1256 968 1606
+1267 979 1611
+1288 1000 1616
+1298 1020 1621
+1298 1062 1627
+1298 1062 1632
+1298 1031 1637
+1298 1000 1642
+1319 979 1647
+1340 968 1653
+1371 958 1658
+1392 968 1663
+1423 979 1668
+1444 1000 1673
+1454 1020 1679
+.PEN_UP
+
+.PEN_DOWN
+1465 1239 2032
+1454 1291 2037
+1454 1291 2042
+1454 1260 2048
+1444 1208 2053
+1444 1135 2058
+1444 1052 2063
+1454 1020 2068
+1465 1000 2074
+1465 1000 2079
+1465 1000 2084
+1465 1010 2089
+1496 1041 2094
+1517 1083 2100
+1548 1114 2105
+1590 1135 2110
+1621 1135 2115
+1652 1125 2121
+1663 1104 2126
+1683 1083 2131
+1683 1073 2136
+1663 1052 2141
+1621 1031 2147
+1569 1010 2152
+1496 989 2157
+1454 979 2162
+1433 979 2167
+1433 979 2173
+.PEN_UP
+
+.COMMENT End of File

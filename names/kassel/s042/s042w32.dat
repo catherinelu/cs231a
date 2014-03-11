@@ -1,0 +1,206 @@
+.VERSION 1.0
+.COMMENT File s042w32
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 42
+.STYLE PRINTED
+.HAND R
+.AGE 34
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 135
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Julie
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Puf+f"
+.SEGMENT LETTER 0-1 ? "P"
+.SEGMENT LETTER 2 ? "u"
+.SEGMENT LETTER 3,5-5:4 ? "f"
+.SEGMENT LETTER 5:5-5:5 ? "+"
+.SEGMENT LETTER 4,5:6-5 ? "f"
+
+.COMMENT Prompt string: "Puff"
+.COMMENT Recognizer string: "Pvrr?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1048 1750 0
+1048 1718 5
+1058 1604 10
+1079 1479 16
+1100 1354 21
+1121 1239 26
+1121 1104 31
+1131 1052 36
+1142 1031 42
+.PEN_UP
+
+.PEN_DOWN
+663 1687 329
+663 1708 334
+746 1739 339
+840 1791 345
+975 1854 350
+1163 1895 355
+1392 1895 360
+1548 1854 365
+1631 1781 371
+1663 1708 376
+1642 1604 381
+1558 1541 386
+1423 1489 392
+1267 1468 397
+1090 1468 402
+1006 1479 407
+965 1479 412
+.PEN_UP
+
+.PEN_DOWN
+1538 1281 714
+1538 1270 719
+1548 1229 724
+1548 1187 730
+1548 1125 735
+1569 1093 740
+1590 1062 745
+1621 1073 750
+1652 1093 756
+1673 1135 761
+1683 1198 766
+1694 1229 771
+1694 1260 776
+1683 1270 782
+1683 1270 787
+.PEN_UP
+
+.PEN_DOWN
+1892 1114 1098
+1892 1083 1103
+1902 1062 1108
+1902 1062 1114
+1902 1062 1119
+1902 1073 1124
+1881 1104 1129
+1871 1145 1134
+1860 1218 1140
+1860 1250 1145
+1860 1291 1150
+1871 1312 1155
+1892 1312 1160
+1913 1323 1166
+1965 1323 1171
+2006 1343 1176
+2058 1354 1181
+2090 1364 1187
+2100 1375 1192
+.PEN_UP
+
+.PEN_DOWN
+2121 1062 1593
+2121 1052 1598
+2121 1052 1603
+2121 1052 1609
+2121 1073 1614
+2121 1093 1619
+2121 1125 1624
+2121 1156 1629
+2110 1208 1635
+2110 1250 1640
+2110 1291 1645
+2121 1333 1650
+2142 1364 1656
+2152 1375 1661
+2183 1375 1666
+2204 1364 1671
+2267 1354 1676
+2319 1333 1682
+2360 1333 1687
+2381 1333 1692
+2381 1343 1697
+.PEN_UP
+
+.PEN_DOWN
+1725 1198 2142
+1725 1198 2147
+1746 1198 2152
+1788 1198 2158
+1860 1198 2163
+2006 1198 2168
+2131 1198 2173
+2246 1208 2178
+2340 1218 2184
+2413 1229 2189
+2444 1229 2194
+2444 1239 2199
+.PEN_UP
+
+.COMMENT End of File

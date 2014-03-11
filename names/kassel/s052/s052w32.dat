@@ -1,0 +1,206 @@
+.VERSION 1.0
+.COMMENT File s052w32
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 52
+.STYLE PRINTED
+.HAND R
+.AGE 27
+.SEX F
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 150
+ Student: No
+ Where educated: NJ
+ Home language: English
+ Name: Linda
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Puf&f"
+.SEGMENT LETTER 0 ? "P"
+.SEGMENT LETTER 1 ? "u"
+.SEGMENT LETTER 2,4-4:2 ? "f"
+.SEGMENT LETTER 4:3-4:3 ? "&"
+.SEGMENT LETTER 3,4:4-4 ? "f"
+
+.COMMENT Prompt string: "Puff"
+.COMMENT Recognizer string: "Pulf"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1871 1218 0
+1871 1218 5
+1881 1218 10
+1881 1208 16
+1892 1166 21
+1892 1135 26
+1892 1093 31
+1902 1062 36
+1902 1020 42
+1913 1010 47
+1913 1000 52
+1913 1010 57
+1902 1031 62
+1892 1062 68
+1881 1083 73
+1871 1125 78
+1860 1156 83
+1850 1187 89
+1850 1218 94
+1871 1239 99
+1881 1250 104
+1892 1250 109
+1913 1250 115
+1933 1229 120
+1944 1208 125
+1944 1187 130
+1933 1166 135
+1902 1145 141
+1892 1125 146
+.PEN_UP
+
+.PEN_DOWN
+2038 1104 659
+2038 1135 664
+2027 1135 669
+2027 1041 675
+2038 1010 680
+2038 989 685
+2048 979 690
+2058 968 695
+2058 968 701
+2069 989 706
+2079 1020 711
+2090 1041 716
+2090 1073 722
+2090 1125 727
+2100 1125 732
+2090 1125 737
+2090 1104 742
+2100 1083 748
+2100 1062 753
+2100 1031 758
+2110 1000 763
+2121 989 768
+2131 979 774
+2142 979 779
+2152 968 784
+2152 968 789
+.PEN_UP
+
+.PEN_DOWN
+2319 1198 1318
+2308 1208 1323
+2298 1218 1328
+2288 1229 1334
+2277 1229 1339
+2246 1198 1344
+2235 1177 1349
+2225 1145 1354
+2225 1125 1360
+2235 1093 1365
+2235 1073 1370
+2246 1041 1375
+2246 1020 1380
+2256 1010 1386
+2256 989 1391
+2256 968 1396
+2256 937 1401
+.PEN_UP
+
+.PEN_DOWN
+2444 1177 1758
+2433 1187 1763
+2423 1198 1768
+2423 1208 1774
+2402 1208 1779
+2392 1198 1784
+2381 1187 1789
+2371 1166 1794
+2360 1156 1800
+2350 1135 1805
+2340 1104 1810
+2340 1062 1815
+2350 1031 1820
+2350 1000 1826
+2350 979 1831
+2350 927 1836
+2360 916 1841
+.PEN_UP
+
+.PEN_DOWN
+2194 1041 2307
+2215 1041 2312
+2235 1052 2317
+2288 1062 2323
+2329 1083 2328
+2371 1083 2333
+2381 1083 2338
+.PEN_UP
+
+.COMMENT End of File

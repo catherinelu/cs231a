@@ -1,0 +1,215 @@
+.VERSION 1.0
+.COMMENT File s105w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 105
+.STYLE PRINTED
+.HAND R
+.AGE 52
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 140
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Mary
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "z"
+.SEGMENT LETTER 5 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+819 2010 0
+798 2010 5
+767 1937 10
+746 1875 16
+725 1791 21
+694 1739 26
+673 1677 31
+673 1666 36
+683 1666 42
+704 1677 47
+.PEN_UP
+
+.PEN_DOWN
+735 1989 274
+735 1989 279
+735 1989 284
+819 2041 290
+923 2083 295
+1017 2135 300
+1110 2177 305
+1152 2187 310
+1152 2177 316
+1121 2135 321
+.PEN_UP
+
+.PEN_DOWN
+704 1885 549
+704 1895 554
+725 1895 559
+788 1927 565
+840 1958 570
+892 1968 575
+913 1979 580
+913 1968 585
+913 1948 591
+.PEN_UP
+
+.PEN_DOWN
+965 1948 878
+965 1958 883
+965 1948 888
+954 1937 894
+933 1906 899
+913 1864 904
+902 1833 909
+902 1823 914
+902 1812 920
+923 1812 925
+944 1833 930
+975 1854 935
+996 1895 940
+1017 1927 946
+1038 1958 951
+1038 1979 956
+1038 1979 961
+1038 1968 967
+1027 1927 972
+1006 1885 977
+996 1833 982
+996 1812 987
+996 1802 993
+1017 1791 998
+.PEN_UP
+
+.PEN_DOWN
+1079 1937 2197
+1058 1937 2202
+1048 1937 2207
+1058 1937 2213
+1090 1958 2218
+1152 1979 2223
+1194 1989 2228
+1215 1989 2233
+1215 1989 2239
+1204 1958 2244
+1173 1916 2249
+1110 1854 2254
+1058 1823 2260
+1027 1802 2265
+1017 1791 2270
+1027 1791 2275
+1058 1791 2280
+1090 1812 2286
+1152 1833 2291
+1194 1843 2296
+1215 1843 2301
+1225 1843 2306
+1235 1843 2312
+.PEN_UP
+
+.PEN_DOWN
+1246 1968 2691
+1235 1968 2696
+1235 1968 2701
+1246 1979 2707
+1277 1979 2712
+1308 2000 2717
+1340 2010 2722
+1371 2020 2727
+1392 2020 2733
+1392 2000 2738
+1381 1968 2743
+1340 1927 2748
+1308 1895 2754
+1267 1854 2759
+1235 1823 2764
+1225 1812 2769
+1225 1812 2774
+1246 1812 2780
+1319 1843 2785
+1381 1864 2790
+1444 1875 2795
+1496 1885 2800
+1538 1895 2806
+1548 1895 2811
+1548 1885 2816
+1548 1885 2821
+1527 1885 2826
+.PEN_UP
+
+.COMMENT End of File

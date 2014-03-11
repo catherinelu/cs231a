@@ -1,0 +1,207 @@
+.VERSION 1.0
+.COMMENT File s115w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 115
+.STYLE PRINTED
+.HAND R
+.AGE 26
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 140
+ Student: Yes
+ Where educated: MN
+ Home language: English
+ Name: Karin
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "F&uzz"
+.SEGMENT LETTER 0-2:5 ? "F"
+.SEGMENT LETTER 2:6-2:9 ? "&"
+.SEGMENT LETTER 2:10-2 ? "u"
+.SEGMENT LETTER 3-4 ? "z"
+.SEGMENT LETTER 5-6 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Tnz??"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1517 2000 0
+1517 2010 5
+1517 2000 10
+1527 1979 16
+1527 1937 21
+1527 1885 26
+1538 1854 31
+1548 1833 36
+1548 1812 42
+1548 1812 47
+.PEN_UP
+
+.PEN_DOWN
+1475 1989 275
+1475 2000 280
+1485 2010 285
+1538 2031 291
+1579 2031 296
+1631 2031 301
+1673 2031 306
+1694 2031 311
+.PEN_UP
+
+.PEN_DOWN
+1538 1916 494
+1538 1916 499
+1538 1916 504
+1569 1916 510
+1600 1927 515
+1631 1927 520
+1673 1937 525
+1694 1948 530
+1704 1948 536
+1704 1948 541
+1704 1948 546
+1704 1937 551
+1704 1906 556
+1715 1885 562
+1715 1875 567
+1725 1854 572
+1735 1854 577
+1756 1864 583
+1777 1885 588
+1798 1906 593
+1798 1916 598
+1808 1916 603
+1808 1906 609
+1808 1885 614
+1808 1864 619
+1808 1843 624
+1808 1833 629
+1819 1823 635
+.PEN_UP
+
+.PEN_DOWN
+1902 1916 1043
+1902 1927 1048
+1913 1937 1053
+1933 1937 1059
+1965 1937 1064
+1985 1937 1069
+2006 1916 1074
+2006 1895 1079
+1996 1864 1085
+1985 1843 1090
+1975 1823 1095
+1975 1802 1100
+1975 1802 1106
+1985 1802 1111
+2006 1802 1116
+2038 1812 1121
+2058 1823 1126
+2069 1833 1132
+.PEN_UP
+
+.PEN_DOWN
+1902 1875 1428
+1902 1875 1433
+1913 1875 1438
+2006 1875 1444
+2038 1875 1449
+.PEN_UP
+
+.PEN_DOWN
+2121 1937 1648
+2121 1937 1653
+2131 1948 1658
+2152 1948 1664
+2194 1937 1669
+2204 1927 1674
+2204 1916 1679
+2194 1895 1684
+2173 1864 1690
+2173 1843 1695
+2173 1833 1700
+2173 1823 1705
+2183 1812 1710
+2204 1812 1716
+2235 1823 1721
+2256 1833 1726
+.PEN_UP
+
+.PEN_DOWN
+2121 1875 1922
+2121 1875 1927
+2121 1875 1932
+2225 1875 1938
+2267 1875 1943
+2319 1885 1948
+.PEN_UP
+
+.COMMENT End of File

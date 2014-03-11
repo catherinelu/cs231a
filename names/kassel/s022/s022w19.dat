@@ -1,0 +1,368 @@
+.VERSION 1.0
+.COMMENT File s022w19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 22
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 171
+ Student: No
+ Where educated: Italy
+ Home language: Italian
+ Name: Andrea
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-17 ? "Accountability"
+.SEGMENT LETTER 0-1 ? "A"
+.SEGMENT LETTER 2 ? "c"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "o"
+.SEGMENT LETTER 5 ? "u"
+.SEGMENT LETTER 6 ? "n"
+.SEGMENT LETTER 7 ? "t"
+.SEGMENT LETTER 8 ? "a"
+.SEGMENT LETTER 9 ? "b"
+.SEGMENT LETTER 10-11 ? "i"
+.SEGMENT LETTER 12 ? "l"
+.SEGMENT LETTER 13-14 ? "i"
+.SEGMENT LETTER 15-16 ? "t"
+.SEGMENT LETTER 17 ? "y"
+
+.COMMENT Prompt string: "Accountability"
+.COMMENT Recognizer string: "Accouuttbilitg"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1954 791 0
+1954 791 5
+1944 760 10
+1933 708 16
+1923 656 21
+1902 593 26
+1892 573 31
+1892 562 36
+1913 604 42
+1933 656 47
+1944 729 52
+1965 781 57
+1965 812 62
+1975 802 68
+1975 791 73
+1975 718 78
+1985 677 83
+1996 635 89
+1996 604 94
+2006 593 99
+2006 583 104
+.PEN_UP
+
+.PEN_DOWN
+1933 666 384
+1923 677 389
+1923 687 394
+1944 687 400
+1975 677 405
+.PEN_UP
+
+.PEN_DOWN
+2110 687 549
+2090 687 554
+2069 687 559
+2038 666 565
+2027 645 570
+2027 625 575
+2038 604 580
+2079 593 585
+.PEN_UP
+
+.PEN_DOWN
+2152 677 769
+2142 677 774
+2121 645 779
+2110 625 785
+2121 604 790
+2142 593 795
+.PEN_UP
+
+.PEN_DOWN
+2256 656 933
+2225 635 938
+2215 625 943
+2215 604 949
+2225 604 954
+2256 614 959
+2288 635 964
+2298 656 969
+2298 677 975
+2277 677 980
+2246 677 985
+2235 656 990
+.PEN_UP
+
+.PEN_DOWN
+2350 687 1373
+2340 666 1378
+2340 645 1383
+2340 635 1389
+2350 625 1394
+2371 635 1399
+2392 656 1404
+2402 677 1409
+2402 687 1415
+2392 687 1420
+2392 687 1425
+2381 656 1430
+2381 635 1436
+2392 635 1441
+2402 635 1446
+.PEN_UP
+
+.PEN_DOWN
+2444 708 1647
+2444 708 1652
+2444 677 1657
+2433 656 1663
+2433 645 1668
+2444 635 1673
+2454 645 1678
+2475 656 1683
+2485 677 1689
+2485 677 1694
+2485 677 1699
+2465 656 1704
+2465 635 1710
+2485 625 1715
+2506 645 1720
+.PEN_UP
+
+.PEN_DOWN
+2579 802 1922
+2579 802 1927
+2569 770 1932
+2569 708 1938
+2569 677 1943
+2579 656 1948
+2590 635 1953
+2590 635 1958
+2590 645 1964
+2579 656 1969
+2558 698 1974
+2527 739 1979
+2517 750 1984
+2517 750 1990
+2569 770 1995
+2621 791 2000
+2725 791 2005
+.PEN_UP
+
+.PEN_DOWN
+2683 729 2471
+2683 729 2476
+2683 729 2481
+2694 718 2487
+2704 708 2492
+2704 687 2497
+2704 666 2502
+2715 645 2507
+2715 645 2513
+2704 645 2518
+2683 656 2523
+2663 656 2528
+2652 656 2534
+2652 656 2539
+2652 656 2544
+2673 656 2549
+2694 656 2554
+2725 677 2560
+.PEN_UP
+
+.PEN_DOWN
+2798 823 2801
+2798 791 2806
+2788 750 2811
+2777 698 2817
+2756 656 2822
+2756 635 2827
+2767 635 2832
+2767 635 2837
+2788 677 2843
+2808 708 2848
+2819 718 2853
+2819 718 2858
+2819 708 2864
+2819 687 2869
+2808 666 2874
+2777 645 2879
+2777 645 2884
+2788 645 2890
+.PEN_UP
+
+.PEN_DOWN
+2881 708 3240
+2881 708 3245
+2871 698 3250
+2871 677 3256
+2871 656 3261
+2871 645 3266
+2881 645 3271
+2892 645 3276
+.PEN_UP
+
+.PEN_DOWN
+2902 760 3405
+2881 781 3410
+2881 781 3415
+2871 781 3421
+2871 781 3426
+2881 770 3431
+.PEN_UP
+
+.PEN_DOWN
+2944 677 3625
+2944 677 3630
+2954 677 3635
+2985 698 3641
+3017 739 3646
+3038 781 3651
+3048 823 3656
+3038 854 3661
+3027 854 3667
+3017 854 3672
+2996 833 3677
+2985 770 3682
+2985 739 3688
+2985 708 3693
+2996 687 3698
+3006 687 3703
+3027 687 3708
+3048 698 3714
+.PEN_UP
+
+.PEN_DOWN
+3069 729 3954
+3069 718 3959
+3058 687 3964
+3058 677 3970
+3069 666 3975
+3079 666 3980
+.PEN_UP
+
+.PEN_DOWN
+3100 760 4064
+3079 781 4069
+3079 781 4074
+.PEN_UP
+
+.PEN_DOWN
+3163 833 4229
+3163 833 4234
+3163 812 4239
+3152 760 4245
+3142 708 4250
+3142 677 4255
+3152 656 4260
+3163 645 4265
+3183 645 4271
+3194 666 4276
+3194 687 4281
+.PEN_UP
+
+.PEN_DOWN
+3142 791 4449
+3121 812 4454
+3121 812 4459
+3173 812 4465
+3204 791 4470
+.PEN_UP
+
+.PEN_DOWN
+3235 739 4668
+3235 729 4673
+3225 718 4678
+3225 708 4684
+3246 708 4689
+3267 729 4694
+3288 739 4699
+3288 739 4704
+3298 718 4710
+3308 645 4715
+3288 593 4720
+3256 531 4725
+3225 479 4730
+3142 458 4736
+3058 448 4741
+2985 458 4746
+2933 479 4751
+2933 520 4757
+.PEN_UP
+
+.COMMENT End of File

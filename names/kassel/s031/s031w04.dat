@@ -1,0 +1,225 @@
+.VERSION 1.0
+.COMMENT File s031w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 31
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 110
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Elizabeth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "Skiing"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1506 864 0
+1496 864 5
+1454 854 10
+1433 833 16
+1402 812 21
+1392 791 26
+1402 781 31
+1433 770 36
+1485 770 42
+1538 770 47
+1569 750 52
+1569 729 57
+1569 708 62
+1548 677 68
+1517 666 73
+1475 666 78
+1454 666 83
+1433 677 89
+.PEN_UP
+
+.PEN_DOWN
+1600 895 550
+1600 895 555
+1610 864 560
+1621 823 566
+1631 770 571
+1642 739 576
+1652 708 581
+1652 698 586
+1652 698 592
+1652 698 597
+1663 718 602
+1673 750 607
+1683 781 612
+1704 812 618
+1715 833 623
+1725 833 628
+1725 833 633
+.PEN_UP
+
+.PEN_DOWN
+1663 760 989
+1663 760 994
+1673 760 999
+1683 750 1005
+1704 739 1010
+1725 718 1015
+1756 708 1020
+1767 708 1025
+.PEN_UP
+
+.PEN_DOWN
+1808 781 1209
+1808 781 1214
+1819 760 1219
+1829 750 1225
+1840 729 1230
+1840 718 1235
+1850 718 1240
+.PEN_UP
+
+.PEN_DOWN
+1788 854 1373
+1788 854 1378
+1788 854 1383
+1788 843 1389
+.PEN_UP
+
+.PEN_DOWN
+1892 812 1483
+1892 802 1488
+1892 791 1493
+1913 760 1499
+1923 729 1504
+1933 718 1509
+1933 718 1514
+1933 718 1519
+.PEN_UP
+
+.PEN_DOWN
+1808 895 1703
+1808 906 1708
+1808 916 1713
+1808 916 1719
+.PEN_UP
+
+.PEN_DOWN
+1954 791 1978
+1954 781 1983
+1965 770 1988
+1975 750 1994
+1975 739 1999
+1985 750 2004
+2006 781 2009
+2027 791 2014
+2038 791 2020
+2048 770 2025
+2069 750 2030
+2069 739 2035
+2079 729 2040
+.PEN_UP
+
+.PEN_DOWN
+2183 802 2307
+2183 812 2312
+2173 823 2317
+2163 823 2323
+2131 802 2328
+2110 770 2333
+2100 739 2338
+2110 718 2343
+2121 718 2349
+2152 739 2354
+2163 770 2359
+2173 791 2364
+2173 802 2370
+2173 802 2375
+2173 760 2380
+2194 729 2385
+2204 666 2390
+2204 635 2396
+2194 593 2401
+2183 562 2406
+2152 541 2411
+2121 520 2416
+2100 510 2422
+.PEN_UP
+
+.COMMENT End of File

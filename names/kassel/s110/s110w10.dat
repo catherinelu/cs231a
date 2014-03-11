@@ -1,0 +1,323 @@
+.VERSION 1.0
+.COMMENT File s110w10
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 110
+.STYLE PRINTED
+.HAND R
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: Yes
+ Where educated: India
+ Home language: Hindi
+ Name: Vivek
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-11 ? "Invulnerable"
+.SEGMENT LETTER 0 ? "I"
+.SEGMENT LETTER 1 ? "n"
+.SEGMENT LETTER 2 ? "v"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "l"
+.SEGMENT LETTER 5 ? "n"
+.SEGMENT LETTER 6 ? "e"
+.SEGMENT LETTER 7 ? "r"
+.SEGMENT LETTER 8 ? "a"
+.SEGMENT LETTER 9 ? "b"
+.SEGMENT LETTER 10 ? "l"
+.SEGMENT LETTER 11 ? "e"
+
+.COMMENT Prompt string: "Invulnerable"
+.COMMENT Recognizer string: "lnvulne8able"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1454 2083 0
+1454 2083 5
+1454 2083 10
+1454 2041 16
+1454 2000 21
+1444 1937 26
+1433 1875 31
+1433 1843 36
+1433 1802 42
+1433 1781 47
+1444 1781 52
+.PEN_UP
+
+.PEN_DOWN
+1517 1895 439
+1517 1895 444
+1517 1895 449
+1517 1895 455
+1517 1875 460
+1517 1833 465
+1517 1791 470
+1517 1791 475
+1527 1812 481
+1548 1854 486
+1569 1895 491
+1579 1895 496
+1590 1895 502
+1590 1875 507
+1600 1843 512
+1600 1802 517
+1610 1781 522
+1621 1760 528
+.PEN_UP
+
+.PEN_DOWN
+1756 1885 988
+1756 1885 993
+1756 1875 998
+1767 1864 1004
+1777 1843 1009
+1788 1812 1014
+1788 1802 1019
+1788 1802 1024
+1798 1802 1030
+1808 1833 1035
+1829 1875 1040
+1840 1906 1045
+1840 1937 1050
+1840 1948 1056
+1840 1948 1061
+.PEN_UP
+
+.PEN_DOWN
+1923 1906 1428
+1923 1906 1433
+1913 1895 1438
+1913 1875 1444
+1913 1843 1449
+1923 1823 1454
+1933 1802 1459
+1933 1802 1464
+1944 1812 1470
+1954 1833 1475
+1975 1875 1480
+1975 1895 1485
+1975 1895 1490
+1975 1895 1496
+1975 1885 1501
+1985 1854 1506
+1985 1823 1511
+2006 1802 1517
+.PEN_UP
+
+.PEN_DOWN
+2100 2052 2032
+2100 2052 2037
+2100 2052 2042
+2090 2041 2048
+2090 1906 2053
+2079 1864 2058
+2069 1812 2063
+2069 1812 2068
+.PEN_UP
+
+.PEN_DOWN
+2152 1906 2471
+2152 1916 2476
+2152 1906 2481
+2152 1895 2487
+2152 1875 2492
+2152 1854 2497
+2152 1823 2502
+2152 1812 2507
+2152 1812 2513
+2173 1854 2518
+2194 1885 2523
+2204 1885 2528
+2204 1885 2534
+2215 1854 2539
+2215 1833 2544
+2225 1802 2549
+2235 1781 2554
+.PEN_UP
+
+.PEN_DOWN
+2308 1875 2856
+2308 1885 2861
+2308 1885 2866
+2319 1885 2872
+2340 1885 2877
+2360 1895 2882
+2360 1906 2887
+2360 1916 2892
+2360 1927 2898
+2329 1937 2903
+2319 1927 2908
+2308 1906 2913
+2288 1885 2918
+2288 1854 2924
+2298 1833 2929
+2319 1823 2934
+2360 1823 2939
+.PEN_UP
+
+.PEN_DOWN
+2423 1895 3460
+2423 1906 3465
+2444 1906 3470
+2454 1895 3476
+2465 1875 3481
+2475 1854 3486
+2475 1833 3491
+2465 1823 3496
+2454 1812 3502
+2454 1812 3507
+2454 1823 3512
+2454 1854 3517
+2485 1906 3522
+2496 1937 3528
+2506 1948 3533
+2506 1948 3538
+2506 1948 3543
+2506 1937 3549
+2506 1927 3554
+2506 1937 3559
+.PEN_UP
+
+.PEN_DOWN
+2673 1906 3954
+2663 1916 3959
+2652 1927 3964
+2621 1927 3970
+2600 1916 3975
+2579 1895 3980
+2558 1875 3985
+2558 1843 3990
+2569 1833 3996
+2579 1833 4001
+2610 1843 4006
+2642 1864 4011
+2652 1875 4016
+2652 1885 4022
+2642 1885 4027
+2642 1875 4032
+2642 1843 4037
+2652 1823 4043
+2663 1812 4048
+.PEN_UP
+
+.PEN_DOWN
+2840 2020 4339
+2829 2020 4344
+2829 2020 4349
+2829 2020 4355
+2819 1979 4360
+2808 1937 4365
+2808 1895 4370
+2798 1864 4375
+2798 1854 4381
+2798 1854 4386
+2808 1854 4391
+2829 1875 4396
+2850 1875 4402
+2860 1864 4407
+2860 1854 4412
+2860 1833 4417
+2840 1802 4422
+2819 1802 4428
+2788 1802 4433
+2767 1812 4438
+.PEN_UP
+
+.PEN_DOWN
+2944 2010 4778
+2944 2010 4783
+2944 2000 4788
+2944 1958 4794
+2933 1906 4799
+2923 1854 4804
+2923 1812 4809
+2913 1791 4814
+.PEN_UP
+
+.PEN_DOWN
+3006 1875 4998
+3027 1875 5003
+3048 1875 5008
+3079 1885 5014
+3110 1906 5019
+3110 1906 5024
+3100 1916 5029
+3079 1916 5034
+3038 1906 5040
+3027 1885 5045
+3027 1864 5050
+3048 1833 5055
+3079 1812 5060
+3121 1802 5066
+.PEN_UP
+
+.COMMENT End of File

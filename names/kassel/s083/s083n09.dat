@@ -1,0 +1,232 @@
+.VERSION 1.0
+.COMMENT File s083n09
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 83
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 125
+ Student: Yes
+ Where educated: CA
+ Home language: Spanish
+ Name: Minerva
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "61449"
+.SEGMENT LETTER 0 ? "6"
+.SEGMENT LETTER 1 ? "1"
+.SEGMENT LETTER 2-3 ? "4"
+.SEGMENT LETTER 4-5 ? "4"
+.SEGMENT LETTER 6-7 ? "9"
+
+.COMMENT Prompt string: "61449"
+.COMMENT Recognizer string: "614401"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2423 1364 0
+2423 1364 5
+2423 1364 10
+2402 1323 16
+2381 1270 21
+2350 1177 26
+2329 1125 31
+2340 1083 36
+2360 1062 42
+2402 1062 47
+2444 1073 52
+2475 1093 57
+2496 1125 62
+2496 1156 68
+2485 1166 73
+2465 1166 78
+2433 1145 83
+2413 1114 89
+2392 1083 94
+2381 1062 99
+2381 1041 104
+2392 1020 109
+2423 1031 115
+.PEN_UP
+
+.PEN_DOWN
+2621 1312 384
+2621 1312 389
+2621 1312 394
+2631 1302 400
+2631 1260 405
+2631 1198 410
+2631 1145 415
+2631 1114 420
+2631 1093 426
+2642 1083 431
+2652 1083 436
+.PEN_UP
+
+.PEN_DOWN
+2808 1312 714
+2808 1281 719
+2798 1270 724
+2798 1239 730
+2798 1218 735
+2788 1177 740
+2777 1166 745
+2777 1145 750
+2777 1145 756
+2808 1145 761
+2829 1156 766
+2871 1156 771
+2913 1166 776
+2933 1166 782
+.PEN_UP
+
+.PEN_DOWN
+2902 1312 1044
+2902 1323 1049
+2902 1323 1054
+2892 1302 1060
+2892 1260 1065
+2881 1208 1070
+2881 1135 1075
+2881 1093 1080
+2881 1062 1086
+2881 1052 1091
+2881 1041 1096
+.PEN_UP
+
+.PEN_DOWN
+3038 1291 1318
+3038 1302 1323
+3038 1302 1328
+3038 1291 1334
+3027 1260 1339
+3017 1229 1344
+3006 1198 1349
+3006 1177 1354
+3006 1156 1360
+3017 1156 1365
+3038 1156 1370
+3058 1156 1375
+3100 1166 1380
+3131 1166 1386
+3163 1166 1391
+3173 1166 1396
+.PEN_UP
+
+.PEN_DOWN
+3142 1354 1703
+3142 1364 1708
+3142 1333 1713
+3131 1302 1719
+3131 1260 1724
+3131 1208 1729
+3142 1135 1734
+3142 1104 1739
+3142 1083 1745
+3131 1062 1750
+.PEN_UP
+
+.PEN_DOWN
+3319 1187 1977
+3340 1187 1982
+3360 1198 1987
+3371 1208 1993
+3392 1229 1998
+3392 1260 2003
+3381 1281 2008
+3360 1302 2013
+3329 1302 2019
+3288 1291 2024
+3246 1260 2029
+3225 1239 2034
+3225 1218 2040
+3246 1187 2045
+3277 1187 2050
+3319 1187 2055
+3350 1208 2060
+3392 1229 2066
+.PEN_UP
+
+.PEN_DOWN
+3392 1270 2307
+3392 1270 2312
+3392 1260 2317
+3381 1239 2323
+3371 1187 2328
+3350 1114 2333
+3340 1052 2338
+3340 1010 2343
+3340 979 2349
+3340 948 2354
+.PEN_UP
+
+.COMMENT End of File

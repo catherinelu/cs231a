@@ -1,0 +1,331 @@
+.VERSION 1.0
+.COMMENT File s075w07
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 75
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 135
+ Student: Yes
+ Where educated: PA
+ Home language: English
+ Name: David
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-11 ? "Geography"
+.SEGMENT LETTER 0 ? "G"
+.SEGMENT LETTER 1-2 ? "e"
+.SEGMENT LETTER 3 ? "o"
+.SEGMENT LETTER 4 ? "g"
+.SEGMENT LETTER 5 ? "r"
+.SEGMENT LETTER 6 ? "a"
+.SEGMENT LETTER 7 ? "p"
+.SEGMENT LETTER 8-9 ? "h"
+.SEGMENT LETTER 10-11 ? "y"
+
+.COMMENT Prompt string: "Geography"
+.COMMENT Recognizer string: "OEograpl7y"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1246 937 0
+1246 948 5
+1277 968 10
+1319 968 16
+1381 979 21
+1485 979 26
+1558 968 31
+1610 948 36
+1663 927 42
+1683 875 47
+1683 833 52
+1652 781 57
+1610 729 62
+1538 677 68
+1465 645 73
+1381 625 78
+1298 625 83
+1215 645 89
+1173 677 94
+1142 750 99
+1121 823 104
+1110 916 109
+1121 1000 115
+1131 1062 120
+1152 1114 125
+1204 1177 130
+1235 1208 135
+1288 1229 141
+1350 1250 146
+1433 1260 151
+1496 1250 156
+1538 1250 161
+.PEN_UP
+
+.PEN_DOWN
+1756 843 604
+1777 843 609
+1808 843 614
+1850 843 620
+1902 843 625
+1954 843 630
+1985 864 635
+1985 875 640
+.PEN_UP
+
+.PEN_DOWN
+1923 948 714
+1892 948 719
+1850 937 724
+1798 895 730
+1767 843 735
+1767 791 740
+1767 739 745
+1808 687 750
+1860 666 756
+1933 656 761
+.PEN_UP
+
+.PEN_DOWN
+2288 927 1043
+2256 916 1048
+2215 895 1053
+2183 864 1059
+2131 791 1064
+2110 750 1069
+2110 718 1074
+2131 698 1079
+2173 698 1085
+2194 708 1090
+2235 739 1095
+2267 791 1100
+2288 823 1106
+2288 864 1111
+2288 906 1116
+2288 916 1121
+2288 916 1126
+.PEN_UP
+
+.PEN_DOWN
+2558 906 1428
+2527 906 1433
+2506 906 1438
+2475 875 1444
+2433 854 1449
+2392 802 1454
+2381 760 1459
+2381 729 1464
+2402 718 1470
+2444 708 1475
+2485 718 1480
+2538 739 1485
+2569 770 1490
+2590 823 1496
+2590 843 1501
+2600 864 1506
+2600 843 1511
+2600 812 1517
+2610 770 1522
+2642 708 1527
+2673 656 1532
+2704 604 1537
+2746 552 1543
+2777 500 1548
+2777 458 1553
+2756 437 1558
+2715 416 1563
+2621 416 1569
+2569 416 1574
+.PEN_UP
+
+.PEN_DOWN
+2788 823 2032
+2788 791 2037
+2798 760 2042
+2808 729 2048
+2808 718 2053
+2808 708 2058
+2808 729 2063
+2798 760 2068
+2798 802 2074
+2798 864 2079
+2819 927 2084
+2829 948 2089
+2840 958 2094
+2871 958 2100
+2913 937 2105
+.PEN_UP
+
+.PEN_DOWN
+3163 906 2416
+3142 906 2421
+3121 895 2426
+3100 885 2432
+3069 843 2437
+3048 823 2442
+3038 781 2447
+3058 760 2452
+3079 750 2458
+3110 750 2463
+3152 770 2468
+3183 802 2473
+3204 833 2478
+3225 864 2484
+3235 895 2489
+3235 895 2494
+3235 895 2499
+3225 875 2505
+3225 843 2510
+3246 812 2515
+3256 781 2520
+3288 760 2525
+3329 729 2531
+.PEN_UP
+
+.PEN_DOWN
+3506 864 2856
+3506 823 2861
+3506 739 2866
+3506 666 2872
+3506 604 2877
+3506 531 2882
+3485 468 2887
+3485 458 2892
+3485 458 2898
+3475 458 2903
+3475 510 2908
+3475 593 2913
+3475 677 2918
+3485 770 2924
+3517 854 2929
+3538 885 2934
+3558 906 2939
+3579 916 2945
+3610 916 2950
+3642 906 2955
+3663 895 2960
+3683 864 2965
+3694 823 2971
+3683 791 2976
+3673 770 2981
+3642 750 2986
+3600 739 2991
+3569 739 2997
+.PEN_UP
+
+.PEN_DOWN
+3840 1125 3460
+3840 1093 3465
+3840 1041 3470
+3829 958 3476
+3819 885 3481
+3819 833 3486
+3808 781 3491
+3808 750 3496
+3808 739 3502
+3808 750 3507
+3808 781 3512
+.PEN_UP
+
+.PEN_DOWN
+3871 875 3625
+3902 906 3630
+3913 906 3635
+3933 895 3641
+3954 864 3646
+3975 843 3651
+3996 802 3656
+4006 770 3661
+4017 750 3667
+.PEN_UP
+
+.PEN_DOWN
+4183 916 3899
+4194 916 3904
+4215 906 3909
+4256 843 3915
+4256 802 3920
+4277 760 3925
+.PEN_UP
+
+.PEN_DOWN
+4433 979 4174
+4402 948 4179
+4371 864 4184
+4288 718 4190
+4215 614 4195
+4152 500 4200
+4100 416 4205
+4038 312 4210
+.PEN_UP
+
+.COMMENT End of File

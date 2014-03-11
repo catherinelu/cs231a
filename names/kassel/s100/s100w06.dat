@@ -1,0 +1,212 @@
+.VERSION 1.0
+.COMMENT File s100w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 100
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 150
+ Student: No
+ Where educated: MA
+ Home language: English & Swedish
+ Name: Per
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Taxi"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "Taxi"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+881 2104 0
+881 2104 5
+881 2104 10
+892 2104 16
+975 2104 21
+1038 2104 26
+1100 2114 31
+1183 2114 36
+1235 2114 42
+1267 2114 47
+1288 2114 52
+1288 2114 57
+1288 2114 62
+1288 2114 68
+1288 2114 73
+.PEN_UP
+
+.PEN_DOWN
+1079 2114 440
+1079 2114 445
+1079 2125 450
+1079 2125 456
+1079 2114 461
+1079 2114 466
+1079 2093 471
+1090 2073 476
+1090 2020 482
+1079 1979 487
+1079 1937 492
+1079 1906 497
+1079 1885 502
+1069 1875 508
+1069 1864 513
+1069 1864 518
+1069 1864 523
+.PEN_UP
+
+.PEN_DOWN
+1444 1989 1154
+1444 2010 1159
+1444 2020 1164
+1433 2031 1170
+1423 2031 1175
+1402 2031 1180
+1371 2010 1185
+1350 1989 1190
+1329 1958 1196
+1329 1937 1201
+1350 1916 1206
+1360 1906 1211
+1392 1916 1216
+1423 1927 1222
+1444 1958 1227
+1444 1979 1232
+1444 1989 1237
+1444 1989 1243
+1444 1989 1248
+1444 1968 1253
+1444 1958 1258
+1454 1937 1263
+1475 1916 1269
+1485 1906 1274
+1506 1895 1279
+1506 1895 1284
+.PEN_UP
+
+.PEN_DOWN
+1829 2010 1758
+1829 2020 1763
+1829 2010 1768
+1819 1989 1774
+1798 1968 1779
+1767 1937 1784
+1746 1916 1789
+1725 1895 1794
+1704 1875 1800
+1704 1875 1805
+1694 1875 1810
+1694 1875 1815
+.PEN_UP
+
+.PEN_DOWN
+1683 2020 2088
+1683 2031 2093
+1683 2031 2098
+1683 2031 2104
+1683 2031 2109
+1694 2010 2114
+1725 1979 2119
+1746 1948 2124
+1756 1927 2130
+1767 1895 2135
+1788 1885 2140
+1808 1875 2145
+1808 1864 2150
+1819 1864 2156
+.PEN_UP
+
+.PEN_DOWN
+2048 2000 2747
+2048 2000 2752
+2048 1989 2757
+2048 1979 2763
+2048 1895 2768
+2048 1906 2773
+.PEN_UP
+
+.PEN_DOWN
+2017 2083 3131
+2017 2093 3136
+2017 2093 3141
+2017 2083 3147
+2017 2083 3152
+2017 2083 3157
+2017 2093 3162
+.PEN_UP
+
+.COMMENT End of File

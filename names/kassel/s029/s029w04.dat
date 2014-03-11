@@ -1,0 +1,197 @@
+.VERSION 1.0
+.COMMENT File s029w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 29
+.STYLE PRINTED
+.HAND L
+.AGE 32
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 135
+ Student: No
+ Where educated: SC
+ Home language: English
+ Name: Michael
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3,8 ? "i"
+.SEGMENT LETTER 4,7 ? "i"
+.SEGMENT LETTER 5 ? "n"
+.SEGMENT LETTER 6 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "Skii?l"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1152 2791 0
+1163 2802 5
+1163 2802 10
+1163 2802 16
+1163 2802 21
+1142 2791 26
+1121 2770 31
+1100 2760 36
+1079 2739 42
+1079 2739 47
+1079 2729 52
+1100 2718 57
+1131 2718 62
+1142 2708 68
+1152 2698 73
+1163 2687 78
+1152 2677 83
+1142 2666 89
+1131 2666 94
+1131 2666 99
+.PEN_UP
+
+.PEN_DOWN
+1215 2802 604
+1215 2791 609
+1215 2770 614
+1215 2698 620
+1215 2687 625
+.PEN_UP
+
+.PEN_DOWN
+1256 2770 824
+1246 2760 829
+1235 2750 834
+1225 2750 840
+1215 2739 845
+1215 2739 850
+1215 2729 855
+1235 2718 860
+1256 2708 866
+1267 2708 871
+1277 2708 876
+1277 2708 881
+.PEN_UP
+
+.PEN_DOWN
+1329 2718 1153
+1329 2708 1158
+1329 2698 1163
+.PEN_UP
+
+.PEN_DOWN
+1371 2750 2087
+1371 2698 2092
+1371 2698 2097
+.PEN_UP
+
+.PEN_DOWN
+1413 2739 2416
+1413 2739 2421
+1413 2729 2426
+1413 2718 2432
+1413 2718 2437
+1413 2729 2442
+1413 2750 2447
+1413 2750 2452
+1413 2750 2458
+1423 2739 2463
+1433 2729 2468
+1444 2729 2473
+1454 2718 2478
+1465 2718 2484
+.PEN_UP
+
+.PEN_DOWN
+1517 2750 2801
+1517 2739 2806
+1527 2729 2811
+1527 2729 2817
+1527 2729 2822
+1527 2729 2827
+1538 2729 2832
+1548 2718 2837
+1569 2708 2843
+1569 2687 2848
+1558 2677 2853
+.PEN_UP
+
+.PEN_DOWN
+1413 2812 3130
+1413 2823 3135
+1413 2812 3140
+1413 2812 3146
+.PEN_UP
+
+.PEN_DOWN
+1308 2833 3350
+1308 2833 3355
+.PEN_UP
+
+.COMMENT End of File

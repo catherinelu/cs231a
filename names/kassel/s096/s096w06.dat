@@ -1,0 +1,184 @@
+.VERSION 1.0
+.COMMENT File s096w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 96
+.STYLE PRINTED
+.HAND R
+.AGE 21
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 135
+ Student: Yes
+ Where educated: MA
+ Home language: Chinese
+ Name: Jerome
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "taxi"
+.SEGMENT LETTER 0-1 ? "t"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "tAXI?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1808 1385 0
+1788 1416 5
+1788 1427 10
+1788 1395 16
+1777 1323 21
+1767 1229 26
+1756 1093 31
+1746 948 36
+1746 812 42
+1756 770 47
+1756 739 52
+1767 729 57
+1767 739 62
+.PEN_UP
+
+.PEN_DOWN
+1444 1020 330
+1444 1031 335
+1496 1041 340
+1579 1052 346
+1715 1062 351
+1808 1073 356
+1871 1083 361
+1923 1093 366
+1965 1104 372
+1996 1114 377
+.PEN_UP
+
+.PEN_DOWN
+2142 989 659
+2152 1020 664
+2152 1052 669
+2152 1083 675
+2131 1093 680
+2100 1083 685
+2069 1020 690
+2027 927 695
+1996 864 701
+1996 833 706
+1996 823 711
+2017 823 716
+2048 854 722
+2090 906 727
+2100 958 732
+2110 1000 737
+2121 1000 742
+2121 1000 748
+2121 979 753
+2142 948 758
+2152 927 763
+2163 906 768
+2173 875 774
+.PEN_UP
+
+.PEN_DOWN
+2329 1062 1099
+2340 1041 1104
+2360 989 1109
+2392 958 1115
+2433 927 1120
+2465 885 1125
+2475 864 1130
+2475 843 1135
+.PEN_UP
+
+.PEN_DOWN
+2454 1062 1318
+2402 1020 1323
+2381 968 1328
+2350 916 1334
+2308 854 1339
+2288 833 1344
+2288 812 1349
+.PEN_UP
+
+.PEN_DOWN
+2621 1062 1593
+2610 1000 1598
+2610 948 1603
+2631 906 1609
+2642 864 1614
+2642 833 1619
+.PEN_UP
+
+.PEN_DOWN
+2683 1260 1813
+2652 1281 1818
+.PEN_UP
+
+.COMMENT End of File

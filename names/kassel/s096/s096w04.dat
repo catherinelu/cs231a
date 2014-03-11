@@ -1,0 +1,231 @@
+.VERSION 1.0
+.COMMENT File s096w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 96
+.STYLE PRINTED
+.HAND R
+.AGE 21
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 135
+ Student: Yes
+ Where educated: MA
+ Home language: Chinese
+ Name: Jerome
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-9 ? "*skiing"
+.SEGMENT LETTER 0 ? "*"
+.SEGMENT LETTER 1 ? "s"
+.SEGMENT LETTER 2-3 ? "k"
+.SEGMENT LETTER 4-5 ? "i"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8 ? "n"
+.SEGMENT LETTER 9 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "?skiing"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1392 989 0
+.PEN_UP
+
+.PEN_DOWN
+1413 1020 55
+1413 1020 60
+1402 1041 65
+1371 1041 71
+1329 1010 76
+1277 948 81
+1235 895 86
+1235 875 91
+1256 843 97
+1319 802 102
+1381 781 107
+1423 760 112
+1433 750 118
+1433 729 123
+1413 718 128
+1381 708 133
+1350 708 138
+1329 718 144
+.PEN_UP
+
+.PEN_DOWN
+1610 1250 440
+1600 1250 445
+1600 1166 450
+1600 1052 456
+1600 948 461
+1579 843 466
+1579 791 471
+1579 750 476
+1579 729 482
+.PEN_UP
+
+.PEN_DOWN
+1746 1041 660
+1694 1010 665
+1631 937 670
+1600 906 676
+1579 885 681
+1579 885 686
+1610 875 691
+1663 864 696
+1715 843 702
+1767 823 707
+1829 802 712
+1840 781 717
+.PEN_UP
+
+.PEN_DOWN
+1954 979 934
+1954 895 939
+1954 843 944
+1965 791 950
+1975 770 955
+.PEN_UP
+
+.PEN_DOWN
+1933 1104 1154
+1902 1104 1159
+1913 1093 1164
+.PEN_UP
+
+.PEN_DOWN
+2173 948 1428
+2152 979 1433
+2152 968 1438
+2152 927 1444
+2152 864 1449
+2152 812 1454
+2152 781 1459
+2163 770 1464
+.PEN_UP
+
+.PEN_DOWN
+2183 1125 1648
+2152 1166 1653
+2142 1166 1658
+2163 1156 1664
+.PEN_UP
+
+.PEN_DOWN
+2288 958 1978
+2277 948 1983
+2288 895 1988
+2308 854 1994
+2319 802 1999
+2329 770 2004
+2329 770 2009
+2340 781 2014
+2381 833 2020
+2423 927 2025
+2465 1000 2030
+2485 1010 2035
+2506 1000 2040
+2527 948 2046
+2538 895 2051
+2538 833 2056
+2548 791 2061
+2558 750 2067
+.PEN_UP
+
+.PEN_DOWN
+2735 948 2362
+2725 968 2367
+2704 989 2372
+2683 989 2378
+2631 958 2383
+2600 916 2388
+2590 885 2393
+2590 864 2398
+2621 854 2404
+2663 864 2409
+2704 895 2414
+2735 927 2419
+2756 948 2424
+2756 958 2430
+2767 958 2435
+2767 906 2440
+2777 843 2445
+2777 760 2451
+2777 687 2456
+2777 614 2461
+2767 583 2466
+2746 552 2471
+2725 552 2477
+2704 552 2482
+2673 562 2487
+2631 573 2492
+.PEN_UP
+
+.COMMENT End of File

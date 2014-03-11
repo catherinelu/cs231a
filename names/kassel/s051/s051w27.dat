@@ -1,0 +1,283 @@
+.VERSION 1.0
+.COMMENT File s051w27
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 51
+.STYLE PRINTED
+.HAND L
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 83
+ Student: Yes
+ Where educated: NY
+ Home language: Gujarati
+ Name: Anuja
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-9 ? "Backing"
+.SEGMENT LETTER 0-1 ? "B"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8 ? "n"
+.SEGMENT LETTER 9 ? "g"
+
+.COMMENT Prompt string: "Backing"
+.COMMENT Recognizer string: "13acking"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+298 2718 0
+298 2718 5
+298 2718 10
+288 2708 16
+288 2677 21
+298 2625 26
+298 2583 31
+298 2562 36
+298 2541 42
+308 2541 47
+308 2541 52
+.PEN_UP
+
+.PEN_DOWN
+267 2677 274
+267 2687 279
+267 2687 284
+277 2687 290
+288 2698 295
+319 2718 300
+329 2729 305
+350 2729 310
+360 2718 316
+371 2708 321
+371 2687 326
+360 2666 331
+340 2656 336
+329 2645 342
+329 2645 347
+329 2656 352
+329 2656 357
+350 2666 363
+381 2656 368
+402 2645 373
+413 2625 378
+423 2604 383
+413 2552 389
+402 2541 394
+371 2520 399
+350 2510 404
+319 2520 409
+308 2541 415
+308 2552 420
+.PEN_UP
+
+.PEN_DOWN
+538 2614 933
+538 2614 938
+527 2625 943
+517 2625 949
+496 2614 954
+465 2593 959
+465 2573 964
+465 2552 969
+465 2531 975
+475 2531 980
+496 2531 985
+517 2541 990
+527 2562 996
+538 2583 1001
+538 2593 1006
+538 2604 1011
+538 2593 1016
+538 2593 1022
+538 2573 1027
+548 2541 1032
+558 2531 1037
+558 2510 1042
+558 2500 1048
+.PEN_UP
+
+.PEN_DOWN
+652 2625 1373
+652 2635 1378
+642 2635 1383
+631 2635 1389
+610 2625 1394
+600 2604 1399
+590 2573 1404
+590 2552 1409
+600 2531 1415
+621 2520 1420
+642 2520 1425
+673 2531 1430
+694 2541 1436
+715 2562 1441
+.PEN_UP
+
+.PEN_DOWN
+725 2729 1702
+725 2718 1707
+725 2698 1712
+725 2666 1718
+725 2625 1723
+725 2593 1728
+725 2562 1733
+725 2541 1738
+735 2531 1744
+735 2531 1749
+735 2541 1754
+.PEN_UP
+
+.PEN_DOWN
+798 2656 1922
+798 2656 1927
+798 2656 1932
+798 2656 1938
+788 2645 1943
+767 2625 1948
+756 2614 1953
+746 2604 1958
+746 2604 1964
+746 2593 1969
+746 2583 1974
+767 2573 1979
+777 2573 1984
+808 2552 1990
+819 2552 1995
+.PEN_UP
+
+.PEN_DOWN
+860 2625 2306
+860 2593 2311
+860 2573 2316
+860 2552 2322
+871 2541 2327
+.PEN_UP
+
+.PEN_DOWN
+860 2698 2526
+860 2698 2531
+860 2698 2536
+860 2698 2542
+.PEN_UP
+
+.PEN_DOWN
+913 2625 2746
+913 2604 2751
+923 2583 2756
+923 2562 2762
+933 2552 2767
+933 2552 2772
+933 2573 2777
+923 2583 2782
+923 2625 2788
+944 2635 2793
+954 2645 2798
+975 2645 2803
+996 2645 2808
+1017 2645 2814
+1027 2625 2819
+1027 2541 2824
+.PEN_UP
+
+.PEN_DOWN
+1121 2635 3240
+1121 2645 3245
+1131 2656 3250
+1131 2656 3256
+1121 2656 3261
+1100 2656 3266
+1079 2635 3271
+1069 2604 3276
+1069 2593 3282
+1069 2583 3287
+1069 2583 3292
+1079 2573 3297
+1100 2583 3302
+1121 2583 3308
+1142 2604 3313
+1142 2614 3318
+1142 2625 3323
+1142 2614 3329
+1142 2614 3334
+1142 2573 3339
+1142 2531 3344
+1152 2468 3349
+1163 2416 3355
+1163 2364 3360
+1152 2333 3365
+1121 2323 3370
+1079 2323 3375
+1058 2343 3381
+.PEN_UP
+
+.COMMENT End of File

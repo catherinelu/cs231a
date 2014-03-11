@@ -1,0 +1,222 @@
+.VERSION 1.0
+.COMMENT File s123n13
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 123
+.STYLE PRINTED
+.HAND R
+.AGE 31
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 185
+ Student: Yes
+ Where educated: PA
+ Home language: English
+ Name: Bronwen
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "30464"
+.SEGMENT LETTER 0 ? "3"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2-3 ? "4"
+.SEGMENT LETTER 4 ? "6"
+.SEGMENT LETTER 5-6 ? "4"
+
+.COMMENT Prompt string: "30464"
+.COMMENT Recognizer string: "30464"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1548 1218 0
+1548 1229 5
+1548 1229 10
+1558 1239 16
+1569 1239 21
+1590 1239 26
+1610 1229 31
+1621 1229 36
+1621 1218 42
+1610 1198 47
+1590 1177 52
+1548 1145 57
+1527 1135 62
+1527 1135 68
+1527 1145 73
+1558 1145 78
+1590 1135 83
+1621 1125 89
+1652 1104 94
+1652 1073 99
+1642 1041 104
+1610 1020 109
+1579 1000 115
+1548 989 120
+1527 989 125
+1517 989 130
+.PEN_UP
+
+.PEN_DOWN
+1756 1187 494
+1756 1198 499
+1746 1198 504
+1735 1198 510
+1704 1177 515
+1683 1135 520
+1673 1093 525
+1663 1052 530
+1673 1031 536
+1715 1010 541
+1746 1020 546
+1777 1041 551
+1798 1062 556
+1808 1093 562
+1808 1125 567
+1788 1156 572
+1746 1177 577
+1725 1177 583
+1715 1156 588
+.PEN_UP
+
+.PEN_DOWN
+1881 1198 879
+1871 1198 884
+1871 1208 889
+1871 1198 895
+1871 1177 900
+1860 1156 905
+1860 1135 910
+1860 1125 915
+1860 1104 921
+1892 1104 926
+1923 1104 931
+1965 1104 936
+1985 1104 942
+1996 1104 947
+.PEN_UP
+
+.PEN_DOWN
+1996 1229 1208
+1996 1229 1213
+1996 1187 1218
+1985 1125 1224
+1985 1073 1229
+1985 968 1234
+1985 968 1239
+.PEN_UP
+
+.PEN_DOWN
+2142 1198 1483
+2142 1208 1488
+2121 1208 1493
+2110 1187 1499
+2100 1145 1504
+2079 1083 1509
+2079 1041 1514
+2079 1010 1519
+2090 979 1525
+2131 979 1530
+2152 979 1535
+2173 1000 1540
+2194 1031 1546
+2204 1073 1551
+2204 1093 1556
+2194 1104 1561
+2194 1104 1566
+2173 1083 1572
+2163 1052 1577
+2152 1020 1582
+2152 989 1587
+2163 979 1592
+.PEN_UP
+
+.PEN_DOWN
+2288 1218 1922
+2288 1218 1927
+2288 1218 1932
+2277 1198 1938
+2267 1166 1943
+2267 1145 1948
+2277 1125 1953
+2288 1104 1958
+2319 1104 1964
+2360 1104 1969
+2381 1104 1974
+.PEN_UP
+
+.PEN_DOWN
+2413 1281 2197
+2392 1239 2202
+2392 1166 2207
+2381 1083 2213
+2360 979 2218
+2340 854 2223
+2340 791 2228
+.PEN_UP
+
+.COMMENT End of File

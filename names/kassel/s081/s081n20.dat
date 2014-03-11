@@ -1,0 +1,226 @@
+.VERSION 1.0
+.COMMENT File s081n20
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 81
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 110
+ Student: No
+ Where educated: NY
+ Home language: English
+ Name: Elizabeth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "47190"
+.SEGMENT LETTER 0-1 ? "4"
+.SEGMENT LETTER 2-3 ? "7"
+.SEGMENT LETTER 4 ? "1"
+.SEGMENT LETTER 5 ? "9"
+.SEGMENT LETTER 6 ? "0"
+
+.COMMENT Prompt string: "47190"
+.COMMENT Recognizer string: "47190"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1038 2260 0
+1027 2239 5
+1006 2198 10
+985 2156 16
+965 2093 21
+933 2052 26
+902 2020 31
+871 1989 36
+860 1979 42
+850 1979 47
+860 1979 52
+881 1979 57
+933 1979 62
+975 2000 68
+1027 2010 73
+1090 2031 78
+1131 2041 83
+1152 2041 89
+.PEN_UP
+
+.PEN_DOWN
+1100 2323 385
+1079 2323 390
+1069 2302 395
+1058 2260 401
+1058 2145 406
+1058 2041 411
+1048 1937 416
+1048 1854 421
+1038 1781 427
+1027 1750 432
+1038 1739 437
+1048 1739 442
+.PEN_UP
+
+.PEN_DOWN
+1215 2166 660
+1215 2156 665
+1225 2135 670
+1246 2145 676
+1298 2177 681
+1350 2218 686
+1381 2250 691
+1423 2270 696
+1433 2260 702
+1444 2198 707
+1444 2114 712
+1454 2020 717
+1444 1906 722
+1433 1843 728
+1413 1802 733
+1402 1770 738
+1381 1750 743
+1381 1750 749
+.PEN_UP
+
+.PEN_DOWN
+1277 1979 989
+1277 1979 994
+1319 1989 999
+1371 2010 1005
+1454 2052 1010
+1527 2073 1015
+.PEN_UP
+
+.PEN_DOWN
+1725 2250 1209
+1704 2239 1214
+1694 2198 1219
+1694 2083 1225
+1704 1979 1230
+1704 1895 1235
+1694 1843 1240
+1694 1802 1245
+1694 1781 1251
+.PEN_UP
+
+.PEN_DOWN
+1985 2177 1483
+1996 2187 1488
+1996 2208 1493
+1985 2229 1499
+1975 2229 1504
+1944 2218 1509
+1892 2177 1514
+1819 2093 1519
+1798 2052 1525
+1798 2031 1530
+1808 2020 1535
+1840 2031 1540
+1881 2062 1546
+1933 2093 1551
+1975 2145 1556
+2017 2177 1561
+2048 2187 1566
+2069 2166 1572
+2079 2135 1577
+2090 2041 1582
+2090 1968 1587
+2079 1895 1592
+2058 1833 1598
+2048 1791 1603
+2038 1770 1608
+2038 1770 1613
+.PEN_UP
+
+.PEN_DOWN
+2235 2177 1978
+2235 2177 1983
+2225 2177 1988
+2215 2145 1994
+2204 2093 1999
+2173 1989 2004
+2163 1927 2009
+2163 1885 2014
+2183 1864 2020
+2215 1854 2025
+2246 1864 2030
+2308 1895 2035
+2360 1948 2040
+2402 2052 2046
+2433 2135 2051
+2433 2208 2056
+2402 2250 2061
+2340 2260 2067
+2267 2239 2072
+2194 2218 2077
+2131 2208 2082
+.PEN_UP
+
+.COMMENT End of File

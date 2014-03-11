@@ -1,0 +1,291 @@
+.VERSION 1.0
+.COMMENT File s114w50
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 114
+.STYLE PRINTED
+.HAND R
+.AGE 18
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 114
+ Student: Yes
+ Where educated: NY
+ Home language: English & Tamil
+ Name: Nalini
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Omit+ted"
+.SEGMENT LETTER 0 ? "O"
+.SEGMENT LETTER 1 ? "m"
+.SEGMENT LETTER 2-3 ? "i"
+.SEGMENT LETTER 4,6-6:6 ? "t"
+.SEGMENT LETTER 6:7-6:7 ? "+"
+.SEGMENT LETTER 5,6:8-6 ? "t"
+.SEGMENT LETTER 7 ? "e"
+.SEGMENT LETTER 8 ? "d"
+
+.COMMENT Prompt string: "Omitted"
+.COMMENT Recognizer string: "OmilTld"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+371 2885 0
+360 2895 5
+360 2895 10
+350 2885 16
+350 2875 21
+350 2864 26
+340 2833 31
+329 2802 36
+329 2729 42
+329 2635 47
+340 2552 52
+350 2489 57
+360 2448 62
+392 2416 68
+423 2406 73
+465 2406 78
+496 2416 83
+527 2468 89
+548 2500 94
+558 2552 99
+558 2687 104
+548 2750 109
+538 2791 115
+517 2823 120
+485 2854 125
+454 2864 130
+433 2875 135
+402 2875 141
+381 2864 146
+381 2843 151
+.PEN_UP
+
+.PEN_DOWN
+663 2687 879
+663 2677 884
+673 2635 889
+683 2552 895
+694 2489 900
+694 2427 905
+694 2385 910
+694 2385 915
+694 2385 921
+704 2385 926
+694 2416 931
+694 2510 936
+704 2573 942
+715 2645 947
+735 2687 952
+746 2698 957
+767 2698 962
+788 2687 968
+798 2656 973
+819 2593 978
+840 2541 983
+850 2500 988
+850 2479 994
+850 2468 999
+850 2489 1004
+850 2531 1009
+850 2583 1014
+871 2645 1020
+881 2687 1025
+902 2708 1030
+913 2708 1035
+933 2698 1040
+954 2666 1046
+965 2625 1051
+975 2583 1056
+975 2531 1061
+996 2500 1066
+996 2468 1072
+1006 2437 1077
+1027 2437 1082
+.PEN_UP
+
+.PEN_DOWN
+1079 2687 1703
+1079 2666 1708
+1079 2625 1713
+1079 2552 1719
+1100 2489 1724
+1100 2437 1729
+1110 2395 1734
+1110 2385 1739
+.PEN_UP
+
+.PEN_DOWN
+1058 2802 2032
+1058 2802 2037
+1069 2781 2042
+.PEN_UP
+
+.PEN_DOWN
+1246 2833 2252
+1246 2802 2257
+1256 2750 2262
+1256 2656 2268
+1256 2583 2273
+1256 2510 2278
+1256 2458 2283
+1267 2406 2288
+1267 2385 2294
+1277 2385 2299
+1277 2385 2304
+.PEN_UP
+
+.PEN_DOWN
+1392 2833 2637
+1392 2781 2642
+1392 2437 2647
+1392 2395 2653
+1392 2385 2658
+.PEN_UP
+
+.PEN_DOWN
+1194 2718 2911
+1183 2729 2916
+1183 2729 2921
+1183 2718 2927
+1204 2698 2932
+1235 2687 2937
+1267 2687 2942
+1319 2698 2947
+1371 2708 2953
+1433 2729 2958
+1475 2729 2963
+1506 2739 2968
+1506 2739 2974
+1506 2750 2979
+1506 2739 2984
+1485 2739 2989
+1475 2729 2994
+.PEN_UP
+
+.PEN_DOWN
+1548 2573 3296
+1548 2562 3301
+1558 2552 3306
+1569 2552 3312
+1590 2562 3317
+1610 2583 3322
+1631 2625 3327
+1663 2666 3332
+1683 2718 3338
+1683 2750 3343
+1683 2770 3348
+1673 2781 3353
+1652 2770 3358
+1642 2750 3364
+1610 2718 3369
+1600 2677 3374
+1579 2604 3379
+1579 2541 3385
+1579 2500 3390
+1579 2448 3395
+1610 2395 3400
+1631 2375 3405
+1663 2364 3411
+1704 2385 3416
+.PEN_UP
+
+.PEN_DOWN
+1892 2843 3790
+1892 2823 3795
+1913 2781 3800
+1923 2729 3806
+1944 2656 3811
+1954 2604 3816
+1965 2552 3821
+1965 2510 3826
+1965 2458 3832
+1965 2437 3837
+1965 2448 3842
+1965 2479 3847
+1954 2520 3852
+1944 2562 3858
+1923 2604 3863
+1902 2656 3868
+1881 2677 3873
+1860 2677 3879
+1840 2677 3884
+1808 2645 3889
+1788 2604 3894
+1777 2552 3899
+1777 2500 3905
+1777 2427 3910
+1788 2395 3915
+1819 2395 3920
+1860 2395 3925
+1923 2437 3931
+.PEN_UP
+
+.COMMENT End of File

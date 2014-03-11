@@ -1,0 +1,269 @@
+.VERSION 1.0
+.COMMENT File s085n11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 85
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 125
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Jane
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "79158"
+.SEGMENT LETTER 4 ? "7"
+.SEGMENT LETTER 0 ? "9"
+.SEGMENT LETTER 1 ? "1"
+.SEGMENT LETTER 2 ? "5"
+.SEGMENT LETTER 3 ? "8"
+
+.COMMENT Prompt string: "79158"
+.COMMENT Recognizer string: "91587"
+.COMMENT Transcriber Comment: "!Characters written out of order."
+
+.PEN_DOWN
+2788 635 0
+2788 635 5
+2798 656 10
+2798 666 16
+2798 677 21
+2788 677 26
+2767 687 31
+2735 687 36
+2704 687 42
+2652 677 47
+2590 656 52
+2558 635 57
+2527 604 62
+2527 573 68
+2538 552 73
+2558 541 78
+2590 541 83
+2642 573 89
+2715 614 94
+2756 656 99
+2788 666 104
+2798 677 109
+2798 677 115
+2788 666 120
+2756 614 125
+2715 552 130
+2663 489 135
+2600 437 141
+2558 375 146
+2558 343 151
+2558 333 156
+.PEN_UP
+
+.PEN_DOWN
+3027 698 659
+3027 698 664
+3017 677 669
+2996 645 675
+2975 593 680
+2923 520 685
+2871 479 690
+2829 427 695
+2808 395 701
+2798 354 706
+2798 333 711
+2798 312 716
+2798 312 722
+.PEN_UP
+
+.PEN_DOWN
+3475 666 1977
+3475 666 1982
+3465 666 1987
+3465 666 1993
+3465 666 1998
+3465 666 2003
+3465 666 2008
+3465 666 2013
+3465 666 2019
+3465 666 2024
+3465 677 2029
+3465 687 2034
+3454 698 2040
+3433 708 2045
+3402 708 2050
+3371 708 2055
+3340 698 2060
+3298 677 2066
+3288 666 2071
+3277 656 2076
+3277 645 2081
+3267 645 2086
+3267 635 2092
+3277 635 2097
+3277 635 2102
+3277 635 2107
+3277 635 2112
+3277 635 2118
+3277 635 2123
+3256 604 2128
+3246 573 2133
+3235 552 2138
+3225 531 2144
+3215 520 2149
+3215 520 2154
+3215 531 2159
+3215 531 2164
+3225 531 2170
+3235 531 2175
+3277 541 2180
+3308 541 2185
+3350 541 2191
+3381 520 2196
+3402 479 2201
+3402 448 2206
+3381 416 2211
+3360 364 2217
+3329 333 2222
+3298 312 2227
+3256 291 2232
+3204 291 2237
+3163 291 2243
+3142 312 2248
+3142 323 2253
+.PEN_UP
+
+.PEN_DOWN
+3902 677 3350
+3892 687 3355
+3881 698 3360
+3871 708 3366
+3850 708 3371
+3808 718 3376
+3756 698 3381
+3694 677 3386
+3642 666 3392
+3631 645 3397
+3631 635 3402
+3642 614 3407
+3663 593 3412
+3704 562 3418
+3735 531 3423
+3756 510 3428
+3777 468 3433
+3777 448 3439
+3756 416 3444
+3725 395 3449
+3673 364 3454
+3642 364 3459
+3610 364 3465
+3600 385 3470
+3600 406 3475
+3600 437 3480
+3621 468 3485
+3673 520 3491
+3735 583 3496
+3777 625 3501
+3798 635 3506
+3798 645 3511
+3798 645 3517
+3798 645 3522
+3777 656 3527
+3746 666 3532
+.PEN_UP
+
+.PEN_DOWN
+2183 687 5327
+2173 687 5332
+2173 687 5337
+2173 687 5343
+2183 687 5348
+2194 677 5353
+2235 666 5358
+2340 666 5363
+2381 666 5369
+2402 656 5374
+2433 656 5379
+2444 645 5384
+2454 645 5390
+2444 635 5395
+2423 614 5400
+2392 593 5405
+2371 552 5410
+2319 479 5416
+2288 448 5421
+2256 416 5426
+2235 395 5431
+2215 375 5436
+2215 364 5442
+2215 364 5447
+2215 364 5452
+.PEN_UP
+
+.COMMENT End of File

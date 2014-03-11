@@ -1,0 +1,220 @@
+.VERSION 1.0
+.COMMENT File s015n11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 15
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 190
+ Student: Yes
+ Where educated: TX
+ Home language: Vietnamese
+ Name: Vuong
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "79158"
+.SEGMENT LETTER 0 ? "7"
+.SEGMENT LETTER 1 ? "9"
+.SEGMENT LETTER 2 ? "1"
+.SEGMENT LETTER 3 ? "5"
+.SEGMENT LETTER 4 ? "8"
+
+.COMMENT Prompt string: "79158"
+.COMMENT Recognizer string: "2915?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1808 2062 0
+1798 2062 5
+1840 2062 10
+1881 2052 16
+1933 2052 21
+1975 2041 26
+2038 2031 31
+2058 2020 36
+2058 2000 42
+2058 1958 47
+2038 1875 52
+2017 1802 57
+1985 1729 62
+1965 1687 68
+1954 1666 73
+1954 1666 78
+1985 1687 83
+.PEN_UP
+
+.PEN_DOWN
+2340 1968 495
+2340 1968 500
+2340 1968 505
+2340 1979 511
+2329 1979 516
+2298 1979 521
+2267 1979 526
+2246 1958 531
+2225 1937 537
+2215 1916 542
+2215 1875 547
+2235 1854 552
+2246 1843 558
+2277 1833 563
+2308 1833 568
+2340 1864 573
+2371 1895 578
+2381 1937 584
+2392 1968 589
+2392 1968 594
+2392 1927 599
+2392 1864 604
+2392 1823 610
+2392 1781 615
+2381 1750 620
+2381 1729 625
+.PEN_UP
+
+.PEN_DOWN
+2569 1979 989
+2548 1979 994
+2548 1958 999
+2548 1927 1005
+2548 1885 1010
+2538 1812 1015
+2527 1760 1020
+2517 1718 1025
+2517 1698 1031
+2517 1698 1036
+2538 1718 1041
+.PEN_UP
+
+.PEN_DOWN
+2798 1958 1264
+2788 1958 1269
+2788 1958 1274
+2756 1968 1280
+2735 1968 1285
+2715 1958 1290
+2694 1948 1295
+2683 1927 1300
+2683 1906 1306
+2683 1875 1311
+2683 1843 1316
+2683 1833 1321
+2694 1823 1326
+2715 1823 1332
+2746 1833 1337
+2767 1843 1342
+2788 1843 1347
+2808 1843 1353
+2819 1812 1358
+2819 1781 1363
+2798 1750 1368
+2777 1718 1373
+2735 1687 1379
+2704 1677 1384
+2673 1677 1389
+2673 1687 1394
+2673 1708 1399
+.PEN_UP
+
+.PEN_DOWN
+3006 1906 1868
+2985 1916 1873
+2985 1916 1878
+2965 1916 1884
+2954 1916 1889
+2933 1906 1894
+2913 1875 1899
+2902 1854 1904
+2913 1843 1910
+2933 1833 1915
+2965 1833 1920
+3017 1823 1925
+3048 1812 1930
+3069 1802 1936
+3069 1770 1941
+3048 1750 1946
+3027 1729 1951
+2996 1708 1957
+2965 1708 1962
+2954 1718 1967
+2954 1729 1972
+2965 1760 1977
+3006 1812 1983
+3038 1854 1988
+3069 1895 1993
+3079 1916 1998
+3069 1937 2003
+3048 1937 2009
+3017 1927 2014
+.PEN_UP
+
+.COMMENT End of File

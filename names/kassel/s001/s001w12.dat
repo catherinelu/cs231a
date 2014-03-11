@@ -1,0 +1,362 @@
+.VERSION 1.0
+.COMMENT File s001w12
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 1
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 190
+ Student: Yes
+ Where educated: OH
+ Home language: English
+ Name: Jim
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-15 ? "Normalizat&ion"
+.SEGMENT LETTER 0 ? "N"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "r"
+.SEGMENT LETTER 3 ? "m"
+.SEGMENT LETTER 4 ? "a"
+.SEGMENT LETTER 5 ? "l"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8-9 ? "z"
+.SEGMENT LETTER 10 ? "a"
+.SEGMENT LETTER 11-12:3 ? "t"
+.SEGMENT LETTER 12:4-12:4 ? "&"
+.SEGMENT LETTER 12:5-13 ? "i"
+.SEGMENT LETTER 14 ? "o"
+.SEGMENT LETTER 15 ? "n"
+
+.COMMENT Prompt string: "Normalization"
+.COMMENT Recognizer string: "Normalizah?on"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+371 1281 0
+371 1281 5
+371 1260 10
+381 1187 16
+392 1093 21
+392 979 26
+392 895 31
+392 833 36
+392 802 42
+392 812 47
+392 885 52
+381 1010 57
+381 1135 62
+360 1239 68
+329 1312 73
+329 1323 78
+340 1302 83
+371 1239 89
+423 1156 94
+506 1031 99
+558 958 104
+600 875 109
+642 833 115
+673 812 120
+683 823 125
+694 875 130
+694 968 135
+642 1145 141
+600 1239 146
+579 1281 151
+569 1291 156
+579 1291 161
+.PEN_UP
+
+.PEN_DOWN
+850 958 824
+819 937 829
+788 875 834
+788 812 840
+798 770 845
+881 770 850
+954 791 855
+1006 833 860
+1006 854 866
+985 885 871
+933 916 876
+881 927 881
+850 937 886
+860 937 892
+.PEN_UP
+
+.PEN_DOWN
+1100 823 1154
+1100 812 1159
+1121 791 1164
+1121 791 1170
+1121 802 1175
+1121 843 1180
+1121 906 1185
+1131 937 1190
+1142 958 1196
+1204 979 1201
+.PEN_UP
+
+.PEN_DOWN
+1371 885 1593
+1371 895 1598
+1381 875 1603
+1392 833 1609
+1402 791 1614
+1402 770 1619
+1402 770 1624
+1402 770 1629
+1402 802 1635
+1402 843 1640
+1423 895 1645
+1465 948 1650
+1506 948 1656
+1538 927 1661
+1558 895 1666
+1569 843 1671
+1569 833 1676
+1579 823 1682
+1579 823 1687
+1579 843 1692
+1590 875 1697
+1610 916 1702
+1631 948 1708
+1663 958 1713
+1683 937 1718
+1694 895 1723
+1694 854 1728
+1704 812 1734
+1746 812 1739
+1798 843 1744
+.PEN_UP
+
+.PEN_DOWN
+1881 927 2143
+1860 927 2148
+1850 906 2153
+1819 864 2159
+1819 812 2164
+1840 791 2169
+1860 791 2174
+1902 802 2179
+1944 843 2185
+1944 864 2190
+1933 885 2195
+1923 906 2200
+1923 895 2206
+1944 864 2211
+1965 843 2216
+1996 812 2221
+2006 812 2226
+2048 812 2232
+.PEN_UP
+
+.PEN_DOWN
+2069 1177 2417
+2058 1177 2422
+2058 1114 2427
+2058 1031 2433
+2090 906 2438
+2110 833 2443
+2131 791 2448
+2163 760 2453
+.PEN_UP
+
+.PEN_DOWN
+2256 895 2637
+2256 823 2642
+2267 781 2647
+2267 760 2653
+.PEN_UP
+
+.PEN_DOWN
+2246 1052 2802
+2225 1093 2807
+.PEN_UP
+
+.PEN_DOWN
+2413 906 3186
+2402 916 3191
+2402 916 3196
+2433 937 3202
+2527 958 3207
+2579 958 3212
+2610 927 3217
+2600 875 3222
+2558 791 3228
+2538 750 3233
+2538 729 3238
+2548 718 3243
+2621 718 3248
+2683 729 3254
+2746 729 3259
+.PEN_UP
+
+.PEN_DOWN
+2454 895 3516
+2444 906 3521
+2444 906 3526
+2444 906 3532
+2485 885 3537
+2548 875 3542
+2652 875 3547
+2725 875 3552
+.PEN_UP
+
+.PEN_DOWN
+2881 895 3735
+2860 895 3740
+2840 875 3745
+2819 854 3751
+2798 812 3756
+2798 781 3761
+2808 760 3766
+2819 760 3771
+2850 781 3777
+2871 812 3782
+2871 843 3787
+2850 875 3792
+2829 906 3798
+2829 906 3803
+2829 895 3808
+2860 854 3813
+2881 823 3818
+2923 781 3824
+2954 770 3829
+2975 760 3834
+2996 760 3839
+.PEN_UP
+
+.PEN_DOWN
+3038 1104 4175
+3027 1062 4180
+3027 1000 4185
+3038 916 4191
+3090 833 4196
+3121 781 4201
+3131 750 4206
+.PEN_UP
+
+.PEN_DOWN
+2996 895 4340
+3006 895 4345
+3048 906 4350
+3121 916 4356
+3183 895 4361
+3235 864 4366
+3267 823 4371
+3288 770 4376
+3288 739 4382
+3288 729 4387
+3298 729 4392
+.PEN_UP
+
+.PEN_DOWN
+3267 1010 4614
+3246 1031 4619
+3225 1031 4624
+3225 1031 4630
+3235 1031 4635
+.PEN_UP
+
+.PEN_DOWN
+3402 854 4779
+3381 812 4784
+3371 781 4789
+3360 750 4795
+3381 739 4800
+3413 739 4805
+3454 750 4810
+3485 781 4815
+3485 812 4821
+3454 843 4826
+3402 875 4831
+3371 895 4836
+.PEN_UP
+
+.PEN_DOWN
+3600 823 5109
+3600 802 5114
+3600 791 5119
+3600 802 5125
+3610 812 5130
+3631 854 5135
+3663 885 5140
+3694 895 5145
+3715 885 5151
+3746 833 5156
+3756 781 5161
+3756 750 5166
+3767 739 5172
+.PEN_UP
+
+.COMMENT End of File

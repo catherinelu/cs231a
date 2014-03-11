@@ -1,0 +1,206 @@
+.VERSION 1.0
+.COMMENT File s040n11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 40
+.STYLE PRINTED
+.HAND L
+.AGE 30
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 175
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: David
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "79158"
+.SEGMENT LETTER 0-1 ? "7"
+.SEGMENT LETTER 2 ? "9"
+.SEGMENT LETTER 3 ? "1"
+.SEGMENT LETTER 4-5 ? "5"
+.SEGMENT LETTER 6 ? "8"
+
+.COMMENT Prompt string: "79158"
+.COMMENT Recognizer string: "75158"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+996 2541 0
+996 2541 5
+996 2541 10
+1027 2541 16
+1090 2562 21
+1163 2583 26
+1194 2583 31
+1204 2583 36
+1204 2562 42
+1194 2510 47
+1173 2458 52
+1152 2406 57
+1142 2354 62
+1142 2302 68
+1142 2291 73
+.PEN_UP
+
+.PEN_DOWN
+1350 2541 275
+1350 2541 280
+1308 2510 285
+1225 2479 291
+1163 2458 296
+1079 2448 301
+1038 2448 306
+.PEN_UP
+
+.PEN_DOWN
+1496 2562 549
+1496 2562 554
+1454 2562 559
+1402 2552 565
+1360 2541 570
+1329 2520 575
+1319 2510 580
+1319 2500 585
+1340 2479 591
+1371 2479 596
+1413 2489 601
+1433 2500 606
+1433 2500 612
+1444 2500 617
+1444 2468 622
+1423 2416 627
+1413 2364 632
+1402 2323 638
+1413 2302 643
+.PEN_UP
+
+.PEN_DOWN
+1631 2552 989
+1631 2531 994
+1621 2489 999
+1610 2448 1005
+1600 2395 1010
+1600 2354 1015
+1600 2343 1020
+.PEN_UP
+
+.PEN_DOWN
+1798 2552 1263
+1777 2552 1268
+1767 2541 1273
+1756 2541 1279
+1756 2531 1284
+1767 2520 1289
+1777 2500 1294
+1808 2468 1299
+1829 2427 1305
+1850 2364 1310
+1850 2343 1315
+1850 2312 1320
+1819 2302 1326
+1777 2312 1331
+.PEN_UP
+
+.PEN_DOWN
+1819 2573 1593
+1850 2573 1598
+1881 2573 1603
+1902 2573 1609
+1923 2573 1614
+1944 2573 1619
+.PEN_UP
+
+.PEN_DOWN
+2173 2573 1812
+2173 2573 1817
+2173 2573 1822
+2110 2573 1828
+2048 2562 1833
+2006 2562 1838
+1985 2552 1843
+1985 2541 1848
+2006 2500 1854
+2038 2458 1859
+2069 2406 1864
+2100 2354 1869
+2100 2333 1874
+2069 2312 1880
+2017 2312 1885
+1965 2333 1890
+1954 2354 1895
+1965 2385 1901
+2017 2427 1906
+2100 2479 1911
+2173 2500 1916
+2235 2500 1921
+.PEN_UP
+
+.COMMENT End of File

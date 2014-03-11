@@ -1,0 +1,40 @@
+A Comparison of Approaches to On-line Handwritten Character Recognition
+Rob Kassel, MIT Spoken Language Systems Group
+
+Speech and handwriting are manifestations of a common need for linguistic
+communication.  The similar nature of speech and handwriting recognition problems
+suggests that a largely shared solution may be possible.  Recent advances in
+speech recognition can be partly attributed to changes in the research paradigm. 
+These changes include using large corpora of common training and testing data,
+adopting statistical modeling over rule-based approaches, and ensuring meaningful
+comparisons between candidate technologies.  The resulting improvements in system
+performance and robustness permit the study of increasingly difficult recognition
+tasks. 
+
+The primary goal of my thesis is to compare handwriting representations for
+on-line, printed, alphanumeric character recognition without striving to
+construct the highest-performance system.  My studies are based on a carefully
+collected body of data containing some 87,000 characters  from 150 writers. 
+Material was selected automatically to ensure compact coverage of significant
+letter sequences.  Subjects were instructed and prompted so as to minimally
+influence the writing they produced.  A time-aligned transcription was entered
+for all of this data.  I conducted an authentication study to understand better
+the classification difficulty of this writing.  Only 81.7% of testing characters
+were identified correctly.
+
+I examined a number of potential representations for handwriting classification
+including bitmaps, projections, transforms, chain codes, and point-sampling,
+paying particular attention to pen motion as an information source.  All
+experiments were based on Gaussian mixture models because of their flexibility. 
+The best representation features Cartesian coordinates of 10 equally-spaced
+samples along the pen trajectory.  Without the benefit of relative size
+information, this representation resulted in 77.2% correct character
+classification on testing data.
+
+Finally, I adapted the SUMMIT segment-based speech recognition system developed
+at MIT to handwriting.  Segmentation is based primarily on pen-lifts, but strokes
+are divided to account for connected character pairs.  The parameter described
+above is computed for each segment and the resulting graph passed to the
+recognition engine for classification and search.  This system was able to
+correctly recognize 65.1% of the test-set characters.  Incorporating a bigram
+character grammar with perplexity 11.3 improved this performance to 76.4%.

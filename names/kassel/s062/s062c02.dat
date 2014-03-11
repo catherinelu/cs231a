@@ -1,0 +1,201 @@
+.VERSION 1.0
+.COMMENT File s062c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 62
+.STYLE PRINTED
+.HAND R
+.AGE 44
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 150
+ Student: No
+ Where educated: NC
+ Home language: English
+ Name: Carol
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fake"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "Fake"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1058 1979 0
+1058 1989 5
+1048 1979 10
+1058 1979 16
+1058 1968 21
+1069 1937 26
+1079 1895 31
+1090 1875 36
+1090 1854 42
+1100 1843 47
+1110 1843 52
+.PEN_UP
+
+.PEN_DOWN
+1027 2000 330
+1027 2000 335
+1038 2000 340
+1048 2010 346
+1079 2000 351
+1142 2000 356
+1163 2000 361
+1194 2000 366
+1194 1989 372
+.PEN_UP
+
+.PEN_DOWN
+1069 1948 660
+1090 1948 665
+1100 1948 670
+1121 1948 676
+1142 1948 681
+1173 1948 686
+.PEN_UP
+
+.PEN_DOWN
+1277 1916 989
+1277 1927 994
+1267 1927 999
+1256 1927 1005
+1235 1927 1010
+1225 1916 1015
+1215 1916 1020
+1204 1906 1025
+1204 1885 1031
+1215 1885 1036
+1225 1885 1041
+1235 1895 1046
+1256 1895 1052
+1256 1906 1057
+1267 1906 1062
+1277 1895 1067
+1288 1885 1072
+1298 1875 1078
+1319 1875 1083
+.PEN_UP
+
+.PEN_DOWN
+1319 2031 1593
+1319 2010 1598
+1329 1989 1603
+1340 1958 1609
+1350 1937 1614
+1371 1906 1619
+1371 1895 1624
+1381 1885 1629
+.PEN_UP
+
+.PEN_DOWN
+1423 1937 1868
+1423 1937 1873
+1423 1937 1878
+1423 1927 1884
+1413 1916 1889
+1413 1916 1894
+1402 1906 1899
+1392 1895 1904
+1392 1895 1910
+1402 1895 1915
+1413 1895 1920
+1433 1895 1925
+1454 1885 1930
+1485 1885 1936
+.PEN_UP
+
+.PEN_DOWN
+1548 1906 2417
+1548 1906 2422
+1548 1906 2427
+1548 1906 2433
+1548 1906 2438
+1579 1906 2443
+1590 1916 2448
+1590 1916 2453
+1590 1937 2459
+1569 1948 2464
+1548 1958 2469
+1548 1958 2474
+1527 1948 2480
+1517 1937 2485
+1517 1906 2490
+1527 1895 2495
+1558 1885 2500
+1600 1885 2506
+1652 1895 2511
+.PEN_UP
+
+.COMMENT End of File

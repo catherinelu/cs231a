@@ -1,0 +1,331 @@
+.VERSION 1.0
+.COMMENT File s051c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 51
+.STYLE PRINTED
+.HAND L
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 83
+ Student: Yes
+ Where educated: NY
+ Home language: Gujarati
+ Name: Anuja
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-12 ? "takeFake"
+.SEGMENT LETTER 0-1 ? "t"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "k"
+.SEGMENT LETTER 5 ? "e"
+.SEGMENT LETTER 6-8 ? "F"
+.SEGMENT LETTER 9 ? "a"
+.SEGMENT LETTER 10-11 ? "k"
+.SEGMENT LETTER 12 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "takeFake"
+.COMMENT Transcriber Comment: "Two words written on two lines."
+
+.PEN_DOWN
+246 2500 0
+235 2479 5
+235 2458 10
+225 2427 16
+235 2375 21
+235 2333 26
+235 2302 31
+235 2260 36
+235 2260 42
+.PEN_UP
+
+.PEN_DOWN
+319 2364 329
+319 2364 334
+319 2364 339
+308 2364 345
+277 2364 350
+246 2354 355
+204 2354 360
+163 2354 365
+.PEN_UP
+
+.PEN_DOWN
+433 2364 1043
+433 2364 1048
+433 2385 1053
+423 2395 1059
+413 2406 1064
+392 2406 1069
+371 2385 1074
+350 2364 1079
+350 2333 1085
+350 2302 1090
+350 2291 1095
+360 2281 1100
+371 2281 1106
+381 2291 1111
+402 2302 1116
+413 2333 1121
+413 2354 1126
+423 2364 1132
+423 2333 1137
+423 2302 1142
+423 2291 1147
+433 2281 1152
+433 2281 1158
+.PEN_UP
+
+.PEN_DOWN
+517 2520 1702
+517 2489 1707
+517 2448 1712
+506 2395 1718
+506 2354 1723
+517 2323 1728
+517 2302 1733
+517 2291 1738
+517 2291 1744
+.PEN_UP
+
+.PEN_DOWN
+579 2437 1977
+590 2448 1982
+590 2437 1987
+590 2437 1993
+579 2437 1998
+569 2416 2003
+558 2406 2008
+538 2395 2013
+538 2385 2019
+527 2375 2024
+527 2375 2029
+527 2375 2034
+538 2364 2040
+548 2343 2045
+558 2333 2050
+569 2312 2055
+579 2302 2060
+590 2291 2066
+590 2291 2071
+.PEN_UP
+
+.PEN_DOWN
+663 2395 2471
+663 2395 2476
+673 2395 2481
+683 2406 2487
+704 2416 2492
+715 2427 2497
+735 2437 2502
+735 2458 2507
+735 2489 2513
+725 2500 2518
+715 2489 2523
+704 2489 2528
+673 2448 2534
+663 2427 2539
+663 2395 2544
+663 2375 2549
+673 2343 2554
+683 2343 2560
+694 2333 2565
+725 2333 2570
+756 2343 2575
+777 2354 2580
+788 2354 2586
+.PEN_UP
+
+.PEN_DOWN
+215 2083 4256
+204 2093 4261
+204 2093 4266
+204 1979 4272
+215 1948 4277
+215 1916 4282
+215 1906 4287
+215 1906 4292
+.PEN_UP
+
+.PEN_DOWN
+350 2135 4586
+350 2145 4591
+350 2145 4596
+350 2145 4602
+329 2145 4607
+308 2135 4612
+277 2125 4617
+246 2114 4622
+225 2114 4628
+204 2114 4633
+204 2104 4638
+.PEN_UP
+
+.PEN_DOWN
+308 2041 4915
+308 2041 4920
+308 2041 4925
+288 2041 4931
+267 2041 4936
+235 2041 4941
+215 2041 4946
+194 2031 4951
+183 2031 4957
+183 2020 4962
+.PEN_UP
+
+.PEN_DOWN
+454 2041 5354
+454 2052 5359
+444 2052 5364
+433 2062 5370
+423 2062 5375
+402 2052 5380
+381 2031 5385
+371 2010 5390
+360 2000 5396
+360 1968 5401
+371 1958 5406
+381 1958 5411
+402 1979 5416
+413 1989 5422
+423 2000 5427
+433 2010 5432
+433 2031 5437
+444 2031 5443
+444 1979 5448
+444 1958 5453
+454 1937 5458
+454 1927 5463
+454 1927 5469
+.PEN_UP
+
+.PEN_DOWN
+527 2156 5959
+527 2156 5964
+527 2156 5969
+517 2125 5975
+517 2093 5980
+517 2073 5985
+517 1968 5990
+527 1958 5995
+527 1958 6001
+527 1958 6006
+.PEN_UP
+
+.PEN_DOWN
+590 2083 6233
+590 2083 6238
+590 2083 6243
+590 2083 6249
+579 2073 6254
+558 2062 6259
+548 2052 6264
+538 2052 6269
+527 2052 6275
+527 2041 6280
+527 2041 6285
+538 2031 6290
+548 2010 6296
+558 1989 6301
+579 1979 6306
+590 1968 6311
+600 1958 6316
+600 1948 6322
+.PEN_UP
+
+.PEN_DOWN
+652 2041 6728
+652 2052 6733
+652 2062 6738
+663 2062 6744
+673 2073 6749
+694 2083 6754
+694 2104 6759
+704 2104 6764
+704 2125 6770
+694 2135 6775
+683 2135 6780
+652 2114 6785
+642 2104 6790
+631 2083 6796
+631 2062 6801
+631 2041 6806
+642 2020 6811
+652 2010 6817
+673 2000 6822
+715 1989 6827
+735 2000 6832
+746 2010 6837
+756 2020 6843
+.PEN_UP
+
+.COMMENT End of File

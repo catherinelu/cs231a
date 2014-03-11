@@ -1,0 +1,218 @@
+.VERSION 1.0
+.COMMENT File s040n17
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 40
+.STYLE PRINTED
+.HAND L
+.AGE 30
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 175
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: David
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "23687"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "6"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4-5 ? "7"
+
+.COMMENT Prompt string: "23687"
+.COMMENT Recognizer string: "23687"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1173 2520 0
+1173 2531 5
+1173 2531 10
+1173 2531 16
+1204 2541 21
+1256 2541 26
+1288 2520 31
+1308 2479 36
+1308 2448 42
+1288 2385 47
+1256 2354 52
+1215 2343 57
+1194 2354 62
+1173 2375 68
+1173 2395 73
+1194 2406 78
+1235 2427 83
+1308 2427 89
+1360 2427 94
+1392 2416 99
+1433 2406 104
+.PEN_UP
+
+.PEN_DOWN
+1454 2541 549
+1444 2541 554
+1444 2541 559
+1465 2541 565
+1496 2541 570
+1548 2552 575
+1579 2541 580
+1590 2531 585
+1590 2510 591
+1579 2500 596
+1538 2468 601
+1527 2468 606
+1548 2468 612
+1569 2448 617
+1600 2427 622
+1621 2406 627
+1610 2364 632
+1590 2333 638
+1548 2312 643
+1506 2312 648
+1475 2312 653
+.PEN_UP
+
+.PEN_DOWN
+1840 2520 1099
+1840 2531 1104
+1840 2531 1109
+1829 2531 1115
+1788 2520 1120
+1756 2500 1125
+1746 2479 1130
+1735 2437 1135
+1735 2385 1141
+1756 2343 1146
+1798 2323 1151
+1829 2312 1156
+1892 2323 1162
+1902 2333 1167
+1902 2364 1172
+1881 2385 1177
+1829 2395 1182
+1798 2385 1188
+1767 2364 1193
+1756 2354 1198
+1767 2333 1203
+.PEN_UP
+
+.PEN_DOWN
+2163 2500 1648
+2163 2500 1653
+2152 2510 1658
+2142 2531 1664
+2110 2541 1669
+2058 2541 1674
+2027 2541 1679
+2017 2531 1684
+2017 2520 1690
+2027 2479 1695
+2058 2458 1700
+2090 2416 1705
+2100 2375 1710
+2090 2343 1716
+2058 2323 1721
+2017 2323 1726
+1996 2323 1731
+1985 2343 1737
+1996 2364 1742
+2027 2385 1747
+2069 2406 1752
+2152 2448 1757
+2194 2448 1763
+.PEN_UP
+
+.PEN_DOWN
+2277 2531 2197
+2277 2531 2202
+2288 2541 2207
+2340 2552 2213
+2381 2541 2218
+2402 2531 2223
+2402 2510 2228
+2402 2458 2233
+2371 2385 2239
+2360 2343 2244
+2350 2312 2249
+2350 2302 2254
+2350 2281 2260
+.PEN_UP
+
+.PEN_DOWN
+2444 2458 2527
+2433 2458 2532
+2413 2448 2537
+2371 2437 2543
+2329 2427 2548
+2267 2416 2553
+.PEN_UP
+
+.COMMENT End of File

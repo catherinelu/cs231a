@@ -1,0 +1,226 @@
+.VERSION 1.0
+.COMMENT File s065w26
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 65
+.STYLE PRINTED
+.HAND R
+.AGE 42
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Seth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Volcanic"
+.SEGMENT LETTER 0 ? "V"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "l"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "a"
+.SEGMENT LETTER 5 ? "n"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8 ? "c"
+
+.COMMENT Prompt string: "Volcanic"
+.COMMENT Recognizer string: "VolccNI?C"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+496 2208 0
+496 2218 5
+496 2229 10
+496 2218 16
+496 2166 21
+496 2104 26
+506 2052 31
+517 2000 36
+538 1968 42
+548 1958 47
+548 1948 52
+558 1958 57
+569 2000 62
+579 2041 68
+610 2093 73
+631 2135 78
+652 2177 83
+652 2198 89
+652 2218 94
+642 2218 99
+631 2218 104
+.PEN_UP
+
+.PEN_DOWN
+694 2073 549
+683 2083 554
+673 2083 559
+652 2073 565
+642 2041 570
+642 2010 575
+652 1989 580
+673 1979 585
+694 1979 591
+704 2000 596
+715 2010 601
+715 2031 606
+704 2062 612
+694 2073 617
+.PEN_UP
+
+.PEN_DOWN
+767 2270 989
+767 2198 994
+767 2125 999
+767 2031 1005
+767 2000 1010
+767 1979 1015
+.PEN_UP
+
+.PEN_DOWN
+902 2073 1373
+892 2083 1378
+881 2083 1383
+860 2083 1389
+829 2052 1394
+829 2031 1399
+840 2010 1404
+860 1989 1409
+881 1979 1415
+.PEN_UP
+
+.PEN_DOWN
+975 2073 1648
+965 2083 1653
+954 2083 1658
+944 2073 1664
+933 2062 1669
+933 2041 1674
+944 2031 1679
+954 2031 1684
+965 2020 1690
+985 2031 1695
+996 2041 1700
+1006 2041 1705
+1006 2041 1710
+.PEN_UP
+
+.PEN_DOWN
+1069 2104 1977
+1069 2083 1982
+1058 2062 1987
+1058 2020 1993
+1058 2010 1998
+1058 2010 2003
+1069 2010 2008
+1079 2020 2013
+1100 2031 2019
+1121 2041 2024
+1131 2052 2029
+1142 2052 2034
+1152 2041 2040
+1163 2031 2045
+1183 2020 2050
+1183 2010 2055
+1194 2000 2060
+.PEN_UP
+
+.PEN_DOWN
+1288 2083 2362
+1277 2062 2367
+1267 2041 2372
+1267 2020 2378
+1267 2000 2383
+.PEN_UP
+
+.PEN_DOWN
+1329 2156 2527
+1319 2166 2532
+1319 2177 2537
+1319 2166 2543
+1319 2145 2548
+.PEN_UP
+
+.PEN_DOWN
+1444 2093 2746
+1433 2104 2751
+1423 2104 2756
+1392 2093 2762
+1371 2073 2767
+1360 2052 2772
+1360 2020 2777
+1371 2010 2782
+1392 1989 2788
+1423 1989 2793
+1465 1989 2798
+.PEN_UP
+
+.COMMENT End of File

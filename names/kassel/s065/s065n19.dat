@@ -1,0 +1,203 @@
+.VERSION 1.0
+.COMMENT File s065n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 65
+.STYLE PRINTED
+.HAND R
+.AGE 42
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Seth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10342"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3-4 ? "4"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "lobut"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1121 2291 0
+1121 2291 5
+1121 2291 10
+1131 2281 16
+1131 2239 21
+1131 2208 26
+1131 2177 31
+1121 2156 36
+1121 2125 42
+1121 2114 47
+.PEN_UP
+
+.PEN_DOWN
+1277 2260 330
+1277 2270 335
+1277 2270 340
+1277 2270 346
+1267 2260 351
+1246 2260 356
+1235 2229 361
+1215 2198 366
+1215 2177 372
+1215 2145 377
+1235 2135 382
+1256 2135 387
+1298 2135 392
+1340 2166 398
+1360 2187 403
+1371 2218 408
+1371 2250 413
+1329 2281 419
+1308 2281 424
+1298 2281 429
+.PEN_UP
+
+.PEN_DOWN
+1465 2333 879
+1465 2343 884
+1465 2343 889
+1475 2343 895
+1485 2333 900
+1506 2333 905
+1517 2312 910
+1517 2302 915
+1506 2281 921
+1475 2260 926
+1454 2260 931
+1454 2260 936
+1465 2250 942
+1485 2250 947
+1506 2239 952
+1538 2218 957
+1569 2198 962
+1579 2177 968
+1579 2166 973
+1579 2156 978
+1538 2145 983
+1517 2145 988
+1496 2135 994
+.PEN_UP
+
+.PEN_DOWN
+1652 2354 1428
+1652 2354 1433
+1642 2343 1438
+1642 2323 1444
+1631 2291 1449
+1631 2260 1454
+1642 2250 1459
+1652 2229 1464
+1663 2229 1470
+1673 2239 1475
+1694 2239 1480
+.PEN_UP
+
+.PEN_DOWN
+1725 2354 1648
+1715 2333 1653
+1704 2291 1658
+1694 2260 1664
+1694 2218 1669
+1683 2198 1674
+1683 2177 1679
+.PEN_UP
+
+.PEN_DOWN
+1819 2354 1923
+1819 2364 1928
+1819 2354 1933
+1829 2333 1939
+1840 2302 1944
+1850 2270 1949
+1829 2208 1954
+1819 2166 1959
+1798 2145 1965
+1777 2135 1970
+1767 2145 1975
+1767 2156 1980
+1767 2177 1986
+1798 2198 1991
+1829 2198 1996
+1850 2187 2001
+1881 2177 2006
+1913 2166 2012
+1933 2145 2017
+.PEN_UP
+
+.COMMENT End of File

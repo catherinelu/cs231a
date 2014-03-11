@@ -1,0 +1,215 @@
+.VERSION 1.0
+.COMMENT File s065n08
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 65
+.STYLE PRINTED
+.HAND R
+.AGE 42
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Seth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "35124"
+.SEGMENT LETTER 0 ? "3"
+.SEGMENT LETTER 1-2 ? "5"
+.SEGMENT LETTER 3 ? "1"
+.SEGMENT LETTER 4 ? "2"
+.SEGMENT LETTER 5-6 ? "4"
+
+.COMMENT Prompt string: "35124"
+.COMMENT Recognizer string: "35?124"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1058 2177 0
+1048 2177 5
+1048 2187 10
+1048 2187 16
+1048 2187 21
+1069 2187 26
+1100 2198 31
+1131 2187 36
+1142 2187 42
+1152 2177 47
+1152 2166 52
+1131 2145 57
+1110 2135 62
+1079 2125 68
+1079 2125 73
+1079 2125 78
+1090 2125 83
+1110 2114 89
+1142 2104 94
+1173 2083 99
+1194 2073 104
+1215 2052 109
+1225 2031 115
+1225 2020 120
+1215 2000 125
+1194 1989 130
+1152 1979 135
+1121 1979 141
+1121 1989 146
+1110 1979 151
+.PEN_UP
+
+.PEN_DOWN
+1360 2198 714
+1350 2218 719
+1329 2229 724
+1329 2229 730
+1329 2218 735
+1329 2177 740
+1350 2135 745
+1371 2104 750
+1392 2083 756
+1402 2052 761
+1402 2041 766
+1392 2041 771
+1360 2031 776
+1319 2031 782
+1288 2041 787
+.PEN_UP
+
+.PEN_DOWN
+1319 2260 1099
+1308 2270 1104
+1308 2270 1109
+1319 2270 1115
+1340 2260 1120
+1381 2260 1125
+1423 2260 1130
+1454 2250 1135
+1475 2250 1141
+.PEN_UP
+
+.PEN_DOWN
+1590 2250 1318
+1590 2239 1323
+1579 2208 1328
+1558 2156 1334
+1548 2114 1339
+1548 2093 1344
+1538 2073 1349
+1538 2052 1354
+.PEN_UP
+
+.PEN_DOWN
+1673 2291 1593
+1683 2291 1598
+1694 2281 1603
+1704 2239 1609
+1704 2198 1614
+1704 2145 1619
+1694 2114 1624
+1663 2093 1629
+1642 2083 1635
+1631 2083 1640
+1621 2104 1645
+1631 2125 1650
+1652 2135 1656
+1683 2125 1661
+1704 2125 1666
+1725 2114 1671
+1735 2093 1676
+1746 2093 1682
+1756 2083 1687
+.PEN_UP
+
+.PEN_DOWN
+1808 2270 2032
+1808 2270 2037
+1798 2250 2042
+1798 2218 2048
+1808 2187 2053
+1819 2177 2058
+1829 2166 2063
+1840 2156 2068
+1860 2156 2074
+1881 2166 2079
+.PEN_UP
+
+.PEN_DOWN
+1933 2312 2307
+1923 2281 2312
+1913 2239 2317
+1902 2177 2323
+1902 2135 2328
+1892 2114 2333
+1892 2093 2338
+1892 2062 2343
+.PEN_UP
+
+.COMMENT End of File

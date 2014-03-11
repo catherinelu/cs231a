@@ -1,0 +1,283 @@
+.VERSION 1.0
+.COMMENT File s022w01
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 22
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 171
+ Student: No
+ Where educated: Italy
+ Home language: Italian
+ Name: Andrea
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-12 ? "Quizzicaly"
+.SEGMENT LETTER 0-1 ? "Q"
+.SEGMENT LETTER 2 ? "u"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5 ? "z"
+.SEGMENT LETTER 6 ? "z"
+.SEGMENT LETTER 7-8 ? "i"
+.SEGMENT LETTER 9 ? "c"
+.SEGMENT LETTER 10 ? "a"
+.SEGMENT LETTER 11 ? "l"
+.SEGMENT LETTER 12 ? "y"
+
+.COMMENT Prompt string: "Quizzically"
+.COMMENT Recognizer string: "OLUizzicalg"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2215 823 0
+2204 823 5
+2194 812 10
+2194 812 16
+2183 770 21
+2183 718 26
+2183 666 31
+2194 645 36
+2215 645 42
+2256 677 47
+2277 718 52
+2288 770 57
+2288 823 62
+2246 864 68
+2225 875 73
+2204 875 78
+2204 864 83
+.PEN_UP
+
+.PEN_DOWN
+2235 760 385
+2235 729 390
+2235 708 395
+2235 677 401
+2246 666 406
+2256 656 411
+2277 666 416
+2298 677 421
+.PEN_UP
+
+.PEN_DOWN
+2340 760 550
+2329 729 555
+2329 708 560
+2329 687 566
+2350 687 571
+2371 698 576
+2381 729 581
+2392 760 586
+2392 781 592
+2392 781 597
+2392 770 602
+2392 729 607
+2392 698 612
+2402 687 618
+2402 687 623
+.PEN_UP
+
+.PEN_DOWN
+2454 750 879
+2444 739 884
+2444 708 889
+2475 698 895
+.PEN_UP
+
+.PEN_DOWN
+2485 812 934
+2465 823 939
+2465 833 944
+2465 833 950
+.PEN_UP
+
+.PEN_DOWN
+2558 802 1154
+2527 802 1159
+2538 802 1164
+2558 802 1170
+2590 802 1175
+2610 802 1180
+2621 802 1185
+2621 802 1190
+2600 781 1196
+2548 739 1201
+2527 718 1206
+2527 698 1211
+2527 698 1216
+2558 698 1222
+2600 718 1227
+.PEN_UP
+
+.PEN_DOWN
+2673 802 1538
+2673 812 1543
+2683 812 1548
+2715 812 1554
+2725 812 1559
+2735 812 1564
+2735 802 1569
+2704 770 1574
+2673 739 1580
+2663 729 1585
+2663 718 1590
+2694 718 1595
+2725 739 1600
+2746 750 1606
+.PEN_UP
+
+.PEN_DOWN
+2767 760 1758
+2756 750 1763
+2756 739 1768
+2756 718 1774
+2767 718 1779
+2777 729 1784
+.PEN_UP
+
+.PEN_DOWN
+2808 802 1923
+2788 823 1928
+2777 833 1933
+2798 833 1939
+.PEN_UP
+
+.PEN_DOWN
+2881 812 2088
+2871 823 2093
+2860 812 2098
+2840 781 2104
+2829 760 2109
+2829 739 2114
+2871 729 2119
+2913 729 2124
+.PEN_UP
+
+.PEN_DOWN
+2954 812 2417
+2965 833 2422
+2975 833 2427
+2985 833 2433
+2985 823 2438
+2985 791 2443
+2985 760 2448
+2985 750 2453
+2985 739 2459
+2985 739 2464
+2975 750 2469
+2944 750 2474
+2933 739 2480
+2933 739 2485
+2933 729 2490
+2965 729 2495
+.PEN_UP
+
+.PEN_DOWN
+3038 770 3076
+3038 770 3081
+3048 770 3086
+3069 781 3092
+3100 823 3097
+3131 854 3102
+3142 895 3107
+3142 937 3112
+3121 958 3118
+3100 958 3123
+3079 916 3128
+3069 864 3133
+3069 812 3138
+3079 781 3144
+3100 760 3149
+3121 760 3154
+3142 770 3159
+.PEN_UP
+
+.PEN_DOWN
+3173 812 3461
+3173 781 3466
+3183 781 3471
+3204 781 3477
+3225 802 3482
+3225 812 3487
+3225 812 3492
+3235 770 3497
+3225 718 3503
+3215 677 3508
+3204 635 3513
+3152 604 3518
+3121 583 3524
+3079 583 3529
+3048 593 3534
+3038 614 3539
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,214 @@
+.VERSION 1.0
+.COMMENT File s055w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 55
+.STYLE PRINTED
+.HAND L
+.AGE 42
+.SEX F
+.WRITER_INFO
+ Group: Spare
+ Weight: 125
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Margaretha
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Taxi"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "taxi"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1121 1406 0
+1121 1416 5
+1121 1416 10
+1121 1416 16
+1121 1406 21
+1131 1406 26
+1152 1406 31
+1194 1406 36
+1225 1416 42
+1267 1416 47
+1319 1427 52
+1381 1427 57
+1433 1427 62
+1475 1437 68
+1517 1437 73
+1527 1437 78
+1527 1437 83
+1517 1437 89
+1517 1437 94
+.PEN_UP
+
+.PEN_DOWN
+1381 1437 439
+1381 1437 444
+1371 1448 449
+1371 1437 455
+1371 1416 460
+1371 1385 465
+1381 1343 470
+1392 1291 475
+1392 1260 481
+1392 1239 486
+1402 1229 491
+1402 1218 496
+1402 1229 502
+1402 1239 507
+1423 1239 512
+.PEN_UP
+
+.PEN_DOWN
+1788 1333 933
+1777 1333 938
+1777 1343 943
+1767 1343 949
+1746 1343 954
+1725 1343 959
+1694 1333 964
+1673 1312 969
+1652 1291 975
+1642 1281 980
+1642 1260 985
+1642 1250 990
+1663 1250 996
+1694 1250 1001
+1715 1250 1006
+1746 1270 1011
+1767 1281 1016
+1777 1302 1022
+1788 1323 1027
+1788 1343 1032
+1788 1354 1037
+1788 1343 1042
+1788 1323 1048
+1788 1302 1053
+1798 1281 1058
+1798 1270 1063
+1808 1250 1068
+1829 1250 1074
+1840 1250 1079
+.PEN_UP
+
+.PEN_DOWN
+2163 1375 1538
+2163 1375 1543
+2163 1375 1548
+2152 1364 1554
+2131 1333 1559
+2110 1312 1564
+2079 1291 1569
+2058 1270 1574
+2027 1270 1580
+2006 1260 1585
+1985 1250 1590
+1985 1250 1595
+.PEN_UP
+
+.PEN_DOWN
+1975 1385 1867
+1985 1375 1872
+1996 1354 1877
+2027 1333 1883
+2058 1312 1888
+2100 1291 1893
+2131 1281 1898
+2152 1281 1903
+2163 1270 1909
+2173 1270 1914
+.PEN_UP
+
+.PEN_DOWN
+2360 1385 2252
+2360 1395 2257
+2360 1385 2262
+2360 1354 2268
+2371 1323 2273
+2371 1302 2278
+2381 1270 2283
+2381 1239 2288
+2381 1239 2294
+.PEN_UP
+
+.PEN_DOWN
+2381 1531 2581
+2381 1531 2586
+2381 1520 2591
+2381 1520 2597
+2381 1520 2602
+.PEN_UP
+
+.COMMENT End of File

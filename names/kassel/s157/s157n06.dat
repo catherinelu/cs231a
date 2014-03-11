@@ -1,0 +1,198 @@
+.VERSION 1.0
+.COMMENT File s157n06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 157
+.STYLE PRINTED
+.HAND R
+.AGE 63
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: No
+ Where educated: MN
+ Home language: English
+ Name: Alve
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-3 ? "5&0&011"
+.SEGMENT LETTER 0-1:6 ? "5"
+.SEGMENT LETTER 1:7-1:11 ? "&"
+.SEGMENT LETTER 1:12-1:26 ? "0"
+.SEGMENT LETTER 1:27-1:32 ? "&"
+.SEGMENT LETTER 1:33-1 ? "0"
+.SEGMENT LETTER 2 ? "1"
+.SEGMENT LETTER 3 ? "1"
+
+.COMMENT Prompt string: "50011"
+.COMMENT Recognizer string: "5?11"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+652 2708 0
+663 2708 5
+652 2708 10
+642 2677 16
+631 2677 21
+621 2656 26
+610 2635 31
+610 2625 36
+631 2614 42
+663 2604 47
+694 2583 52
+715 2562 57
+725 2552 62
+725 2541 68
+715 2520 73
+694 2510 78
+663 2500 83
+621 2500 89
+569 2489 94
+548 2489 99
+538 2510 104
+527 2510 109
+517 2520 115
+517 2531 120
+517 2531 125
+517 2520 130
+.PEN_UP
+
+.PEN_DOWN
+652 2708 549
+652 2718 554
+652 2718 559
+663 2708 565
+694 2708 570
+725 2708 575
+767 2708 580
+808 2708 585
+840 2708 591
+860 2708 596
+871 2698 601
+860 2687 606
+850 2656 612
+798 2625 617
+777 2593 622
+767 2573 627
+777 2552 632
+808 2552 638
+860 2552 643
+902 2562 648
+923 2583 653
+933 2604 658
+933 2635 664
+913 2656 669
+892 2666 674
+850 2666 679
+850 2666 684
+881 2677 690
+933 2677 695
+965 2687 700
+996 2687 705
+1017 2687 710
+1038 2687 716
+1027 2687 721
+1006 2656 726
+975 2604 731
+965 2583 736
+975 2562 742
+996 2552 747
+1048 2552 752
+1069 2573 757
+1079 2593 763
+1090 2625 768
+1079 2645 773
+1069 2666 778
+1038 2666 783
+.PEN_UP
+
+.PEN_DOWN
+1246 2677 1483
+1256 2677 1488
+1246 2666 1493
+1246 2645 1499
+1225 2614 1504
+1204 2583 1509
+1194 2541 1514
+1194 2510 1519
+.PEN_UP
+
+.PEN_DOWN
+1340 2677 1703
+1350 2698 1708
+1350 2698 1713
+1340 2666 1719
+1329 2614 1724
+1319 2562 1729
+1319 2520 1734
+1308 2500 1739
+1308 2489 1745
+.PEN_UP
+
+.COMMENT End of File

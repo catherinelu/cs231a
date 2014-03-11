@@ -1,0 +1,210 @@
+.VERSION 1.0
+.COMMENT File s016n23
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 16
+.STYLE PRINTED
+.HAND R
+.AGE 28
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: No
+ Where educated: PA
+ Home language: English
+ Name: Annette
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "27657"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1-2 ? "7"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4-5 ? "5"
+.SEGMENT LETTER 6-7 ? "7"
+
+.COMMENT Prompt string: "27657"
+.COMMENT Recognizer string: "2765?7"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2027 1145 0
+2017 1145 5
+2017 1156 10
+2017 1156 16
+2027 1156 21
+2048 1156 26
+2069 1156 31
+2079 1156 36
+2090 1135 42
+2090 1125 47
+2090 1114 52
+2079 1093 57
+2058 1073 62
+2048 1073 68
+2038 1062 73
+2038 1052 78
+2048 1052 83
+2069 1052 89
+2090 1062 94
+2121 1073 99
+2142 1073 104
+.PEN_UP
+
+.PEN_DOWN
+2173 1156 495
+2163 1156 500
+2173 1156 505
+2194 1156 511
+2215 1156 516
+2225 1145 521
+2225 1135 526
+2235 1114 531
+2235 1073 537
+2235 1052 542
+.PEN_UP
+
+.PEN_DOWN
+2183 1093 824
+2183 1093 829
+2194 1093 834
+2215 1104 840
+2235 1104 845
+.PEN_UP
+
+.PEN_DOWN
+2329 1156 1099
+2319 1145 1104
+2308 1125 1109
+2308 1104 1115
+2308 1083 1120
+2308 1062 1125
+2319 1052 1130
+2329 1041 1135
+2350 1041 1141
+2371 1052 1146
+2371 1062 1151
+2371 1073 1156
+2360 1083 1162
+2340 1083 1167
+2329 1073 1172
+2308 1062 1177
+2308 1062 1182
+2319 1052 1188
+.PEN_UP
+
+.PEN_DOWN
+2423 1135 1593
+2413 1125 1598
+2402 1114 1603
+2413 1114 1609
+2423 1104 1614
+2444 1104 1619
+2465 1093 1624
+2485 1093 1629
+2485 1083 1635
+2485 1073 1640
+2475 1062 1645
+2465 1062 1650
+2454 1062 1656
+.PEN_UP
+
+.PEN_DOWN
+2413 1145 1923
+2413 1145 1928
+2413 1156 1933
+2423 1156 1939
+2454 1156 1944
+2475 1156 1949
+.PEN_UP
+
+.PEN_DOWN
+2527 1156 2252
+2527 1156 2257
+2527 1156 2262
+2538 1156 2268
+2600 1156 2273
+2610 1156 2278
+2610 1125 2283
+2600 1104 2288
+2600 1083 2294
+2600 1073 2299
+2600 1052 2304
+2610 1052 2309
+.PEN_UP
+
+.PEN_DOWN
+2569 1093 2637
+2569 1093 2642
+2579 1104 2647
+2579 1104 2653
+2600 1104 2658
+2631 1104 2663
+.PEN_UP
+
+.COMMENT End of File

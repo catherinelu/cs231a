@@ -1,0 +1,227 @@
+.VERSION 1.0
+.COMMENT File s038w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 38
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 140
+ Student: Yes
+ Where educated: South Africa
+ Home language: English
+ Name: Scott
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fuzz"
+.SEGMENT LETTER 0-1 ? "F"
+.SEGMENT LETTER 2 ? "u"
+.SEGMENT LETTER 3-4 ? "z"
+.SEGMENT LETTER 5-6 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1850 1823 0
+1850 1854 5
+1850 1854 10
+1850 1843 16
+1850 1812 21
+1860 1760 26
+1860 1718 31
+1871 1687 36
+1871 1687 42
+1871 1677 47
+1871 1687 52
+1860 1698 57
+1850 1729 62
+1840 1770 68
+1840 1812 73
+1829 1833 78
+1829 1854 83
+1829 1875 89
+1829 1885 94
+1829 1885 99
+1829 1875 104
+1850 1875 109
+1871 1885 115
+1923 1885 120
+1944 1895 125
+1965 1895 130
+.PEN_UP
+
+.PEN_DOWN
+1840 1791 659
+1829 1781 664
+1829 1781 669
+1840 1791 675
+1871 1802 680
+1902 1802 685
+.PEN_UP
+
+.PEN_DOWN
+1944 1791 989
+1944 1812 994
+1944 1812 999
+1944 1812 1005
+1944 1812 1010
+1944 1791 1015
+1944 1770 1020
+1944 1750 1025
+1944 1729 1031
+1944 1729 1036
+1954 1729 1041
+1954 1729 1046
+1975 1729 1052
+1985 1739 1057
+1996 1750 1062
+2006 1770 1067
+2006 1812 1072
+1996 1812 1078
+1996 1781 1083
+1996 1750 1088
+2006 1739 1093
+2017 1729 1098
+2027 1718 1104
+.PEN_UP
+
+.PEN_DOWN
+2090 1833 1593
+2079 1833 1598
+2079 1833 1603
+2090 1833 1609
+2110 1843 1614
+2131 1843 1619
+2152 1833 1624
+2163 1833 1629
+2173 1833 1635
+2183 1823 1640
+2183 1812 1645
+2173 1791 1650
+2152 1781 1656
+2131 1770 1661
+2121 1750 1666
+2090 1718 1671
+2090 1718 1676
+2100 1708 1682
+2110 1708 1687
+2121 1698 1692
+2142 1708 1697
+2173 1718 1702
+2183 1729 1708
+.PEN_UP
+
+.PEN_DOWN
+2090 1770 2142
+2079 1770 2147
+2079 1770 2152
+2131 1770 2158
+2163 1770 2163
+.PEN_UP
+
+.PEN_DOWN
+2215 1843 2527
+2204 1843 2532
+2204 1843 2537
+2225 1843 2543
+2256 1843 2548
+2277 1843 2553
+2298 1833 2558
+2308 1833 2563
+2308 1833 2569
+2308 1833 2574
+2298 1823 2579
+2288 1802 2584
+2267 1770 2590
+2256 1760 2595
+2235 1739 2600
+2225 1729 2605
+2215 1718 2610
+2215 1718 2616
+2225 1708 2621
+2235 1708 2626
+2288 1708 2631
+2308 1708 2636
+2319 1718 2642
+.PEN_UP
+
+.PEN_DOWN
+2215 1781 3076
+2215 1781 3081
+2215 1781 3086
+2246 1781 3092
+2277 1781 3097
+2308 1781 3102
+.PEN_UP
+
+.COMMENT End of File

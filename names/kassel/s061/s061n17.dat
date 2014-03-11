@@ -1,0 +1,249 @@
+.VERSION 1.0
+.COMMENT File s061n17
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 61
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Deborah
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "23687"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "6"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4-5 ? "7"
+
+.COMMENT Prompt string: "23687"
+.COMMENT Recognizer string: "23u?7?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2788 656 0
+2798 656 5
+2808 666 10
+2808 677 16
+2819 677 21
+2850 677 26
+2860 656 31
+2860 625 36
+2860 593 42
+2850 573 47
+2840 552 52
+2829 541 57
+2819 541 62
+2819 541 68
+2829 562 73
+2829 573 78
+2840 573 83
+2850 562 89
+2860 562 94
+2881 562 99
+2892 562 104
+2892 562 109
+.PEN_UP
+
+.PEN_DOWN
+2913 698 440
+2913 698 445
+2913 708 450
+2923 708 456
+2944 718 461
+2965 718 466
+2975 718 471
+2975 718 476
+2975 708 482
+2954 677 487
+2944 666 492
+2933 656 497
+2933 656 502
+2944 645 508
+2954 645 513
+2975 645 518
+2985 645 523
+3006 635 529
+3006 625 534
+3006 614 539
+2996 593 544
+2975 562 549
+2954 541 555
+2944 541 560
+2944 541 565
+2944 541 570
+.PEN_UP
+
+.PEN_DOWN
+3038 687 879
+3038 729 884
+3038 729 889
+3038 708 895
+3027 687 900
+3027 656 905
+3038 635 910
+3048 614 915
+3058 604 921
+3090 614 926
+3100 625 931
+3110 635 936
+3110 656 942
+3110 677 947
+3100 687 952
+3079 687 957
+3069 677 962
+3058 656 968
+3058 635 973
+3058 614 978
+3090 614 983
+.PEN_UP
+
+.PEN_DOWN
+3173 802 1319
+3163 802 1324
+3152 781 1329
+3142 760 1335
+3142 750 1340
+3152 739 1345
+3173 739 1350
+3204 729 1355
+3225 729 1361
+3235 718 1366
+3235 698 1371
+3235 677 1376
+3225 677 1382
+3215 666 1387
+3204 666 1392
+3194 666 1397
+3183 677 1402
+3183 698 1408
+3194 718 1413
+3204 729 1418
+3225 760 1423
+3225 791 1428
+3215 802 1434
+3194 812 1439
+3194 812 1444
+3183 812 1449
+3183 823 1454
+3183 823 1460
+.PEN_UP
+
+.PEN_DOWN
+3267 812 1868
+3267 812 1873
+3267 823 1878
+3267 833 1884
+3267 854 1889
+3256 854 1894
+3256 864 1899
+3246 875 1904
+3256 864 1910
+3267 864 1915
+3288 854 1920
+3298 854 1925
+3319 854 1930
+3319 854 1936
+3329 864 1941
+3329 875 1946
+3340 885 1951
+3350 895 1957
+3350 895 1962
+3360 895 1967
+3360 885 1972
+3371 875 1977
+3371 864 1983
+3371 833 1988
+3381 791 1993
+3392 750 1998
+3392 718 2003
+3402 698 2009
+3413 687 2014
+3413 677 2019
+3413 677 2024
+3413 687 2029
+3402 698 2035
+.PEN_UP
+
+.PEN_DOWN
+3340 770 2472
+3350 770 2477
+3381 781 2482
+3413 791 2488
+3433 812 2493
+3465 823 2498
+.PEN_UP
+
+.COMMENT End of File

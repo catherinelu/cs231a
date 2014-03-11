@@ -1,0 +1,206 @@
+.VERSION 1.0
+.COMMENT File s020n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 20
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 172
+ Student: Yes
+ Where educated: TX
+ Home language: English
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10342"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3-4 ? "4"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "1034?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1350 1812 0
+1350 1823 5
+1350 1823 10
+1340 1823 16
+1340 1802 21
+1350 1750 26
+1340 1666 31
+1340 1614 36
+1340 1573 42
+1340 1541 47
+1340 1531 52
+.PEN_UP
+
+.PEN_DOWN
+1610 1791 274
+1610 1791 279
+1600 1791 284
+1579 1791 290
+1558 1760 295
+1527 1708 300
+1506 1666 305
+1506 1625 310
+1538 1614 316
+1569 1625 321
+1621 1645 326
+1663 1687 331
+1663 1718 336
+1652 1750 342
+1631 1770 347
+1600 1770 352
+1590 1781 357
+.PEN_UP
+
+.PEN_DOWN
+1850 1781 659
+1829 1791 664
+1829 1812 669
+1850 1833 675
+1860 1843 680
+1881 1843 685
+1892 1833 690
+1892 1812 695
+1892 1791 701
+1871 1770 706
+1860 1750 711
+1860 1739 716
+1881 1739 722
+1902 1739 727
+1933 1750 732
+1954 1750 737
+1954 1739 742
+1954 1729 748
+1954 1708 753
+1933 1687 758
+1913 1666 763
+1902 1656 768
+1902 1645 774
+.PEN_UP
+
+.PEN_DOWN
+2142 1854 1153
+2142 1854 1158
+2142 1854 1163
+2142 1854 1169
+2142 1843 1174
+2142 1823 1179
+2110 1781 1184
+2110 1750 1189
+2100 1718 1195
+2110 1708 1200
+2142 1708 1205
+2163 1708 1210
+2183 1718 1216
+2204 1729 1221
+2215 1739 1226
+2225 1750 1231
+.PEN_UP
+
+.PEN_DOWN
+2256 1875 1482
+2256 1864 1487
+2256 1854 1492
+2246 1823 1498
+2235 1760 1503
+2225 1708 1508
+2215 1677 1513
+2215 1645 1518
+.PEN_UP
+
+.PEN_DOWN
+2423 1802 1757
+2413 1812 1762
+2413 1833 1767
+2423 1854 1773
+2433 1864 1778
+2454 1864 1783
+2475 1864 1788
+2485 1843 1793
+2485 1823 1799
+2475 1781 1804
+2454 1739 1809
+2423 1687 1814
+2423 1656 1820
+2423 1645 1825
+2444 1635 1830
+2485 1635 1835
+2506 1645 1840
+2517 1656 1846
+.PEN_UP
+
+.COMMENT End of File

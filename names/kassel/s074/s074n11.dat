@@ -1,0 +1,225 @@
+.VERSION 1.0
+.COMMENT File s074n11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 74
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: Netherlands
+ Home language: Dutch
+ Name: Wouter
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "79158"
+.SEGMENT LETTER 0-1 ? "7"
+.SEGMENT LETTER 2 ? "9"
+.SEGMENT LETTER 3 ? "1"
+.SEGMENT LETTER 4-5 ? "5"
+.SEGMENT LETTER 6 ? "8"
+
+.COMMENT Prompt string: "79158"
+.COMMENT Recognizer string: "7915?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2048 1802 0
+2048 1812 5
+2090 1812 10
+2121 1802 16
+2225 1802 21
+2246 1791 26
+2246 1781 31
+2235 1750 36
+2215 1698 42
+2183 1635 47
+2152 1562 52
+2142 1510 57
+2131 1479 62
+2131 1458 68
+2142 1458 73
+2152 1468 78
+.PEN_UP
+
+.PEN_DOWN
+2079 1614 384
+2090 1614 389
+2121 1614 394
+2183 1625 400
+2235 1635 405
+2277 1645 410
+.PEN_UP
+
+.PEN_DOWN
+2444 1823 549
+2444 1823 554
+2433 1812 559
+2402 1781 565
+2371 1718 570
+2350 1666 575
+2350 1635 580
+2360 1625 585
+2381 1635 591
+2413 1666 596
+2444 1708 601
+2465 1760 606
+2465 1802 612
+2454 1812 617
+2444 1812 622
+2433 1770 627
+2433 1729 632
+2433 1645 638
+2444 1583 643
+2444 1520 648
+2433 1500 653
+2423 1489 658
+2402 1489 664
+2381 1500 669
+.PEN_UP
+
+.PEN_DOWN
+2590 1781 1043
+2590 1781 1048
+2600 1781 1053
+2600 1770 1059
+2600 1750 1064
+2590 1718 1069
+2579 1656 1074
+2569 1625 1079
+2569 1614 1085
+.PEN_UP
+
+.PEN_DOWN
+2788 1812 1263
+2788 1812 1268
+2798 1823 1273
+2788 1812 1279
+2777 1791 1284
+2767 1770 1289
+2746 1739 1294
+2746 1729 1299
+2746 1718 1305
+2788 1718 1310
+2808 1718 1315
+2819 1708 1320
+2819 1687 1326
+2819 1666 1331
+2798 1635 1336
+2767 1604 1341
+2746 1583 1346
+2746 1593 1352
+.PEN_UP
+
+.PEN_DOWN
+2777 1802 1647
+2777 1823 1652
+2788 1823 1657
+2798 1823 1663
+2829 1812 1668
+2860 1812 1673
+.PEN_UP
+
+.PEN_DOWN
+3006 1739 1922
+3006 1750 1927
+3017 1750 1932
+3017 1760 1938
+2996 1750 1943
+2985 1718 1948
+2965 1666 1953
+2954 1625 1958
+2954 1593 1964
+2965 1583 1969
+2996 1593 1974
+3017 1614 1979
+3038 1645 1984
+3048 1687 1990
+3038 1750 1995
+3017 1802 2000
+2985 1843 2005
+2975 1875 2011
+2975 1895 2016
+2996 1895 2021
+3017 1895 2026
+3058 1895 2031
+3110 1875 2037
+3131 1864 2042
+3152 1854 2047
+3152 1843 2052
+3142 1812 2057
+3110 1781 2063
+3090 1750 2068
+3069 1729 2073
+.PEN_UP
+
+.COMMENT End of File

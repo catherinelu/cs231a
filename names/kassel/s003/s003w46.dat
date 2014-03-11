@@ -1,0 +1,286 @@
+.VERSION 1.0
+.COMMENT File s003w46
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 3
+.STYLE PRINTED
+.HAND R
+.AGE 27
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 185
+ Student: No
+ Where educated: NY
+ Home language: English
+ Name: Mitchell
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-9 ? "Declaring"
+.SEGMENT LETTER 0-1 ? "D"
+.SEGMENT LETTER 2 ? "e"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "l"
+.SEGMENT LETTER 5 ? "a"
+.SEGMENT LETTER 6 ? "r"
+.SEGMENT LETTER 7 ? "i"
+.SEGMENT LETTER 8 ? "n"
+.SEGMENT LETTER 9 ? "g"
+
+.COMMENT Prompt string: "Declaring"
+.COMMENT Recognizer string: "l?eclarlng"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2933 698 0
+2933 698 5
+2944 687 10
+2944 656 16
+2933 604 21
+2923 541 26
+2913 479 31
+2902 448 36
+2902 427 42
+.PEN_UP
+
+.PEN_DOWN
+2954 739 275
+2975 739 280
+2996 729 285
+3017 708 291
+3048 666 296
+3048 635 301
+3048 583 306
+3027 531 311
+2996 458 317
+2965 427 322
+2944 406 327
+2933 395 332
+.PEN_UP
+
+.PEN_DOWN
+3048 510 714
+3048 510 719
+3058 520 724
+3079 531 730
+3100 541 735
+3110 562 740
+3131 562 745
+3142 583 750
+3152 604 756
+3152 614 761
+3152 625 766
+3131 625 771
+3100 614 776
+3079 583 782
+3058 552 787
+3048 520 792
+3048 500 797
+3069 479 803
+3090 479 808
+3110 479 813
+3152 500 818
+3183 531 823
+3215 541 829
+.PEN_UP
+
+.PEN_DOWN
+3319 666 1208
+3298 666 1213
+3288 666 1218
+3277 656 1224
+3267 656 1229
+3246 635 1234
+3235 625 1239
+3235 604 1244
+3235 583 1250
+3256 562 1255
+3288 562 1260
+3319 583 1265
+3360 604 1270
+.PEN_UP
+
+.PEN_DOWN
+3423 875 1648
+3423 864 1653
+3423 833 1658
+3413 802 1664
+3413 750 1669
+3423 718 1674
+3433 687 1679
+3433 666 1684
+.PEN_UP
+
+.PEN_DOWN
+3548 770 2472
+3548 770 2477
+3548 770 2482
+3538 770 2488
+3527 750 2493
+3506 739 2498
+3485 708 2503
+3465 687 2508
+3465 687 2514
+3475 677 2519
+3485 666 2524
+3517 677 2529
+3527 677 2534
+3538 698 2540
+3558 729 2545
+3569 770 2550
+3579 791 2555
+3579 791 2561
+3579 781 2566
+3579 750 2571
+3590 729 2576
+3590 708 2581
+3600 698 2587
+3610 698 2592
+3621 708 2597
+.PEN_UP
+
+.PEN_DOWN
+3673 833 3076
+3673 739 3081
+3673 718 3086
+3683 718 3092
+3683 729 3097
+3683 750 3102
+3694 781 3107
+3715 823 3112
+3725 833 3118
+3746 854 3123
+3756 864 3128
+3767 864 3133
+3777 854 3138
+.PEN_UP
+
+.PEN_DOWN
+3850 906 3515
+3840 895 3520
+3840 864 3525
+3850 843 3531
+3850 823 3536
+3850 823 3541
+.PEN_UP
+
+.PEN_DOWN
+3933 906 3790
+3923 895 3795
+3923 885 3800
+3913 864 3806
+3913 854 3811
+3913 833 3816
+3913 833 3821
+3923 843 3826
+3933 854 3832
+3954 895 3837
+3965 916 3842
+3985 937 3847
+3985 948 3852
+3996 948 3858
+3996 937 3863
+3996 937 3868
+3996 916 3873
+4006 895 3879
+4006 875 3884
+4006 854 3889
+.PEN_UP
+
+.PEN_DOWN
+4110 979 4339
+4110 979 4344
+4100 968 4349
+4090 958 4355
+4069 937 4360
+4058 927 4365
+4058 906 4370
+4058 895 4375
+4058 885 4381
+4079 885 4386
+4110 906 4391
+4131 937 4396
+4152 958 4402
+4163 968 4407
+4163 968 4412
+4183 958 4417
+4183 916 4422
+4204 843 4428
+4215 770 4433
+4215 718 4438
+4204 687 4443
+4194 677 4448
+4173 677 4454
+4152 666 4459
+4142 666 4464
+4142 677 4469
+4142 729 4474
+4152 760 4480
+.PEN_UP
+
+.COMMENT End of File

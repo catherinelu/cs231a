@@ -1,0 +1,230 @@
+.VERSION 1.0
+.COMMENT File s069n10
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 69
+.STYLE PRINTED
+.HAND R
+.AGE 30
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 158
+ Student: No
+ Where educated: Peru
+ Home language: Spanish
+ Name: Uri
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "72898"
+.SEGMENT LETTER 0-1 ? "7"
+.SEGMENT LETTER 2 ? "2"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4 ? "9"
+.SEGMENT LETTER 5 ? "8"
+
+.COMMENT Prompt string: "72898"
+.COMMENT Recognizer string: "7L89?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+829 2375 0
+819 2375 5
+819 2385 10
+819 2385 16
+840 2385 21
+860 2385 26
+902 2385 31
+944 2385 36
+965 2364 42
+975 2343 47
+975 2302 52
+975 2229 57
+965 2177 62
+954 2125 68
+954 2104 73
+944 2093 78
+.PEN_UP
+
+.PEN_DOWN
+840 2218 384
+840 2218 389
+860 2229 394
+881 2229 400
+933 2239 405
+975 2250 410
+.PEN_UP
+
+.PEN_DOWN
+1246 2343 604
+1246 2343 609
+1246 2343 614
+1256 2343 620
+1277 2343 625
+1288 2323 630
+1288 2281 635
+1277 2239 640
+1256 2198 646
+1235 2156 651
+1215 2135 656
+1194 2135 661
+1194 2156 666
+1194 2177 672
+1215 2177 677
+1256 2177 682
+1288 2156 687
+1308 2135 693
+1329 2135 698
+.PEN_UP
+
+.PEN_DOWN
+1673 2364 1098
+1663 2364 1103
+1642 2375 1108
+1621 2364 1114
+1600 2343 1119
+1600 2323 1124
+1600 2302 1129
+1631 2281 1134
+1652 2260 1140
+1683 2229 1145
+1694 2198 1150
+1704 2177 1155
+1694 2156 1160
+1683 2145 1166
+1652 2145 1171
+1631 2156 1176
+1621 2177 1181
+1621 2187 1187
+1642 2229 1192
+1673 2250 1197
+1694 2270 1202
+1694 2291 1207
+1694 2312 1213
+1683 2343 1218
+1673 2354 1223
+1663 2364 1228
+.PEN_UP
+
+.PEN_DOWN
+1944 2333 1703
+1944 2343 1708
+1933 2343 1713
+1923 2343 1719
+1902 2343 1724
+1892 2333 1729
+1871 2302 1734
+1871 2250 1739
+1892 2229 1745
+1913 2229 1750
+1933 2239 1755
+1954 2270 1760
+1965 2281 1766
+1965 2291 1771
+1965 2291 1776
+1965 2260 1781
+1954 2198 1786
+1954 2145 1792
+1954 2114 1797
+1965 2104 1802
+.PEN_UP
+
+.PEN_DOWN
+2235 2323 2197
+2235 2323 2202
+2225 2333 2207
+2225 2333 2213
+2215 2333 2218
+2204 2333 2223
+2194 2323 2228
+2173 2312 2233
+2163 2281 2239
+2163 2270 2244
+2163 2239 2249
+2183 2218 2254
+2204 2198 2260
+2225 2177 2265
+2235 2145 2270
+2235 2135 2275
+2225 2125 2280
+2204 2114 2286
+2173 2114 2291
+2142 2114 2296
+2142 2125 2301
+2152 2135 2306
+2173 2177 2312
+2204 2208 2317
+2235 2250 2322
+2256 2281 2327
+2256 2302 2332
+2256 2333 2338
+2235 2343 2343
+2225 2343 2348
+.PEN_UP
+
+.COMMENT End of File

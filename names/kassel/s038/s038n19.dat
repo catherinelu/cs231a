@@ -1,0 +1,215 @@
+.VERSION 1.0
+.COMMENT File s038n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 38
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 140
+ Student: Yes
+ Where educated: South Africa
+ Home language: English
+ Name: Scott
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10342"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3-4 ? "4"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "10342"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1902 1666 0
+1902 1666 5
+1913 1677 10
+1913 1666 16
+1913 1656 21
+1913 1625 26
+1913 1531 31
+1913 1510 36
+1913 1500 42
+.PEN_UP
+
+.PEN_DOWN
+2069 1666 275
+2069 1666 280
+2069 1677 285
+2058 1677 291
+2058 1666 296
+2048 1666 301
+2038 1666 306
+2017 1656 311
+1996 1635 317
+1975 1614 322
+1965 1593 327
+1965 1573 332
+1975 1552 338
+1985 1531 343
+2006 1531 348
+2048 1531 353
+2069 1531 358
+2090 1552 364
+2090 1583 369
+2079 1614 374
+2069 1635 379
+2058 1645 384
+2048 1645 390
+.PEN_UP
+
+.PEN_DOWN
+2163 1687 769
+2152 1687 774
+2163 1687 779
+2163 1687 785
+2183 1666 790
+2194 1645 795
+2204 1635 800
+2194 1625 805
+2183 1614 811
+2173 1604 816
+2173 1593 821
+2163 1593 826
+2163 1583 832
+2163 1583 837
+2173 1583 842
+2194 1573 847
+2204 1573 852
+2204 1562 858
+2204 1552 863
+2194 1531 868
+2194 1520 873
+2173 1510 878
+2152 1520 884
+2121 1531 889
+2110 1541 894
+.PEN_UP
+
+.PEN_DOWN
+2246 1677 1318
+2246 1677 1323
+2246 1677 1328
+2246 1666 1334
+2235 1635 1339
+2235 1593 1344
+2246 1593 1349
+2267 1593 1354
+2288 1593 1360
+2298 1593 1365
+2329 1593 1370
+.PEN_UP
+
+.PEN_DOWN
+2288 1656 1648
+2277 1656 1653
+2277 1645 1658
+2277 1635 1664
+2277 1614 1669
+2277 1541 1674
+2277 1520 1679
+2288 1510 1684
+.PEN_UP
+
+.PEN_DOWN
+2371 1666 1977
+2371 1677 1982
+2371 1677 1987
+2371 1687 1993
+2381 1687 1998
+2381 1698 2003
+2402 1698 2008
+2423 1687 2013
+2444 1677 2019
+2444 1656 2024
+2444 1645 2029
+2444 1625 2034
+2423 1593 2040
+2402 1573 2045
+2381 1562 2050
+2381 1552 2055
+2360 1541 2060
+2350 1531 2066
+2350 1531 2071
+2350 1531 2076
+2360 1531 2081
+2381 1520 2086
+2402 1520 2092
+2433 1510 2097
+2475 1520 2102
+2496 1531 2107
+.PEN_UP
+
+.COMMENT End of File

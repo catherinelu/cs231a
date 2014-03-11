@@ -1,0 +1,205 @@
+.VERSION 1.0
+.COMMENT File s070w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 70
+.STYLE PRINTED
+.HAND R
+.AGE 38
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 135
+ Student: No
+ Where educated: Russia
+ Home language: Russian
+ Name: Irina
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "z"
+.SEGMENT LETTER 5 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1663 1343 0
+1652 1375 5
+1652 1364 10
+1652 1312 16
+1642 1250 21
+1642 1166 26
+1642 1104 31
+1631 1052 36
+1621 1000 42
+1621 968 47
+1621 958 52
+1631 968 57
+.PEN_UP
+
+.PEN_DOWN
+1621 1364 1153
+1621 1385 1158
+1621 1406 1163
+1621 1406 1169
+1631 1406 1174
+1652 1385 1179
+1683 1375 1184
+1704 1375 1189
+1735 1375 1195
+1756 1364 1200
+.PEN_UP
+
+.PEN_DOWN
+1590 1187 1483
+1590 1187 1488
+1600 1177 1493
+1621 1177 1499
+1663 1177 1504
+1694 1187 1509
+1715 1187 1514
+1746 1177 1519
+.PEN_UP
+
+.PEN_DOWN
+1798 1177 2032
+1798 1177 2037
+1798 1145 2042
+1798 1114 2048
+1798 1073 2053
+1798 1041 2058
+1808 1020 2063
+1829 1010 2068
+1840 1010 2074
+1871 1041 2079
+1892 1073 2084
+1913 1104 2089
+1913 1135 2094
+1913 1145 2100
+1913 1145 2105
+1913 1073 2110
+1913 1052 2115
+1923 1041 2121
+1933 989 2126
+.PEN_UP
+
+.PEN_DOWN
+2027 1177 2966
+2027 1177 2971
+2017 1177 2976
+2017 1177 2982
+2069 1177 2987
+2100 1177 2992
+2131 1177 2997
+2152 1166 3002
+2163 1156 3008
+2163 1135 3013
+2142 1114 3018
+2100 1093 3023
+2079 1073 3028
+2038 1052 3034
+2017 1031 3039
+2017 1020 3044
+2017 1020 3049
+2027 1010 3055
+2058 1000 3060
+2090 1010 3065
+2142 1020 3070
+2183 1020 3075
+.PEN_UP
+
+.PEN_DOWN
+2267 1135 3460
+2256 1166 3465
+2256 1177 3470
+2267 1187 3476
+2288 1187 3481
+2308 1177 3486
+2340 1177 3491
+2371 1166 3496
+2381 1166 3502
+2392 1156 3507
+2392 1156 3512
+2392 1145 3517
+2350 1125 3522
+2319 1104 3528
+2277 1083 3533
+2256 1073 3538
+2246 1052 3543
+2256 1041 3549
+2277 1041 3554
+2298 1041 3559
+2350 1041 3564
+2381 1041 3569
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,213 @@
+.VERSION 1.0
+.COMMENT File s063n07
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 63
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: NJ
+ Home language: English
+ Name: Tarik
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "02066"
+.SEGMENT LETTER 0 ? "0"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "0"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "6"
+
+.COMMENT Prompt string: "02066"
+.COMMENT Recognizer string: "?zo??"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2069 1062 0
+2058 1073 5
+2058 1073 10
+2048 1062 16
+2017 1062 21
+1996 1073 26
+1975 1083 31
+1944 1114 36
+1944 1156 42
+1944 1187 47
+1954 1218 52
+1985 1229 57
+2027 1239 62
+2090 1229 68
+2152 1166 73
+2173 1135 78
+2173 1093 83
+2152 1062 89
+2110 1052 94
+2069 1052 99
+2027 1052 104
+2006 1052 109
+1996 1062 115
+.PEN_UP
+
+.PEN_DOWN
+2246 1198 494
+2246 1198 499
+2267 1187 504
+2277 1177 510
+2298 1166 515
+2308 1145 520
+2308 1125 525
+2298 1104 530
+2267 1083 536
+2256 1062 541
+2246 1041 546
+2256 1031 551
+2288 1031 556
+2350 1031 562
+2413 1031 567
+2444 1031 572
+.PEN_UP
+
+.PEN_DOWN
+2517 1073 824
+2496 1073 829
+2465 1073 834
+2454 1093 840
+2444 1125 845
+2444 1166 850
+2475 1198 855
+2496 1208 860
+2538 1208 866
+2579 1177 871
+2600 1135 876
+2600 1093 881
+2579 1062 886
+2538 1052 892
+2506 1052 897
+2475 1073 902
+2465 1093 907
+.PEN_UP
+
+.PEN_DOWN
+2715 1062 1483
+2704 1062 1488
+2704 1062 1493
+2704 1083 1499
+2715 1104 1504
+2746 1125 1509
+2767 1125 1514
+2788 1125 1519
+2808 1114 1525
+2819 1104 1530
+2819 1083 1535
+2808 1062 1540
+2777 1062 1546
+2735 1062 1551
+2704 1073 1556
+2663 1104 1561
+2663 1156 1566
+2694 1218 1572
+2735 1250 1577
+2788 1270 1582
+2808 1260 1587
+2850 1250 1592
+.PEN_UP
+
+.PEN_DOWN
+2965 1041 1922
+2954 1041 1927
+2944 1031 1932
+2944 1041 1938
+2923 1052 1943
+2913 1073 1948
+2902 1125 1953
+2902 1156 1958
+2913 1177 1964
+2944 1187 1969
+2996 1187 1974
+3038 1177 1979
+3058 1145 1984
+3058 1114 1990
+3048 1073 1995
+3017 1052 2000
+2985 1052 2005
+2923 1062 2011
+2881 1093 2016
+2860 1156 2021
+2860 1229 2026
+2892 1291 2031
+2933 1333 2037
+2975 1343 2042
+3017 1343 2047
+.PEN_UP
+
+.COMMENT End of File

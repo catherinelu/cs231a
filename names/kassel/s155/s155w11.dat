@@ -1,0 +1,226 @@
+.VERSION 1.0
+.COMMENT File s155w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 155
+.STYLE PRINTED
+.HAND R
+.AGE 22
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: OH
+ Home language: English
+ Name: Gene
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4-5 ? "z"
+.SEGMENT LETTER 6-7 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1590 1843 0
+1579 1843 5
+1579 1698 10
+1579 1635 16
+1579 1562 21
+1569 1500 26
+1569 1489 31
+1579 1479 36
+1579 1489 42
+1579 1500 47
+1579 1520 52
+.PEN_UP
+
+.PEN_DOWN
+1569 1864 494
+1569 1875 499
+1579 1875 504
+1579 1875 510
+1590 1875 515
+1621 1885 520
+1673 1895 525
+1715 1895 530
+1756 1895 536
+1777 1885 541
+.PEN_UP
+
+.PEN_DOWN
+1600 1708 879
+1590 1708 884
+1590 1718 889
+1600 1718 895
+1610 1718 900
+1652 1729 905
+1694 1729 910
+.PEN_UP
+
+.PEN_DOWN
+1767 1677 1373
+1767 1677 1378
+1767 1604 1383
+1756 1583 1389
+1767 1573 1394
+1777 1573 1399
+1808 1562 1404
+1819 1583 1409
+1840 1604 1415
+1860 1625 1420
+1871 1656 1425
+1871 1677 1430
+1871 1687 1436
+1871 1677 1441
+1871 1656 1446
+1871 1625 1451
+1871 1593 1456
+1860 1573 1462
+1871 1541 1467
+1871 1531 1472
+.PEN_UP
+
+.PEN_DOWN
+1965 1708 2032
+1954 1708 2037
+1954 1708 2042
+1965 1698 2048
+1975 1708 2053
+1996 1708 2058
+2017 1708 2063
+2027 1698 2068
+2038 1687 2074
+2038 1677 2079
+2038 1666 2084
+2027 1645 2089
+2006 1614 2094
+1996 1583 2100
+1985 1562 2105
+1975 1552 2110
+1985 1541 2115
+1985 1531 2121
+2006 1531 2126
+2027 1531 2131
+2058 1531 2136
+2090 1531 2141
+.PEN_UP
+
+.PEN_DOWN
+1975 1645 2581
+1975 1645 2586
+1975 1645 2591
+1975 1645 2597
+1996 1656 2602
+2017 1656 2607
+2069 1656 2612
+2100 1656 2617
+.PEN_UP
+
+.PEN_DOWN
+2173 1729 3185
+2173 1729 3190
+2183 1729 3195
+2215 1729 3201
+2246 1729 3206
+2256 1729 3211
+2267 1718 3216
+2277 1718 3221
+2277 1708 3227
+2267 1687 3232
+2267 1677 3237
+2256 1645 3242
+2246 1625 3248
+2225 1593 3253
+2204 1562 3258
+2204 1552 3263
+2204 1541 3268
+2204 1531 3274
+2215 1520 3279
+2225 1520 3284
+2235 1531 3289
+2256 1531 3294
+2277 1541 3300
+2298 1541 3305
+.PEN_UP
+
+.PEN_DOWN
+2215 1656 3899
+2215 1666 3904
+2225 1666 3909
+2256 1666 3915
+2267 1666 3920
+2288 1666 3925
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,220 @@
+.VERSION 1.0
+.COMMENT File s112n20
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 112
+.STYLE PRINTED
+.HAND R
+.AGE 37
+.SEX M
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 155
+ Student: No
+ Where educated: NY
+ Home language: English
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "47190"
+.SEGMENT LETTER 0-1 ? "4"
+.SEGMENT LETTER 2 ? "7"
+.SEGMENT LETTER 3 ? "1"
+.SEGMENT LETTER 4 ? "9"
+.SEGMENT LETTER 5 ? "0"
+
+.COMMENT Prompt string: "47190"
+.COMMENT Recognizer string: "47190"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1788 1395 0
+1788 1406 5
+1788 1395 10
+1788 1385 16
+1777 1364 21
+1777 1343 26
+1767 1323 31
+1756 1302 36
+1756 1291 42
+1767 1291 47
+1777 1281 52
+1788 1270 57
+1808 1270 62
+1871 1270 68
+.PEN_UP
+
+.PEN_DOWN
+1871 1395 384
+1860 1395 389
+1860 1385 394
+1871 1364 400
+1871 1343 405
+1860 1323 410
+1850 1281 415
+1840 1260 420
+1840 1229 426
+1840 1218 431
+1850 1208 436
+.PEN_UP
+
+.PEN_DOWN
+1965 1385 714
+1965 1385 719
+1965 1385 724
+1965 1385 730
+1975 1385 735
+1996 1385 740
+2027 1395 745
+2058 1395 750
+2069 1385 756
+2079 1385 761
+2079 1385 766
+2090 1375 771
+2090 1364 776
+2079 1354 782
+2079 1333 787
+2058 1302 792
+2048 1281 797
+2038 1260 803
+2027 1229 808
+2017 1229 813
+2017 1218 818
+2017 1208 823
+2017 1208 829
+2017 1208 834
+2017 1208 839
+.PEN_UP
+
+.PEN_DOWN
+2194 1395 1318
+2194 1385 1323
+2183 1354 1328
+2183 1333 1334
+2173 1302 1339
+2173 1270 1344
+2163 1239 1349
+2163 1218 1354
+2163 1218 1360
+2163 1218 1365
+.PEN_UP
+
+.PEN_DOWN
+2350 1312 1702
+2350 1312 1707
+2360 1323 1712
+2371 1333 1718
+2371 1375 1723
+2360 1406 1728
+2350 1406 1733
+2329 1406 1738
+2319 1395 1744
+2308 1364 1749
+2298 1354 1754
+2308 1333 1759
+2308 1323 1764
+2329 1323 1770
+2350 1323 1775
+2360 1333 1780
+2371 1333 1785
+2360 1323 1791
+2360 1291 1796
+2350 1270 1801
+2340 1239 1806
+2340 1229 1811
+2340 1218 1817
+.PEN_UP
+
+.PEN_DOWN
+2465 1354 2306
+2465 1354 2311
+2465 1354 2316
+2465 1354 2322
+2465 1343 2327
+2444 1333 2332
+2433 1312 2337
+2423 1291 2342
+2423 1270 2348
+2423 1250 2353
+2433 1239 2358
+2454 1239 2363
+2485 1239 2368
+2517 1260 2374
+2527 1270 2379
+2538 1302 2384
+2538 1323 2389
+2527 1364 2395
+2517 1385 2400
+2496 1385 2405
+2475 1385 2410
+2444 1364 2415
+2444 1354 2421
+2444 1343 2426
+.PEN_UP
+
+.COMMENT End of File

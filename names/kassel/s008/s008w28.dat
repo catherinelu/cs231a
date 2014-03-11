@@ -1,0 +1,196 @@
+.VERSION 1.0
+.COMMENT File s008w28
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 8
+.STYLE PRINTED
+.HAND R
+.AGE 21
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 120
+ Student: Yes
+ Where educated: Hong Kong
+ Home language: Chinese
+ Name: Diana
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-3 ? "Zer&o"
+.SEGMENT LETTER 0-1 ? "Z"
+.SEGMENT LETTER 2 ? "e"
+.SEGMENT LETTER 3-3:15 ? "r"
+.SEGMENT LETTER 3:16-3:17 ? "&"
+.SEGMENT LETTER 3:18-3 ? "o"
+
+.COMMENT Prompt string: "Zero"
+.COMMENT Recognizer string: "Ze?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1465 1823 0
+1433 1833 5
+1433 1833 10
+1454 1854 16
+1485 1875 21
+1517 1885 26
+1558 1906 31
+1610 1906 36
+1642 1906 42
+1663 1895 47
+1663 1854 52
+1642 1781 57
+1610 1698 62
+1569 1614 68
+1538 1520 73
+1496 1437 78
+1496 1416 83
+1506 1406 89
+1548 1395 94
+1621 1395 99
+1683 1395 104
+1735 1406 109
+1767 1406 115
+1777 1406 120
+.PEN_UP
+
+.PEN_DOWN
+1392 1573 495
+1392 1573 500
+1392 1583 505
+1423 1583 511
+1475 1604 516
+1538 1625 521
+1610 1645 526
+1673 1666 531
+1746 1698 537
+.PEN_UP
+
+.PEN_DOWN
+1892 1500 769
+1902 1500 774
+1933 1520 779
+1965 1552 785
+2006 1604 790
+2027 1645 795
+2027 1666 800
+2027 1677 805
+2006 1698 811
+1985 1698 816
+1954 1677 821
+1923 1645 826
+1913 1593 832
+1913 1552 837
+1923 1510 842
+1944 1479 847
+1985 1458 852
+2017 1458 858
+2058 1458 863
+2100 1468 868
+2163 1489 873
+.PEN_UP
+
+.PEN_DOWN
+2194 1708 1154
+2183 1718 1159
+2183 1708 1164
+2194 1656 1170
+2215 1614 1175
+2225 1552 1180
+2235 1500 1185
+2246 1458 1190
+2246 1458 1196
+2246 1458 1201
+2246 1479 1206
+2235 1531 1211
+2246 1583 1216
+2256 1635 1222
+2298 1666 1227
+2340 1698 1232
+2392 1708 1237
+2433 1708 1243
+2465 1698 1248
+2465 1677 1253
+2454 1645 1258
+2433 1593 1263
+2423 1541 1269
+2433 1510 1274
+2454 1489 1279
+2485 1489 1284
+2558 1531 1289
+2600 1583 1295
+2621 1635 1300
+2621 1677 1305
+2610 1718 1310
+2579 1729 1315
+2538 1739 1321
+2506 1739 1326
+2465 1687 1331
+.PEN_UP
+
+.COMMENT End of File

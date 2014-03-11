@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s044c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 44
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 135
+ Student: Yes
+ Where educated: MI
+ Home language: English
+ Name: Bridget
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fake"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "F?Ke"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+308 2812 0
+308 2812 5
+298 2812 10
+298 2781 16
+298 2750 21
+298 2656 26
+298 2645 31
+298 2635 36
+298 2635 42
+298 2635 47
+298 2645 52
+.PEN_UP
+
+.PEN_DOWN
+267 2812 494
+267 2812 499
+288 2812 504
+308 2823 510
+371 2823 515
+392 2823 520
+402 2823 525
+413 2823 530
+413 2823 536
+.PEN_UP
+
+.PEN_DOWN
+267 2718 934
+267 2718 939
+267 2718 944
+277 2718 950
+329 2718 955
+350 2718 960
+350 2718 965
+350 2718 970
+.PEN_UP
+
+.PEN_DOWN
+475 2729 1428
+465 2729 1433
+454 2739 1438
+454 2750 1444
+444 2750 1449
+423 2739 1454
+413 2739 1459
+402 2729 1464
+392 2708 1470
+381 2677 1475
+392 2656 1480
+392 2656 1485
+402 2656 1490
+413 2656 1496
+423 2666 1501
+444 2677 1506
+444 2698 1511
+444 2708 1517
+454 2718 1522
+454 2718 1527
+454 2708 1532
+454 2708 1537
+454 2687 1543
+454 2677 1548
+465 2666 1553
+475 2666 1558
+485 2656 1563
+.PEN_UP
+
+.PEN_DOWN
+538 2802 1977
+538 2802 1982
+538 2791 1987
+538 2687 1993
+548 2677 1998
+548 2666 2003
+548 2656 2008
+548 2656 2013
+.PEN_UP
+
+.PEN_DOWN
+610 2823 2252
+590 2802 2257
+579 2781 2262
+558 2760 2268
+548 2739 2273
+538 2729 2278
+538 2729 2283
+527 2729 2288
+527 2718 2294
+538 2718 2299
+538 2708 2304
+548 2698 2309
+569 2687 2314
+590 2677 2320
+600 2677 2325
+610 2666 2330
+610 2666 2335
+610 2666 2341
+.PEN_UP
+
+.PEN_DOWN
+642 2708 2746
+642 2708 2751
+652 2708 2756
+663 2708 2762
+683 2718 2767
+694 2718 2772
+715 2718 2777
+715 2729 2782
+725 2739 2788
+725 2750 2793
+735 2750 2798
+725 2760 2803
+725 2770 2808
+715 2770 2814
+694 2770 2819
+673 2760 2824
+663 2750 2829
+642 2729 2835
+631 2708 2840
+631 2677 2845
+642 2666 2850
+652 2656 2855
+673 2645 2861
+704 2645 2866
+725 2645 2871
+746 2656 2876
+767 2656 2881
+777 2666 2887
+.PEN_UP
+
+.COMMENT End of File

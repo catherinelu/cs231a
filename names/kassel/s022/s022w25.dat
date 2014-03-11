@@ -1,0 +1,312 @@
+.VERSION 1.0
+.COMMENT File s022w25
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 22
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 171
+ Student: No
+ Where educated: Italy
+ Home language: Italian
+ Name: Andrea
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-10 ? "Faithfu&l+ly"
+.SEGMENT LETTER 0-1 ? "F"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "t"
+.SEGMENT LETTER 7 ? "h"
+.SEGMENT LETTER 8 ? "f"
+.SEGMENT LETTER 9-9:12 ? "u"
+.SEGMENT LETTER 9:13-9:25 ? "&"
+.SEGMENT LETTER 9:26-9:37 ? "l"
+.SEGMENT LETTER 9:38-9:38 ? "+"
+.SEGMENT LETTER 9:39-9 ? "l"
+.SEGMENT LETTER 10 ? "y"
+
+.COMMENT Prompt string: "Frightfully"
+.COMMENT Recognizer string: "F?ith8?J"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2288 927 0
+2288 885 5
+2288 781 10
+2288 750 16
+2298 729 21
+2298 729 26
+2298 770 31
+2298 823 36
+2288 885 42
+2277 937 47
+2277 968 52
+2288 979 57
+2308 979 62
+2360 979 68
+2392 979 73
+2402 968 78
+.PEN_UP
+
+.PEN_DOWN
+2288 895 384
+2288 895 389
+2298 895 394
+2308 895 400
+2350 895 405
+.PEN_UP
+
+.PEN_DOWN
+2444 875 714
+2444 885 719
+2454 885 724
+2475 885 730
+2485 864 735
+2485 843 740
+2485 823 745
+2485 791 750
+2485 770 756
+2485 770 761
+2485 781 766
+2485 791 771
+2454 802 776
+2433 812 782
+2423 812 787
+2423 802 792
+2423 791 797
+2444 791 803
+2465 791 808
+.PEN_UP
+
+.PEN_DOWN
+2548 854 1098
+2548 854 1103
+2538 833 1108
+2538 802 1114
+2538 791 1119
+2548 791 1124
+2558 791 1129
+.PEN_UP
+
+.PEN_DOWN
+2579 875 1263
+2548 885 1268
+2548 895 1273
+2558 906 1279
+.PEN_UP
+
+.PEN_DOWN
+2642 958 1373
+2642 937 1378
+2631 906 1383
+2621 854 1389
+2631 843 1394
+2631 823 1399
+2642 812 1404
+2652 812 1409
+2663 823 1415
+.PEN_UP
+
+.PEN_DOWN
+2621 927 1593
+2610 927 1598
+2610 927 1603
+2621 927 1609
+2673 927 1614
+.PEN_UP
+
+.PEN_DOWN
+2746 1000 1812
+2746 906 1817
+2735 864 1822
+2735 843 1828
+2735 854 1833
+2746 864 1838
+2756 895 1843
+2777 916 1848
+2777 916 1854
+2788 916 1859
+2788 885 1864
+2788 854 1869
+2788 833 1874
+2798 823 1880
+.PEN_UP
+
+.PEN_DOWN
+2902 916 2417
+2902 916 2422
+2902 916 2427
+2913 916 2433
+2913 916 2438
+2933 927 2443
+2954 948 2448
+2965 979 2453
+2965 1010 2459
+2965 1010 2464
+2954 1000 2469
+2944 937 2474
+2933 854 2480
+2913 760 2485
+2902 708 2490
+2892 687 2495
+2892 687 2500
+2860 698 2506
+2850 729 2511
+2840 770 2516
+2840 802 2521
+2840 823 2526
+2860 843 2532
+2892 854 2537
+2933 864 2542
+2965 885 2547
+.PEN_UP
+
+.PEN_DOWN
+2996 927 2911
+2985 906 2916
+2985 885 2921
+2996 875 2927
+2996 864 2932
+3006 875 2937
+3017 875 2942
+3027 895 2947
+3027 885 2953
+3027 885 2958
+3027 875 2963
+3027 864 2968
+3017 854 2974
+3017 833 2979
+3017 833 2984
+3027 833 2989
+3027 823 2994
+3027 812 3000
+3027 812 3005
+3038 812 3010
+3038 802 3015
+3038 802 3020
+3038 802 3026
+3048 802 3031
+3048 812 3036
+3079 823 3041
+3100 843 3046
+3131 895 3052
+3152 937 3057
+3152 979 3062
+3152 1010 3067
+3142 1020 3072
+3142 1020 3078
+3131 1020 3083
+3121 968 3088
+3121 927 3093
+3121 885 3098
+3142 875 3104
+3163 864 3109
+3183 875 3114
+3204 895 3119
+3215 937 3125
+3235 1000 3130
+3235 1031 3135
+3225 1052 3140
+3215 1052 3145
+3204 1052 3151
+3183 1020 3156
+3183 968 3161
+3183 916 3166
+3204 864 3171
+3225 854 3177
+3246 854 3182
+3277 864 3187
+.PEN_UP
+
+.PEN_DOWN
+3298 937 3900
+3298 927 3905
+3298 916 3910
+3298 906 3916
+3319 906 3921
+3329 916 3926
+3350 916 3931
+3360 895 3936
+3371 854 3942
+3360 802 3947
+3350 750 3952
+3308 708 3957
+3277 687 3962
+3235 677 3968
+3204 677 3973
+3163 698 3978
+3163 708 3983
+3163 729 3989
+.PEN_UP
+
+.COMMENT End of File

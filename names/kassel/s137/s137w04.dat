@@ -1,0 +1,250 @@
+.VERSION 1.0
+.COMMENT File s137w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 137
+.STYLE PRINTED
+.HAND R
+.AGE 18
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 120
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Jerusha
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "SKiin?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+381 2781 0
+381 2781 5
+381 2781 10
+381 2781 16
+381 2791 21
+392 2791 26
+392 2802 31
+402 2823 36
+402 2843 42
+402 2854 47
+381 2854 52
+371 2854 57
+340 2843 62
+319 2823 68
+298 2802 73
+308 2781 78
+329 2770 83
+360 2750 89
+402 2739 94
+444 2718 99
+454 2708 104
+454 2687 109
+423 2677 115
+381 2656 120
+350 2656 125
+340 2656 130
+329 2656 135
+.PEN_UP
+
+.PEN_DOWN
+506 2812 714
+506 2791 719
+517 2770 724
+527 2729 730
+538 2708 735
+538 2687 740
+538 2677 745
+548 2666 750
+.PEN_UP
+
+.PEN_DOWN
+642 2791 934
+642 2791 939
+621 2781 944
+590 2760 950
+558 2739 955
+538 2729 960
+527 2718 965
+527 2708 970
+527 2718 976
+538 2718 981
+538 2718 986
+590 2718 991
+621 2718 996
+652 2718 1002
+663 2718 1007
+.PEN_UP
+
+.PEN_DOWN
+777 2781 1319
+777 2760 1324
+777 2729 1329
+767 2718 1335
+767 2708 1340
+.PEN_UP
+
+.PEN_DOWN
+767 2823 1483
+767 2833 1488
+.PEN_UP
+
+.PEN_DOWN
+881 2802 1648
+881 2812 1653
+881 2812 1658
+892 2791 1664
+892 2781 1669
+902 2750 1674
+913 2729 1679
+913 2708 1684
+913 2698 1690
+913 2698 1695
+.PEN_UP
+
+.PEN_DOWN
+913 2864 1923
+913 2875 1928
+913 2875 1933
+923 2875 1939
+.PEN_UP
+
+.PEN_DOWN
+1058 2781 2197
+1058 2770 2202
+1069 2750 2207
+1069 2729 2213
+1069 2718 2218
+1069 2708 2223
+1069 2729 2228
+1079 2739 2233
+1090 2760 2239
+1110 2770 2244
+1110 2770 2249
+1131 2770 2254
+1152 2760 2260
+1173 2750 2265
+1173 2729 2270
+1173 2718 2275
+1183 2708 2280
+1183 2708 2286
+.PEN_UP
+
+.PEN_DOWN
+1360 2770 2527
+1371 2791 2532
+1371 2791 2537
+1360 2802 2543
+1329 2802 2548
+1288 2781 2553
+1267 2770 2558
+1256 2739 2563
+1256 2729 2569
+1267 2718 2574
+1277 2718 2579
+1288 2718 2584
+1319 2729 2590
+1360 2760 2595
+1392 2781 2600
+1392 2781 2605
+1381 2770 2610
+1371 2760 2616
+1360 2750 2621
+1360 2729 2626
+1360 2687 2631
+1381 2645 2636
+1402 2604 2642
+1413 2573 2647
+1402 2531 2652
+1381 2520 2657
+1360 2520 2662
+1329 2520 2668
+1308 2541 2673
+1308 2593 2678
+1329 2625 2683
+1371 2666 2688
+1413 2698 2694
+1465 2718 2699
+1517 2739 2704
+1538 2750 2709
+1548 2750 2714
+1548 2739 2720
+.PEN_UP
+
+.COMMENT End of File

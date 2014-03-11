@@ -1,0 +1,369 @@
+.VERSION 1.0
+.COMMENT File s001w19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 1
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 190
+ Student: Yes
+ Where educated: OH
+ Home language: English
+ Name: Jim
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-20 ? "Accountability"
+.SEGMENT LETTER 0-2 ? "A"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "c"
+.SEGMENT LETTER 5 ? "o"
+.SEGMENT LETTER 6 ? "u"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8-9 ? "t"
+.SEGMENT LETTER 10 ? "a"
+.SEGMENT LETTER 11 ? "b"
+.SEGMENT LETTER 12-13 ? "i"
+.SEGMENT LETTER 14 ? "l"
+.SEGMENT LETTER 15-16 ? "i"
+.SEGMENT LETTER 17-18 ? "t"
+.SEGMENT LETTER 19-20 ? "y"
+
+.COMMENT Prompt string: "Accountability"
+.COMMENT Recognizer string: "Acc?untability"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+652 927 0
+642 958 5
+642 968 10
+642 968 16
+652 927 21
+663 833 26
+652 739 31
+642 656 36
+631 593 42
+631 541 47
+642 531 52
+.PEN_UP
+
+.PEN_DOWN
+663 927 275
+663 927 280
+683 906 285
+715 854 291
+746 770 296
+777 708 301
+829 645 306
+871 604 311
+923 562 317
+944 541 322
+.PEN_UP
+
+.PEN_DOWN
+642 625 495
+642 635 500
+683 656 505
+735 666 511
+788 666 516
+.PEN_UP
+
+.PEN_DOWN
+1142 698 1044
+1131 729 1049
+1121 729 1054
+1110 729 1060
+1058 677 1065
+1017 604 1070
+1006 531 1075
+1027 500 1080
+1079 500 1086
+1152 510 1091
+1215 531 1096
+.PEN_UP
+
+.PEN_DOWN
+1371 708 1264
+1329 687 1269
+1277 635 1274
+1246 583 1280
+1256 531 1285
+1288 510 1290
+1360 520 1295
+1433 541 1300
+.PEN_UP
+
+.PEN_DOWN
+1631 656 1483
+1579 656 1488
+1538 645 1493
+1465 604 1499
+1444 573 1504
+1444 541 1509
+1475 520 1514
+1548 510 1519
+1600 531 1525
+1631 552 1530
+1642 562 1535
+1621 583 1540
+1590 604 1546
+1558 645 1551
+1558 656 1556
+.PEN_UP
+
+.PEN_DOWN
+1715 614 1868
+1704 604 1873
+1715 573 1878
+1725 541 1884
+1746 520 1889
+1767 520 1894
+1777 520 1899
+1819 562 1904
+1829 614 1910
+1829 625 1915
+1829 593 1920
+1840 541 1925
+1871 510 1930
+1913 500 1936
+1975 520 1941
+.PEN_UP
+
+.PEN_DOWN
+2006 583 2417
+2006 562 2422
+2006 541 2427
+1996 510 2433
+1996 500 2438
+1996 500 2443
+1996 500 2448
+1996 500 2453
+1996 500 2459
+1996 510 2464
+1996 531 2469
+2038 583 2474
+2058 625 2480
+2079 656 2485
+2110 666 2490
+2163 645 2495
+2183 614 2500
+2204 552 2506
+2215 500 2511
+2215 489 2516
+2235 489 2521
+.PEN_UP
+
+.PEN_DOWN
+2350 833 2911
+2329 833 2916
+2319 760 2921
+2319 698 2927
+2329 645 2932
+2350 593 2937
+2360 520 2942
+2371 489 2947
+.PEN_UP
+
+.PEN_DOWN
+2225 645 3131
+2225 645 3136
+2225 645 3141
+2256 645 3147
+2350 656 3152
+2423 656 3157
+.PEN_UP
+
+.PEN_DOWN
+2600 614 3296
+2558 583 3301
+2517 541 3306
+2485 510 3312
+2485 489 3317
+2506 479 3322
+2548 489 3327
+2600 510 3332
+2621 541 3338
+2621 541 3343
+2621 531 3348
+2642 489 3353
+2663 468 3358
+2683 468 3364
+2735 468 3369
+.PEN_UP
+
+.PEN_DOWN
+2808 802 3900
+2788 812 3905
+2777 802 3910
+2756 739 3916
+2767 625 3921
+2777 552 3926
+2798 510 3931
+2819 489 3936
+2829 489 3942
+2840 510 3947
+2860 541 3952
+2923 573 3957
+2975 573 3962
+3006 541 3968
+3006 510 3973
+2965 458 3978
+2892 427 3983
+2850 427 3989
+2850 427 3994
+2892 468 3999
+.PEN_UP
+
+.PEN_DOWN
+3090 625 4230
+3090 604 4235
+3079 562 4240
+3079 500 4246
+3079 479 4251
+3090 468 4256
+.PEN_UP
+
+.PEN_DOWN
+3069 656 4394
+3048 687 4399
+3048 687 4404
+.PEN_UP
+
+.PEN_DOWN
+3204 843 4559
+3204 833 4564
+3204 781 4569
+3225 677 4575
+3235 614 4580
+3246 541 4585
+3246 489 4590
+3246 427 4595
+3256 406 4601
+.PEN_UP
+
+.PEN_DOWN
+3402 573 4779
+3392 562 4784
+3392 531 4789
+3392 500 4795
+3392 468 4800
+3392 458 4805
+.PEN_UP
+
+.PEN_DOWN
+3392 687 4944
+3381 729 4949
+3381 729 4954
+.PEN_UP
+
+.PEN_DOWN
+3579 833 5053
+3569 843 5058
+3569 833 5063
+3579 770 5069
+3590 708 5074
+3600 635 5079
+3600 552 5084
+3600 437 5089
+.PEN_UP
+
+.PEN_DOWN
+3454 573 5273
+3454 593 5278
+3485 614 5283
+3538 614 5289
+3600 614 5294
+3663 604 5299
+3725 604 5304
+3788 614 5309
+.PEN_UP
+
+.PEN_DOWN
+3954 635 5493
+3923 593 5498
+3871 500 5503
+3850 427 5509
+3829 364 5514
+3808 291 5519
+3808 229 5524
+3808 218 5529
+.PEN_UP
+
+.PEN_DOWN
+3735 583 5658
+3735 583 5663
+3746 552 5668
+3777 500 5674
+3798 468 5679
+3840 448 5684
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,216 @@
+.VERSION 1.0
+.COMMENT File s007n18
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 7
+.STYLE PRINTED
+.HAND R
+.AGE 28
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 120
+ Student: Yes
+ Where educated: Canada
+ Home language: English & Hindi
+ Name: Milan
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "88253"
+.SEGMENT LETTER 0 ? "8"
+.SEGMENT LETTER 1 ? "8"
+.SEGMENT LETTER 2 ? "2"
+.SEGMENT LETTER 3-4 ? "5"
+.SEGMENT LETTER 5 ? "3"
+
+.COMMENT Prompt string: "88253"
+.COMMENT Recognizer string: "88?53"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2152 1562 0
+2142 1573 5
+2121 1573 10
+2110 1573 16
+2079 1573 21
+2069 1552 26
+2058 1541 31
+2058 1541 36
+2048 1531 42
+2058 1531 47
+2069 1520 52
+2090 1500 57
+2110 1468 62
+2121 1448 68
+2110 1427 73
+2090 1395 78
+2048 1364 83
+2017 1354 89
+2006 1364 94
+1996 1385 99
+2006 1427 104
+2038 1458 109
+2079 1489 115
+.PEN_UP
+
+.PEN_DOWN
+2204 1541 440
+2215 1552 445
+2225 1562 450
+2215 1552 456
+2194 1541 461
+2163 1510 466
+2152 1500 471
+2152 1500 476
+2152 1489 482
+2183 1479 487
+2204 1468 492
+2225 1448 497
+2235 1437 502
+2235 1406 508
+2215 1385 513
+2194 1385 518
+2183 1385 523
+2173 1406 529
+2173 1448 534
+2194 1479 539
+2225 1510 544
+.PEN_UP
+
+.PEN_DOWN
+2308 1500 879
+2298 1510 884
+2298 1520 889
+2308 1520 895
+2319 1531 900
+2340 1541 905
+2371 1541 910
+2381 1541 915
+2381 1510 921
+2371 1468 926
+2350 1448 931
+2340 1427 936
+2340 1406 942
+2340 1406 947
+2350 1406 952
+2371 1406 957
+.PEN_UP
+
+.PEN_DOWN
+2475 1552 1209
+2475 1552 1214
+2496 1562 1219
+2527 1573 1225
+2558 1583 1230
+2558 1583 1235
+.PEN_UP
+
+.PEN_DOWN
+2475 1541 1373
+2465 1531 1378
+2454 1520 1383
+2454 1489 1389
+2465 1489 1394
+2465 1500 1399
+2485 1500 1404
+2506 1510 1409
+2538 1510 1415
+2558 1500 1420
+2579 1479 1425
+2579 1458 1430
+2558 1437 1436
+2538 1416 1441
+2517 1406 1446
+2506 1395 1451
+.PEN_UP
+
+.PEN_DOWN
+2631 1520 1758
+2631 1531 1763
+2631 1541 1768
+2631 1552 1774
+2642 1562 1779
+2663 1573 1784
+2683 1573 1789
+2694 1562 1794
+2704 1541 1800
+2694 1520 1805
+2673 1500 1810
+2663 1489 1815
+2673 1489 1820
+2673 1489 1826
+2683 1479 1831
+2694 1468 1836
+2704 1458 1841
+2704 1448 1847
+2673 1416 1852
+2642 1406 1857
+2631 1406 1862
+.PEN_UP
+
+.COMMENT End of File

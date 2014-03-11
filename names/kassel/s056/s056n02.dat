@@ -1,0 +1,234 @@
+.VERSION 1.0
+.COMMENT File s056n02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 56
+.STYLE PRINTED
+.HAND L
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 160
+ Student: Yes
+ Where educated: CO
+ Home language: English
+ Name: Scott
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "13262"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "2"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "2"
+
+.COMMENT Prompt string: "13262"
+.COMMENT Recognizer string: "132?2"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+350 2739 0
+350 2739 5
+350 2739 10
+350 2739 16
+350 2750 21
+350 2718 26
+350 2687 31
+350 2666 36
+340 2625 42
+340 2604 47
+340 2593 52
+340 2583 57
+350 2583 62
+.PEN_UP
+
+.PEN_DOWN
+444 2739 329
+444 2739 334
+444 2750 339
+444 2750 345
+433 2750 350
+444 2750 355
+454 2750 360
+485 2750 365
+496 2750 371
+506 2729 376
+506 2708 381
+485 2698 386
+475 2687 392
+454 2677 397
+444 2677 402
+444 2666 407
+444 2666 412
+444 2666 418
+454 2666 423
+475 2656 428
+485 2656 433
+496 2645 438
+517 2645 444
+517 2635 449
+517 2604 454
+517 2593 459
+496 2583 464
+475 2573 470
+444 2573 475
+423 2583 480
+413 2583 485
+.PEN_UP
+
+.PEN_DOWN
+590 2677 988
+590 2698 993
+590 2698 998
+579 2708 1004
+579 2708 1009
+579 2708 1014
+579 2718 1019
+590 2718 1024
+610 2729 1030
+621 2729 1035
+621 2729 1040
+631 2729 1045
+642 2708 1050
+642 2687 1056
+642 2656 1061
+631 2625 1066
+610 2593 1071
+579 2583 1077
+569 2583 1082
+558 2583 1087
+558 2593 1092
+569 2604 1097
+569 2625 1103
+579 2625 1108
+590 2614 1113
+600 2604 1118
+610 2604 1123
+621 2593 1129
+631 2583 1134
+642 2583 1139
+663 2583 1144
+.PEN_UP
+
+.PEN_DOWN
+777 2739 1647
+777 2750 1652
+777 2750 1657
+767 2739 1663
+756 2729 1668
+746 2708 1673
+725 2687 1678
+715 2666 1683
+715 2645 1689
+725 2625 1694
+746 2614 1699
+767 2614 1704
+788 2614 1710
+798 2625 1715
+798 2625 1720
+788 2635 1725
+777 2645 1730
+756 2666 1736
+746 2666 1741
+735 2656 1746
+735 2635 1751
+746 2625 1756
+.PEN_UP
+
+.PEN_DOWN
+860 2729 2252
+860 2729 2257
+860 2739 2262
+860 2739 2268
+881 2750 2273
+892 2750 2278
+913 2750 2283
+913 2739 2288
+923 2729 2294
+923 2677 2299
+913 2645 2304
+892 2625 2309
+871 2614 2314
+860 2614 2320
+860 2625 2325
+860 2625 2330
+860 2645 2335
+871 2645 2341
+871 2656 2346
+881 2656 2351
+881 2656 2356
+902 2645 2361
+913 2645 2367
+933 2635 2372
+954 2625 2377
+965 2614 2382
+985 2614 2387
+.PEN_UP
+
+.COMMENT End of File

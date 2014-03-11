@@ -1,0 +1,236 @@
+.VERSION 1.0
+.COMMENT File s079c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 79
+.STYLE PRINTED
+.HAND R
+.AGE 22
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 138
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Lori
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "fake"
+.SEGMENT LETTER 0-2 ? "f"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "eTalce"
+.COMMENT Transcriber Comment: "Possible correction on f."
+
+.PEN_DOWN
+402 2885 0
+402 2885 5
+402 2895 10
+413 2916 16
+402 2937 21
+392 2968 26
+371 2989 31
+340 2989 36
+308 2968 42
+288 2937 47
+277 2885 52
+288 2843 57
+298 2781 62
+319 2760 68
+319 2750 73
+329 2750 78
+329 2739 83
+329 2750 89
+319 2750 94
+319 2770 99
+319 2770 104
+319 2770 109
+319 2770 115
+329 2770 120
+.PEN_UP
+
+.PEN_DOWN
+288 2843 604
+288 2843 609
+288 2843 614
+288 2833 620
+288 2843 625
+288 2833 630
+288 2812 635
+298 2802 640
+308 2770 646
+319 2739 651
+319 2708 656
+329 2687 661
+340 2666 666
+340 2666 672
+340 2666 677
+340 2666 682
+329 2687 687
+329 2687 693
+.PEN_UP
+
+.PEN_DOWN
+246 2812 1153
+246 2812 1158
+256 2812 1163
+288 2823 1169
+350 2843 1174
+381 2843 1179
+413 2854 1184
+433 2864 1189
+423 2854 1195
+413 2854 1200
+413 2843 1205
+.PEN_UP
+
+.PEN_DOWN
+465 2802 1648
+454 2802 1653
+454 2812 1658
+475 2833 1664
+496 2833 1669
+506 2833 1674
+506 2812 1679
+517 2781 1684
+517 2739 1690
+517 2718 1695
+517 2698 1700
+527 2687 1705
+538 2687 1710
+538 2687 1716
+527 2708 1721
+506 2750 1726
+485 2770 1731
+465 2770 1737
+433 2770 1742
+423 2750 1747
+413 2729 1752
+423 2708 1757
+433 2698 1763
+465 2687 1768
+506 2698 1773
+538 2708 1778
+.PEN_UP
+
+.PEN_DOWN
+610 2864 2087
+590 2875 2092
+590 2781 2097
+579 2739 2103
+579 2698 2108
+579 2687 2113
+590 2677 2118
+.PEN_UP
+
+.PEN_DOWN
+673 2812 2307
+663 2812 2312
+652 2802 2317
+621 2791 2323
+600 2781 2328
+579 2770 2333
+579 2750 2338
+579 2739 2343
+600 2718 2349
+631 2708 2354
+652 2687 2359
+673 2687 2364
+683 2677 2370
+694 2677 2375
+704 2687 2380
+.PEN_UP
+
+.PEN_DOWN
+725 2739 2636
+725 2750 2641
+735 2739 2646
+746 2729 2652
+767 2729 2657
+798 2750 2662
+819 2760 2667
+840 2770 2672
+840 2781 2678
+819 2802 2683
+808 2802 2688
+788 2791 2693
+767 2770 2698
+756 2729 2704
+767 2698 2709
+788 2677 2714
+840 2666 2719
+913 2666 2725
+944 2666 2730
+954 2666 2735
+.PEN_UP
+
+.COMMENT End of File

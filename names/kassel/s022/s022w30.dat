@@ -1,0 +1,275 @@
+.VERSION 1.0
+.COMMENT File s022w30
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 22
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 171
+ Student: No
+ Where educated: Italy
+ Home language: Italian
+ Name: Andrea
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Gove&rning"
+.SEGMENT LETTER 0 ? "G"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "v"
+.SEGMENT LETTER 3-3:13 ? "e"
+.SEGMENT LETTER 3:14-3:15 ? "&"
+.SEGMENT LETTER 3:16-3 ? "r"
+.SEGMENT LETTER 4 ? "n"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Governing"
+.COMMENT Recognizer string: "GoV?nin?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2944 593 0
+2944 604 5
+2944 614 10
+2944 614 16
+2933 614 21
+2933 614 26
+2913 604 31
+2881 583 36
+2850 562 42
+2829 531 47
+2788 489 52
+2777 458 57
+2756 437 62
+2756 406 68
+2777 385 73
+2798 375 78
+2840 375 83
+2892 406 89
+2923 427 94
+2954 437 99
+2965 458 104
+2954 458 109
+2944 468 115
+2913 468 120
+2892 458 125
+2860 458 130
+2860 448 135
+2860 448 141
+2871 448 146
+.PEN_UP
+
+.PEN_DOWN
+3006 458 495
+2985 437 500
+2985 416 505
+2985 406 511
+2996 406 516
+3027 416 521
+3038 427 526
+3038 437 531
+3038 458 537
+3006 458 542
+2996 458 547
+2996 458 552
+2996 448 558
+.PEN_UP
+
+.PEN_DOWN
+3090 500 769
+3090 479 774
+3090 437 779
+3100 427 785
+3110 416 790
+3110 416 795
+3121 416 800
+3131 437 805
+3142 468 811
+3142 500 816
+3163 541 821
+3173 552 826
+.PEN_UP
+
+.PEN_DOWN
+3204 468 1044
+3204 468 1049
+3215 468 1054
+3225 479 1060
+3246 500 1065
+3246 520 1070
+3246 520 1075
+3225 520 1080
+3215 500 1086
+3215 468 1091
+3215 458 1096
+3215 448 1101
+3225 458 1106
+3246 479 1112
+3267 500 1117
+3267 520 1122
+3267 520 1127
+3267 500 1133
+3267 468 1138
+3267 437 1143
+3267 427 1148
+3267 416 1153
+3267 416 1159
+3277 437 1164
+3288 479 1169
+3298 500 1174
+3308 520 1179
+3319 531 1185
+3340 541 1190
+3340 541 1195
+.PEN_UP
+
+.PEN_DOWN
+3360 520 1538
+3360 448 1543
+3360 448 1548
+3360 458 1554
+3381 489 1559
+3392 510 1564
+3402 520 1569
+3413 520 1574
+3413 520 1580
+3413 500 1585
+3413 489 1590
+3413 458 1595
+3413 448 1600
+3413 437 1606
+3413 437 1611
+3423 437 1616
+.PEN_UP
+
+.PEN_DOWN
+3465 489 1868
+3465 489 1873
+3454 468 1878
+3454 458 1884
+3454 448 1889
+3465 448 1894
+3475 448 1899
+.PEN_UP
+
+.PEN_DOWN
+3506 562 2033
+3496 593 2038
+3485 593 2043
+3485 593 2049
+3496 583 2054
+.PEN_UP
+
+.PEN_DOWN
+3548 531 2252
+3548 510 2257
+3548 500 2262
+3538 489 2268
+3538 479 2273
+3538 489 2278
+3548 500 2283
+3569 510 2288
+3579 520 2294
+3579 520 2299
+3579 520 2304
+3579 500 2309
+3579 489 2314
+3579 479 2320
+3579 468 2325
+.PEN_UP
+
+.PEN_DOWN
+3642 520 2637
+3642 520 2642
+3631 520 2647
+3631 510 2653
+3642 510 2658
+3652 510 2663
+3663 500 2668
+3673 479 2673
+3683 448 2679
+3673 395 2684
+3642 343 2689
+3590 302 2694
+3538 270 2700
+3517 260 2705
+3506 270 2710
+3506 281 2715
+3517 302 2720
+3579 343 2726
+3631 375 2731
+3663 416 2736
+3704 437 2741
+.PEN_UP
+
+.COMMENT End of File

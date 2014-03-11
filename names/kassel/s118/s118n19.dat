@@ -1,0 +1,241 @@
+.VERSION 1.0
+.COMMENT File s118n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 118
+.STYLE PRINTED
+.HAND R
+.AGE 18
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 185
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Brian
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10342"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3-4 ? "4"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "10342"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1923 1250 0
+1913 1260 5
+1913 1260 10
+1913 1260 16
+1913 1250 21
+1913 1250 26
+1913 1239 31
+1923 1218 36
+1923 1156 42
+1923 1125 47
+1913 1093 52
+1902 1083 57
+1902 1073 62
+1902 1073 68
+1902 1073 73
+1902 1083 78
+1902 1083 83
+.PEN_UP
+
+.PEN_DOWN
+2038 1250 659
+2038 1250 664
+2038 1260 669
+2038 1260 675
+2027 1250 680
+2006 1239 685
+1996 1229 690
+1985 1208 695
+1975 1187 701
+1965 1145 706
+1965 1125 711
+1985 1114 716
+1996 1114 722
+2048 1125 727
+2079 1145 732
+2100 1166 737
+2121 1187 742
+2121 1198 748
+2100 1208 753
+2090 1229 758
+2069 1250 763
+2048 1250 768
+2038 1250 774
+2038 1250 779
+2027 1239 784
+.PEN_UP
+
+.PEN_DOWN
+2152 1281 1318
+2152 1281 1323
+2152 1291 1328
+2152 1281 1334
+2163 1281 1339
+2183 1270 1344
+2204 1260 1349
+2204 1260 1354
+2215 1250 1360
+2215 1239 1365
+2204 1239 1370
+2183 1229 1375
+2163 1218 1380
+2163 1208 1386
+2163 1208 1391
+2173 1187 1396
+2194 1177 1401
+2225 1145 1407
+2246 1135 1412
+2246 1125 1417
+2246 1104 1422
+2235 1093 1427
+2215 1083 1433
+2204 1083 1438
+2173 1093 1443
+2152 1093 1448
+2142 1104 1453
+2142 1104 1459
+.PEN_UP
+
+.PEN_DOWN
+2288 1250 1977
+2288 1260 1982
+2288 1260 1987
+2298 1260 1993
+2288 1250 1998
+2277 1239 2003
+2267 1229 2008
+2267 1218 2013
+2256 1208 2019
+2256 1187 2024
+2267 1187 2029
+2277 1177 2034
+2298 1177 2040
+2329 1177 2045
+2350 1177 2050
+2360 1177 2055
+2371 1187 2060
+2371 1187 2066
+.PEN_UP
+
+.PEN_DOWN
+2392 1281 2417
+2392 1281 2422
+2392 1281 2427
+2392 1270 2433
+2381 1250 2438
+2381 1229 2443
+2360 1187 2448
+2350 1135 2453
+2340 1093 2459
+2340 1073 2464
+2329 1052 2469
+2329 1052 2474
+2329 1052 2480
+.PEN_UP
+
+.PEN_DOWN
+2475 1270 3076
+2475 1270 3081
+2475 1281 3086
+2485 1281 3092
+2485 1270 3097
+2496 1260 3102
+2517 1250 3107
+2538 1229 3112
+2558 1218 3118
+2590 1198 3123
+2600 1166 3128
+2600 1145 3133
+2600 1114 3138
+2569 1093 3144
+2517 1083 3149
+2485 1083 3154
+2454 1093 3159
+2444 1114 3165
+2454 1145 3170
+2465 1156 3175
+2496 1156 3180
+2517 1166 3185
+2548 1166 3191
+2569 1166 3196
+2590 1145 3201
+2600 1135 3206
+2600 1125 3211
+.PEN_UP
+
+.COMMENT End of File

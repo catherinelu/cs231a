@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s068n17
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 68
+.STYLE PRINTED
+.HAND R
+.AGE 28
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 210
+ Student: Yes
+ Where educated: NJ
+ Home language: English
+ Name: Gilbert
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "23687"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "6"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4-5 ? "7"
+
+.COMMENT Prompt string: "23687"
+.COMMENT Recognizer string: "236?7"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1538 1812 0
+1517 1812 5
+1506 1812 10
+1496 1823 16
+1485 1833 21
+1485 1843 26
+1496 1875 31
+1527 1906 36
+1548 1927 42
+1590 1927 47
+1631 1906 52
+1704 1812 57
+1735 1718 62
+1746 1625 68
+1746 1541 73
+1725 1458 78
+1694 1427 83
+1652 1416 89
+1621 1427 94
+1600 1479 99
+1610 1500 104
+1642 1531 109
+1683 1531 115
+1756 1531 120
+1808 1520 125
+.PEN_UP
+
+.PEN_DOWN
+1892 1791 495
+1892 1864 500
+1902 1875 505
+1965 1875 511
+2006 1875 516
+2027 1854 521
+2027 1781 526
+2006 1729 531
+1985 1687 537
+1965 1656 542
+1933 1656 547
+1933 1645 552
+1933 1645 558
+1965 1635 563
+2038 1604 568
+2079 1573 573
+2131 1531 578
+2152 1489 584
+2152 1427 589
+2110 1395 594
+2058 1354 599
+2006 1343 604
+1965 1364 610
+1965 1406 615
+.PEN_UP
+
+.PEN_DOWN
+2350 1791 934
+2319 1791 939
+2277 1770 944
+2246 1698 950
+2204 1593 955
+2204 1510 960
+2235 1448 965
+2277 1406 970
+2340 1385 976
+2371 1395 981
+2392 1427 986
+2392 1448 991
+2360 1479 996
+2319 1489 1002
+2277 1489 1007
+2256 1468 1012
+.PEN_UP
+
+.PEN_DOWN
+2558 1739 1264
+2548 1739 1269
+2527 1729 1274
+2485 1687 1280
+2465 1656 1285
+2475 1614 1290
+2506 1583 1295
+2579 1552 1300
+2621 1510 1306
+2663 1479 1311
+2694 1448 1316
+2683 1406 1321
+2652 1385 1326
+2600 1385 1332
+2558 1395 1337
+2538 1416 1342
+2548 1448 1347
+2558 1489 1353
+2600 1552 1358
+2631 1614 1363
+2631 1656 1368
+2621 1698 1373
+2600 1718 1379
+2569 1718 1384
+2558 1708 1389
+2558 1687 1394
+.PEN_UP
+
+.PEN_DOWN
+2704 1708 1758
+2715 1708 1763
+2735 1698 1768
+2767 1687 1774
+2788 1677 1779
+2829 1645 1784
+2860 1614 1789
+2902 1593 1794
+2913 1562 1800
+2944 1510 1805
+2954 1468 1810
+2954 1416 1815
+2944 1385 1820
+2933 1333 1826
+.PEN_UP
+
+.PEN_DOWN
+2850 1427 2033
+2850 1448 2038
+2881 1468 2043
+2975 1489 2049
+3048 1489 2054
+3100 1468 2059
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,230 @@
+.VERSION 1.0
+.COMMENT File s080n17
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 80
+.STYLE PRINTED
+.HAND R
+.AGE 47
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 184
+ Student: No
+ Where educated: Taiwan
+ Home language: Chinese
+ Name: Victor
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "23687"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "6"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4 ? "7"
+
+.COMMENT Prompt string: "23687"
+.COMMENT Recognizer string: "23687"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1923 1677 0
+1923 1687 5
+1923 1687 10
+1933 1687 16
+2006 1687 21
+2027 1677 26
+2048 1666 31
+2048 1635 36
+2038 1604 42
+2006 1573 47
+1985 1531 52
+1954 1489 57
+1933 1479 62
+1923 1458 68
+1933 1448 73
+1954 1437 78
+1975 1437 83
+2006 1437 89
+2027 1448 94
+2048 1448 99
+2048 1448 104
+2048 1448 109
+.PEN_UP
+
+.PEN_DOWN
+2183 1666 714
+2173 1666 719
+2173 1677 724
+2183 1677 730
+2204 1687 735
+2225 1677 740
+2256 1677 745
+2277 1677 750
+2288 1656 756
+2288 1635 761
+2277 1625 766
+2256 1604 771
+2225 1583 776
+2204 1573 782
+2194 1562 787
+2194 1562 792
+2204 1562 797
+2215 1573 803
+2235 1573 808
+2267 1573 813
+2288 1541 818
+2298 1520 823
+2298 1489 829
+2288 1468 834
+2267 1448 839
+2235 1437 844
+2225 1427 849
+2194 1427 855
+2194 1437 860
+2194 1458 865
+.PEN_UP
+
+.PEN_DOWN
+2517 1656 1373
+2517 1677 1378
+2517 1687 1383
+2517 1687 1389
+2506 1687 1394
+2496 1687 1399
+2475 1656 1404
+2454 1604 1409
+2433 1552 1415
+2433 1500 1420
+2444 1468 1425
+2465 1448 1430
+2506 1448 1436
+2548 1468 1441
+2558 1489 1446
+2558 1510 1451
+2527 1520 1456
+2496 1531 1462
+2465 1510 1467
+2444 1500 1472
+2444 1479 1477
+.PEN_UP
+
+.PEN_DOWN
+2767 1656 1977
+2767 1666 1982
+2777 1677 1987
+2777 1687 1993
+2767 1698 1998
+2767 1708 2003
+2756 1718 2008
+2725 1729 2013
+2704 1729 2019
+2673 1718 2024
+2652 1708 2029
+2631 1687 2034
+2631 1677 2040
+2642 1656 2045
+2683 1625 2050
+2725 1593 2055
+2756 1562 2060
+2777 1531 2066
+2777 1489 2071
+2767 1468 2076
+2746 1448 2081
+2715 1437 2086
+2683 1437 2092
+2663 1458 2097
+2663 1489 2102
+2683 1531 2107
+2715 1583 2112
+2756 1614 2118
+2788 1614 2123
+.PEN_UP
+
+.PEN_DOWN
+2944 1687 2637
+2944 1698 2642
+2933 1698 2647
+2944 1698 2653
+2965 1687 2658
+2996 1687 2663
+3038 1687 2668
+3079 1687 2673
+3100 1677 2679
+3110 1677 2684
+3110 1645 2689
+3100 1614 2694
+3079 1573 2700
+3069 1531 2705
+3048 1479 2710
+3038 1448 2715
+3038 1406 2720
+3048 1406 2726
+.PEN_UP
+
+.COMMENT End of File

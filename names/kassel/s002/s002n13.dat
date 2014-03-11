@@ -1,0 +1,221 @@
+.VERSION 1.0
+.COMMENT File s002n13
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 2
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 155
+ Student: Yes
+ Where educated: MA
+ Home language: English & Greek
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "30464"
+.SEGMENT LETTER 0 ? "3"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2-3 ? "4"
+.SEGMENT LETTER 4 ? "6"
+.SEGMENT LETTER 5-6 ? "4"
+
+.COMMENT Prompt string: "30464"
+.COMMENT Recognizer string: "3oaGIC"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1663 823 0
+1652 833 5
+1652 833 10
+1652 833 16
+1652 833 21
+1683 843 26
+1715 843 31
+1746 843 36
+1746 843 42
+1746 833 47
+1735 812 52
+1704 802 57
+1683 791 62
+1683 781 68
+1683 781 73
+1704 770 78
+1756 760 83
+1788 750 89
+1808 739 94
+1819 718 99
+1819 698 104
+1798 687 109
+1777 666 115
+1746 645 120
+1725 645 125
+1715 645 130
+1715 645 135
+.PEN_UP
+
+.PEN_DOWN
+1881 770 550
+1860 750 555
+1850 729 560
+1840 718 566
+1840 708 571
+1860 687 576
+1881 698 581
+1923 708 586
+1954 729 592
+1954 739 597
+1954 760 602
+1933 770 607
+1902 770 612
+1881 770 618
+1881 760 623
+.PEN_UP
+
+.PEN_DOWN
+2100 781 824
+2100 770 829
+2100 750 834
+2100 729 840
+2110 698 845
+2110 677 850
+2110 656 855
+2110 645 860
+2121 645 866
+.PEN_UP
+
+.PEN_DOWN
+2131 854 1154
+2121 854 1159
+2121 854 1164
+2100 833 1170
+2069 791 1175
+2048 750 1180
+2027 729 1185
+2017 698 1190
+2017 687 1196
+2017 687 1201
+2027 687 1206
+2058 698 1211
+2100 718 1216
+.PEN_UP
+
+.PEN_DOWN
+2246 802 1428
+2246 802 1433
+2235 791 1438
+2215 760 1444
+2194 708 1449
+2194 687 1454
+2204 666 1459
+2215 666 1464
+2235 666 1470
+2256 677 1475
+2267 687 1480
+2267 687 1485
+2256 698 1490
+2235 698 1496
+2215 698 1501
+2204 687 1506
+.PEN_UP
+
+.PEN_DOWN
+2402 760 1813
+2413 760 1818
+2413 750 1823
+2413 718 1829
+2413 687 1834
+2413 666 1839
+2423 645 1844
+2423 625 1849
+2423 625 1855
+2423 625 1860
+.PEN_UP
+
+.PEN_DOWN
+2413 833 2087
+2413 833 2092
+2413 823 2097
+2392 802 2103
+2381 781 2108
+2360 739 2113
+2350 718 2118
+2340 698 2123
+2340 687 2129
+2340 677 2134
+2340 666 2139
+2340 666 2144
+2350 666 2150
+2402 687 2155
+2444 698 2160
+.PEN_UP
+
+.COMMENT End of File

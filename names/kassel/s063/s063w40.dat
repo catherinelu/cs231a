@@ -1,0 +1,246 @@
+.VERSION 1.0
+.COMMENT File s063w40
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 63
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: NJ
+ Home language: English
+ Name: Tarik
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Vanquish"
+.SEGMENT LETTER 0 ? "V"
+.SEGMENT LETTER 1 ? "a"
+.SEGMENT LETTER 2 ? "n"
+.SEGMENT LETTER 3 ? "q"
+.SEGMENT LETTER 4 ? "u"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "s"
+.SEGMENT LETTER 8 ? "h"
+
+.COMMENT Prompt string: "Vanquish"
+.COMMENT Recognizer string: "Vah?cish"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1850 1270 0
+1850 1302 5
+1850 1302 10
+1860 1281 16
+1871 1239 21
+1892 1177 26
+1933 1135 31
+1965 1104 36
+1985 1073 42
+2006 1062 47
+2017 1062 52
+2017 1083 57
+2027 1125 62
+2027 1208 68
+2038 1270 73
+2048 1291 78
+2048 1302 83
+2058 1291 89
+.PEN_UP
+
+.PEN_DOWN
+2152 1093 550
+2163 1104 555
+2152 1104 560
+2152 1104 566
+2142 1104 571
+2121 1093 576
+2121 1083 581
+2110 1083 586
+2110 1073 592
+2121 1073 597
+2152 1073 602
+2163 1083 607
+2163 1093 612
+2163 1093 618
+2173 1083 623
+2173 1083 628
+2183 1073 633
+2194 1073 639
+2194 1073 644
+2204 1073 649
+.PEN_UP
+
+.PEN_DOWN
+2256 1125 989
+2256 1114 994
+2256 1104 999
+2267 1104 1005
+2277 1093 1010
+2277 1083 1015
+2288 1093 1020
+2288 1093 1025
+2298 1093 1031
+2298 1093 1036
+2308 1083 1041
+2308 1083 1046
+2319 1073 1052
+.PEN_UP
+
+.PEN_DOWN
+2423 1104 1319
+2423 1104 1324
+2413 1104 1329
+2402 1104 1335
+2402 1104 1340
+2392 1093 1345
+2381 1083 1350
+2371 1073 1355
+2371 1073 1361
+2381 1062 1366
+2392 1062 1371
+2413 1073 1376
+2433 1073 1382
+2433 1073 1387
+2433 1083 1392
+2433 1073 1397
+2433 1041 1402
+2444 1020 1408
+2454 1000 1413
+2475 989 1418
+2485 979 1423
+.PEN_UP
+
+.PEN_DOWN
+2548 1104 1813
+2548 1104 1818
+2548 1093 1823
+2558 1073 1829
+2579 1073 1834
+2590 1073 1839
+2600 1073 1844
+2610 1073 1849
+.PEN_UP
+
+.PEN_DOWN
+2652 1104 2033
+2663 1104 2038
+2663 1093 2043
+2673 1093 2049
+2683 1073 2054
+2683 1073 2059
+.PEN_UP
+
+.PEN_DOWN
+2683 1145 2252
+2673 1145 2257
+2683 1145 2262
+2683 1145 2268
+.PEN_UP
+
+.PEN_DOWN
+2808 1125 2417
+2798 1135 2422
+2788 1135 2427
+2767 1125 2433
+2746 1114 2438
+2746 1104 2443
+2746 1104 2448
+2767 1093 2453
+2788 1083 2459
+2798 1073 2464
+2798 1062 2469
+2798 1041 2474
+2788 1041 2480
+2788 1031 2485
+2767 1031 2490
+2756 1041 2495
+.PEN_UP
+
+.PEN_DOWN
+2860 1343 2801
+2860 1291 2806
+2860 1218 2811
+2860 1166 2817
+2871 1125 2822
+2881 1093 2827
+2892 1083 2832
+2892 1083 2837
+2913 1093 2843
+2923 1104 2848
+2923 1104 2853
+2933 1083 2858
+2944 1073 2864
+2944 1041 2869
+2954 1031 2874
+.PEN_UP
+
+.COMMENT End of File

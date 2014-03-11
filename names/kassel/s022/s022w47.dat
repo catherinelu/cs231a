@@ -1,0 +1,246 @@
+.VERSION 1.0
+.COMMENT File s022w47
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 22
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 171
+ Student: No
+ Where educated: Italy
+ Home language: Italian
+ Name: Andrea
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Hugg&ing"
+.SEGMENT LETTER 0-1 ? "H"
+.SEGMENT LETTER 2 ? "u"
+.SEGMENT LETTER 3 ? "g"
+.SEGMENT LETTER 4-4:20 ? "g"
+.SEGMENT LETTER 4:21-4:23 ? "&"
+.SEGMENT LETTER 4:24-4 ? "i"
+.SEGMENT LETTER 5 ? "n"
+.SEGMENT LETTER 6 ? "g"
+
+.COMMENT Prompt string: "Hugging"
+.COMMENT Recognizer string: "Hug?u?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2881 718 0
+2892 698 5
+2892 635 10
+2892 583 16
+2892 468 21
+.PEN_UP
+
+.PEN_DOWN
+2881 541 165
+2881 552 170
+2881 552 175
+2892 541 181
+2902 541 186
+2923 552 191
+2933 562 196
+2954 593 201
+2965 635 207
+2965 718 212
+2965 718 217
+2975 677 222
+2975 635 228
+2975 593 233
+2975 531 238
+2985 510 243
+2985 510 248
+2985 510 254
+.PEN_UP
+
+.PEN_DOWN
+3006 583 550
+3006 552 555
+3017 541 560
+3027 541 566
+3048 562 571
+3058 573 576
+3069 593 581
+3058 593 586
+3058 583 592
+3058 562 597
+3058 520 602
+3069 510 607
+3090 510 612
+.PEN_UP
+
+.PEN_DOWN
+3173 573 989
+3163 583 994
+3163 583 999
+3163 583 1005
+3152 573 1010
+3142 562 1015
+3131 552 1020
+3131 531 1025
+3131 531 1031
+3152 552 1036
+3173 573 1041
+3173 583 1046
+3183 583 1052
+3183 520 1057
+3173 479 1062
+3131 416 1067
+3100 385 1072
+3079 375 1078
+3058 375 1083
+3048 395 1088
+3048 416 1093
+3058 448 1098
+3090 468 1104
+3152 510 1109
+3183 531 1114
+.PEN_UP
+
+.PEN_DOWN
+3277 604 1593
+3267 593 1598
+3267 593 1603
+3256 583 1609
+3267 583 1614
+3277 583 1619
+3298 583 1624
+3298 562 1629
+3298 531 1635
+3277 489 1640
+3246 437 1645
+3215 406 1650
+3194 395 1656
+3183 395 1661
+3173 395 1666
+3173 406 1671
+3173 427 1676
+3204 458 1682
+3256 520 1687
+3298 562 1692
+3319 573 1697
+3319 573 1702
+3319 531 1708
+3319 520 1713
+3340 510 1718
+3350 520 1723
+3360 531 1728
+3360 552 1734
+3360 562 1739
+3350 593 1744
+3350 604 1749
+3350 614 1754
+3360 614 1760
+.PEN_UP
+
+.PEN_DOWN
+3402 593 2142
+3402 573 2147
+3402 562 2152
+3402 552 2158
+3402 541 2163
+3413 541 2168
+3413 562 2173
+3423 573 2178
+3433 583 2184
+3433 573 2189
+3433 573 2194
+3433 552 2199
+3444 541 2204
+3454 531 2210
+.PEN_UP
+
+.PEN_DOWN
+3517 593 2527
+3517 593 2532
+3517 593 2537
+3517 593 2543
+3517 593 2548
+3548 593 2553
+3548 573 2558
+3548 541 2563
+3538 489 2569
+3506 448 2574
+3444 395 2579
+3402 364 2584
+3381 354 2590
+3371 354 2595
+3381 375 2600
+3413 416 2605
+3465 448 2610
+3538 489 2616
+3621 552 2621
+.PEN_UP
+
+.COMMENT End of File

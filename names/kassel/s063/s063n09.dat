@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s063n09
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 63
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: NJ
+ Home language: English
+ Name: Tarik
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "61449"
+.SEGMENT LETTER 0 ? "6"
+.SEGMENT LETTER 1 ? "1"
+.SEGMENT LETTER 2 ? "4"
+.SEGMENT LETTER 3 ? "4"
+.SEGMENT LETTER 4 ? "9"
+
+.COMMENT Prompt string: "61449"
+.COMMENT Recognizer string: "?IYUq"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1767 1000 0
+1767 1000 5
+1756 1010 10
+1756 1010 16
+1756 1020 21
+1756 1041 26
+1767 1052 31
+1788 1073 36
+1798 1083 42
+1829 1093 47
+1860 1093 52
+1881 1083 57
+1902 1062 62
+1902 1052 68
+1892 1020 73
+1871 1010 78
+1840 1000 83
+1808 1000 89
+1777 1020 94
+1756 1062 99
+1746 1125 104
+1746 1177 109
+1777 1229 115
+1798 1250 120
+1819 1260 125
+1850 1250 130
+.PEN_UP
+
+.PEN_DOWN
+1985 1250 494
+1975 1250 499
+1975 1229 504
+1975 1125 510
+1985 1083 515
+1996 1062 520
+2017 1031 525
+2027 1020 530
+2038 1020 536
+.PEN_UP
+
+.PEN_DOWN
+2121 1218 933
+2110 1208 938
+2100 1208 943
+2100 1198 949
+2100 1177 954
+2110 1156 959
+2121 1145 964
+2131 1135 969
+2152 1125 975
+2173 1125 980
+2194 1145 985
+2215 1156 990
+2225 1187 996
+2235 1198 1001
+2225 1208 1006
+2225 1208 1011
+2225 1187 1016
+2215 1145 1022
+2215 1083 1027
+2215 1062 1032
+2235 1031 1037
+2246 1031 1042
+.PEN_UP
+
+.PEN_DOWN
+2350 1208 1538
+2350 1218 1543
+2340 1218 1548
+2329 1198 1554
+2319 1166 1559
+2319 1145 1564
+2319 1114 1569
+2340 1093 1574
+2371 1093 1580
+2402 1093 1585
+2423 1104 1590
+2465 1125 1595
+2485 1145 1600
+2485 1166 1606
+2485 1198 1611
+2475 1198 1616
+2465 1187 1621
+2454 1166 1627
+2444 1125 1632
+2444 1093 1637
+2444 1062 1642
+2444 1041 1647
+2454 1031 1653
+2485 1031 1658
+.PEN_UP
+
+.PEN_DOWN
+2642 1187 2142
+2642 1198 2147
+2642 1208 2152
+2642 1218 2158
+2631 1218 2163
+2610 1218 2168
+2579 1198 2173
+2558 1177 2178
+2558 1156 2184
+2558 1145 2189
+2569 1145 2194
+2590 1166 2199
+2621 1187 2204
+2642 1198 2210
+2652 1198 2215
+2652 1187 2220
+2652 1052 2225
+2663 1020 2231
+2663 989 2236
+2673 958 2241
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,251 @@
+.VERSION 1.0
+.COMMENT File s022w51
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 22
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 171
+ Student: No
+ Where educated: Italy
+ Home language: Italian
+ Name: Andrea
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Embrac+es"
+.SEGMENT LETTER 0-2 ? "E"
+.SEGMENT LETTER 3 ? "m"
+.SEGMENT LETTER 4 ? "b"
+.SEGMENT LETTER 5 ? "r"
+.SEGMENT LETTER 6 ? "a"
+.SEGMENT LETTER 7-7:5 ? "c"
+.SEGMENT LETTER 7:6-7:6 ? "+"
+.SEGMENT LETTER 7:7-7 ? "e"
+.SEGMENT LETTER 8 ? "s"
+
+.COMMENT Prompt string: "Embraces"
+.COMMENT Recognizer string: "Embra?s"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2527 625 0
+2527 625 5
+2527 593 10
+2506 541 16
+2496 479 21
+2496 458 26
+2506 448 31
+2538 448 36
+2579 448 42
+2590 448 47
+2600 448 52
+2621 458 57
+2631 458 62
+.PEN_UP
+
+.PEN_DOWN
+2538 604 330
+2527 635 335
+2527 645 340
+2548 656 346
+2590 666 351
+2621 677 356
+2642 677 361
+.PEN_UP
+
+.PEN_DOWN
+2506 573 495
+2506 573 500
+2517 573 505
+2538 573 511
+2569 573 516
+.PEN_UP
+
+.PEN_DOWN
+2663 552 659
+2652 531 664
+2652 510 669
+2652 500 675
+2663 500 680
+2673 520 685
+2694 552 690
+2704 573 695
+2704 593 701
+2704 583 706
+2704 562 711
+2704 531 716
+2704 510 722
+2715 500 727
+2715 500 732
+2725 500 737
+2735 531 742
+2746 552 748
+2756 562 753
+2756 562 758
+2756 562 763
+2756 552 768
+2756 489 774
+2767 479 779
+.PEN_UP
+
+.PEN_DOWN
+2840 656 1154
+2840 656 1159
+2840 645 1164
+2840 604 1170
+2840 552 1175
+2840 510 1180
+2840 479 1185
+2840 510 1190
+2850 541 1196
+2871 573 1201
+2871 573 1206
+2881 573 1211
+2892 573 1216
+2881 552 1222
+2871 520 1227
+2829 468 1232
+2829 468 1237
+2829 468 1243
+.PEN_UP
+
+.PEN_DOWN
+2902 583 1483
+2913 583 1488
+2913 562 1493
+2913 541 1499
+2913 500 1504
+2913 489 1509
+2913 500 1514
+2913 520 1519
+2923 541 1525
+2933 573 1530
+2954 583 1535
+2975 593 1540
+.PEN_UP
+
+.PEN_DOWN
+3017 593 1868
+3017 593 1873
+3027 593 1878
+3027 573 1884
+3027 520 1889
+3027 520 1894
+3017 520 1899
+3006 531 1904
+2996 520 1910
+2985 510 1915
+2985 500 1920
+2985 500 1925
+3006 489 1930
+3027 500 1936
+.PEN_UP
+
+.PEN_DOWN
+3131 604 2252
+3121 604 2257
+3100 593 2262
+3090 562 2268
+3090 541 2273
+3100 520 2278
+3121 520 2283
+3152 520 2288
+3173 531 2294
+3183 552 2299
+3194 573 2304
+3183 593 2309
+3173 593 2314
+3152 573 2320
+3142 552 2325
+3142 520 2330
+3163 510 2335
+3204 510 2341
+.PEN_UP
+
+.PEN_DOWN
+3308 604 2692
+3308 635 2697
+3308 635 2702
+3298 635 2708
+3298 625 2713
+3288 583 2718
+3277 541 2723
+3277 520 2728
+3277 510 2734
+3267 510 2739
+3256 510 2744
+3246 520 2749
+3235 531 2754
+3235 531 2760
+.PEN_UP
+
+.COMMENT End of File

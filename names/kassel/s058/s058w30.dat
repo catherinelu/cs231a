@@ -1,0 +1,318 @@
+.VERSION 1.0
+.COMMENT File s058w30
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 58
+.STYLE PRINTED
+.HAND R
+.AGE 49
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 142
+ Student: No
+ Where educated: NY
+ Home language: English
+ Name: Janet
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-11 ? "Gover*ni!ng"
+.SEGMENT LETTER 0 ? "G"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "v"
+.SEGMENT LETTER 3 ? "e"
+.SEGMENT LETTER 4 ? "r"
+.SEGMENT LETTER 5 ? "*"
+.SEGMENT LETTER 6 ? "n"
+.SEGMENT LETTER 7,11 ? "i"
+.SEGMENT LETTER 8 ? "!"
+.SEGMENT LETTER 9 ? "n"
+.SEGMENT LETTER 10 ? "g"
+
+.COMMENT Prompt string: "Governing"
+.COMMENT Recognizer string: "Gou?r?nlluql"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1069 1666 0
+1079 1708 5
+1100 1729 10
+1100 1760 16
+1090 1770 21
+1048 1770 26
+985 1739 31
+913 1677 36
+819 1562 42
+767 1448 47
+746 1302 52
+746 1187 57
+798 1083 62
+871 1062 68
+965 1062 73
+1048 1104 78
+1090 1166 83
+1090 1208 89
+1027 1260 94
+944 1270 99
+850 1260 104
+819 1229 109
+808 1218 115
+808 1218 120
+871 1250 125
+954 1291 130
+1048 1323 135
+1110 1333 141
+1183 1333 146
+1194 1323 151
+1194 1323 156
+1194 1312 161
+.PEN_UP
+
+.PEN_DOWN
+1298 1281 604
+1277 1291 609
+1267 1291 614
+1256 1291 620
+1235 1270 625
+1194 1239 630
+1183 1198 635
+1183 1145 640
+1194 1083 646
+1225 1083 651
+1298 1093 656
+1340 1156 661
+1350 1229 666
+1350 1270 672
+1308 1302 677
+1267 1302 682
+1225 1270 687
+.PEN_UP
+
+.PEN_DOWN
+1392 1281 989
+1381 1281 994
+1381 1281 999
+1371 1281 1005
+1371 1281 1010
+1371 1260 1015
+1381 1239 1020
+1392 1198 1025
+1413 1145 1031
+1433 1114 1036
+1454 1114 1041
+1496 1135 1046
+1538 1218 1052
+1548 1281 1057
+1538 1333 1062
+1538 1343 1067
+1538 1343 1072
+1548 1312 1078
+.PEN_UP
+
+.PEN_DOWN
+1652 1239 1373
+1652 1239 1378
+1704 1239 1383
+1756 1250 1389
+1788 1270 1394
+1798 1281 1399
+1788 1291 1404
+1767 1312 1409
+1704 1302 1415
+1652 1270 1420
+1621 1218 1425
+1621 1177 1430
+1631 1135 1436
+1683 1135 1441
+1767 1166 1446
+1840 1208 1451
+1902 1229 1456
+.PEN_UP
+
+.PEN_DOWN
+1923 1270 1758
+1944 1281 1763
+1954 1281 1768
+1954 1281 1774
+1965 1260 1779
+1985 1208 1784
+1985 1177 1789
+1985 1145 1794
+1985 1145 1800
+1985 1187 1805
+1996 1239 1810
+2027 1281 1815
+2058 1302 1820
+2100 1302 1826
+2121 1281 1831
+2142 1270 1836
+.PEN_UP
+
+.PEN_DOWN
+2340 1270 2417
+2340 1270 2422
+.PEN_UP
+
+.PEN_DOWN
+2319 1291 2472
+2329 1302 2477
+2329 1302 2482
+2319 1302 2488
+2319 1302 2493
+2319 1291 2498
+2319 1281 2503
+2329 1281 2508
+2329 1145 2514
+2329 1145 2519
+2329 1166 2524
+2350 1198 2529
+2381 1250 2534
+2423 1302 2540
+2444 1302 2545
+2454 1291 2550
+2465 1270 2555
+2475 1218 2561
+2475 1177 2566
+2475 1156 2571
+2475 1145 2576
+2485 1156 2581
+.PEN_UP
+
+.PEN_DOWN
+2610 1312 2911
+2610 1302 2916
+2621 1281 2921
+2621 1260 2927
+2631 1239 2932
+2642 1218 2937
+2652 1208 2942
+2652 1208 2947
+.PEN_UP
+
+.PEN_DOWN
+2767 1302 3131
+2767 1302 3136
+2767 1260 3141
+2767 1239 3147
+2777 1218 3152
+2788 1208 3157
+2798 1208 3162
+.PEN_UP
+
+.PEN_DOWN
+2881 1323 3295
+2881 1312 3300
+2881 1291 3305
+2892 1270 3311
+2902 1250 3316
+2923 1239 3321
+2954 1239 3326
+2975 1250 3331
+3006 1270 3337
+3048 1323 3342
+3079 1333 3347
+3100 1333 3352
+3121 1302 3358
+3142 1260 3363
+3152 1229 3368
+3163 1218 3373
+.PEN_UP
+
+.PEN_DOWN
+3413 1354 3680
+3402 1406 3685
+3402 1427 3690
+3381 1427 3696
+3319 1395 3701
+3267 1343 3706
+3256 1302 3711
+3267 1270 3716
+3308 1270 3722
+3340 1281 3727
+3381 1302 3732
+3392 1312 3737
+3402 1291 3742
+3423 1218 3748
+3433 1114 3753
+3433 1000 3758
+3444 843 3763
+3454 781 3769
+3465 750 3774
+3485 750 3779
+3485 739 3784
+.PEN_UP
+
+.PEN_DOWN
+2621 1677 4174
+2642 1656 4179
+2663 1635 4184
+2683 1625 4190
+2704 1625 4195
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,217 @@
+.VERSION 1.0
+.COMMENT File s073w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 73
+.STYLE PRINTED
+.HAND R
+.AGE 50
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 172
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Vicky-Lynn
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "z"
+.SEGMENT LETTER 5 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "T?uzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1048 2145 0
+1048 2145 5
+1048 2135 10
+1038 2073 16
+1027 2031 21
+1027 1989 26
+1027 1979 31
+1017 1968 36
+1017 1968 42
+1017 1968 47
+1017 1989 52
+.PEN_UP
+
+.PEN_DOWN
+788 2125 330
+777 2135 335
+777 2135 340
+808 2125 346
+881 2125 351
+954 2135 356
+1027 2135 361
+1100 2156 366
+1142 2166 372
+1152 2166 377
+1142 2166 382
+1142 2166 387
+1121 2166 392
+.PEN_UP
+
+.PEN_DOWN
+819 2052 604
+819 2052 609
+850 2052 614
+892 2073 620
+944 2073 625
+996 2083 630
+1017 2083 635
+1027 2083 640
+1038 2093 646
+.PEN_UP
+
+.PEN_DOWN
+1121 2083 989
+1121 2083 994
+1121 2083 999
+1121 2093 1005
+1121 2083 1010
+1100 2052 1015
+1079 2020 1020
+1079 2000 1025
+1110 1989 1031
+1131 1989 1036
+1142 2000 1041
+1163 2010 1046
+1163 2031 1052
+1173 2041 1057
+1183 2073 1062
+1183 2083 1067
+1173 2083 1072
+1173 2073 1078
+1173 2052 1083
+1173 2031 1088
+1163 2000 1093
+1173 1989 1098
+1173 1989 1104
+1173 1989 1109
+1194 1989 1114
+.PEN_UP
+
+.PEN_DOWN
+1277 2083 1538
+1267 2083 1543
+1277 2083 1548
+1308 2083 1554
+1371 2083 1559
+1381 2083 1564
+1392 2073 1569
+1392 2073 1574
+1371 2052 1580
+1340 2041 1585
+1308 2031 1590
+1267 2020 1595
+1246 2010 1600
+1246 2010 1606
+1246 2010 1611
+1267 2010 1616
+1298 2010 1621
+1319 2010 1627
+1350 2020 1632
+1371 2020 1637
+1392 2020 1642
+1392 2020 1647
+1392 2020 1653
+.PEN_UP
+
+.PEN_DOWN
+1413 2093 2087
+1413 2093 2092
+1413 2093 2097
+1413 2093 2103
+1423 2104 2108
+1485 2104 2113
+1506 2093 2118
+1517 2093 2123
+1517 2093 2129
+1517 2083 2134
+1475 2073 2139
+1444 2062 2144
+1423 2052 2150
+1402 2041 2155
+1402 2031 2160
+1402 2031 2165
+1413 2031 2170
+1444 2031 2176
+1475 2031 2181
+1506 2041 2186
+1538 2041 2191
+1558 2041 2196
+1558 2041 2202
+1558 2052 2207
+.PEN_UP
+
+.COMMENT End of File

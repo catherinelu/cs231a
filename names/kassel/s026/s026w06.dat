@@ -1,0 +1,230 @@
+.VERSION 1.0
+.COMMENT File s026w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 26
+.STYLE PRINTED
+.HAND R
+.AGE 32
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: No
+ Where educated: Canada
+ Home language: English
+ Name: James
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Taxi"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "Taxi"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1590 1552 0
+1579 1552 5
+1579 1541 10
+1590 1531 16
+1590 1510 21
+1590 1500 26
+1600 1468 31
+1600 1437 36
+1610 1406 42
+1610 1375 47
+1610 1364 52
+1610 1375 57
+.PEN_UP
+
+.PEN_DOWN
+1454 1531 879
+1454 1531 884
+1465 1531 889
+1475 1531 895
+1496 1531 900
+1517 1531 905
+1548 1541 910
+1579 1552 915
+1610 1562 921
+1631 1562 926
+1652 1562 931
+1652 1562 936
+1663 1562 942
+1673 1573 947
+1673 1573 952
+1673 1562 957
+.PEN_UP
+
+.PEN_DOWN
+1767 1479 1813
+1767 1479 1818
+1767 1479 1823
+1767 1479 1829
+1756 1489 1834
+1756 1489 1839
+1756 1489 1844
+1735 1489 1849
+1725 1489 1855
+1725 1479 1860
+1715 1468 1865
+1704 1458 1870
+1694 1458 1876
+1694 1448 1881
+1694 1437 1886
+1704 1427 1891
+1715 1416 1896
+1725 1406 1902
+1725 1406 1907
+1735 1406 1912
+1746 1406 1917
+1746 1416 1922
+1756 1416 1928
+1767 1427 1933
+1767 1437 1938
+1767 1448 1943
+1777 1458 1948
+1777 1468 1954
+1777 1468 1959
+1777 1479 1964
+1777 1479 1969
+1777 1479 1974
+1777 1479 1980
+1788 1468 1985
+1788 1458 1990
+1788 1437 1995
+1808 1427 2000
+1808 1416 2006
+1819 1406 2011
+1829 1406 2016
+1829 1406 2021
+1829 1406 2027
+1829 1406 2032
+1829 1406 2037
+.PEN_UP
+
+.PEN_DOWN
+1871 1510 3186
+1871 1510 3191
+1871 1510 3196
+1871 1510 3202
+1881 1500 3207
+1892 1489 3212
+1902 1479 3217
+1913 1468 3222
+1944 1458 3228
+1965 1448 3233
+1975 1448 3238
+1985 1448 3243
+1985 1448 3248
+1985 1448 3254
+1975 1448 3259
+.PEN_UP
+
+.PEN_DOWN
+1944 1541 3680
+1944 1541 3685
+1944 1531 3690
+1933 1510 3696
+1923 1479 3701
+1913 1448 3706
+1892 1427 3711
+1881 1406 3716
+1881 1395 3722
+1881 1406 3727
+1881 1406 3732
+1881 1406 3737
+.PEN_UP
+
+.PEN_DOWN
+2017 1541 4175
+2017 1531 4180
+2027 1520 4185
+2027 1500 4191
+2038 1489 4196
+2048 1468 4201
+2048 1468 4206
+2048 1458 4211
+2058 1458 4217
+2058 1458 4222
+.PEN_UP
+
+.PEN_DOWN
+1985 1656 4724
+1985 1656 4729
+1985 1656 4734
+1985 1656 4740
+1985 1656 4745
+1985 1656 4750
+.PEN_UP
+
+.COMMENT End of File

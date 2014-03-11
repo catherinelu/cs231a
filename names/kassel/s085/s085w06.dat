@@ -1,0 +1,207 @@
+.VERSION 1.0
+.COMMENT File s085w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 85
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 125
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Jane
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Taxi"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "taxi"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1579 1364 0
+1579 1364 5
+1569 1343 10
+1558 1312 16
+1538 1260 21
+1485 1198 26
+1423 1114 31
+1371 1062 36
+1340 1010 42
+1329 979 47
+1329 968 52
+1329 989 57
+1350 1020 62
+.PEN_UP
+
+.PEN_DOWN
+1329 1333 329
+1319 1343 334
+1319 1354 339
+1350 1354 345
+1423 1364 350
+1506 1385 355
+1590 1406 360
+1652 1416 365
+1715 1416 371
+1735 1416 376
+1746 1406 381
+1767 1406 386
+1767 1395 392
+.PEN_UP
+
+.PEN_DOWN
+1788 1218 714
+1788 1229 719
+1777 1239 724
+1767 1239 730
+1715 1218 735
+1663 1187 740
+1600 1125 745
+1558 1073 750
+1548 1041 756
+1548 1020 761
+1558 1020 766
+1569 1020 771
+1600 1041 776
+1642 1073 782
+1704 1125 787
+1746 1177 792
+1788 1218 797
+1788 1229 803
+1788 1218 808
+1756 1177 813
+1725 1125 818
+1683 1073 823
+1652 1010 829
+1631 968 834
+1631 948 839
+1642 937 844
+1683 948 849
+1735 968 855
+.PEN_UP
+
+.PEN_DOWN
+1913 1218 1263
+1913 1229 1268
+1923 1208 1273
+1933 1177 1279
+1954 1145 1284
+1965 1125 1289
+1965 1083 1294
+1975 1062 1299
+1985 1041 1305
+1985 1031 1310
+.PEN_UP
+
+.PEN_DOWN
+2121 1291 1538
+2110 1291 1543
+2100 1291 1548
+2079 1270 1554
+1996 1198 1559
+1944 1114 1564
+1892 1052 1569
+1850 1010 1574
+1798 958 1580
+1777 937 1585
+1756 916 1590
+1756 916 1595
+1767 937 1600
+.PEN_UP
+
+.PEN_DOWN
+2256 1281 1922
+2246 1250 1927
+2204 1208 1932
+2173 1166 1938
+2152 1104 1943
+2121 1073 1948
+2100 1052 1953
+2090 1041 1958
+2090 1020 1964
+2090 1020 1969
+.PEN_UP
+
+.PEN_DOWN
+2288 1520 2197
+2277 1562 2202
+2277 1573 2207
+2277 1573 2213
+2288 1573 2218
+.PEN_UP
+
+.COMMENT End of File

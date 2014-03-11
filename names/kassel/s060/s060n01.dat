@@ -1,0 +1,229 @@
+.VERSION 1.0
+.COMMENT File s060n01
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 60
+.STYLE PRINTED
+.HAND L
+.AGE 28
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 130
+ Student: Yes
+ Where educated: NE
+ Home language: English
+ Name: Terilynn
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "48170"
+.SEGMENT LETTER 0-1 ? "4"
+.SEGMENT LETTER 2 ? "8"
+.SEGMENT LETTER 3 ? "1"
+.SEGMENT LETTER 4 ? "7"
+.SEGMENT LETTER 5 ? "0"
+
+.COMMENT Prompt string: "48170"
+.COMMENT Recognizer string: "L18120"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+746 2041 0
+746 2041 5
+746 2041 10
+746 1968 16
+735 1885 21
+725 1791 26
+715 1708 31
+683 1635 36
+673 1604 42
+663 1604 47
+663 1604 52
+673 1645 57
+694 1677 62
+725 1698 68
+767 1698 73
+840 1677 78
+913 1656 83
+954 1625 89
+1006 1604 94
+1069 1604 99
+1100 1614 104
+.PEN_UP
+
+.PEN_DOWN
+1131 1958 385
+1131 2000 390
+1131 2000 395
+1131 1979 401
+1131 1927 406
+1142 1823 411
+1152 1656 416
+1173 1510 421
+1183 1395 427
+1194 1270 432
+1194 1239 437
+1194 1218 442
+.PEN_UP
+
+.PEN_DOWN
+1663 1698 659
+1683 1750 664
+1683 1812 669
+1652 1875 675
+1590 1906 680
+1527 1927 685
+1433 1927 690
+1392 1906 695
+1381 1875 701
+1381 1843 706
+1444 1770 711
+1517 1698 716
+1579 1614 722
+1652 1500 727
+1704 1364 732
+1704 1281 737
+1663 1229 742
+1610 1198 748
+1548 1208 753
+1496 1250 758
+1496 1312 763
+1506 1416 768
+1558 1583 774
+1600 1666 779
+1631 1729 784
+1652 1760 789
+1663 1781 794
+1663 1791 800
+.PEN_UP
+
+.PEN_DOWN
+1975 1802 1209
+1985 1802 1214
+1985 1770 1219
+1985 1698 1225
+1975 1573 1230
+1965 1458 1235
+1954 1323 1240
+1954 1239 1245
+1965 1156 1251
+1985 1145 1256
+.PEN_UP
+
+.PEN_DOWN
+2183 1729 1538
+2204 1739 1543
+2204 1750 1548
+2225 1770 1554
+2256 1802 1559
+2319 1843 1564
+2381 1864 1569
+2465 1885 1574
+2527 1895 1580
+2590 1895 1585
+2610 1885 1590
+2610 1833 1595
+2590 1708 1600
+2548 1593 1606
+2506 1458 1611
+2465 1333 1616
+2423 1208 1621
+2402 1145 1627
+2402 1114 1632
+2402 1104 1637
+2423 1125 1642
+2444 1166 1647
+.PEN_UP
+
+.PEN_DOWN
+2808 1729 1868
+2829 1750 1873
+2829 1750 1878
+2798 1708 1884
+2746 1593 1889
+2694 1479 1894
+2642 1343 1899
+2631 1229 1904
+2642 1135 1910
+2683 1093 1915
+2756 1083 1920
+2860 1104 1925
+3017 1208 1930
+3110 1333 1936
+3163 1500 1941
+3163 1645 1946
+3079 1823 1951
+2975 1906 1957
+2871 1968 1962
+2798 1979 1967
+2725 1958 1972
+2694 1916 1977
+2694 1875 1983
+.PEN_UP
+
+.COMMENT End of File

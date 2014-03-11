@@ -1,0 +1,359 @@
+.VERSION 1.0
+.COMMENT File s001w16
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 1
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 190
+ Student: Yes
+ Where educated: OH
+ Home language: English
+ Name: Jim
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-12 ? "Rujuvenat&ing"
+.SEGMENT LETTER 0 ? "R"
+.SEGMENT LETTER 1 ? "u"
+.SEGMENT LETTER 2 ? "j"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "v"
+.SEGMENT LETTER 5 ? "e"
+.SEGMENT LETTER 6 ? "n"
+.SEGMENT LETTER 7 ? "a"
+.SEGMENT LETTER 8-9:6 ? "t"
+.SEGMENT LETTER 9:7-9:7 ? "&"
+.SEGMENT LETTER 9:8-10 ? "i"
+.SEGMENT LETTER 11 ? "n"
+.SEGMENT LETTER 12 ? "g"
+
+.COMMENT Prompt string: "Rejuvenating"
+.COMMENT Recognizer string: "Ruluuenah?hq"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+360 989 0
+360 1000 5
+360 1000 10
+381 968 16
+402 885 21
+423 802 26
+433 750 31
+433 708 36
+433 677 42
+433 677 47
+433 677 52
+433 708 57
+402 823 62
+371 948 68
+340 1062 73
+340 1114 78
+360 1135 83
+413 1135 89
+475 1125 94
+527 1093 99
+579 1041 104
+600 1000 109
+600 937 115
+558 875 120
+475 823 125
+433 802 130
+433 802 135
+433 802 141
+454 802 146
+517 802 151
+558 781 156
+610 739 161
+663 677 167
+694 635 172
+715 593 177
+725 573 182
+725 573 188
+725 573 193
+715 583 198
+.PEN_UP
+
+.PEN_DOWN
+871 770 988
+860 770 993
+850 750 998
+850 698 1004
+871 656 1009
+892 625 1014
+933 593 1019
+954 583 1024
+975 583 1030
+1006 604 1035
+1048 666 1040
+1048 708 1045
+1038 739 1050
+1038 739 1056
+1038 708 1061
+1069 677 1066
+1100 645 1071
+1131 635 1077
+1163 625 1082
+1173 625 1087
+1183 635 1092
+.PEN_UP
+
+.PEN_DOWN
+1267 770 1647
+1267 770 1652
+1288 729 1657
+1319 666 1663
+1350 614 1668
+1371 562 1673
+1381 520 1678
+1371 468 1683
+1340 437 1689
+1298 416 1694
+1267 416 1699
+1256 448 1704
+.PEN_UP
+
+.PEN_DOWN
+1423 750 2142
+1423 729 2147
+1433 687 2152
+1444 645 2158
+1485 614 2163
+1538 614 2168
+1579 625 2173
+1610 656 2178
+1610 687 2184
+1600 718 2189
+1590 739 2194
+1610 708 2199
+1631 656 2204
+1663 625 2210
+1694 593 2215
+.PEN_UP
+
+.PEN_DOWN
+1808 750 2691
+1798 750 2696
+1788 739 2701
+1798 698 2707
+1829 656 2712
+1860 625 2717
+1902 614 2722
+1944 604 2727
+1944 604 2733
+1954 614 2738
+1954 645 2743
+1954 718 2748
+1923 770 2754
+1913 791 2759
+1913 802 2764
+1913 802 2769
+1933 760 2774
+.PEN_UP
+
+.PEN_DOWN
+2110 656 3075
+2110 656 3080
+2121 666 3085
+2142 687 3091
+2152 729 3096
+2142 739 3101
+2110 739 3106
+2079 718 3111
+2069 677 3117
+2079 645 3122
+2110 614 3127
+2163 593 3132
+2215 573 3138
+2246 573 3143
+.PEN_UP
+
+.PEN_DOWN
+2381 687 3570
+2371 656 3575
+2371 625 3580
+2371 593 3586
+2381 593 3591
+2381 593 3596
+2381 614 3601
+2381 656 3606
+2392 718 3612
+2402 750 3617
+2423 750 3622
+2475 729 3627
+2527 677 3632
+2538 645 3638
+2548 604 3643
+2548 583 3648
+2558 573 3653
+.PEN_UP
+
+.PEN_DOWN
+2715 708 3899
+2683 708 3904
+2642 677 3909
+2621 645 3915
+2610 614 3920
+2621 593 3925
+2673 593 3930
+2715 625 3935
+2735 645 3941
+2735 666 3946
+2725 677 3951
+2715 687 3956
+2715 677 3962
+2735 645 3967
+2767 625 3972
+2798 604 3977
+2829 604 3982
+2871 604 3988
+.PEN_UP
+
+.PEN_DOWN
+2913 958 4284
+2913 958 4289
+2913 937 4294
+2913 895 4300
+2944 833 4305
+2975 760 4310
+2985 677 4315
+2985 614 4320
+2996 562 4326
+3006 541 4331
+3017 552 4336
+.PEN_UP
+
+.PEN_DOWN
+2850 729 4558
+2850 729 4563
+2881 718 4568
+2923 718 4574
+2985 708 4579
+3027 708 4584
+3079 687 4589
+3110 677 4594
+3142 656 4600
+3152 635 4605
+3142 604 4610
+3142 583 4615
+.PEN_UP
+
+.PEN_DOWN
+3110 812 4833
+3100 823 4838
+3100 833 4843
+3100 833 4849
+3131 833 4854
+.PEN_UP
+
+.PEN_DOWN
+3267 677 5327
+3288 645 5332
+3298 625 5337
+3298 604 5343
+3298 604 5348
+3298 625 5353
+3308 666 5358
+3319 708 5363
+3350 729 5369
+3360 729 5374
+3381 698 5379
+3392 656 5384
+3402 614 5390
+3413 593 5395
+3433 593 5400
+3454 604 5405
+.PEN_UP
+
+.PEN_DOWN
+3621 677 5657
+3621 698 5662
+3610 708 5667
+3590 708 5673
+3538 677 5678
+3517 645 5683
+3517 625 5688
+3538 614 5693
+3590 625 5699
+3631 635 5704
+3652 656 5709
+3663 666 5714
+3663 666 5720
+3663 656 5725
+3694 614 5730
+3725 541 5735
+3746 458 5740
+3735 406 5746
+3704 364 5751
+3673 364 5756
+.PEN_UP
+
+.COMMENT End of File

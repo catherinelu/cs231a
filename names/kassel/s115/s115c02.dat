@@ -1,0 +1,203 @@
+.VERSION 1.0
+.COMMENT File s115c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 115
+.STYLE PRINTED
+.HAND R
+.AGE 26
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 140
+ Student: Yes
+ Where educated: MN
+ Home language: English
+ Name: Karin
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "Fick"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5 ? "c"
+.SEGMENT LETTER 6-7 ? "k"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "Fick"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+485 2541 0
+485 2541 5
+485 2520 10
+496 2510 16
+496 2479 21
+506 2416 26
+517 2385 31
+517 2364 36
+517 2343 42
+517 2333 47
+517 2343 52
+.PEN_UP
+
+.PEN_DOWN
+454 2541 329
+454 2541 334
+454 2541 339
+475 2541 345
+496 2552 350
+548 2562 355
+558 2562 360
+579 2562 365
+590 2562 371
+600 2552 376
+600 2552 381
+.PEN_UP
+
+.PEN_DOWN
+485 2458 659
+485 2458 664
+506 2458 669
+538 2468 675
+579 2468 680
+579 2468 685
+579 2468 690
+590 2468 695
+.PEN_UP
+
+.PEN_DOWN
+663 2458 1098
+663 2458 1103
+663 2427 1108
+673 2406 1114
+673 2385 1119
+673 2375 1124
+683 2375 1129
+683 2375 1134
+.PEN_UP
+
+.PEN_DOWN
+673 2489 1318
+663 2489 1323
+.PEN_UP
+
+.PEN_DOWN
+860 2437 1702
+850 2448 1707
+829 2448 1712
+819 2437 1718
+798 2416 1723
+777 2406 1728
+767 2375 1733
+767 2364 1738
+788 2354 1744
+808 2343 1749
+840 2343 1754
+860 2354 1759
+881 2364 1764
+902 2375 1770
+913 2375 1775
+.PEN_UP
+
+.PEN_DOWN
+944 2562 2252
+944 2552 2257
+944 2531 2262
+954 2479 2268
+954 2448 2273
+954 2406 2278
+965 2385 2283
+975 2364 2288
+975 2354 2294
+.PEN_UP
+
+.PEN_DOWN
+1048 2448 2746
+1048 2458 2751
+1048 2458 2756
+1048 2448 2762
+1048 2448 2767
+1027 2448 2772
+1006 2437 2777
+985 2437 2782
+975 2437 2788
+965 2437 2793
+965 2437 2798
+965 2427 2803
+985 2406 2808
+1017 2385 2814
+1038 2375 2819
+1058 2354 2824
+1069 2343 2829
+1090 2333 2835
+1090 2323 2840
+1090 2323 2845
+1090 2323 2850
+.PEN_UP
+
+.COMMENT End of File

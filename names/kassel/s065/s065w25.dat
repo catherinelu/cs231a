@@ -1,0 +1,329 @@
+.VERSION 1.0
+.COMMENT File s065w25
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 65
+.STYLE PRINTED
+.HAND R
+.AGE 42
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Seth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-13 ? "Frightfully"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "r"
+.SEGMENT LETTER 4-5 ? "i"
+.SEGMENT LETTER 6 ? "g"
+.SEGMENT LETTER 7 ? "h"
+.SEGMENT LETTER 8 ? "t"
+.SEGMENT LETTER 9 ? "f"
+.SEGMENT LETTER 10 ? "u"
+.SEGMENT LETTER 11 ? "l"
+.SEGMENT LETTER 12 ? "l"
+.SEGMENT LETTER 13 ? "y"
+
+.COMMENT Prompt string: "Frightfully"
+.COMMENT Recognizer string: "Frish?jLII?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+569 2166 0
+558 2177 5
+558 2177 10
+569 2166 16
+569 2135 21
+558 2073 26
+558 2041 31
+569 2010 36
+569 1989 42
+569 2000 47
+569 2010 52
+.PEN_UP
+
+.PEN_DOWN
+538 2229 275
+517 2239 280
+506 2239 285
+496 2239 291
+506 2229 296
+517 2229 301
+548 2239 306
+610 2250 311
+652 2260 317
+694 2260 322
+704 2260 327
+715 2260 332
+715 2260 338
+704 2250 343
+.PEN_UP
+
+.PEN_DOWN
+527 2083 660
+527 2083 665
+538 2093 670
+569 2104 676
+600 2114 681
+610 2114 686
+631 2125 691
+642 2125 696
+.PEN_UP
+
+.PEN_DOWN
+694 2073 989
+694 2062 994
+694 2052 999
+694 2031 1005
+694 2031 1010
+694 2031 1015
+683 2052 1020
+683 2083 1025
+694 2104 1031
+694 2114 1036
+704 2125 1041
+725 2135 1046
+735 2135 1052
+746 2135 1057
+767 2135 1062
+.PEN_UP
+
+.PEN_DOWN
+829 2093 1319
+819 2073 1324
+819 2062 1329
+819 2041 1335
+.PEN_UP
+
+.PEN_DOWN
+850 2187 1483
+850 2198 1488
+850 2198 1493
+.PEN_UP
+
+.PEN_DOWN
+954 2114 1703
+944 2125 1708
+923 2135 1713
+913 2145 1719
+892 2135 1724
+881 2125 1729
+881 2093 1734
+892 2073 1739
+923 2031 1745
+954 2000 1750
+975 1968 1755
+985 1948 1760
+975 1937 1766
+954 1937 1771
+923 1937 1776
+892 1948 1781
+881 1968 1786
+.PEN_UP
+
+.PEN_DOWN
+1027 2323 2088
+1038 2312 2093
+1038 2281 2098
+1017 2218 2104
+1017 2145 2109
+1017 2093 2114
+1017 2083 2119
+1017 2083 2124
+1017 2083 2130
+1038 2104 2135
+1058 2125 2140
+1079 2135 2145
+1090 2135 2150
+1100 2114 2156
+1100 2104 2161
+1110 2093 2166
+1121 2083 2171
+1131 2083 2177
+.PEN_UP
+
+.PEN_DOWN
+1225 2354 2472
+1225 2260 2477
+1215 2187 2482
+1215 2125 2488
+1204 2093 2493
+1183 2062 2498
+1173 2062 2503
+1152 2062 2508
+1131 2083 2514
+1121 2125 2519
+1121 2145 2524
+1131 2156 2529
+1131 2156 2534
+1152 2156 2540
+1204 2156 2545
+1235 2156 2550
+1256 2156 2555
+.PEN_UP
+
+.PEN_DOWN
+1360 2270 3241
+1371 2291 3246
+1371 2312 3251
+1360 2343 3257
+1350 2364 3262
+1350 2364 3267
+1350 2364 3272
+1350 2343 3277
+1329 2281 3283
+1319 2218 3288
+1308 2166 3293
+1298 2125 3298
+1288 2093 3304
+1267 2093 3309
+1246 2093 3314
+1225 2093 3319
+1225 2125 3324
+1235 2145 3330
+1256 2166 3335
+1288 2177 3340
+1319 2187 3345
+1329 2187 3350
+1350 2187 3356
+1360 2177 3361
+.PEN_UP
+
+.PEN_DOWN
+1402 2198 3680
+1392 2187 3685
+1381 2156 3690
+1381 2135 3696
+1381 2114 3701
+1381 2114 3706
+1402 2125 3711
+1413 2125 3716
+1423 2145 3722
+1444 2145 3727
+1444 2145 3732
+1454 2135 3737
+1465 2125 3742
+1485 2114 3748
+1485 2114 3753
+1506 2114 3758
+1517 2114 3763
+1517 2125 3769
+.PEN_UP
+
+.PEN_DOWN
+1569 2364 4120
+1569 2364 4125
+1569 2323 4130
+1558 2270 4136
+1548 2218 4141
+1548 2125 4146
+1548 2114 4151
+1548 2114 4156
+.PEN_UP
+
+.PEN_DOWN
+1652 2375 4394
+1652 2364 4399
+1652 2343 4404
+1642 2281 4410
+1631 2229 4415
+1631 2187 4420
+1631 2156 4425
+1621 2135 4430
+1621 2114 4436
+.PEN_UP
+
+.PEN_DOWN
+1704 2229 4669
+1704 2229 4674
+1704 2229 4679
+1683 2208 4685
+1683 2187 4690
+1683 2156 4695
+1683 2135 4700
+1704 2125 4705
+1725 2114 4711
+1746 2104 4716
+1756 2083 4721
+1788 2052 4726
+1798 2020 4732
+1798 2000 4737
+1798 1979 4742
+1788 1968 4747
+1756 1968 4752
+1725 1968 4758
+1694 1979 4763
+1683 1979 4768
+.PEN_UP
+
+.COMMENT End of File

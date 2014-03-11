@@ -1,0 +1,218 @@
+.VERSION 1.0
+.COMMENT File s116n07
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 116
+.STYLE PRINTED
+.HAND R
+.AGE 25
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 118
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Michele
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "02066"
+.SEGMENT LETTER 0 ? "0"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "0"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "6"
+
+.COMMENT Prompt string: "02066"
+.COMMENT Recognizer string: "02066"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+3371 1104 0
+3381 1125 5
+3371 1125 10
+3371 1125 16
+3360 1135 21
+3340 1125 26
+3308 1093 31
+3277 1041 36
+3225 958 42
+3194 885 47
+3183 823 52
+3194 802 57
+3225 802 62
+3288 823 68
+3340 864 73
+3402 937 78
+3433 1000 83
+3433 1073 89
+3433 1114 94
+3402 1135 99
+3392 1145 104
+3371 1156 109
+.PEN_UP
+
+.PEN_DOWN
+3590 1104 440
+3600 1114 445
+3621 1125 450
+3631 1125 456
+3652 1114 461
+3673 1083 466
+3683 1052 471
+3683 1010 476
+3663 958 482
+3642 916 487
+3600 885 492
+3558 854 497
+3496 854 502
+3465 854 508
+3454 864 513
+3454 885 518
+3485 906 523
+3517 906 529
+3569 906 534
+3621 885 539
+3673 864 544
+3694 864 549
+.PEN_UP
+
+.PEN_DOWN
+3985 1083 934
+3975 1093 939
+3965 1093 944
+3944 1093 950
+3902 1062 955
+3860 1020 960
+3840 968 965
+3819 906 970
+3819 875 976
+3840 854 981
+3881 854 986
+3944 864 991
+4006 895 996
+4027 937 1002
+4038 979 1007
+4027 1020 1012
+3996 1062 1017
+3954 1073 1023
+3944 1073 1028
+.PEN_UP
+
+.PEN_DOWN
+4204 1104 1428
+4194 1104 1433
+4194 1114 1438
+4194 1083 1444
+4173 1062 1449
+4152 1010 1454
+4131 937 1459
+4121 875 1464
+4131 843 1470
+4152 823 1475
+4183 823 1480
+4235 833 1485
+4277 864 1490
+4298 885 1496
+4308 906 1501
+4288 937 1506
+4267 937 1511
+4235 937 1517
+4194 916 1522
+4173 885 1527
+4173 875 1532
+4194 864 1537
+.PEN_UP
+
+.PEN_DOWN
+4465 1062 1923
+4475 1073 1928
+4475 1073 1933
+4475 1073 1939
+4465 1073 1944
+4433 1052 1949
+4402 989 1954
+4381 937 1959
+4371 895 1965
+4371 864 1970
+4392 823 1975
+4423 802 1980
+4465 802 1986
+4506 802 1991
+4538 823 1996
+4548 854 2001
+4538 875 2006
+4517 885 2012
+4465 885 2017
+4433 875 2022
+4423 854 2027
+4423 823 2032
+4454 781 2038
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s099n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 99
+.STYLE PRINTED
+.HAND R
+.AGE 32
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 153
+ Student: No
+ Where educated: ME
+ Home language: English
+ Name: Paul
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10342"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3-4 ? "4"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "ID342"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1194 1791 0
+1204 1781 5
+1225 1750 10
+1246 1677 16
+1288 1520 21
+1298 1406 26
+1298 1260 31
+1308 1218 36
+.PEN_UP
+
+.PEN_DOWN
+1767 1823 165
+1767 1833 170
+1756 1833 175
+1725 1770 181
+1704 1687 186
+1694 1573 191
+1694 1458 196
+1694 1354 201
+1725 1333 207
+1756 1333 212
+1808 1395 217
+1871 1510 222
+1892 1635 228
+1892 1750 233
+1860 1833 238
+1788 1854 243
+1725 1823 248
+1663 1770 254
+1642 1718 259
+1673 1677 264
+.PEN_UP
+
+.PEN_DOWN
+2256 1895 659
+2225 1906 664
+2204 1916 669
+2194 1916 675
+2215 1937 680
+2256 1948 685
+2308 1948 690
+2360 1948 695
+2423 1937 701
+2444 1916 706
+2433 1906 711
+2402 1864 716
+2340 1823 722
+2319 1791 727
+2319 1770 732
+2329 1750 737
+2381 1718 742
+2413 1698 748
+2423 1677 753
+2423 1645 758
+2381 1604 763
+2308 1562 768
+2235 1552 774
+2194 1552 779
+2173 1573 784
+.PEN_UP
+
+.PEN_DOWN
+2788 2020 1208
+2788 2031 1213
+2788 2020 1218
+2777 1979 1224
+2756 1927 1229
+2715 1875 1234
+2694 1833 1239
+2704 1823 1244
+2735 1823 1250
+2788 1833 1255
+2871 1843 1260
+2933 1864 1265
+.PEN_UP
+
+.PEN_DOWN
+3069 2073 1538
+3058 2083 1543
+3058 2073 1548
+3027 2020 1554
+2985 1927 1559
+2944 1823 1564
+2902 1708 1569
+2892 1656 1574
+2902 1614 1580
+.PEN_UP
+
+.PEN_DOWN
+3267 2010 1757
+3246 2020 1762
+3235 2031 1767
+3235 2041 1773
+3288 2073 1778
+3350 2093 1783
+3402 2104 1788
+3444 2114 1793
+3485 2104 1799
+3496 2093 1804
+3485 2062 1809
+3433 2000 1814
+3371 1916 1820
+3308 1854 1825
+3267 1791 1830
+3246 1750 1835
+3246 1718 1840
+3267 1718 1846
+3298 1718 1851
+3381 1739 1856
+3454 1750 1861
+3558 1760 1866
+3642 1770 1872
+3746 1770 1877
+.PEN_UP
+
+.COMMENT End of File

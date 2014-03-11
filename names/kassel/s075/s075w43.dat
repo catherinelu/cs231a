@@ -1,0 +1,245 @@
+.VERSION 1.0
+.COMMENT File s075w43
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 75
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 135
+ Student: Yes
+ Where educated: PA
+ Home language: English
+ Name: David
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Wobble"
+.SEGMENT LETTER 0 ? "W"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "b"
+.SEGMENT LETTER 3 ? "b"
+.SEGMENT LETTER 4 ? "l"
+.SEGMENT LETTER 5 ? "e"
+
+.COMMENT Prompt string: "Wobble"
+.COMMENT Recognizer string: "Wobble"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1298 635 0
+1298 656 5
+1298 656 10
+1308 635 16
+1319 604 21
+1340 552 26
+1371 520 31
+1392 500 36
+1413 468 42
+1444 458 47
+1454 458 52
+1465 468 57
+1465 500 62
+1485 552 68
+1485 614 73
+1496 666 78
+1496 687 83
+1496 666 89
+1506 604 94
+1527 573 99
+1548 541 104
+1590 520 109
+1631 520 115
+1663 531 120
+1673 562 125
+1683 593 130
+1683 645 135
+1673 677 141
+1663 708 146
+1652 718 151
+1642 729 156
+.PEN_UP
+
+.PEN_DOWN
+1829 687 659
+1788 687 664
+1756 666 669
+1725 635 675
+1725 593 680
+1735 583 685
+1756 562 690
+1788 562 695
+1829 573 701
+1871 593 706
+1892 614 711
+1892 635 716
+1881 677 722
+1850 698 727
+1829 718 732
+1808 718 737
+1788 729 742
+.PEN_UP
+
+.PEN_DOWN
+1892 864 1043
+1913 823 1048
+1923 781 1053
+1954 729 1059
+1985 677 1064
+2006 645 1069
+2017 614 1074
+2017 625 1079
+2017 635 1085
+2027 677 1090
+2048 698 1095
+2079 718 1100
+2090 729 1106
+2100 729 1111
+2100 729 1116
+2121 698 1121
+2121 656 1126
+2100 625 1132
+2079 614 1137
+2038 604 1142
+2006 604 1147
+1975 614 1152
+1975 635 1158
+.PEN_UP
+
+.PEN_DOWN
+2183 948 1538
+2194 916 1543
+2204 885 1548
+2215 864 1554
+2215 823 1559
+2225 770 1564
+2235 739 1569
+2246 718 1574
+2246 698 1580
+2246 698 1585
+2246 698 1590
+2256 729 1595
+2267 760 1600
+2288 791 1606
+2298 802 1611
+2308 802 1616
+2329 802 1621
+2350 791 1627
+2360 770 1632
+2371 750 1637
+2371 718 1642
+2360 698 1647
+2329 687 1653
+2308 677 1658
+2277 677 1663
+2225 677 1668
+2225 698 1673
+2225 698 1679
+.PEN_UP
+
+.PEN_DOWN
+2548 958 2142
+2527 927 2147
+2496 875 2152
+2485 823 2158
+2475 770 2163
+2465 718 2168
+2465 687 2173
+2454 666 2178
+2454 656 2184
+2454 656 2189
+2454 656 2194
+.PEN_UP
+
+.PEN_DOWN
+2590 677 2416
+2590 687 2421
+2631 687 2426
+2663 687 2432
+2694 687 2437
+2735 708 2442
+2746 708 2447
+2756 718 2452
+2756 739 2458
+2746 760 2463
+2725 760 2468
+2694 760 2473
+2642 739 2478
+2610 718 2484
+2590 698 2489
+2590 677 2494
+2610 656 2499
+2631 625 2505
+2683 604 2510
+2735 583 2515
+2788 552 2520
+.PEN_UP
+
+.COMMENT End of File

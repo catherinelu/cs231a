@@ -1,0 +1,227 @@
+.VERSION 1.0
+.COMMENT File s091w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 91
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Rejected
+ Weight: 135
+ Student: Yes
+ Where educated: India
+ Home language: Marathi
+ Name: Narendra
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4-5 ? "z"
+.SEGMENT LETTER 6-7 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1673 1833 0
+1652 1854 5
+1652 1864 10
+1652 1864 16
+1652 1854 21
+1652 1802 26
+1652 1718 31
+1663 1614 36
+1683 1468 42
+1683 1385 47
+1683 1312 52
+1694 1281 57
+1694 1260 62
+1694 1281 68
+.PEN_UP
+
+.PEN_DOWN
+1621 1875 439
+1621 1864 444
+1621 1864 449
+1663 1864 455
+1735 1875 460
+1798 1885 465
+1871 1906 470
+1944 1927 475
+1985 1937 481
+2006 1937 486
+.PEN_UP
+
+.PEN_DOWN
+1642 1510 988
+1642 1510 993
+1652 1510 998
+1652 1520 1004
+1673 1520 1009
+1715 1541 1014
+1756 1552 1019
+1788 1562 1024
+1819 1573 1030
+.PEN_UP
+
+.PEN_DOWN
+1881 1520 1757
+1881 1541 1762
+1871 1552 1767
+1871 1552 1773
+1871 1541 1778
+1860 1489 1783
+1860 1427 1788
+1871 1364 1793
+1881 1343 1799
+1902 1323 1804
+1913 1323 1809
+1944 1364 1814
+1965 1395 1820
+1975 1437 1825
+1975 1489 1830
+1975 1520 1835
+1975 1416 1840
+1985 1385 1846
+2006 1364 1851
+2027 1364 1856
+2048 1364 1861
+.PEN_UP
+
+.PEN_DOWN
+2069 1562 2251
+2069 1562 2256
+2069 1562 2261
+2079 1562 2267
+2110 1573 2272
+2142 1562 2277
+2163 1552 2282
+2163 1531 2287
+2163 1468 2293
+2142 1437 2298
+2121 1416 2303
+2121 1385 2308
+2121 1385 2314
+2142 1375 2319
+2152 1375 2324
+2194 1385 2329
+2225 1395 2334
+2246 1416 2340
+2256 1416 2345
+.PEN_UP
+
+.PEN_DOWN
+2069 1458 2691
+2058 1458 2696
+2058 1458 2701
+2058 1458 2707
+2058 1458 2712
+2079 1468 2717
+2142 1479 2722
+2173 1489 2727
+2194 1500 2733
+.PEN_UP
+
+.PEN_DOWN
+2277 1573 3020
+2277 1583 3025
+2277 1583 3030
+2288 1593 3036
+2308 1593 3041
+2329 1593 3046
+2350 1583 3051
+2360 1562 3056
+2350 1520 3062
+2340 1489 3067
+2308 1458 3072
+2298 1437 3077
+2288 1406 3082
+2288 1385 3088
+2298 1375 3093
+2319 1375 3098
+2360 1385 3103
+2402 1395 3109
+2413 1406 3114
+2423 1406 3119
+.PEN_UP
+
+.PEN_DOWN
+2235 1489 3515
+2235 1489 3520
+2235 1489 3525
+2267 1489 3531
+2319 1500 3536
+2371 1520 3541
+2413 1531 3546
+.PEN_UP
+
+.COMMENT End of File

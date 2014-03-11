@@ -1,0 +1,220 @@
+.VERSION 1.0
+.COMMENT File s023w53
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 23
+.STYLE PRINTED
+.HAND L
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 125
+ Student: No
+ Where educated: US
+ Home language: English
+ Name: Laura
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Mate"
+.SEGMENT LETTER 0-1 ? "M"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "t"
+.SEGMENT LETTER 5 ? "e"
+
+.COMMENT Prompt string: "Mate"
+.COMMENT Recognizer string: "Mate"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+965 1291 0
+965 1291 5
+965 1250 10
+965 1177 16
+965 1104 21
+965 1020 26
+954 906 31
+944 843 36
+944 760 42
+954 739 47
+.PEN_UP
+
+.PEN_DOWN
+975 1260 385
+975 1270 390
+975 1260 395
+975 1250 401
+996 1198 406
+1027 1125 411
+1058 1052 416
+1079 1000 421
+1100 948 427
+1110 937 432
+1121 927 437
+1142 937 442
+1173 979 448
+1194 1052 453
+1215 1135 458
+1225 1198 463
+1235 1260 468
+1246 1291 474
+1256 1312 479
+1267 1323 484
+1267 1323 489
+1267 1302 494
+1288 1229 500
+1308 1135 505
+1319 1010 510
+1340 916 515
+1340 843 520
+1350 781 526
+1360 718 531
+1360 698 536
+1371 698 541
+1371 708 546
+.PEN_UP
+
+.PEN_DOWN
+1610 948 1318
+1610 958 1323
+1600 958 1328
+1590 958 1334
+1558 948 1339
+1527 916 1344
+1506 864 1349
+1506 823 1354
+1506 791 1360
+1517 760 1365
+1538 750 1370
+1558 760 1375
+1579 781 1380
+1600 823 1386
+1610 895 1391
+1621 937 1396
+1621 968 1401
+1621 979 1407
+1621 989 1412
+1621 979 1417
+1610 958 1422
+1621 906 1427
+1631 833 1433
+1642 791 1438
+1652 770 1443
+1673 750 1448
+1683 750 1453
+.PEN_UP
+
+.PEN_DOWN
+1829 1198 1813
+1840 1198 1818
+1829 1166 1823
+1829 1125 1829
+1829 1031 1834
+1840 937 1839
+1840 854 1844
+1850 802 1849
+1850 750 1855
+1860 739 1860
+.PEN_UP
+
+.PEN_DOWN
+1788 937 2087
+1788 937 2092
+1798 948 2097
+1819 958 2103
+1850 968 2108
+1892 968 2113
+1933 979 2118
+.PEN_UP
+
+.PEN_DOWN
+2027 864 2307
+2027 864 2312
+2027 864 2317
+2038 864 2323
+2058 864 2328
+2079 875 2333
+2110 885 2338
+2152 916 2343
+2152 937 2349
+2152 948 2354
+2131 958 2359
+2090 948 2364
+2058 927 2370
+2027 895 2375
+2017 864 2380
+2017 812 2385
+2038 781 2390
+2069 760 2396
+2121 739 2401
+2183 739 2406
+2225 760 2411
+2235 760 2416
+.PEN_UP
+
+.COMMENT End of File

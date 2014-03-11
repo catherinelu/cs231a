@@ -1,0 +1,212 @@
+.VERSION 1.0
+.COMMENT File s062w37
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 62
+.STYLE PRINTED
+.HAND R
+.AGE 44
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 150
+ Student: No
+ Where educated: NC
+ Home language: English
+ Name: Carol
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Swab"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1 ? "w"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "b"
+
+.COMMENT Prompt string: "Swab"
+.COMMENT Recognizer string: "S?ab"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1850 1489 0
+1860 1500 5
+1860 1510 10
+1871 1510 16
+1871 1510 21
+1860 1510 26
+1808 1510 31
+1767 1510 36
+1725 1500 42
+1683 1489 47
+1652 1479 52
+1652 1458 57
+1663 1448 62
+1704 1437 68
+1746 1427 73
+1819 1406 78
+1860 1385 83
+1881 1364 89
+1892 1343 94
+1892 1312 99
+1871 1302 104
+1850 1291 109
+1819 1281 115
+1767 1281 120
+1735 1291 125
+1725 1302 130
+1715 1302 135
+.PEN_UP
+
+.PEN_DOWN
+1975 1354 769
+1965 1354 774
+1965 1364 779
+1954 1364 785
+1954 1364 790
+1954 1375 795
+1965 1385 800
+1985 1385 805
+1996 1395 811
+2006 1395 816
+2027 1395 821
+2048 1385 826
+2058 1364 832
+2058 1343 837
+2058 1291 842
+2058 1291 847
+2069 1312 852
+2079 1323 858
+2090 1333 863
+2090 1333 868
+2090 1333 873
+2100 1323 878
+2100 1323 884
+2121 1302 889
+2131 1302 894
+2152 1291 899
+2173 1302 904
+2173 1302 910
+2183 1312 915
+2183 1333 920
+2183 1364 925
+2163 1385 930
+2152 1385 936
+2142 1375 941
+.PEN_UP
+
+.PEN_DOWN
+2319 1354 1483
+2319 1354 1488
+2319 1354 1493
+2308 1364 1499
+2308 1375 1504
+2298 1385 1509
+2277 1385 1514
+2267 1385 1519
+2246 1385 1525
+2225 1375 1530
+2225 1354 1535
+2225 1343 1540
+2235 1333 1546
+2256 1333 1551
+2277 1333 1556
+2288 1354 1561
+2298 1364 1566
+2298 1364 1572
+2308 1343 1577
+2329 1333 1582
+2360 1323 1587
+2392 1323 1592
+.PEN_UP
+
+.PEN_DOWN
+2360 1562 2087
+2360 1562 2092
+2360 1531 2097
+2371 1500 2103
+2392 1437 2108
+2423 1395 2113
+2444 1364 2118
+2454 1333 2123
+2475 1323 2129
+.PEN_UP
+
+.PEN_DOWN
+2423 1406 2362
+2444 1406 2367
+2465 1406 2372
+2496 1385 2378
+2517 1375 2383
+2569 1354 2388
+2590 1333 2393
+2590 1323 2398
+2569 1312 2404
+2538 1302 2409
+2496 1302 2414
+.PEN_UP
+
+.COMMENT End of File

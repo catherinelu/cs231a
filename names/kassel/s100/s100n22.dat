@@ -1,0 +1,215 @@
+.VERSION 1.0
+.COMMENT File s100n22
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 100
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 150
+ Student: No
+ Where educated: MA
+ Home language: English & Swedish
+ Name: Per
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "16380"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "6"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4 ? "0"
+
+.COMMENT Prompt string: "16380"
+.COMMENT Recognizer string: "IGJ80"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+3215 2114 0
+3225 2125 5
+3225 2125 10
+3225 2125 16
+3215 2114 21
+3204 2093 26
+3204 2073 31
+3183 2031 36
+3173 1989 42
+3163 1958 47
+3142 1937 52
+3131 1916 57
+3131 1916 62
+3121 1916 68
+3131 1916 73
+.PEN_UP
+
+.PEN_DOWN
+3433 2104 604
+3433 2104 609
+3423 2104 614
+3423 2104 620
+3413 2104 625
+3402 2093 630
+3381 2073 635
+3360 2041 640
+3340 2000 646
+3340 1968 651
+3350 1948 656
+3381 1937 661
+3402 1927 666
+3413 1937 672
+3423 1958 677
+3423 2000 682
+3413 2000 687
+3402 2000 693
+3381 1989 698
+3371 1968 703
+3371 1958 708
+3371 1948 713
+.PEN_UP
+
+.PEN_DOWN
+3590 2093 1153
+3579 2093 1158
+3579 2093 1163
+3600 2104 1169
+3621 2114 1174
+3652 2114 1179
+3673 2114 1184
+3683 2114 1189
+3683 2104 1195
+3673 2093 1200
+3652 2073 1205
+3642 2062 1210
+3642 2052 1216
+3652 2052 1221
+3663 2041 1226
+3683 2031 1231
+3694 2020 1236
+3694 2010 1242
+3694 1989 1247
+3673 1989 1252
+3652 1979 1257
+3610 1958 1262
+3600 1948 1268
+3579 1937 1273
+3579 1927 1278
+.PEN_UP
+
+.PEN_DOWN
+3923 2093 1703
+3923 2104 1708
+3913 2114 1713
+3902 2114 1719
+3892 2114 1724
+3881 2114 1729
+3860 2114 1734
+3840 2104 1739
+3829 2083 1745
+3840 2073 1750
+3850 2052 1755
+3881 2031 1760
+3902 2010 1766
+3913 1989 1771
+3913 1979 1776
+3902 1958 1781
+3881 1948 1786
+3860 1948 1792
+3840 1948 1797
+3840 1958 1802
+3840 1979 1807
+3860 2000 1812
+3881 2041 1818
+3902 2073 1823
+3913 2073 1828
+3923 2093 1833
+.PEN_UP
+
+.PEN_DOWN
+4058 2083 2252
+4058 2083 2257
+4058 2083 2262
+4058 2062 2268
+4038 2020 2273
+4038 2000 2278
+4038 1979 2283
+4058 1958 2288
+4100 1948 2294
+4121 1958 2299
+4142 1979 2304
+4142 2010 2309
+4131 2062 2314
+4110 2083 2320
+4079 2093 2325
+4069 2104 2330
+4069 2104 2335
+.PEN_UP
+
+.COMMENT End of File

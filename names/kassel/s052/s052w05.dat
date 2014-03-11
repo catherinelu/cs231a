@@ -1,0 +1,215 @@
+.VERSION 1.0
+.COMMENT File s052w05
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 52
+.STYLE PRINTED
+.HAND R
+.AGE 27
+.SEX F
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 150
+ Student: No
+ Where educated: NJ
+ Home language: English
+ Name: Linda
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-3 ? "Menu"
+.SEGMENT LETTER 0 ? "M"
+.SEGMENT LETTER 1 ? "e"
+.SEGMENT LETTER 2 ? "n"
+.SEGMENT LETTER 3 ? "u"
+
+.COMMENT Prompt string: "Menu"
+.COMMENT Recognizer string: "Menu"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1579 1073 0
+1579 1083 5
+1579 1073 10
+1579 1052 16
+1579 989 21
+1579 968 26
+1579 979 31
+1579 989 36
+1579 1052 42
+1569 1083 47
+1569 1135 52
+1569 1145 57
+1569 1156 62
+1569 1156 68
+1579 1135 73
+1579 1114 78
+1610 1093 83
+1631 1073 89
+1652 1062 94
+1663 1052 99
+1683 1052 104
+1694 1062 109
+1694 1083 115
+1704 1114 120
+1704 1156 125
+1704 1187 130
+1704 1187 135
+1715 1187 141
+1715 1187 146
+1715 1177 151
+1725 1145 156
+1735 1104 161
+1746 1062 167
+1756 1020 172
+1767 1000 177
+1777 979 182
+1788 968 188
+1788 968 193
+.PEN_UP
+
+.PEN_DOWN
+1840 1052 823
+1850 1052 828
+1860 1052 833
+1881 1052 839
+1902 1062 844
+1933 1073 849
+1944 1073 854
+1954 1093 859
+1954 1093 865
+1965 1104 870
+1944 1104 875
+1923 1104 880
+1902 1104 886
+1881 1093 891
+1860 1083 896
+1850 1062 901
+1840 1041 906
+1850 1020 912
+1860 1000 917
+1892 979 922
+1933 979 927
+1965 979 932
+1985 979 938
+2006 1000 943
+.PEN_UP
+
+.PEN_DOWN
+2048 1114 1318
+2048 1104 1323
+2048 1093 1328
+2048 1062 1334
+2058 1031 1339
+2079 1000 1344
+2079 989 1349
+2090 979 1354
+2090 1052 1360
+2090 1083 1365
+2100 1114 1370
+2110 1135 1375
+2131 1135 1380
+2142 1135 1386
+2163 1114 1391
+2173 1093 1396
+2194 1052 1401
+2194 1031 1407
+2204 1010 1412
+2204 989 1417
+2204 979 1422
+.PEN_UP
+
+.PEN_DOWN
+2256 1125 1702
+2256 1135 1707
+2256 1135 1712
+2256 1125 1718
+2267 1093 1723
+2267 1062 1728
+2277 1041 1733
+2288 1020 1738
+2308 1000 1744
+2319 989 1749
+2329 989 1754
+2340 1000 1759
+2350 1020 1764
+2350 1052 1770
+2360 1083 1775
+2360 1125 1780
+2360 1083 1785
+2360 1052 1791
+2371 1020 1796
+2381 1000 1801
+2413 1000 1806
+2433 1000 1811
+2465 1010 1817
+2485 1031 1822
+2496 1052 1827
+2496 1052 1832
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,205 @@
+.VERSION 1.0
+.COMMENT File s049n06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 49
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Rejected
+ Weight: 126
+ Student: Yes
+ Where educated: IL
+ Home language: English
+ Name: Arley
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "55&011"
+.SEGMENT LETTER 0-1 ? "5"
+.SEGMENT LETTER 2-3:5 ? "5"
+.SEGMENT LETTER 3:6-3:9 ? "&"
+.SEGMENT LETTER 3:10-3 ? "0"
+.SEGMENT LETTER 4 ? "1"
+.SEGMENT LETTER 5 ? "1"
+
+.COMMENT Prompt string: "50011"
+.COMMENT Recognizer string: "55?11"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2256 1698 0
+2246 1698 5
+2246 1698 10
+2235 1687 16
+2215 1656 21
+2204 1625 26
+2194 1614 31
+2204 1614 36
+2215 1625 42
+2256 1635 47
+2288 1635 52
+2308 1635 57
+2329 1625 62
+2340 1614 68
+2329 1593 73
+2319 1573 78
+2277 1552 83
+2235 1531 89
+2215 1531 94
+2215 1541 99
+.PEN_UP
+
+.PEN_DOWN
+2235 1666 384
+2225 1677 389
+2225 1677 394
+2235 1677 400
+2267 1698 405
+2298 1708 410
+2329 1718 415
+.PEN_UP
+
+.PEN_DOWN
+2413 1708 549
+2392 1687 554
+2381 1677 559
+2381 1656 565
+2381 1656 570
+2381 1645 575
+2402 1645 580
+2423 1645 585
+2444 1635 591
+2465 1614 596
+2475 1604 601
+2475 1583 606
+2465 1573 612
+2444 1552 617
+2413 1552 622
+2402 1541 627
+2402 1541 632
+.PEN_UP
+
+.PEN_DOWN
+2360 1666 879
+2360 1677 884
+2381 1687 889
+2413 1708 895
+2454 1718 900
+2506 1729 905
+2538 1729 910
+2569 1729 915
+2579 1729 921
+2590 1729 926
+2590 1729 931
+2579 1729 936
+2579 1718 942
+2569 1708 947
+2558 1687 952
+2548 1656 957
+2527 1625 962
+2527 1604 968
+2538 1583 973
+2558 1573 978
+2579 1583 983
+2600 1593 988
+2621 1625 994
+2631 1645 999
+2631 1677 1004
+2621 1698 1009
+2600 1708 1014
+2600 1708 1020
+2600 1708 1025
+.PEN_UP
+
+.PEN_DOWN
+2715 1687 1538
+2715 1687 1543
+2715 1687 1548
+2715 1656 1554
+2715 1635 1559
+2704 1604 1564
+2704 1583 1569
+2704 1562 1574
+2694 1552 1580
+2694 1541 1585
+.PEN_UP
+
+.PEN_DOWN
+2829 1687 1813
+2829 1698 1818
+2829 1635 1823
+2819 1604 1829
+2819 1562 1834
+2808 1531 1839
+2798 1520 1844
+2798 1510 1849
+.PEN_UP
+
+.COMMENT End of File

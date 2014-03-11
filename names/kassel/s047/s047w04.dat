@@ -1,0 +1,216 @@
+.VERSION 1.0
+.COMMENT File s047w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 47
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 200
+ Student: Yes
+ Where educated: Canada
+ Home language: English
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "Skiin?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1163 2083 0
+1110 2104 5
+1058 2135 10
+944 2135 16
+860 2104 21
+808 2083 26
+788 2041 31
+808 1958 36
+860 1875 42
+913 1770 47
+954 1698 52
+975 1625 57
+975 1583 62
+944 1552 68
+892 1531 73
+819 1531 78
+767 1552 83
+725 1573 89
+704 1593 94
+.PEN_UP
+
+.PEN_DOWN
+1267 2031 494
+1246 2020 499
+1215 1937 504
+1194 1854 510
+1173 1760 515
+1152 1677 520
+1142 1614 525
+1152 1593 530
+1152 1593 536
+1163 1614 541
+1215 1687 546
+1267 1760 551
+1319 1812 556
+1360 1854 562
+.PEN_UP
+
+.PEN_DOWN
+1288 1802 824
+1256 1791 829
+1256 1750 834
+1277 1708 840
+1298 1677 845
+1308 1656 850
+1329 1635 855
+.PEN_UP
+
+.PEN_DOWN
+1475 1791 1043
+1454 1750 1048
+1454 1718 1053
+.PEN_UP
+
+.PEN_DOWN
+1475 1937 1208
+.PEN_UP
+
+.PEN_DOWN
+1631 1812 1373
+1631 1770 1378
+1631 1729 1383
+1621 1708 1389
+1621 1677 1394
+.PEN_UP
+
+.PEN_DOWN
+1673 1979 1483
+1652 1979 1488
+1663 1979 1493
+.PEN_UP
+
+.PEN_DOWN
+1777 1770 1703
+1767 1739 1708
+1767 1739 1713
+1767 1750 1719
+1788 1791 1724
+1819 1833 1729
+1850 1864 1734
+1881 1885 1739
+1902 1885 1745
+1913 1875 1750
+1923 1833 1755
+1923 1781 1760
+.PEN_UP
+
+.PEN_DOWN
+2131 1875 2032
+2090 1875 2037
+2048 1854 2042
+2006 1823 2048
+1985 1791 2053
+1985 1770 2058
+1985 1760 2063
+2006 1760 2068
+2027 1770 2074
+2048 1802 2079
+2069 1823 2084
+2090 1854 2089
+2090 1864 2094
+2079 1864 2100
+2079 1864 2105
+2079 1843 2110
+2069 1802 2115
+2069 1760 2121
+2069 1698 2126
+2058 1614 2131
+2048 1552 2136
+2038 1510 2141
+2027 1479 2147
+1996 1468 2152
+1975 1468 2157
+1933 1468 2162
+1902 1468 2167
+1871 1479 2173
+1860 1479 2178
+.PEN_UP
+
+.COMMENT End of File

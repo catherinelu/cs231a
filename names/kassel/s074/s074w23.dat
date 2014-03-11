@@ -1,0 +1,267 @@
+.VERSION 1.0
+.COMMENT File s074w23
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 74
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: Netherlands
+ Home language: Dutch
+ Name: Wouter
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-9 ? "Complex"
+.SEGMENT LETTER 0 ? "C"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "m"
+.SEGMENT LETTER 3 ? "p"
+.SEGMENT LETTER 4 ? "l"
+.SEGMENT LETTER 5-7 ? "e"
+.SEGMENT LETTER 8-9 ? "x"
+
+.COMMENT Prompt string: "Complex"
+.COMMENT Recognizer string: "COMPLEX"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1360 2416 0
+1350 2427 5
+1350 2427 10
+1340 2437 16
+1319 2427 21
+1298 2416 26
+1256 2375 31
+1235 2323 36
+1204 2281 42
+1204 2229 47
+1204 2166 52
+1215 2145 57
+1256 2145 62
+1298 2156 68
+.PEN_UP
+
+.PEN_DOWN
+1475 2354 274
+1475 2375 279
+1475 2385 284
+1454 2395 290
+1433 2395 295
+1413 2364 300
+1381 2302 305
+1381 2270 310
+1392 2239 316
+1413 2218 321
+1454 2208 326
+1496 2218 331
+1527 2260 336
+1558 2302 342
+1548 2343 347
+1527 2375 352
+1485 2395 357
+1465 2395 363
+1465 2385 368
+.PEN_UP
+
+.PEN_DOWN
+1683 2416 823
+1694 2427 828
+1694 2427 833
+1694 2427 839
+1694 2395 844
+1683 2343 849
+1663 2270 854
+1652 2229 859
+1652 2218 865
+1673 2239 870
+1673 2291 875
+1673 2364 880
+1683 2416 886
+1694 2437 891
+1694 2427 896
+1704 2406 901
+1725 2385 906
+1756 2385 912
+1777 2416 917
+1808 2448 922
+1829 2458 927
+1829 2458 932
+1829 2437 938
+1819 2385 943
+1808 2333 948
+1808 2270 953
+1808 2229 958
+1819 2218 964
+.PEN_UP
+
+.PEN_DOWN
+1985 2395 1482
+1985 2416 1487
+1996 2437 1492
+1996 2437 1498
+1996 2406 1503
+1996 2364 1508
+1985 2291 1513
+1975 2239 1518
+1975 2208 1524
+1975 2229 1529
+1975 2270 1534
+1975 2323 1539
+1965 2395 1544
+1975 2437 1550
+1975 2458 1555
+1996 2458 1560
+2017 2458 1565
+2048 2448 1571
+2069 2437 1576
+2090 2427 1581
+2090 2406 1586
+2069 2375 1591
+2038 2343 1597
+2017 2323 1602
+1996 2312 1607
+1985 2312 1612
+.PEN_UP
+
+.PEN_DOWN
+2183 2479 1977
+2183 2479 1982
+2183 2468 1987
+2173 2416 1993
+2152 2375 1998
+2142 2323 2003
+2142 2291 2008
+2142 2270 2013
+2152 2260 2019
+2173 2260 2024
+2204 2260 2029
+2225 2260 2034
+2246 2270 2040
+.PEN_UP
+
+.PEN_DOWN
+2402 2479 2416
+2402 2489 2421
+2392 2489 2426
+2392 2479 2432
+2392 2448 2437
+2381 2406 2442
+2360 2343 2447
+2360 2312 2452
+2360 2302 2458
+2381 2291 2463
+2402 2291 2468
+2433 2302 2473
+2454 2302 2478
+2475 2302 2484
+.PEN_UP
+
+.PEN_DOWN
+2371 2395 2746
+2392 2395 2751
+2444 2395 2756
+2475 2406 2762
+2517 2406 2767
+.PEN_UP
+
+.PEN_DOWN
+2402 2520 2911
+2402 2520 2916
+2433 2520 2921
+2475 2510 2927
+2517 2510 2932
+.PEN_UP
+
+.PEN_DOWN
+2621 2500 3130
+2621 2500 3135
+2621 2479 3140
+2621 2385 3146
+2621 2343 3151
+2631 2312 3156
+2642 2302 3161
+.PEN_UP
+
+.PEN_DOWN
+2715 2500 3350
+2715 2510 3355
+2704 2510 3360
+2694 2500 3366
+2652 2468 3371
+2610 2416 3376
+2558 2343 3381
+2538 2312 3386
+2527 2302 3392
+.PEN_UP
+
+.COMMENT End of File

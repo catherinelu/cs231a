@@ -1,0 +1,228 @@
+.VERSION 1.0
+.COMMENT File s120c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 120
+.STYLE PRINTED
+.HAND R
+.AGE 56
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 0
+ Student: No
+ Where educated: City
+ Home language: English
+ Name: Rita
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-9 ? "Fake"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3-4 ? "a"
+.SEGMENT LETTER 5-6 ? "k"
+.SEGMENT LETTER 7-9 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "FAKE"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+694 2291 0
+694 2302 5
+694 2302 10
+694 2312 16
+694 2302 21
+683 2270 26
+683 2239 31
+673 2187 36
+673 2145 42
+673 2104 47
+673 2083 52
+673 2073 57
+673 2073 62
+.PEN_UP
+
+.PEN_DOWN
+673 2312 440
+663 2312 445
+663 2312 450
+663 2312 456
+694 2312 461
+735 2323 466
+788 2343 471
+808 2354 476
+819 2343 482
+819 2343 487
+.PEN_UP
+
+.PEN_DOWN
+663 2208 769
+663 2208 774
+673 2208 779
+694 2208 785
+735 2218 790
+.PEN_UP
+
+.PEN_DOWN
+798 2198 1648
+808 2208 1653
+808 2198 1658
+788 2177 1664
+777 2156 1669
+767 2125 1674
+756 2104 1679
+756 2104 1684
+756 2104 1690
+767 2125 1695
+777 2145 1700
+777 2166 1705
+788 2187 1710
+798 2198 1716
+808 2198 1721
+819 2177 1726
+829 2156 1731
+840 2135 1737
+840 2114 1742
+850 2104 1747
+850 2093 1752
+.PEN_UP
+
+.PEN_DOWN
+777 2135 2142
+777 2135 2147
+777 2135 2152
+808 2145 2158
+808 2145 2163
+829 2145 2168
+.PEN_UP
+
+.PEN_DOWN
+902 2198 2362
+902 2198 2367
+902 2187 2372
+902 2177 2378
+902 2135 2383
+913 2114 2388
+913 2114 2393
+.PEN_UP
+
+.PEN_DOWN
+965 2208 2582
+965 2198 2587
+954 2187 2592
+954 2177 2598
+944 2156 2603
+933 2145 2608
+913 2135 2613
+902 2135 2618
+902 2145 2624
+902 2145 2629
+902 2145 2634
+913 2145 2639
+913 2135 2644
+923 2125 2650
+944 2125 2655
+954 2114 2660
+975 2114 2665
+975 2114 2671
+.PEN_UP
+
+.PEN_DOWN
+1017 2198 3021
+1017 2187 3026
+1017 2187 3031
+1017 2177 3037
+1017 2156 3042
+1017 2145 3047
+1006 2135 3052
+1006 2125 3057
+1017 2125 3063
+1038 2125 3068
+1048 2125 3073
+1058 2125 3078
+1069 2125 3084
+.PEN_UP
+
+.PEN_DOWN
+1027 2145 3406
+1027 2145 3411
+1038 2145 3416
+1048 2156 3422
+1058 2156 3427
+1058 2156 3432
+.PEN_UP
+
+.PEN_DOWN
+1006 2187 3625
+1006 2187 3630
+1017 2187 3635
+1048 2198 3641
+1079 2208 3646
+.PEN_UP
+
+.COMMENT End of File

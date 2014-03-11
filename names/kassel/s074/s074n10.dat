@@ -1,0 +1,232 @@
+.VERSION 1.0
+.COMMENT File s074n10
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 74
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: Netherlands
+ Home language: Dutch
+ Name: Wouter
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "72898"
+.SEGMENT LETTER 0-1 ? "7"
+.SEGMENT LETTER 2 ? "2"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4 ? "9"
+.SEGMENT LETTER 5 ? "8"
+
+.COMMENT Prompt string: "72898"
+.COMMENT Recognizer string: "7z?g?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2006 1958 0
+2017 1958 5
+2048 1958 10
+2090 1948 16
+2121 1948 21
+2152 1937 26
+2173 1937 31
+2183 1916 36
+2173 1885 42
+2152 1843 47
+2121 1802 52
+2100 1760 57
+2079 1718 62
+2058 1677 68
+2058 1656 73
+2069 1656 78
+.PEN_UP
+
+.PEN_DOWN
+2006 1823 330
+2006 1833 335
+2017 1833 340
+2069 1833 346
+2110 1833 351
+2152 1843 356
+.PEN_UP
+
+.PEN_DOWN
+2298 1979 550
+2340 1979 555
+2350 1979 560
+2371 1968 566
+2371 1968 571
+2381 1958 576
+2381 1958 581
+2381 1937 586
+2360 1916 592
+2329 1895 597
+2308 1864 602
+2308 1833 607
+2329 1802 612
+2350 1802 618
+2381 1791 623
+.PEN_UP
+
+.PEN_DOWN
+2642 1937 824
+2642 1937 829
+2631 1937 834
+2610 1937 840
+2579 1927 845
+2548 1885 850
+2527 1854 855
+2517 1812 860
+2517 1791 866
+2538 1770 871
+2558 1770 876
+2579 1791 881
+2610 1833 886
+2631 1895 892
+2631 1948 897
+2610 1989 902
+2600 2031 907
+2590 2041 913
+2621 2041 918
+2663 2031 923
+2683 2020 928
+2704 2000 933
+2715 1989 939
+2715 1968 944
+2694 1937 949
+2663 1906 954
+2642 1885 959
+.PEN_UP
+
+.PEN_DOWN
+2808 1927 1428
+2808 1948 1433
+2788 1958 1438
+2767 1948 1444
+2735 1927 1449
+2715 1895 1454
+2694 1854 1459
+2694 1823 1464
+2704 1802 1470
+2735 1802 1475
+2777 1823 1480
+2798 1843 1485
+2829 1875 1490
+2829 1906 1496
+2829 1927 1501
+2819 1927 1506
+2819 1916 1511
+2798 1875 1517
+2798 1843 1522
+2788 1802 1527
+2788 1750 1532
+2777 1708 1537
+2767 1698 1543
+2746 1677 1548
+2725 1677 1553
+.PEN_UP
+
+.PEN_DOWN
+2985 1906 1923
+2985 1906 1928
+2996 1906 1933
+2996 1906 1939
+2975 1906 1944
+2965 1885 1949
+2944 1843 1954
+2933 1802 1959
+2933 1770 1965
+2944 1760 1970
+2965 1760 1975
+2985 1781 1980
+3006 1833 1986
+3017 1875 1991
+3027 1906 1996
+3017 1958 2001
+3017 1989 2006
+3017 2000 2012
+3017 2010 2017
+3038 2010 2022
+3048 2020 2027
+3069 2010 2032
+3100 2010 2038
+3121 1989 2043
+3121 1968 2048
+3121 1948 2053
+3110 1927 2058
+3090 1895 2064
+3058 1885 2069
+3048 1864 2074
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,239 @@
+.VERSION 1.0
+.COMMENT File s133n07
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 133
+.STYLE PRINTED
+.HAND R
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Rejected
+ Weight: 162
+ Student: Yes
+ Where educated: Canada
+ Home language: English & Korean
+ Name: Frank
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "0206*6"
+.SEGMENT LETTER 0 ? "0"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "0"
+.SEGMENT LETTER 4 ? "6"
+.SEGMENT LETTER 3 ? "*"
+.SEGMENT LETTER 5 ? "6"
+
+.COMMENT Prompt string: "02066"
+.COMMENT Recognizer string: "020?66"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2027 1406 0
+1965 1468 5
+1923 1489 10
+1871 1510 16
+1819 1510 21
+1746 1489 26
+1683 1427 31
+1590 1291 36
+1485 1062 42
+1423 885 47
+1402 739 52
+1413 666 57
+1517 666 62
+1621 729 68
+1746 833 73
+1840 937 78
+1954 1083 83
+1996 1198 89
+1996 1302 94
+1975 1406 99
+1892 1500 104
+1829 1531 109
+1777 1531 115
+1767 1520 120
+.PEN_UP
+
+.PEN_DOWN
+2444 1666 494
+2496 1677 499
+2538 1677 504
+2569 1656 510
+2610 1562 515
+2610 1468 520
+2590 1343 525
+2548 1229 530
+2444 1083 536
+2371 989 541
+2288 906 546
+2204 864 551
+2194 864 556
+2194 937 562
+2256 1041 567
+2360 1156 572
+2423 1208 577
+2506 1229 583
+2569 1218 588
+2631 1177 593
+2673 1125 598
+2704 1062 603
+2746 1020 609
+2819 1000 614
+.PEN_UP
+
+.PEN_DOWN
+3298 1781 1592
+3277 1812 1597
+3225 1812 1602
+3163 1791 1608
+3090 1739 1613
+3006 1645 1618
+2933 1520 1623
+2871 1354 1628
+2860 1229 1634
+2871 1145 1639
+2923 1093 1644
+3038 1104 1649
+3152 1156 1654
+3246 1229 1660
+3319 1302 1665
+3381 1427 1670
+3392 1510 1675
+3381 1604 1681
+3350 1687 1686
+3298 1770 1691
+3267 1802 1696
+3246 1802 1701
+.PEN_UP
+
+.PEN_DOWN
+3819 1895 2142
+3767 1916 2147
+3756 1916 2152
+.PEN_UP
+
+.PEN_DOWN
+3756 1916 2306
+3756 1916 2311
+3767 1916 2316
+3767 1916 2322
+3767 1916 2327
+3767 1927 2332
+3767 1927 2337
+3756 1916 2342
+3746 1906 2348
+3704 1843 2353
+3652 1739 2358
+3579 1614 2363
+3527 1500 2368
+3517 1427 2374
+3527 1364 2379
+3569 1333 2384
+3610 1333 2389
+3663 1343 2395
+3715 1385 2400
+3788 1468 2405
+3808 1531 2410
+3819 1604 2415
+3798 1656 2421
+3725 1677 2426
+3642 1666 2431
+3569 1604 2436
+3506 1500 2441
+3465 1406 2447
+3475 1343 2452
+3538 1333 2457
+.PEN_UP
+
+.PEN_DOWN
+4371 2104 3020
+4319 2114 3025
+4256 2104 3030
+4163 2031 3036
+4100 1916 3041
+4048 1791 3046
+4006 1677 3051
+3985 1541 3056
+3996 1489 3062
+4027 1468 3067
+4079 1468 3072
+4163 1500 3077
+4215 1552 3082
+4256 1614 3088
+4256 1677 3093
+4225 1750 3098
+4163 1760 3103
+4090 1739 3109
+3996 1666 3114
+3913 1541 3119
+3892 1468 3124
+3902 1406 3129
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,185 @@
+.VERSION 1.0
+.COMMENT File s051n06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 51
+.STYLE PRINTED
+.HAND L
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 83
+ Student: Yes
+ Where educated: NY
+ Home language: Gujarati
+ Name: Anuja
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "50011"
+.SEGMENT LETTER 0-1 ? "5"
+.SEGMENT LETTER 2 ? "0"
+.SEGMENT LETTER 3 ? "0"
+.SEGMENT LETTER 4 ? "1"
+.SEGMENT LETTER 5 ? "1"
+
+.COMMENT Prompt string: "50011"
+.COMMENT Recognizer string: "50011"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+881 2260 0
+881 2250 5
+860 2239 10
+840 2218 16
+829 2208 21
+829 2198 26
+829 2198 31
+892 2198 36
+923 2177 42
+954 2166 47
+975 2135 52
+975 2104 57
+965 2083 62
+944 2052 68
+892 2052 73
+850 2073 78
+840 2093 83
+.PEN_UP
+
+.PEN_DOWN
+1027 2281 329
+1038 2281 334
+1048 2291 339
+1048 2281 345
+1027 2281 350
+996 2260 355
+933 2250 360
+892 2239 365
+871 2239 371
+860 2239 376
+.PEN_UP
+
+.PEN_DOWN
+1215 2260 604
+1246 2250 609
+1267 2229 614
+1288 2187 620
+1277 2125 625
+1256 2083 630
+1225 2073 635
+1194 2073 640
+1152 2093 646
+1142 2135 651
+1142 2177 656
+1152 2208 661
+1194 2229 666
+1235 2239 672
+.PEN_UP
+
+.PEN_DOWN
+1444 2281 934
+1496 2239 939
+1517 2208 944
+1517 2177 950
+1506 2135 955
+1465 2093 960
+1444 2083 965
+1413 2083 970
+1402 2104 976
+1392 2135 981
+1392 2177 986
+1402 2208 991
+1423 2239 996
+1444 2260 1002
+.PEN_UP
+
+.PEN_DOWN
+1631 2281 1318
+1631 2270 1323
+1631 2260 1328
+1631 2239 1334
+1621 2208 1339
+1610 2166 1344
+1610 2135 1349
+1610 2125 1354
+1621 2125 1360
+.PEN_UP
+
+.PEN_DOWN
+1767 2312 1648
+1767 2312 1653
+1767 2312 1658
+1756 2291 1664
+1756 2260 1669
+1746 2218 1674
+1746 2177 1679
+1746 2135 1684
+.PEN_UP
+
+.COMMENT End of File

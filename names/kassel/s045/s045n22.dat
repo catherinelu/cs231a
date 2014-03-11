@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s045n22
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 45
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 140
+ Student: Yes
+ Where educated: IN
+ Home language: English
+ Name: Colleen
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "16380"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "6"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4 ? "0"
+
+.COMMENT Prompt string: "16380"
+.COMMENT Recognizer string: "16380"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2715 1031 0
+2704 1031 5
+2704 906 10
+2694 864 16
+2694 812 21
+2694 760 26
+2694 770 31
+2694 770 36
+.PEN_UP
+
+.PEN_DOWN
+2944 1000 384
+2933 1000 389
+2933 1000 394
+2923 989 400
+2902 958 405
+2892 937 410
+2871 895 415
+2871 854 420
+2871 823 426
+2892 802 431
+2923 791 436
+2965 791 441
+2996 802 446
+3017 823 452
+3017 843 457
+3006 864 462
+2985 885 467
+2965 885 473
+2933 875 478
+2892 843 483
+2881 823 488
+2881 781 493
+.PEN_UP
+
+.PEN_DOWN
+3142 958 933
+3131 979 938
+3131 989 943
+3152 1010 949
+3163 1020 954
+3183 1020 959
+3204 1020 964
+3225 1010 969
+3235 989 975
+3235 968 980
+3215 937 985
+3194 906 990
+3152 885 996
+3142 885 1001
+3142 875 1006
+3142 885 1011
+3173 885 1016
+3204 885 1022
+3246 875 1027
+3267 864 1032
+3288 854 1037
+3288 833 1042
+3256 802 1048
+3225 770 1053
+3183 760 1058
+3152 750 1063
+3131 750 1068
+3131 760 1074
+3131 760 1079
+3142 760 1084
+3152 760 1089
+3173 760 1094
+.PEN_UP
+
+.PEN_DOWN
+3485 958 1592
+3496 979 1597
+3506 1000 1602
+3506 1010 1608
+3496 1020 1613
+3475 1031 1618
+3433 1031 1623
+3402 1020 1628
+3392 1010 1634
+3381 1000 1639
+3381 979 1644
+3392 958 1649
+3413 927 1654
+3444 906 1660
+3485 864 1665
+3506 843 1670
+3517 823 1675
+3506 802 1681
+3485 781 1686
+3454 770 1691
+3423 770 1696
+3402 781 1701
+3381 802 1707
+3381 833 1712
+3402 864 1717
+3433 895 1722
+3475 937 1727
+3496 958 1733
+3496 979 1738
+3496 979 1743
+.PEN_UP
+
+.PEN_DOWN
+3694 989 2251
+3694 979 2256
+3683 968 2261
+3673 948 2267
+3663 916 2272
+3642 885 2277
+3642 843 2282
+3642 812 2287
+3642 791 2293
+3663 781 2298
+3704 770 2303
+3735 781 2308
+3767 802 2314
+3788 823 2319
+3798 864 2324
+3798 895 2329
+3788 948 2334
+3777 979 2340
+3725 989 2345
+3683 989 2350
+3652 958 2355
+3621 895 2360
+.PEN_UP
+
+.COMMENT End of File

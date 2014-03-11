@@ -1,0 +1,246 @@
+.VERSION 1.0
+.COMMENT File s045n17
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 45
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 140
+ Student: Yes
+ Where educated: IN
+ Home language: English
+ Name: Colleen
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "23687"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "6"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4-5 ? "7"
+
+.COMMENT Prompt string: "23687"
+.COMMENT Recognizer string: "23687?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2423 1135 0
+2423 1145 5
+2433 1156 10
+2454 1166 16
+2465 1166 21
+2506 1166 26
+2527 1166 31
+2538 1145 36
+2548 1135 42
+2548 1093 47
+2527 1073 52
+2506 1031 57
+2465 989 62
+2433 948 68
+2423 937 73
+2423 937 78
+2433 927 83
+2465 927 89
+2506 927 94
+2548 927 99
+2569 927 104
+2590 927 109
+2590 927 115
+2590 916 120
+.PEN_UP
+
+.PEN_DOWN
+2631 1104 549
+2631 1125 554
+2642 1125 559
+2652 1145 565
+2673 1156 570
+2704 1156 575
+2725 1145 580
+2746 1135 585
+2746 1114 591
+2735 1093 596
+2704 1052 601
+2663 1041 606
+2642 1031 612
+2642 1031 617
+2663 1041 622
+2694 1041 627
+2715 1031 632
+2756 1010 638
+2756 989 643
+2756 979 648
+2735 948 653
+2694 927 658
+2663 916 664
+2631 916 669
+2610 927 674
+2610 948 679
+2642 948 684
+.PEN_UP
+
+.PEN_DOWN
+2881 1135 1153
+2881 1145 1158
+2881 1145 1163
+2871 1145 1169
+2850 1125 1174
+2840 1104 1179
+2819 1062 1184
+2808 1020 1189
+2808 989 1195
+2819 958 1200
+2850 937 1205
+2881 937 1210
+2902 948 1216
+2923 958 1221
+2933 989 1226
+2933 1010 1231
+2923 1031 1236
+2902 1031 1242
+2860 1020 1247
+2829 1000 1252
+2819 989 1257
+2808 968 1262
+2829 948 1268
+.PEN_UP
+
+.PEN_DOWN
+3142 1135 1648
+3152 1145 1653
+3152 1166 1658
+3142 1177 1664
+3110 1187 1669
+3079 1187 1674
+3058 1177 1679
+3038 1166 1684
+3038 1145 1690
+3038 1135 1695
+3048 1114 1700
+3079 1093 1705
+3110 1073 1710
+3142 1041 1716
+3152 1020 1721
+3163 989 1726
+3152 968 1731
+3121 948 1737
+3090 937 1742
+3048 937 1747
+3017 958 1752
+3006 979 1757
+3006 1010 1763
+3038 1052 1768
+3069 1083 1773
+3100 1104 1778
+3131 1125 1783
+3152 1135 1789
+3152 1145 1794
+.PEN_UP
+
+.PEN_DOWN
+3225 1166 2252
+3235 1177 2257
+3235 1187 2262
+3246 1198 2268
+3246 1198 2273
+3246 1198 2278
+3246 1187 2283
+3256 1177 2288
+3298 1177 2294
+3319 1187 2299
+3350 1198 2304
+3371 1198 2309
+3381 1198 2314
+3392 1198 2320
+3392 1198 2325
+3392 1198 2330
+3381 1187 2335
+3360 1156 2341
+3340 1114 2346
+3319 1073 2351
+3308 1041 2356
+3298 989 2361
+3298 948 2367
+3298 958 2372
+.PEN_UP
+
+.PEN_DOWN
+3256 1062 2856
+3256 1062 2861
+3298 1062 2866
+3329 1062 2872
+3360 1062 2877
+3381 1073 2882
+.PEN_UP
+
+.COMMENT End of File

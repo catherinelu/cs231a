@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s065w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 65
+.STYLE PRINTED
+.HAND R
+.AGE 42
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 180
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Seth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "Skiihg"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+663 2250 0
+663 2260 5
+673 2260 10
+673 2270 16
+652 2270 21
+642 2260 26
+621 2250 31
+610 2250 36
+610 2239 42
+610 2229 47
+610 2208 52
+631 2198 57
+642 2177 62
+663 2166 68
+683 2135 73
+704 2114 78
+715 2093 83
+715 2093 89
+715 2073 94
+704 2062 99
+683 2062 104
+663 2062 109
+631 2062 115
+621 2062 120
+.PEN_UP
+
+.PEN_DOWN
+767 2312 659
+767 2302 664
+767 2260 669
+767 2145 675
+767 2104 680
+767 2093 685
+777 2093 690
+777 2093 695
+808 2114 701
+829 2145 706
+850 2177 711
+871 2198 716
+871 2198 722
+871 2187 727
+.PEN_UP
+
+.PEN_DOWN
+819 2166 1044
+819 2145 1049
+819 2125 1054
+840 2114 1060
+840 2104 1065
+860 2093 1070
+881 2093 1075
+.PEN_UP
+
+.PEN_DOWN
+954 2187 1319
+954 2166 1324
+954 2135 1329
+954 2114 1335
+.PEN_UP
+
+.PEN_DOWN
+975 2302 1483
+965 2302 1488
+965 2302 1493
+.PEN_UP
+
+.PEN_DOWN
+1017 2198 1758
+1017 2135 1763
+1017 2104 1768
+1017 2083 1774
+.PEN_UP
+
+.PEN_DOWN
+1038 2312 1923
+1038 2323 1928
+1038 2323 1933
+1038 2302 1939
+.PEN_UP
+
+.PEN_DOWN
+1069 2229 2142
+1069 2187 2147
+1069 2166 2152
+1079 2135 2158
+1079 2125 2163
+1079 2114 2168
+1090 2125 2173
+1090 2135 2178
+1110 2156 2184
+1121 2166 2189
+1131 2156 2194
+1142 2156 2199
+1152 2145 2204
+1163 2125 2210
+1163 2125 2215
+1173 2114 2220
+.PEN_UP
+
+.PEN_DOWN
+1256 2177 2527
+1256 2187 2532
+1256 2198 2537
+1256 2218 2543
+1235 2218 2548
+1215 2218 2553
+1194 2198 2558
+1173 2177 2563
+1173 2166 2569
+1183 2156 2574
+1183 2145 2579
+1215 2135 2584
+1235 2125 2590
+1246 2125 2595
+1267 2093 2600
+1288 2073 2605
+1308 2041 2610
+1319 2020 2616
+1319 2000 2621
+1308 1979 2626
+1288 1968 2631
+1256 1958 2636
+1225 1958 2642
+1204 1958 2647
+1204 1958 2652
+.PEN_UP
+
+.COMMENT End of File

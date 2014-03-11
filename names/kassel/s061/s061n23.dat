@@ -1,0 +1,256 @@
+.VERSION 1.0
+.COMMENT File s061n23
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 61
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Deborah
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "27657"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1-2 ? "7"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "5"
+.SEGMENT LETTER 5-6 ? "7"
+
+.COMMENT Prompt string: "27657"
+.COMMENT Recognizer string: "27?69MI"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2767 677 0
+2767 677 5
+2788 698 10
+2808 708 16
+2819 708 21
+2850 708 26
+2881 677 31
+2892 656 36
+2892 635 42
+2892 593 47
+2860 552 52
+2840 531 57
+2819 510 62
+2808 510 68
+2808 510 73
+2808 520 78
+2808 531 83
+2829 531 89
+2840 541 94
+2860 541 99
+2871 541 104
+2902 541 109
+2902 541 115
+2913 541 120
+.PEN_UP
+
+.PEN_DOWN
+2923 708 495
+2923 708 500
+2933 708 505
+2965 718 511
+2985 739 516
+3006 739 521
+3017 739 526
+3017 729 531
+3027 698 537
+3027 645 542
+3017 593 547
+3017 541 552
+3027 520 558
+3027 510 563
+.PEN_UP
+
+.PEN_DOWN
+2975 562 824
+2965 583 829
+2965 583 834
+2975 593 840
+2996 604 845
+3017 604 850
+3048 614 855
+.PEN_UP
+
+.PEN_DOWN
+3110 739 1044
+3110 739 1049
+3110 718 1054
+3100 687 1060
+3100 645 1065
+3100 614 1070
+3110 604 1075
+3142 573 1080
+3173 573 1086
+3183 583 1091
+3194 593 1096
+3204 614 1101
+3204 635 1106
+3194 656 1112
+3183 666 1117
+3173 666 1122
+3163 656 1127
+3142 625 1133
+3142 604 1138
+3152 583 1143
+3173 583 1148
+.PEN_UP
+
+.PEN_DOWN
+3350 781 1483
+3350 791 1488
+3350 802 1493
+3350 802 1499
+3350 802 1504
+3340 812 1509
+3329 812 1514
+3319 791 1519
+3298 770 1525
+3288 739 1530
+3288 698 1535
+3288 687 1540
+3298 677 1546
+3298 677 1551
+3308 677 1556
+3319 687 1561
+3340 698 1566
+3360 708 1572
+3371 708 1577
+3381 698 1582
+3381 677 1587
+3381 656 1592
+3381 635 1598
+3360 604 1603
+3340 583 1608
+3319 573 1613
+3298 562 1618
+3288 562 1624
+3288 562 1629
+3288 562 1634
+3277 562 1639
+.PEN_UP
+
+.PEN_DOWN
+3423 802 2143
+3413 802 2148
+3402 802 2153
+3402 812 2159
+3402 812 2164
+3413 833 2169
+3423 833 2174
+3423 833 2179
+3423 833 2185
+3413 833 2190
+3413 833 2195
+3413 843 2200
+3413 875 2206
+3413 875 2211
+3423 864 2216
+3433 864 2221
+3444 854 2226
+3465 843 2232
+3485 843 2237
+3517 843 2242
+3538 843 2247
+3538 864 2252
+3558 875 2258
+3548 854 2263
+3538 823 2268
+3538 781 2273
+3538 718 2278
+3538 677 2284
+3538 645 2289
+3538 625 2294
+3548 614 2299
+3548 604 2304
+3548 604 2310
+3548 604 2315
+.PEN_UP
+
+.PEN_DOWN
+3485 666 2857
+3485 677 2862
+3496 687 2867
+3517 698 2873
+3538 729 2878
+3558 739 2883
+3579 760 2888
+3600 760 2893
+3600 770 2899
+.PEN_UP
+
+.COMMENT End of File

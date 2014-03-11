@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s020n12
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 20
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 172
+ Student: Yes
+ Where educated: TX
+ Home language: English
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "60839"
+.SEGMENT LETTER 0 ? "6"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "8"
+.SEGMENT LETTER 3 ? "3"
+.SEGMENT LETTER 4 ? "9"
+
+.COMMENT Prompt string: "60839"
+.COMMENT Recognizer string: "60?39"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1308 1833 0
+1308 1833 5
+1308 1833 10
+1298 1833 16
+1298 1812 21
+1256 1718 26
+1235 1656 31
+1215 1604 36
+1215 1573 42
+1235 1541 47
+1277 1541 52
+1319 1562 57
+1350 1593 62
+1350 1625 68
+1340 1625 73
+1319 1625 78
+1288 1604 83
+1267 1583 89
+1267 1573 94
+1298 1573 99
+.PEN_UP
+
+.PEN_DOWN
+1725 1750 439
+1715 1770 444
+1715 1781 449
+1715 1791 455
+1704 1802 460
+1694 1791 465
+1673 1750 470
+1642 1698 475
+1642 1656 481
+1663 1635 486
+1694 1635 491
+1767 1666 496
+1777 1698 502
+1777 1729 507
+1767 1750 512
+1725 1770 517
+1704 1770 522
+1704 1729 528
+.PEN_UP
+
+.PEN_DOWN
+2173 1812 824
+2173 1843 829
+2183 1854 834
+2183 1864 840
+2173 1875 845
+2152 1875 850
+2131 1864 855
+2100 1833 860
+2069 1802 866
+2048 1750 871
+2048 1718 876
+2058 1698 881
+2090 1687 886
+2142 1677 892
+2173 1677 897
+2173 1677 902
+2173 1677 907
+2163 1645 913
+2142 1635 918
+2100 1625 923
+2069 1614 928
+2048 1625 933
+2048 1635 939
+2069 1677 944
+2131 1739 949
+2173 1781 954
+2183 1812 959
+2183 1823 965
+.PEN_UP
+
+.PEN_DOWN
+2329 1812 1373
+2329 1823 1378
+2340 1843 1383
+2360 1864 1389
+2381 1864 1394
+2402 1864 1399
+2402 1864 1404
+2402 1833 1409
+2392 1812 1415
+2381 1791 1420
+2381 1770 1425
+2381 1760 1430
+2381 1760 1436
+2413 1770 1441
+2444 1770 1446
+2475 1770 1451
+2485 1770 1456
+2496 1760 1462
+2496 1750 1467
+2485 1718 1472
+2475 1698 1477
+2444 1677 1482
+2423 1656 1488
+2402 1645 1493
+2402 1635 1498
+.PEN_UP
+
+.PEN_DOWN
+2788 1854 1922
+2788 1864 1927
+2808 1885 1932
+2808 1895 1938
+2798 1906 1943
+2788 1895 1948
+2735 1864 1953
+2715 1833 1958
+2715 1812 1964
+2715 1791 1969
+2746 1791 1974
+2788 1802 1979
+2829 1833 1984
+2850 1843 1990
+2860 1843 1995
+2871 1843 2000
+2871 1812 2005
+2871 1770 2011
+2850 1698 2016
+2840 1656 2021
+2840 1625 2026
+2840 1593 2031
+2840 1552 2037
+.PEN_UP
+
+.COMMENT End of File

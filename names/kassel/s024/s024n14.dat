@@ -1,0 +1,202 @@
+.VERSION 1.0
+.COMMENT File s024n14
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 24
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 205
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Luke
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "0785&6"
+.SEGMENT LETTER 0 ? "0"
+.SEGMENT LETTER 1 ? "7"
+.SEGMENT LETTER 2 ? "8"
+.SEGMENT LETTER 3-4:4 ? "5"
+.SEGMENT LETTER 4:5-4:6 ? "&"
+.SEGMENT LETTER 4:7-4 ? "6"
+
+.COMMENT Prompt string: "07856"
+.COMMENT Recognizer string: "0785s"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1735 1948 0
+1735 1958 5
+1735 1958 10
+1725 1958 16
+1725 1948 21
+1715 1916 26
+1704 1875 31
+1704 1812 36
+1715 1770 42
+1735 1760 47
+1767 1760 52
+1788 1791 57
+1798 1833 62
+1798 1875 68
+1788 1895 73
+1767 1927 78
+1746 1937 83
+1725 1937 89
+1725 1937 94
+1725 1927 99
+.PEN_UP
+
+.PEN_DOWN
+1819 1937 384
+1819 1948 389
+1860 1968 394
+1871 1968 400
+1892 1968 405
+1902 1958 410
+1913 1937 415
+1913 1895 420
+1913 1864 426
+1902 1833 431
+1902 1791 436
+1902 1770 441
+1902 1770 446
+.PEN_UP
+
+.PEN_DOWN
+2006 1937 714
+2006 1948 719
+1996 1948 724
+1975 1937 730
+1965 1937 735
+1965 1906 740
+1965 1895 745
+1975 1875 750
+1985 1864 756
+1996 1854 761
+2006 1833 766
+2006 1802 771
+1996 1791 776
+1985 1781 782
+1975 1791 787
+1975 1823 792
+1985 1864 797
+2006 1895 803
+2017 1927 808
+2027 1937 813
+.PEN_UP
+
+.PEN_DOWN
+2090 1948 1098
+2090 1948 1103
+2090 1937 1108
+2079 1916 1114
+2069 1895 1119
+2069 1875 1124
+2069 1864 1129
+2090 1864 1134
+2121 1875 1140
+2142 1875 1145
+2152 1864 1150
+2152 1854 1155
+2152 1823 1160
+2142 1802 1166
+2131 1791 1171
+2121 1781 1176
+.PEN_UP
+
+.PEN_DOWN
+2100 1927 1428
+2110 1937 1433
+2110 1937 1438
+2131 1958 1444
+2163 1958 1449
+2183 1968 1454
+2194 1968 1459
+2215 1968 1464
+2215 1968 1470
+2215 1927 1475
+2215 1875 1480
+2225 1854 1485
+2235 1833 1490
+2246 1833 1496
+2288 1843 1501
+2298 1854 1506
+2308 1864 1511
+2308 1875 1517
+2288 1864 1522
+2277 1854 1527
+2256 1833 1532
+2256 1823 1537
+.PEN_UP
+
+.COMMENT End of File

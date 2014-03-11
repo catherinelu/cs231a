@@ -1,0 +1,246 @@
+.VERSION 1.0
+.COMMENT File s131w23
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 131
+.STYLE PRINTED
+.HAND R
+.AGE 30
+.SEX F
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 99
+ Student: Yes
+ Where educated: NY
+ Home language: English & Cantonese
+ Name: Elaine
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "Complex"
+.SEGMENT LETTER 0 ? "C"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "m"
+.SEGMENT LETTER 3 ? "p"
+.SEGMENT LETTER 4 ? "l"
+.SEGMENT LETTER 5 ? "e"
+.SEGMENT LETTER 6-7 ? "x"
+
+.COMMENT Prompt string: "Complex"
+.COMMENT Recognizer string: "Complex"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1715 1593 0
+1715 1583 5
+1715 1593 10
+1715 1614 16
+1725 1645 21
+1715 1677 26
+1704 1708 31
+1673 1739 36
+1631 1739 42
+1590 1729 47
+1558 1698 52
+1506 1614 57
+1496 1500 62
+1517 1416 68
+1569 1343 73
+1610 1333 78
+1663 1333 83
+1715 1343 89
+1767 1375 94
+.PEN_UP
+
+.PEN_DOWN
+1850 1510 330
+1829 1520 335
+1819 1520 340
+1798 1500 346
+1767 1437 351
+1767 1385 356
+1777 1354 361
+1829 1333 366
+1881 1333 372
+1913 1354 377
+1933 1375 382
+1933 1406 387
+1902 1448 392
+1871 1479 398
+1840 1489 403
+1808 1489 408
+.PEN_UP
+
+.PEN_DOWN
+1944 1510 714
+1933 1500 719
+1933 1468 724
+1933 1427 730
+1944 1375 735
+1944 1364 740
+1944 1354 745
+1954 1375 750
+1965 1406 756
+1975 1437 761
+1985 1468 766
+2006 1479 771
+2017 1468 776
+2027 1448 782
+2027 1364 787
+2027 1375 792
+2038 1406 797
+2058 1437 803
+2079 1458 808
+2090 1468 813
+2110 1458 818
+2121 1427 823
+2121 1395 829
+2121 1364 834
+2121 1333 839
+2121 1333 844
+.PEN_UP
+
+.PEN_DOWN
+2204 1489 1208
+2204 1479 1213
+2194 1437 1218
+2194 1385 1224
+2194 1312 1229
+2204 1239 1234
+2215 1218 1239
+2215 1208 1244
+2215 1239 1250
+2204 1270 1255
+2204 1333 1260
+2215 1416 1265
+2246 1468 1270
+2267 1489 1276
+2277 1489 1281
+2308 1479 1286
+2308 1437 1291
+2308 1395 1297
+2288 1364 1302
+2256 1333 1307
+2235 1333 1312
+2225 1343 1317
+.PEN_UP
+
+.PEN_DOWN
+2371 1698 1593
+2371 1698 1598
+2381 1687 1603
+2381 1635 1609
+2381 1562 1614
+2392 1500 1619
+2392 1375 1624
+.PEN_UP
+
+.PEN_DOWN
+2444 1479 1813
+2454 1479 1818
+2465 1479 1823
+2496 1479 1829
+2527 1489 1834
+2548 1500 1839
+2558 1520 1844
+2558 1531 1849
+2548 1541 1855
+2527 1541 1860
+2506 1531 1865
+2485 1510 1870
+2454 1468 1876
+2454 1437 1881
+2465 1406 1886
+2485 1385 1891
+2517 1385 1896
+2558 1385 1902
+.PEN_UP
+
+.PEN_DOWN
+2788 1552 2197
+2788 1552 2202
+2777 1541 2207
+2746 1510 2213
+2715 1468 2218
+2673 1416 2223
+2652 1385 2228
+2642 1364 2233
+2631 1364 2239
+.PEN_UP
+
+.PEN_DOWN
+2621 1541 2362
+2621 1541 2367
+2631 1531 2372
+2673 1479 2378
+2704 1437 2383
+2735 1406 2388
+2767 1385 2393
+2777 1375 2398
+.PEN_UP
+
+.COMMENT End of File

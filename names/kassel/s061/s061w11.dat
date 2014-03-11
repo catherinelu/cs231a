@@ -1,0 +1,219 @@
+.VERSION 1.0
+.COMMENT File s061w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 61
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Deborah
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "z"
+.SEGMENT LETTER 5 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuz?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+933 2489 0
+923 2489 5
+923 2468 10
+933 2291 16
+954 2125 21
+985 1979 26
+1006 1854 31
+1048 1708 36
+1079 1635 42
+1090 1573 47
+1110 1562 52
+.PEN_UP
+
+.PEN_DOWN
+829 2364 329
+808 2385 334
+798 2385 339
+798 2385 345
+819 2395 350
+913 2427 355
+985 2458 360
+1069 2479 365
+1163 2510 371
+1267 2552 376
+1350 2573 381
+1392 2583 386
+1444 2604 392
+1465 2604 397
+.PEN_UP
+
+.PEN_DOWN
+996 2125 659
+996 2135 664
+1027 2135 669
+1079 2166 675
+1142 2208 680
+1204 2239 685
+1308 2291 690
+1371 2302 695
+.PEN_UP
+
+.PEN_DOWN
+1642 2239 878
+1652 2177 883
+1683 2093 888
+1704 2031 894
+1725 1989 899
+1767 1958 904
+1788 1937 909
+1808 1937 914
+1840 1948 920
+1860 2000 925
+1871 2041 930
+1881 2083 935
+1881 2104 940
+1871 2135 946
+1871 2135 951
+1881 2125 956
+1892 2093 961
+1933 1989 967
+1975 1906 972
+2006 1833 977
+2038 1770 982
+2079 1729 987
+2090 1708 993
+.PEN_UP
+
+.PEN_DOWN
+2194 2260 1428
+2225 2239 1433
+2267 2239 1438
+2319 2250 1444
+2371 2250 1449
+2444 2250 1454
+2496 2250 1459
+2548 2239 1464
+2579 2218 1470
+2600 2177 1475
+2600 2104 1480
+2590 2020 1485
+2579 1906 1490
+2558 1739 1496
+2548 1656 1501
+2548 1604 1506
+2558 1573 1511
+2600 1573 1517
+2808 1573 1522
+2892 1583 1527
+2954 1593 1532
+2996 1614 1537
+.PEN_UP
+
+.PEN_DOWN
+3038 2156 1922
+3038 2166 1927
+3038 2166 1932
+3038 2177 1938
+3069 2187 1943
+3121 2198 1948
+3194 2198 1953
+3288 2198 1958
+3350 2198 1964
+3402 2187 1969
+3444 2177 1974
+3475 2125 1979
+3506 2073 1984
+3517 1989 1990
+3517 1895 1995
+3506 1781 2000
+3485 1677 2005
+3454 1573 2011
+3444 1479 2016
+3433 1406 2021
+3444 1385 2026
+3475 1375 2031
+3548 1385 2037
+3652 1385 2042
+3756 1395 2047
+3840 1406 2052
+3913 1427 2057
+4006 1448 2063
+4069 1448 2068
+.PEN_UP
+
+.COMMENT End of File

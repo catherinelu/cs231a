@@ -1,0 +1,349 @@
+.VERSION 1.0
+.COMMENT File s028w19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 28
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 180
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Michael
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-20 ? "Accountibility"
+.SEGMENT LETTER 0-1 ? "A"
+.SEGMENT LETTER 2 ? "c"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "o"
+.SEGMENT LETTER 5 ? "u"
+.SEGMENT LETTER 6 ? "n"
+.SEGMENT LETTER 7-8 ? "t"
+.SEGMENT LETTER 9-10 ? "i"
+.SEGMENT LETTER 11 ? "b"
+.SEGMENT LETTER 12-13 ? "i"
+.SEGMENT LETTER 14 ? "l"
+.SEGMENT LETTER 15-16 ? "i"
+.SEGMENT LETTER 17-18 ? "t"
+.SEGMENT LETTER 19-20 ? "y"
+
+.COMMENT Prompt string: "Accountability"
+.COMMENT Recognizer string: "AccouutibilitY"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+819 1729 0
+819 1718 5
+819 1510 10
+819 1479 16
+819 1479 21
+819 1500 26
+819 1593 31
+840 1677 36
+850 1760 42
+871 1854 47
+881 1864 52
+881 1854 57
+913 1781 62
+923 1698 68
+944 1604 73
+954 1531 78
+954 1479 83
+965 1458 89
+.PEN_UP
+
+.PEN_DOWN
+829 1593 439
+808 1604 444
+819 1604 449
+840 1604 455
+881 1614 460
+913 1614 465
+.PEN_UP
+
+.PEN_DOWN
+1163 1635 824
+1152 1645 829
+1131 1645 834
+1100 1635 840
+1090 1593 845
+1090 1573 850
+1090 1541 855
+1110 1520 860
+1142 1500 866
+.PEN_UP
+
+.PEN_DOWN
+1350 1666 1208
+1329 1666 1213
+1308 1656 1218
+1288 1614 1224
+1288 1573 1229
+1288 1520 1234
+1308 1500 1239
+1329 1479 1244
+.PEN_UP
+
+.PEN_DOWN
+1496 1593 1538
+1475 1573 1543
+1475 1541 1548
+1485 1510 1554
+1506 1510 1559
+1538 1510 1564
+1579 1541 1569
+1590 1583 1574
+1590 1614 1580
+1579 1645 1585
+1517 1666 1590
+1485 1666 1595
+1465 1656 1600
+1465 1635 1606
+1496 1573 1611
+.PEN_UP
+
+.PEN_DOWN
+1683 1645 2032
+1683 1614 2037
+1683 1573 2042
+1715 1531 2048
+1756 1531 2053
+1777 1531 2058
+1798 1552 2063
+1808 1573 2068
+1798 1614 2074
+1777 1625 2079
+1767 1635 2084
+1767 1645 2089
+.PEN_UP
+
+.PEN_DOWN
+1892 1656 2307
+1881 1635 2312
+1881 1604 2317
+1892 1583 2323
+1902 1583 2328
+1913 1583 2333
+1944 1614 2338
+1965 1635 2343
+1975 1656 2349
+1985 1656 2354
+1985 1645 2359
+1996 1635 2364
+2006 1604 2370
+2027 1583 2375
+2048 1552 2380
+.PEN_UP
+
+.PEN_DOWN
+2163 1833 2746
+2163 1833 2751
+2163 1833 2756
+2173 1812 2762
+2173 1760 2767
+2183 1687 2772
+2183 1625 2777
+2183 1573 2782
+2194 1541 2788
+.PEN_UP
+
+.PEN_DOWN
+2142 1625 2911
+2121 1635 2916
+2121 1635 2921
+2152 1635 2927
+2183 1635 2932
+2225 1635 2937
+.PEN_UP
+
+.PEN_DOWN
+2340 1666 3185
+2340 1656 3190
+2350 1635 3195
+2350 1604 3201
+2360 1583 3206
+2360 1562 3211
+2360 1562 3216
+.PEN_UP
+
+.PEN_DOWN
+2350 1770 3350
+2329 1781 3355
+2319 1791 3360
+2319 1781 3366
+.PEN_UP
+
+.PEN_DOWN
+2517 1812 3680
+2517 1802 3685
+2506 1770 3690
+2506 1718 3696
+2517 1645 3701
+2538 1593 3706
+2569 1583 3711
+2600 1583 3716
+2621 1604 3722
+2621 1635 3727
+2610 1656 3732
+2590 1677 3737
+2569 1698 3742
+2538 1687 3748
+2538 1687 3753
+2548 1656 3758
+.PEN_UP
+
+.PEN_DOWN
+2715 1687 4009
+2704 1687 4014
+2715 1677 4019
+2725 1645 4025
+2735 1614 4030
+2746 1593 4035
+2746 1583 4040
+.PEN_UP
+
+.PEN_DOWN
+2704 1812 4174
+2704 1823 4179
+2704 1823 4184
+2704 1823 4190
+.PEN_UP
+
+.PEN_DOWN
+2850 1823 4504
+2850 1823 4509
+2850 1802 4514
+2850 1760 4520
+2850 1687 4525
+2860 1645 4530
+2881 1593 4535
+.PEN_UP
+
+.PEN_DOWN
+2985 1666 4668
+2985 1666 4673
+2985 1645 4678
+2996 1635 4684
+2996 1614 4689
+3006 1593 4694
+.PEN_UP
+
+.PEN_DOWN
+2985 1802 4833
+2965 1802 4838
+2965 1802 4843
+.PEN_UP
+
+.PEN_DOWN
+3121 1854 4998
+3110 1854 5003
+3110 1843 5008
+3110 1812 5014
+3121 1760 5019
+3121 1687 5024
+3131 1604 5029
+3142 1541 5034
+.PEN_UP
+
+.PEN_DOWN
+3058 1656 5218
+3048 1666 5223
+3058 1666 5228
+3069 1677 5234
+3110 1677 5239
+3163 1666 5244
+.PEN_UP
+
+.PEN_DOWN
+3256 1656 5327
+3256 1635 5332
+3246 1614 5337
+3246 1593 5343
+3246 1573 5348
+3246 1541 5353
+.PEN_UP
+
+.PEN_DOWN
+3194 1770 5547
+3194 1750 5552
+3215 1708 5557
+3246 1677 5563
+3277 1666 5568
+3298 1656 5573
+3340 1677 5578
+3350 1708 5583
+3350 1750 5589
+3350 1781 5594
+.PEN_UP
+
+.COMMENT End of File

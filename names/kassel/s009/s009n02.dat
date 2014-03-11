@@ -1,0 +1,217 @@
+.VERSION 1.0
+.COMMENT File s009n02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 9
+.STYLE PRINTED
+.HAND L
+.AGE 29
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 115
+ Student: Yes
+ Where educated: RI
+ Home language: English
+ Name: Nancy
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "13262"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "2"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "2"
+
+.COMMENT Prompt string: "13262"
+.COMMENT Recognizer string: "13262"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1538 1645 0
+1538 1635 5
+1538 1635 10
+1538 1645 16
+1527 1687 21
+1527 1750 26
+1527 1833 31
+1517 1885 36
+1506 1937 42
+1496 1979 47
+1496 2010 52
+1496 2010 57
+1496 2010 62
+1496 2000 68
+.PEN_UP
+
+.PEN_DOWN
+1715 1937 384
+1715 1937 389
+1715 1948 394
+1715 1958 400
+1756 1989 405
+1788 2000 410
+1819 1989 415
+1840 1968 420
+1850 1916 426
+1840 1875 431
+1819 1843 436
+1798 1833 441
+1767 1812 446
+1767 1812 452
+1767 1812 457
+1767 1812 462
+1798 1823 467
+1829 1823 473
+1860 1802 478
+1902 1760 483
+1902 1718 488
+1892 1677 493
+1860 1645 499
+1808 1625 504
+1788 1625 509
+1756 1625 514
+1756 1645 519
+.PEN_UP
+
+.PEN_DOWN
+2079 1895 933
+2069 1906 938
+2069 1916 943
+2079 1948 949
+2100 1958 954
+2121 1979 959
+2152 1979 964
+2173 1948 969
+2183 1895 975
+2183 1843 980
+2173 1781 985
+2152 1708 990
+2131 1677 996
+2110 1656 1001
+2110 1645 1006
+2110 1645 1011
+2131 1656 1016
+2173 1656 1022
+2235 1656 1027
+2277 1656 1032
+2288 1656 1037
+2308 1656 1042
+.PEN_UP
+
+.PEN_DOWN
+2538 2010 1483
+2548 2020 1488
+2548 2020 1493
+2517 2000 1499
+2475 1948 1504
+2444 1895 1509
+2433 1843 1514
+2423 1791 1519
+2444 1718 1525
+2475 1687 1530
+2517 1666 1535
+2558 1666 1540
+2600 1718 1546
+2600 1760 1551
+2590 1791 1556
+2558 1823 1561
+2506 1843 1566
+2475 1854 1572
+2454 1854 1577
+.PEN_UP
+
+.PEN_DOWN
+2777 1937 1977
+2777 1948 1982
+2777 1968 1987
+2788 1989 1993
+2798 2020 1998
+2829 2031 2003
+2850 2031 2008
+2881 2020 2013
+2892 1979 2019
+2892 1916 2024
+2892 1864 2029
+2860 1812 2034
+2840 1750 2040
+2808 1718 2045
+2798 1698 2050
+2788 1687 2055
+2788 1677 2060
+2798 1666 2066
+2829 1656 2071
+2871 1645 2076
+2944 1645 2081
+2996 1656 2086
+3038 1656 2092
+3058 1666 2097
+3058 1666 2102
+.PEN_UP
+
+.COMMENT End of File

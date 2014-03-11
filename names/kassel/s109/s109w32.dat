@@ -1,0 +1,226 @@
+.VERSION 1.0
+.COMMENT File s109w32
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 109
+.STYLE PRINTED
+.HAND R
+.AGE 28
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 165
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Patrick
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Puf+f"
+.SEGMENT LETTER 0 ? "P"
+.SEGMENT LETTER 1 ? "u"
+.SEGMENT LETTER 2,4-4:6 ? "f"
+.SEGMENT LETTER 4:7-4:7 ? "+"
+.SEGMENT LETTER 3,4:8-4 ? "f"
+
+.COMMENT Prompt string: "Puff"
+.COMMENT Recognizer string: "Pvlf"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1788 1562 0
+1788 1573 5
+1788 1145 10
+1798 1104 16
+1798 1062 21
+1798 1052 26
+1798 1041 31
+1798 1052 36
+1788 1073 42
+1788 1156 47
+1767 1270 52
+1756 1437 57
+1756 1531 62
+1756 1625 68
+1767 1698 73
+1777 1791 78
+1798 1833 83
+1819 1864 89
+1829 1864 94
+1860 1864 99
+1881 1843 104
+1923 1823 109
+1954 1770 115
+1975 1708 120
+1975 1666 125
+1954 1604 130
+1913 1531 135
+1850 1458 141
+1819 1427 146
+1798 1416 151
+1788 1406 156
+1788 1406 161
+1777 1395 167
+1777 1395 172
+1777 1385 177
+.PEN_UP
+
+.PEN_DOWN
+1975 1354 769
+1975 1354 774
+1975 1343 779
+1975 1312 785
+1985 1250 790
+1985 1187 795
+1985 1145 800
+1996 1114 805
+2006 1093 811
+2006 1083 816
+2017 1083 821
+2027 1083 826
+2048 1104 832
+2069 1156 837
+2090 1229 842
+2100 1270 847
+2110 1302 852
+2110 1312 858
+2110 1312 863
+2100 1312 868
+2100 1312 873
+.PEN_UP
+
+.PEN_DOWN
+2433 1656 1373
+2433 1677 1378
+2423 1687 1383
+2413 1698 1389
+2402 1698 1394
+2392 1698 1399
+2350 1677 1404
+2298 1635 1409
+2277 1593 1415
+2256 1531 1420
+2246 1448 1425
+2246 1333 1430
+2246 1270 1436
+2246 1218 1441
+2246 1187 1446
+2256 1156 1451
+2256 1145 1456
+2256 1135 1462
+2256 1135 1467
+2267 1156 1472
+.PEN_UP
+
+.PEN_DOWN
+2548 1635 1758
+2548 1656 1763
+2579 1677 1768
+2590 1687 1774
+2590 1698 1779
+2600 1698 1784
+2590 1698 1789
+2579 1698 1794
+2558 1698 1800
+2517 1687 1805
+2485 1677 1810
+2454 1635 1815
+2413 1583 1820
+2392 1500 1826
+2381 1458 1831
+2381 1343 1836
+2402 1281 1841
+2402 1239 1847
+2413 1208 1852
+2433 1145 1857
+2433 1145 1862
+2433 1145 1867
+2433 1145 1873
+2433 1166 1878
+.PEN_UP
+
+.PEN_DOWN
+2121 1354 2362
+2110 1354 2367
+2110 1364 2372
+2121 1364 2378
+2142 1364 2383
+2183 1375 2388
+2246 1395 2393
+2298 1406 2398
+2340 1416 2404
+2381 1427 2409
+2444 1427 2414
+2465 1427 2419
+2475 1427 2424
+2496 1427 2430
+2506 1427 2435
+2517 1427 2440
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,220 @@
+.VERSION 1.0
+.COMMENT File s031w52
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 31
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 110
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Elizabeth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Seek&e&r"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1 ? "e"
+.SEGMENT LETTER 2 ? "e"
+.SEGMENT LETTER 3-4:4 ? "k"
+.SEGMENT LETTER 4:5-4:5 ? "&"
+.SEGMENT LETTER 4:6-4:19 ? "e"
+.SEGMENT LETTER 4:20-4:24 ? "&"
+.SEGMENT LETTER 4:25-4 ? "r"
+
+.COMMENT Prompt string: "Seeker"
+.COMMENT Recognizer string: "SeeVa"
+.COMMENT Transcriber Comment: "Questionable alignment of k."
+
+.PEN_DOWN
+1392 739 0
+1392 739 5
+1381 739 10
+1371 739 16
+1350 739 21
+1319 708 26
+1298 687 31
+1298 677 36
+1319 666 42
+1350 666 47
+1381 666 52
+1413 656 57
+1444 635 62
+1454 614 68
+1454 593 73
+1433 583 78
+1360 552 83
+1340 552 89
+1329 562 94
+.PEN_UP
+
+.PEN_DOWN
+1496 625 440
+1506 625 445
+1527 635 450
+1548 645 456
+1569 656 461
+1579 666 466
+1579 677 471
+1569 687 476
+1558 687 482
+1548 687 487
+1538 656 492
+1527 635 497
+1527 614 502
+1538 604 508
+1579 593 513
+1600 593 518
+1621 604 523
+.PEN_UP
+
+.PEN_DOWN
+1631 656 769
+1631 656 774
+1642 656 779
+1652 656 785
+1683 656 790
+1694 666 795
+1704 677 800
+1704 687 805
+1704 698 811
+1694 698 816
+1673 687 821
+1652 666 826
+1652 645 832
+1652 635 837
+1663 625 842
+1694 625 847
+1725 625 852
+1767 645 858
+.PEN_UP
+
+.PEN_DOWN
+1746 791 1209
+1746 770 1214
+1756 739 1219
+1767 698 1225
+1777 656 1230
+1788 635 1235
+1788 625 1240
+1788 635 1245
+1788 635 1251
+1798 656 1256
+1808 687 1261
+1819 708 1266
+1819 729 1272
+1829 739 1277
+.PEN_UP
+
+.PEN_DOWN
+1798 677 1483
+1788 666 1488
+1788 656 1493
+1798 645 1499
+1819 645 1504
+1850 645 1509
+1881 656 1514
+1902 666 1519
+1923 677 1525
+1933 687 1530
+1933 708 1535
+1933 718 1540
+1923 718 1546
+1902 708 1551
+1892 687 1556
+1892 666 1561
+1892 656 1566
+1902 645 1572
+1923 645 1577
+1944 645 1582
+1975 666 1587
+1996 687 1592
+2006 698 1598
+2006 708 1603
+2006 708 1608
+2017 708 1613
+2017 677 1618
+2027 666 1624
+2027 656 1629
+2027 645 1634
+2027 645 1639
+2017 656 1644
+2017 666 1650
+2027 677 1655
+2038 698 1660
+2058 708 1665
+2079 718 1670
+2090 729 1676
+2100 729 1681
+.PEN_UP
+
+.COMMENT End of File

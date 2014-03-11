@@ -1,0 +1,218 @@
+.VERSION 1.0
+.COMMENT File s123n09
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 123
+.STYLE PRINTED
+.HAND R
+.AGE 31
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 185
+ Student: Yes
+ Where educated: PA
+ Home language: English
+ Name: Bronwen
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "61449"
+.SEGMENT LETTER 0 ? "6"
+.SEGMENT LETTER 1 ? "1"
+.SEGMENT LETTER 2-3 ? "4"
+.SEGMENT LETTER 4-5 ? "4"
+.SEGMENT LETTER 6 ? "9"
+
+.COMMENT Prompt string: "61449"
+.COMMENT Recognizer string: "61449"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1860 1062 0
+1860 1073 5
+1860 1073 10
+1860 1062 16
+1850 1041 21
+1829 1000 26
+1808 948 31
+1798 885 36
+1798 854 42
+1808 833 47
+1829 833 52
+1860 833 57
+1892 843 62
+1923 875 68
+1933 895 73
+1933 927 78
+1933 948 83
+1923 958 89
+1913 958 94
+1892 937 99
+1881 895 104
+1881 864 109
+1892 833 115
+1902 812 120
+1913 802 125
+.PEN_UP
+
+.PEN_DOWN
+2027 1052 495
+2027 1052 500
+2027 1041 505
+2027 1010 511
+2027 958 516
+2027 885 521
+2027 854 526
+2017 823 531
+2017 812 537
+.PEN_UP
+
+.PEN_DOWN
+2163 1041 769
+2163 1041 774
+2163 1031 779
+2152 1020 785
+2142 1000 790
+2121 979 795
+2121 958 800
+2131 948 805
+2152 948 811
+2173 937 816
+2194 937 821
+2225 948 826
+2246 948 832
+.PEN_UP
+
+.PEN_DOWN
+2256 1041 1044
+2256 1052 1049
+2256 989 1054
+2246 916 1060
+2246 875 1065
+2235 833 1070
+2235 812 1075
+2235 802 1080
+2235 812 1086
+.PEN_UP
+
+.PEN_DOWN
+2329 1062 1318
+2329 1062 1323
+2329 1052 1328
+2329 1052 1334
+2319 1020 1339
+2319 989 1344
+2319 968 1349
+2329 948 1354
+2350 948 1360
+2381 948 1365
+2413 958 1370
+2444 968 1375
+.PEN_UP
+
+.PEN_DOWN
+2454 1062 1593
+2444 1062 1598
+2454 1041 1603
+2454 1000 1609
+2444 948 1614
+2433 854 1619
+2423 823 1624
+2423 812 1629
+.PEN_UP
+
+.PEN_DOWN
+2600 1000 1813
+2621 1031 1818
+2631 1041 1823
+2642 1062 1829
+2642 1073 1834
+2642 1083 1839
+2621 1083 1844
+2590 1073 1849
+2569 1062 1855
+2548 1041 1860
+2538 1020 1865
+2538 989 1870
+2548 979 1876
+2569 979 1881
+2590 989 1886
+2610 1000 1891
+2621 1020 1896
+2621 1041 1902
+2621 1041 1907
+2610 1020 1912
+2610 979 1917
+2600 927 1922
+2600 823 1928
+2600 791 1933
+2610 770 1938
+2610 760 1943
+.PEN_UP
+
+.COMMENT End of File

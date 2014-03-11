@@ -1,0 +1,228 @@
+.VERSION 1.0
+.COMMENT File s133w05
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 133
+.STYLE PRINTED
+.HAND R
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Rejected
+ Weight: 162
+ Student: Yes
+ Where educated: Canada
+ Home language: English & Korean
+ Name: Frank
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0 ? "M&e&n&u"
+.SEGMENT LETTER 0-0:50 ? "M"
+.SEGMENT LETTER 0:51-0:54 ? "&"
+.SEGMENT LETTER 0:55-0:68 ? "e"
+.SEGMENT LETTER 0:69-0:72 ? "&"
+.SEGMENT LETTER 0:73-0:92 ? "n"
+.SEGMENT LETTER 0:93-0:99 ? "&"
+.SEGMENT LETTER 0:100-0 ? "u"
+
+.COMMENT Prompt string: "Menu"
+.COMMENT Recognizer string: ""
+.COMMENT Transcriber Comment: "!Subject writes cursively; possible character after u."
+
+.PEN_DOWN
+1413 2187 0
+1381 2177 5
+1360 2104 10
+1340 1979 16
+1298 1750 21
+1246 1541 26
+1215 1333 31
+1173 1156 36
+1121 979 42
+1090 937 47
+1090 937 52
+1090 1010 57
+1131 1145 62
+1173 1291 68
+1215 1448 73
+1267 1635 78
+1350 1854 83
+1392 2000 89
+1413 2093 94
+1413 2166 99
+1413 2198 104
+1433 2166 109
+1454 2073 115
+1475 1937 120
+1475 1802 125
+1454 1635 130
+1423 1489 135
+1392 1270 141
+1371 1145 146
+1371 1062 151
+1381 1020 156
+1402 1031 161
+1444 1073 167
+1475 1145 172
+1527 1302 177
+1569 1458 182
+1610 1625 188
+1663 1781 193
+1746 1948 198
+1788 2041 203
+1819 2083 208
+1840 2083 214
+1850 2052 219
+1840 1958 224
+1808 1833 229
+1777 1666 234
+1715 1458 240
+1683 1312 245
+1683 1218 250
+1704 1156 255
+1735 1125 260
+1767 1125 266
+1808 1125 271
+1850 1145 276
+1913 1198 281
+1965 1260 286
+2017 1333 292
+2058 1416 297
+2100 1489 302
+2100 1531 307
+2090 1531 312
+2069 1531 318
+2027 1458 323
+1996 1395 328
+1985 1323 333
+1985 1270 339
+2006 1250 344
+2027 1239 349
+2069 1250 354
+2131 1302 359
+2183 1354 365
+2225 1395 370
+2267 1416 375
+2298 1416 380
+2308 1385 385
+2308 1333 391
+2298 1270 396
+2288 1229 401
+2277 1198 406
+2267 1198 411
+2267 1208 417
+2298 1270 422
+2340 1333 427
+2381 1416 432
+2423 1458 438
+2475 1479 443
+2485 1468 448
+2485 1437 453
+2485 1385 458
+2485 1312 464
+2485 1281 469
+2496 1250 474
+2506 1250 479
+2548 1250 484
+2579 1281 490
+2621 1343 495
+2663 1416 500
+2715 1489 505
+2725 1531 510
+2725 1531 516
+2725 1531 521
+2704 1468 526
+2694 1406 531
+2683 1343 536
+2683 1291 542
+2694 1281 547
+2715 1281 552
+2735 1302 557
+2788 1364 562
+2819 1416 568
+2840 1448 573
+2840 1458 578
+2840 1406 583
+2840 1354 589
+2840 1312 594
+2860 1291 599
+2892 1291 604
+2933 1312 609
+2985 1354 615
+3038 1437 620
+3079 1489 625
+3110 1520 630
+3121 1531 635
+3121 1531 641
+3121 1500 646
+3121 1448 651
+3142 1385 656
+3183 1323 661
+.PEN_UP
+
+.COMMENT End of File

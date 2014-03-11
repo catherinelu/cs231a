@@ -1,0 +1,223 @@
+.VERSION 1.0
+.COMMENT File s133w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 133
+.STYLE PRINTED
+.HAND R
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Rejected
+ Weight: 162
+ Student: Yes
+ Where educated: Canada
+ Home language: English & Korean
+ Name: Frank
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Ta&x&i"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2-2:31 ? "a"
+.SEGMENT LETTER 2:32-2:40 ? "&"
+.SEGMENT LETTER 2:41-2:50,4 ? "x"
+.SEGMENT LETTER 2:51-2:58 ? "&"
+.SEGMENT LETTER 2:59-3 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "T?i"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+663 1770 0
+642 1770 5
+652 1781 10
+694 1781 16
+767 1791 21
+860 1812 26
+954 1843 31
+1079 1895 36
+1173 1937 42
+1267 1979 47
+1360 2020 52
+1465 2052 57
+.PEN_UP
+
+.PEN_DOWN
+1131 1875 385
+1121 1875 390
+1121 1875 395
+1131 1823 401
+1142 1750 406
+1152 1656 411
+1152 1552 416
+1131 1427 421
+1100 1312 427
+1069 1218 432
+1048 1135 437
+1048 1083 442
+1079 1083 448
+.PEN_UP
+
+.PEN_DOWN
+1663 1458 714
+1652 1468 719
+1652 1479 724
+1642 1489 730
+1621 1489 735
+1590 1489 740
+1558 1489 745
+1496 1479 750
+1423 1406 756
+1371 1343 761
+1340 1281 766
+1329 1208 771
+1350 1177 776
+1381 1156 782
+1423 1166 787
+1485 1208 792
+1538 1250 797
+1579 1302 803
+1600 1364 808
+1631 1448 813
+1642 1489 818
+1642 1520 823
+1642 1520 829
+1642 1510 834
+1631 1468 839
+1621 1395 844
+1621 1323 849
+1631 1239 855
+1652 1187 860
+1683 1145 865
+1725 1125 870
+1788 1125 875
+1829 1156 881
+1892 1208 886
+1944 1270 891
+1985 1354 896
+2006 1416 902
+2027 1468 907
+2048 1500 912
+2058 1510 917
+2079 1510 922
+2100 1510 928
+2131 1489 933
+2173 1458 938
+2204 1406 943
+2225 1354 948
+2246 1281 954
+2277 1218 959
+2319 1177 964
+2360 1156 969
+2423 1135 974
+2475 1135 980
+2538 1156 985
+2590 1198 990
+2663 1270 995
+2704 1333 1000
+2735 1406 1006
+2746 1468 1011
+2756 1510 1016
+2756 1510 1021
+2756 1489 1026
+2756 1437 1032
+2746 1375 1037
+2735 1312 1042
+2735 1270 1047
+2746 1218 1053
+2777 1198 1058
+2819 1198 1063
+2871 1208 1068
+2975 1218 1073
+3027 1239 1079
+3090 1270 1084
+3142 1291 1089
+.PEN_UP
+
+.PEN_DOWN
+2892 1812 2032
+2829 1823 2037
+2808 1823 2042
+2808 1812 2048
+.PEN_UP
+
+.PEN_DOWN
+2517 1635 2252
+2496 1635 2257
+2454 1625 2262
+2423 1562 2268
+2381 1479 2273
+2340 1375 2278
+2256 1208 2283
+2173 1073 2288
+2090 927 2294
+2027 823 2299
+.PEN_UP
+
+.COMMENT End of File

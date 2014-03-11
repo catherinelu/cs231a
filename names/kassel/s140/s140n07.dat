@@ -1,0 +1,209 @@
+.VERSION 1.0
+.COMMENT File s140n07
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 140
+.STYLE PRINTED
+.HAND R
+.AGE 34
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 200
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Jonathan
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "02066"
+.SEGMENT LETTER 0 ? "0"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "0"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "6"
+
+.COMMENT Prompt string: "02066"
+.COMMENT Recognizer string: "02066"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1475 1010 0
+1413 1041 5
+1392 1073 10
+1371 1093 16
+1371 1125 21
+1381 1198 26
+1423 1270 31
+1475 1333 36
+1548 1395 42
+1631 1448 47
+1683 1458 52
+1735 1448 57
+1767 1395 62
+1767 1323 68
+1735 1250 73
+1694 1166 78
+1621 1083 83
+1569 1031 89
+1527 989 94
+1496 989 99
+.PEN_UP
+
+.PEN_DOWN
+1923 1541 494
+1954 1573 499
+1996 1625 504
+2058 1656 510
+2142 1666 515
+2194 1656 520
+2246 1625 525
+2256 1520 530
+2246 1437 536
+2194 1333 541
+2121 1250 546
+2027 1156 551
+1985 1145 556
+1975 1145 562
+1975 1187 567
+2027 1250 572
+2100 1281 577
+2183 1312 583
+2267 1323 588
+2371 1323 593
+2413 1312 598
+.PEN_UP
+
+.PEN_DOWN
+2683 1552 933
+2715 1541 938
+2735 1531 943
+2725 1520 949
+2704 1500 954
+2663 1500 959
+2600 1520 964
+2548 1541 969
+2517 1593 975
+2506 1656 980
+2517 1729 985
+2558 1791 990
+2621 1823 996
+2683 1823 1001
+2756 1770 1006
+2777 1698 1011
+2777 1635 1016
+2756 1531 1022
+2725 1479 1027
+2694 1468 1032
+2694 1468 1037
+.PEN_UP
+
+.PEN_DOWN
+3090 2093 1428
+3048 2020 1433
+3017 1937 1438
+3006 1864 1444
+3006 1781 1449
+3017 1687 1454
+3038 1635 1459
+3079 1614 1464
+3110 1614 1470
+3173 1666 1475
+3215 1729 1480
+3235 1791 1485
+3235 1843 1490
+3204 1864 1496
+3173 1854 1501
+3142 1802 1506
+3131 1739 1511
+3142 1677 1517
+.PEN_UP
+
+.PEN_DOWN
+3392 2156 1867
+3381 2125 1872
+3371 2073 1877
+3360 2020 1883
+3350 1958 1888
+3340 1864 1893
+3340 1791 1898
+3360 1729 1903
+3402 1718 1909
+3433 1718 1914
+3485 1750 1919
+3517 1802 1924
+3527 1875 1930
+3527 1906 1935
+3506 1927 1940
+3475 1916 1945
+3444 1843 1950
+3423 1770 1956
+3413 1698 1961
+.PEN_UP
+
+.COMMENT End of File

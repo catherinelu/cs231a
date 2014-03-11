@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s077n16
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 77
+.STYLE PRINTED
+.HAND L
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 135
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: Russell
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "94095"
+.SEGMENT LETTER 0 ? "9"
+.SEGMENT LETTER 1-2 ? "4"
+.SEGMENT LETTER 3 ? "0"
+.SEGMENT LETTER 4 ? "9"
+.SEGMENT LETTER 5 ? "5"
+
+.COMMENT Prompt string: "94095"
+.COMMENT Recognizer string: "?4o?s"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1517 2031 0
+1527 2041 5
+1517 2062 10
+1506 2073 16
+1485 2083 21
+1444 2073 26
+1392 2041 31
+1371 2000 36
+1360 1979 42
+1371 1948 47
+1402 1937 52
+1433 1937 57
+1475 1958 62
+1506 1979 68
+1527 1979 73
+1538 1979 78
+1548 1958 83
+1548 1823 89
+1548 1760 94
+1558 1718 99
+1569 1698 104
+1569 1687 109
+.PEN_UP
+
+.PEN_DOWN
+1673 2010 494
+1673 1989 499
+1663 1979 504
+1663 1948 510
+1663 1927 515
+1663 1875 520
+1663 1854 525
+1673 1833 530
+1694 1823 536
+1735 1833 541
+1777 1843 546
+1808 1854 551
+1819 1854 556
+.PEN_UP
+
+.PEN_DOWN
+1829 2010 769
+1829 2010 774
+1840 1989 779
+1829 1948 785
+1819 1895 790
+1808 1833 795
+1808 1770 800
+1829 1718 805
+1840 1677 811
+1840 1645 816
+.PEN_UP
+
+.PEN_DOWN
+2006 1927 1044
+2006 1927 1049
+1996 1927 1054
+1965 1895 1060
+1933 1854 1065
+1923 1823 1070
+1923 1781 1075
+1965 1739 1080
+2017 1729 1086
+2069 1729 1091
+2100 1770 1096
+2121 1833 1101
+2110 1875 1106
+2079 1906 1112
+2038 1927 1117
+.PEN_UP
+
+.PEN_DOWN
+2215 1979 1428
+2235 1979 1433
+2235 1989 1438
+2225 2000 1444
+2204 1989 1449
+2183 1968 1454
+2163 1958 1459
+2163 1937 1464
+2173 1927 1470
+2183 1927 1475
+2204 1927 1480
+2246 1927 1485
+2267 1916 1490
+2288 1864 1496
+2298 1812 1501
+2298 1750 1506
+2308 1718 1511
+2319 1698 1517
+2319 1687 1522
+.PEN_UP
+
+.PEN_DOWN
+2517 2020 1867
+2527 2031 1872
+2538 2031 1877
+2538 2041 1883
+2527 2041 1888
+2496 2020 1893
+2454 2020 1898
+2433 2010 1903
+2423 2010 1909
+2423 2000 1914
+2423 1989 1919
+2423 1979 1924
+2433 1958 1930
+2444 1927 1935
+2454 1916 1940
+2465 1895 1945
+2485 1895 1950
+2506 1885 1956
+2527 1864 1961
+2548 1843 1966
+2569 1802 1971
+2579 1750 1976
+2579 1718 1982
+2569 1698 1987
+2548 1687 1992
+2517 1698 1997
+2496 1708 2002
+2475 1718 2008
+2475 1718 2013
+2475 1729 2018
+2485 1729 2023
+2485 1729 2028
+.PEN_UP
+
+.COMMENT End of File

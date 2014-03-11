@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s063w41
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 63
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: NJ
+ Home language: English
+ Name: Tarik
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Shadow"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1 ? "h"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3 ? "d"
+.SEGMENT LETTER 4 ? "o"
+.SEGMENT LETTER 5 ? "w"
+
+.COMMENT Prompt string: "Shadow"
+.COMMENT Recognizer string: "Sh?dou"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1840 1260 0
+1840 1260 5
+1808 1260 10
+1756 1250 16
+1694 1239 21
+1652 1218 26
+1621 1208 31
+1610 1198 36
+1621 1177 42
+1663 1156 47
+1725 1125 52
+1798 1083 57
+1840 1062 62
+1850 1052 68
+1840 1031 73
+1777 1010 78
+1715 1010 83
+1652 1010 89
+1600 1031 94
+1579 1052 99
+1579 1062 104
+.PEN_UP
+
+.PEN_DOWN
+1944 1291 549
+1923 1281 554
+1923 1250 559
+1923 1208 565
+1923 1145 570
+1933 1093 575
+1944 1073 580
+1954 1062 585
+1954 1062 591
+1965 1083 596
+1985 1114 601
+1996 1114 606
+2006 1114 612
+2006 1093 617
+2006 1083 622
+2006 1062 627
+2017 1052 632
+2027 1052 638
+.PEN_UP
+
+.PEN_DOWN
+2121 1104 933
+2121 1104 938
+2100 1104 943
+2090 1104 949
+2090 1093 954
+2090 1083 959
+2090 1073 964
+2100 1073 969
+2110 1073 975
+2121 1083 980
+2131 1083 985
+2131 1083 990
+2131 1083 996
+2131 1073 1001
+2142 1062 1006
+2152 1052 1011
+2163 1052 1016
+.PEN_UP
+
+.PEN_DOWN
+2267 1302 1263
+2267 1312 1268
+2267 1312 1273
+2267 1270 1279
+2267 1229 1284
+2277 1166 1289
+2298 1083 1294
+2298 1052 1299
+2298 1041 1305
+2308 1041 1310
+2308 1062 1315
+2288 1083 1320
+2267 1093 1326
+2246 1093 1331
+2225 1093 1336
+2225 1073 1341
+2225 1062 1346
+2246 1052 1352
+2277 1052 1357
+.PEN_UP
+
+.PEN_DOWN
+2402 1052 1647
+2392 1062 1652
+2381 1062 1657
+2360 1062 1663
+2360 1073 1668
+2350 1083 1673
+2350 1093 1678
+2360 1104 1683
+2381 1104 1689
+2392 1093 1694
+2402 1073 1699
+2402 1062 1704
+2402 1052 1710
+2392 1041 1715
+2381 1041 1720
+.PEN_UP
+
+.PEN_DOWN
+2413 1104 2032
+2423 1083 2037
+2423 1083 2042
+2444 1062 2048
+2444 1062 2053
+2444 1062 2058
+2454 1062 2063
+2475 1073 2068
+2485 1083 2074
+2496 1083 2079
+2506 1083 2084
+2506 1073 2089
+2506 1062 2094
+2517 1062 2100
+2527 1062 2105
+2538 1062 2110
+2548 1073 2115
+2569 1083 2121
+2590 1093 2126
+2621 1093 2131
+.PEN_UP
+
+.COMMENT End of File

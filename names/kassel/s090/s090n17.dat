@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s090n17
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 90
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 0
+ Student: Yes
+ Where educated: India
+ Home language: English & Gujarati
+ Name: Gargi
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "23687"
+.SEGMENT LETTER 0 ? "2"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "6"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4-5 ? "7"
+
+.COMMENT Prompt string: "23687"
+.COMMENT Recognizer string: "23687?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1298 1916 0
+1277 1916 5
+1267 1927 10
+1277 1948 16
+1298 1968 21
+1329 2000 26
+1360 2000 31
+1371 1979 36
+1371 1927 42
+1350 1843 47
+1329 1770 52
+1298 1718 57
+1298 1687 62
+1308 1687 68
+1350 1718 73
+1381 1760 78
+1413 1791 83
+1454 1823 89
+1475 1823 94
+.PEN_UP
+
+.PEN_DOWN
+1517 1979 494
+1517 1979 499
+1517 1989 504
+1527 2020 510
+1558 2041 515
+1590 2052 520
+1600 2052 525
+1610 2031 530
+1600 1989 536
+1579 1927 541
+1548 1885 546
+1527 1864 551
+1527 1864 556
+1527 1864 562
+1548 1875 567
+1600 1895 572
+1631 1895 577
+1663 1875 583
+1663 1833 588
+1631 1791 593
+1590 1739 598
+1548 1708 603
+1517 1698 609
+.PEN_UP
+
+.PEN_DOWN
+1808 2083 1043
+1798 2083 1048
+1798 2062 1053
+1788 2010 1059
+1777 1916 1064
+1767 1843 1069
+1767 1781 1074
+1788 1739 1079
+1808 1729 1085
+1840 1750 1090
+1860 1791 1095
+1860 1823 1100
+1850 1854 1106
+1819 1854 1111
+1788 1833 1116
+1767 1791 1121
+1767 1750 1126
+1767 1750 1132
+.PEN_UP
+
+.PEN_DOWN
+2079 2083 1428
+2079 2104 1433
+2038 2114 1438
+2006 2093 1444
+1975 2073 1449
+1954 2041 1454
+1954 2000 1459
+1965 1968 1464
+1985 1948 1470
+2027 1916 1475
+2079 1875 1480
+2121 1833 1485
+2121 1791 1490
+2100 1760 1496
+2048 1739 1501
+1996 1739 1506
+1975 1760 1511
+1975 1812 1517
+1996 1885 1522
+2027 1948 1527
+2069 2000 1532
+2110 2041 1537
+2142 2062 1543
+.PEN_UP
+
+.PEN_DOWN
+2235 2041 1922
+2225 2020 1927
+2204 2020 1932
+2204 2020 1938
+2194 2020 1943
+2204 2031 1948
+2204 2041 1953
+2225 2052 1958
+2246 2073 1964
+2288 2093 1969
+2308 2104 1974
+2329 2114 1979
+2340 2135 1984
+2340 2135 1990
+2329 2125 1995
+2319 2093 2000
+2308 2031 2005
+2288 1906 2011
+2267 1802 2016
+2256 1718 2021
+2246 1666 2026
+2246 1635 2031
+2246 1635 2037
+.PEN_UP
+
+.PEN_DOWN
+2204 1854 2307
+2235 1875 2312
+2277 1895 2317
+2319 1927 2323
+2371 1948 2328
+.PEN_UP
+
+.COMMENT End of File

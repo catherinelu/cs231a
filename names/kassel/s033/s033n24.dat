@@ -1,0 +1,236 @@
+.VERSION 1.0
+.COMMENT File s033n24
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 33
+.STYLE PRINTED
+.HAND R
+.AGE 31
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 120
+ Student: Yes
+ Where educated: Romania
+ Home language: Romanian
+ Name: Marina
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "05521"
+.SEGMENT LETTER 0 ? "0"
+.SEGMENT LETTER 1-2 ? "5"
+.SEGMENT LETTER 3-4 ? "5"
+.SEGMENT LETTER 5 ? "2"
+.SEGMENT LETTER 6 ? "1"
+
+.COMMENT Prompt string: "05521"
+.COMMENT Recognizer string: "091521"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1631 843 0
+1631 833 5
+1621 823 10
+1610 791 16
+1600 739 21
+1600 698 26
+1610 666 31
+1631 635 36
+1663 614 42
+1694 614 47
+1725 635 52
+1746 656 57
+1767 718 62
+1777 760 68
+1777 802 73
+1756 843 78
+1715 875 83
+1683 875 89
+1652 864 94
+1631 843 99
+1610 781 104
+1621 750 109
+.PEN_UP
+
+.PEN_DOWN
+1913 1073 439
+1913 1052 444
+1902 1010 449
+1881 958 455
+1881 937 460
+1881 937 465
+1881 937 470
+1881 948 475
+1902 979 481
+1923 989 486
+1954 1000 491
+1985 989 496
+2006 958 502
+2027 927 507
+2017 864 512
+2006 823 517
+1985 791 522
+1965 781 528
+1944 781 533
+1913 781 538
+.PEN_UP
+
+.PEN_DOWN
+1860 1062 878
+1881 1083 883
+1913 1114 888
+1944 1145 894
+.PEN_UP
+
+.PEN_DOWN
+2142 1239 1043
+2142 1229 1048
+2152 1208 1053
+2142 1145 1059
+2121 1093 1064
+2100 1052 1069
+2100 1020 1074
+2100 1020 1079
+2100 1041 1085
+2121 1062 1090
+2152 1114 1095
+2173 1135 1100
+2194 1156 1106
+2215 1156 1111
+2235 1135 1116
+2256 1114 1121
+2267 1073 1126
+2277 1041 1132
+2267 989 1137
+2256 958 1142
+2235 948 1147
+2215 948 1152
+2183 968 1158
+.PEN_UP
+
+.PEN_DOWN
+2131 1208 1538
+2131 1239 1543
+2163 1260 1548
+2183 1281 1554
+2204 1312 1559
+.PEN_UP
+
+.PEN_DOWN
+2465 1364 1812
+2454 1364 1817
+2454 1354 1822
+2444 1354 1828
+2444 1364 1833
+2423 1385 1838
+2423 1427 1843
+2423 1468 1848
+2433 1489 1854
+2454 1489 1859
+2485 1489 1864
+2527 1458 1869
+2548 1406 1874
+2548 1333 1880
+2538 1260 1885
+2496 1187 1890
+2454 1145 1895
+2423 1125 1901
+2392 1125 1906
+2360 1145 1911
+2360 1187 1916
+2360 1229 1921
+2381 1250 1927
+2423 1250 1932
+2485 1229 1937
+2527 1208 1942
+2558 1166 1947
+2579 1156 1953
+2579 1145 1958
+2590 1145 1963
+.PEN_UP
+
+.PEN_DOWN
+2631 1395 2416
+2631 1427 2421
+2642 1448 2426
+2652 1510 2432
+2663 1562 2437
+2663 1604 2442
+2673 1625 2447
+2673 1625 2452
+2683 1614 2458
+2683 1562 2463
+2704 1479 2468
+2715 1406 2473
+2725 1343 2478
+2725 1302 2484
+2725 1270 2489
+2725 1250 2494
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,220 @@
+.VERSION 1.0
+.COMMENT File s032n02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 32
+.STYLE PRINTED
+.HAND R
+.AGE 23
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: MD
+ Home language: Spanish
+ Name: Michael
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "13262"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "3"
+.SEGMENT LETTER 2 ? "2"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "2"
+
+.COMMENT Prompt string: "13262"
+.COMMENT Recognizer string: "13?62"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1444 2437 0
+1444 2437 5
+1444 2437 10
+1444 2416 16
+1433 2364 21
+1433 2312 26
+1423 2281 31
+1413 2250 36
+1413 2218 42
+1413 2208 47
+1413 2208 52
+1413 2208 57
+.PEN_UP
+
+.PEN_DOWN
+1506 2448 329
+1506 2458 334
+1517 2458 339
+1538 2458 345
+1579 2458 350
+1600 2458 355
+1631 2437 360
+1631 2427 365
+1631 2395 371
+1600 2364 376
+1579 2333 381
+1558 2312 386
+1548 2312 392
+1548 2312 397
+1569 2302 402
+1590 2281 407
+1621 2270 412
+1631 2250 418
+1642 2239 423
+1642 2218 428
+1621 2187 433
+1600 2166 438
+1579 2145 444
+1548 2135 449
+1548 2135 454
+.PEN_UP
+
+.PEN_DOWN
+1735 2458 824
+1735 2458 829
+1735 2458 834
+1756 2468 840
+1788 2468 845
+1808 2458 850
+1829 2448 855
+1850 2427 860
+1850 2406 866
+1840 2375 871
+1808 2333 876
+1788 2302 881
+1767 2270 886
+1756 2250 892
+1746 2229 897
+1746 2218 902
+1767 2198 907
+1798 2198 913
+1829 2208 918
+1860 2218 923
+1902 2229 928
+1913 2229 933
+1913 2229 939
+1913 2239 944
+1913 2239 949
+.PEN_UP
+
+.PEN_DOWN
+2090 2468 1373
+2090 2468 1378
+2090 2458 1383
+2058 2427 1389
+2027 2395 1394
+2006 2354 1399
+1985 2312 1404
+1975 2270 1409
+1975 2250 1415
+1985 2229 1420
+2006 2218 1425
+2048 2218 1430
+2090 2239 1436
+2110 2260 1441
+2131 2281 1446
+2142 2312 1451
+2131 2323 1456
+2121 2323 1462
+2079 2312 1467
+2027 2291 1472
+2006 2270 1477
+1985 2270 1482
+1985 2260 1488
+1996 2260 1493
+2017 2260 1498
+.PEN_UP
+
+.PEN_DOWN
+2235 2500 1977
+2246 2510 1982
+2267 2510 1987
+2288 2510 1993
+2308 2510 1998
+2329 2489 2003
+2340 2468 2008
+2340 2448 2013
+2329 2416 2019
+2298 2364 2024
+2267 2323 2029
+2246 2291 2034
+2235 2270 2040
+2235 2250 2045
+2246 2239 2050
+2256 2239 2055
+2288 2239 2060
+2329 2239 2066
+2350 2250 2071
+2360 2250 2076
+2360 2250 2081
+2360 2250 2086
+2360 2250 2092
+.PEN_UP
+
+.COMMENT End of File

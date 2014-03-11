@@ -1,0 +1,309 @@
+.VERSION 1.0
+.COMMENT File s145n09
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 145
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX M
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 150
+ Student: Yes
+ Where educated: TX
+ Home language: English & Chinese
+ Name: Alexander
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "61449"
+.SEGMENT LETTER 0 ? "6"
+.SEGMENT LETTER 1 ? "1"
+.SEGMENT LETTER 2-3 ? "4"
+.SEGMENT LETTER 4-5 ? "4"
+.SEGMENT LETTER 6 ? "9"
+
+.COMMENT Prompt string: "61449"
+.COMMENT Recognizer string: "Gluuq"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1850 573 0
+1840 573 5
+1840 562 10
+1829 562 16
+1829 562 21
+1819 552 26
+1808 552 31
+1808 541 36
+1798 541 42
+1798 531 47
+1798 520 52
+1788 500 57
+1788 489 62
+1777 479 68
+1767 448 73
+1767 375 78
+1777 364 83
+1777 354 89
+1788 343 94
+1788 333 99
+1798 323 104
+1808 312 109
+1819 312 115
+1860 312 120
+1871 323 125
+1881 323 130
+1892 323 135
+1902 333 141
+1913 333 146
+1913 343 151
+1913 354 156
+1913 385 161
+1913 385 167
+1902 385 172
+1892 395 177
+1881 395 182
+1860 395 188
+1850 395 193
+1829 385 198
+1819 385 203
+1819 385 208
+1808 375 214
+1798 375 219
+1788 364 224
+1788 364 229
+1798 364 234
+.PEN_UP
+
+.PEN_DOWN
+1965 541 440
+1965 541 445
+1965 448 450
+1965 437 456
+1965 427 461
+1965 406 466
+1965 354 471
+1965 343 476
+1965 343 482
+1965 343 487
+1975 343 492
+1975 343 497
+.PEN_UP
+
+.PEN_DOWN
+2079 520 714
+2069 520 719
+2069 520 724
+2069 510 730
+2058 510 735
+2048 489 740
+2048 479 745
+2048 468 750
+2048 448 756
+2048 437 761
+2058 437 766
+2069 437 771
+2079 437 776
+2121 437 782
+2131 437 787
+2142 437 792
+2152 448 797
+2163 448 803
+2163 458 808
+2163 458 813
+2173 468 818
+.PEN_UP
+
+.PEN_DOWN
+2173 541 989
+2163 541 994
+2163 531 999
+2163 531 1005
+2152 510 1010
+2152 489 1015
+2152 479 1020
+2152 468 1025
+2152 458 1031
+2142 448 1036
+2142 427 1041
+2131 416 1046
+2131 385 1052
+2142 375 1057
+2163 375 1062
+.PEN_UP
+
+.PEN_DOWN
+2246 520 1208
+2246 531 1213
+2235 531 1218
+2235 531 1224
+2235 520 1229
+2225 520 1234
+2225 520 1239
+2225 510 1244
+2225 510 1250
+2215 500 1255
+2204 479 1260
+2204 479 1265
+2204 458 1270
+2204 437 1276
+2204 437 1281
+2204 437 1286
+2215 427 1291
+2225 427 1297
+2277 427 1302
+2288 427 1307
+2298 427 1312
+2308 448 1317
+2308 448 1323
+2319 448 1328
+2319 458 1333
+.PEN_UP
+
+.PEN_DOWN
+2319 531 1428
+2308 541 1433
+2308 541 1438
+2308 541 1444
+2308 520 1449
+2298 520 1454
+2298 510 1459
+2298 500 1464
+2298 500 1470
+2298 479 1475
+2288 468 1480
+2288 458 1485
+2288 448 1490
+2277 416 1496
+2277 385 1501
+2277 385 1506
+2288 375 1511
+2288 375 1517
+2288 375 1522
+2298 375 1527
+.PEN_UP
+
+.PEN_DOWN
+2454 510 1648
+2465 520 1653
+2475 531 1658
+2485 541 1664
+2496 541 1669
+2496 552 1674
+2496 562 1679
+2506 562 1684
+2506 562 1690
+2496 562 1695
+2496 562 1700
+2485 552 1705
+2475 541 1710
+2465 541 1716
+2454 531 1721
+2444 531 1726
+2444 520 1731
+2433 510 1737
+2413 500 1742
+2402 489 1747
+2392 479 1752
+2392 468 1757
+2392 448 1763
+2392 448 1768
+2402 437 1773
+2402 427 1778
+2413 427 1783
+2423 427 1789
+2444 427 1794
+2454 427 1799
+2454 427 1804
+2465 437 1809
+2475 448 1815
+2485 458 1820
+2485 458 1825
+2485 468 1830
+2496 479 1836
+2496 479 1841
+2496 500 1846
+2496 510 1851
+2496 520 1856
+2496 479 1862
+2496 468 1867
+2496 458 1872
+2496 437 1877
+2485 427 1882
+2485 406 1888
+2485 385 1893
+2485 375 1898
+2475 354 1903
+2475 323 1908
+2475 302 1914
+2485 291 1919
+2485 281 1924
+.PEN_UP
+
+.COMMENT End of File

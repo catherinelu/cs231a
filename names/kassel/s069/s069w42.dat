@@ -1,0 +1,228 @@
+.VERSION 1.0
+.COMMENT File s069w42
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 69
+.STYLE PRINTED
+.HAND R
+.AGE 30
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 158
+ Student: No
+ Where educated: Peru
+ Home language: Spanish
+ Name: Uri
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-9 ? "Kidding"
+.SEGMENT LETTER 0-2 ? "K"
+.SEGMENT LETTER 3 ? "i"
+.SEGMENT LETTER 4-5 ? "d"
+.SEGMENT LETTER 6 ? "d"
+.SEGMENT LETTER 7 ? "i"
+.SEGMENT LETTER 8 ? "n"
+.SEGMENT LETTER 9 ? "g"
+
+.COMMENT Prompt string: "Kidding"
+.COMMENT Recognizer string: "KI?I?ING"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+329 2281 0
+329 2281 5
+329 2302 10
+329 2343 16
+340 2416 21
+350 2458 26
+360 2500 31
+360 2552 36
+360 2541 42
+.PEN_UP
+
+.PEN_DOWN
+371 2427 275
+381 2375 280
+402 2333 285
+423 2302 291
+454 2291 296
+465 2291 301
+.PEN_UP
+
+.PEN_DOWN
+340 2375 440
+340 2385 445
+371 2416 450
+402 2458 456
+433 2489 461
+475 2500 466
+.PEN_UP
+
+.PEN_DOWN
+527 2302 660
+527 2323 665
+538 2354 670
+538 2395 676
+548 2437 681
+558 2458 686
+.PEN_UP
+
+.PEN_DOWN
+663 2416 879
+652 2427 884
+663 2427 889
+673 2406 895
+694 2385 900
+725 2364 905
+735 2343 910
+735 2323 915
+725 2302 921
+725 2281 926
+694 2281 931
+663 2291 936
+642 2291 942
+.PEN_UP
+
+.PEN_DOWN
+663 2323 1209
+652 2333 1214
+663 2343 1219
+673 2385 1225
+683 2406 1230
+.PEN_UP
+
+.PEN_DOWN
+777 2448 1429
+788 2437 1434
+808 2427 1439
+819 2395 1445
+850 2364 1450
+850 2333 1455
+840 2302 1460
+829 2281 1465
+788 2270 1471
+767 2270 1476
+756 2291 1481
+756 2312 1486
+756 2343 1492
+777 2364 1497
+798 2385 1502
+808 2385 1507
+.PEN_UP
+
+.PEN_DOWN
+913 2270 2088
+902 2270 2093
+902 2281 2098
+913 2302 2104
+923 2354 2109
+933 2375 2114
+.PEN_UP
+
+.PEN_DOWN
+975 2281 2307
+975 2291 2312
+975 2312 2317
+985 2333 2323
+985 2354 2328
+996 2354 2333
+996 2354 2338
+1006 2343 2343
+1006 2323 2349
+1017 2302 2354
+1027 2302 2359
+1048 2302 2364
+1069 2312 2370
+1069 2333 2375
+1090 2364 2380
+1090 2406 2385
+.PEN_UP
+
+.PEN_DOWN
+1204 2427 2802
+1204 2427 2807
+1194 2427 2812
+1183 2416 2818
+1183 2406 2823
+1173 2375 2828
+1173 2333 2833
+1173 2302 2838
+1183 2281 2844
+1194 2270 2849
+1215 2281 2854
+1225 2291 2859
+1225 2323 2864
+1235 2323 2870
+1246 2323 2875
+1267 2312 2880
+1298 2312 2885
+1329 2302 2891
+.PEN_UP
+
+.COMMENT End of File

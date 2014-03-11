@@ -1,0 +1,233 @@
+.VERSION 1.0
+.COMMENT File s063w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 63
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 170
+ Student: Yes
+ Where educated: NJ
+ Home language: English
+ Name: Tarik
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-9 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-3 ? "k"
+.SEGMENT LETTER 4-5 ? "i"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8 ? "n"
+.SEGMENT LETTER 9 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "Slc?iing"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2058 1208 0
+2058 1218 5
+2048 1229 10
+2038 1229 16
+2027 1229 21
+1985 1229 26
+1944 1229 31
+1913 1218 36
+1892 1208 42
+1871 1198 47
+1860 1187 52
+1871 1177 57
+1892 1166 62
+1944 1135 68
+1985 1125 73
+2017 1104 78
+2038 1083 83
+2048 1062 89
+2038 1041 94
+2017 1020 99
+1985 1020 104
+1933 1020 109
+1892 1020 115
+1871 1052 120
+1860 1073 125
+1871 1073 130
+.PEN_UP
+
+.PEN_DOWN
+2121 1239 659
+2110 1239 664
+2100 1229 669
+2100 1187 675
+2100 1145 680
+2100 1104 685
+2110 1083 690
+2121 1052 695
+2121 1041 701
+2131 1020 706
+.PEN_UP
+
+.PEN_DOWN
+2142 1104 879
+2142 1093 884
+2152 1093 889
+2152 1083 895
+2173 1062 900
+2183 1062 905
+2194 1062 910
+2204 1062 915
+.PEN_UP
+
+.PEN_DOWN
+2121 1104 1098
+2121 1125 1103
+2131 1135 1108
+2152 1145 1114
+2173 1156 1119
+2204 1145 1124
+.PEN_UP
+
+.PEN_DOWN
+2267 1104 1318
+2267 1104 1323
+2267 1093 1328
+2277 1083 1334
+2288 1062 1339
+.PEN_UP
+
+.PEN_DOWN
+2256 1177 1593
+2267 1177 1598
+.PEN_UP
+
+.PEN_DOWN
+2360 1114 1757
+2360 1073 1762
+2371 1052 1767
+2381 1041 1773
+2392 1010 1778
+2392 1000 1783
+.PEN_UP
+
+.PEN_DOWN
+2360 1187 2032
+2350 1198 2037
+2350 1198 2042
+2360 1198 2048
+.PEN_UP
+
+.PEN_DOWN
+2465 1135 2362
+2465 1135 2367
+2465 1114 2372
+2475 1104 2378
+2485 1083 2383
+2496 1083 2388
+2496 1073 2393
+2506 1073 2398
+2517 1093 2404
+2527 1104 2409
+2548 1104 2414
+2548 1104 2419
+2558 1104 2424
+2558 1083 2430
+2558 1073 2435
+2569 1062 2440
+2569 1041 2445
+2590 1041 2451
+.PEN_UP
+
+.PEN_DOWN
+2694 1073 2856
+2694 1083 2861
+2694 1083 2866
+2673 1083 2872
+2663 1093 2877
+2663 1093 2882
+2652 1093 2887
+2642 1083 2892
+2631 1083 2898
+2631 1083 2903
+2642 1073 2908
+2663 1062 2913
+2704 1041 2918
+2735 1020 2924
+2777 979 2929
+2777 948 2934
+2777 916 2939
+2756 895 2945
+2694 875 2950
+2642 875 2955
+2600 885 2960
+2590 916 2965
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,216 @@
+.VERSION 1.0
+.COMMENT File s088n10
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 88
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: FL
+ Home language: English
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "72898"
+.SEGMENT LETTER 0 ? "7"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "8"
+.SEGMENT LETTER 3 ? "9"
+.SEGMENT LETTER 4 ? "8"
+
+.COMMENT Prompt string: "72898"
+.COMMENT Recognizer string: "?2818"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2444 1218 0
+2413 1218 5
+2402 1218 10
+2402 1218 16
+2402 1229 21
+2402 1239 26
+2413 1250 31
+2433 1250 36
+2465 1239 42
+2517 1250 47
+2558 1250 52
+2590 1260 57
+2610 1250 62
+2621 1187 68
+2621 1104 73
+2610 1000 78
+2621 979 83
+2621 979 89
+2621 979 94
+.PEN_UP
+
+.PEN_DOWN
+2663 1229 384
+2663 1229 389
+2673 1229 394
+2683 1229 400
+2735 1270 405
+2798 1312 410
+2829 1312 415
+2860 1270 420
+2871 1208 426
+2860 1145 431
+2840 1104 436
+2819 1073 441
+2819 1041 446
+2840 1020 452
+2871 1010 457
+2902 1020 462
+2944 1041 467
+2965 1052 473
+.PEN_UP
+
+.PEN_DOWN
+3163 1270 714
+3142 1270 719
+3131 1281 724
+3110 1291 730
+3058 1291 735
+3027 1291 740
+3006 1281 745
+3006 1260 750
+3017 1229 756
+3048 1208 761
+3100 1187 766
+3131 1177 771
+3163 1125 776
+3163 1083 782
+3163 1041 787
+3131 1010 792
+3110 1010 797
+3090 1010 803
+3079 1052 808
+3090 1135 813
+3110 1187 818
+3121 1218 823
+3142 1229 829
+.PEN_UP
+
+.PEN_DOWN
+3308 1260 1153
+3308 1260 1158
+3308 1281 1163
+3319 1291 1169
+3308 1312 1174
+3288 1323 1179
+3256 1312 1184
+3246 1291 1189
+3235 1270 1195
+3256 1239 1200
+3288 1229 1205
+3308 1218 1210
+3319 1218 1216
+3319 1218 1221
+3329 1187 1226
+3329 1125 1231
+3340 1083 1236
+3350 1041 1242
+3360 1020 1247
+3360 1010 1252
+3350 1010 1257
+.PEN_UP
+
+.PEN_DOWN
+3527 1270 1592
+3517 1270 1597
+3517 1281 1602
+3496 1291 1608
+3475 1302 1613
+3444 1302 1618
+3433 1291 1623
+3433 1270 1628
+3444 1250 1634
+3465 1229 1639
+3485 1208 1644
+3527 1166 1649
+3558 1135 1654
+3590 1104 1660
+3600 1083 1665
+3600 1041 1670
+3569 1010 1675
+3548 979 1681
+3527 979 1686
+3506 1000 1691
+3496 1052 1696
+3496 1104 1701
+3496 1156 1707
+3506 1208 1712
+3527 1229 1717
+.PEN_UP
+
+.COMMENT End of File

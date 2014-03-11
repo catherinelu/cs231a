@@ -1,0 +1,231 @@
+.VERSION 1.0
+.COMMENT File s021n10
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 21
+.STYLE PRINTED
+.HAND L
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 225
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Nick
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "72898"
+.SEGMENT LETTER 0 ? "7"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "8"
+.SEGMENT LETTER 3-4 ? "9"
+.SEGMENT LETTER 5 ? "8"
+
+.COMMENT Prompt string: "72898"
+.COMMENT Recognizer string: "7L898"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+340 2833 0
+340 2833 5
+350 2833 10
+360 2833 16
+381 2843 21
+402 2854 26
+433 2854 31
+454 2864 36
+454 2864 42
+454 2843 47
+444 2812 52
+423 2750 57
+402 2708 62
+381 2677 68
+371 2656 73
+360 2645 78
+360 2645 83
+371 2656 89
+.PEN_UP
+
+.PEN_DOWN
+527 2843 494
+527 2843 499
+538 2843 504
+538 2854 510
+538 2854 515
+558 2843 520
+569 2833 525
+579 2802 530
+579 2770 536
+569 2739 541
+548 2698 546
+527 2677 551
+506 2666 556
+506 2666 562
+496 2666 567
+496 2666 572
+506 2666 577
+527 2677 583
+579 2698 588
+610 2708 593
+631 2708 598
+663 2708 603
+683 2708 609
+.PEN_UP
+
+.PEN_DOWN
+756 2833 934
+767 2843 939
+777 2854 944
+777 2864 950
+777 2864 955
+756 2854 960
+735 2843 965
+715 2823 970
+715 2812 976
+715 2791 981
+715 2770 986
+735 2750 991
+746 2739 996
+756 2729 1002
+767 2708 1007
+767 2687 1012
+756 2656 1017
+735 2645 1023
+715 2645 1028
+704 2645 1033
+704 2666 1038
+704 2687 1043
+735 2718 1049
+767 2750 1054
+788 2781 1059
+808 2812 1064
+819 2833 1069
+819 2843 1075
+829 2843 1080
+.PEN_UP
+
+.PEN_DOWN
+933 2854 1538
+933 2854 1543
+944 2843 1548
+944 2802 1554
+933 2760 1559
+923 2708 1564
+923 2677 1569
+913 2656 1574
+.PEN_UP
+
+.PEN_DOWN
+965 2843 1703
+954 2854 1708
+944 2854 1713
+923 2854 1719
+902 2854 1724
+892 2854 1729
+881 2843 1734
+881 2823 1739
+881 2791 1745
+892 2781 1750
+902 2770 1755
+923 2770 1760
+.PEN_UP
+
+.PEN_DOWN
+1121 2875 2032
+1121 2875 2037
+1121 2875 2042
+1110 2875 2048
+1090 2864 2053
+1069 2854 2058
+1058 2833 2063
+1058 2823 2068
+1048 2812 2074
+1058 2791 2079
+1069 2770 2084
+1100 2750 2089
+1121 2739 2094
+1131 2708 2100
+1131 2687 2105
+1131 2666 2110
+1110 2656 2115
+1079 2645 2121
+1069 2656 2126
+1058 2666 2131
+1058 2677 2136
+1079 2718 2141
+1100 2750 2147
+1121 2781 2152
+1163 2843 2157
+1173 2875 2162
+1173 2875 2167
+1183 2875 2173
+.PEN_UP
+
+.COMMENT End of File

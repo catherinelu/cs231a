@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s040n13
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 40
+.STYLE PRINTED
+.HAND L
+.AGE 30
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 175
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: David
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "30464"
+.SEGMENT LETTER 0 ? "3"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2-3 ? "4"
+.SEGMENT LETTER 4 ? "6"
+.SEGMENT LETTER 5-6 ? "4"
+
+.COMMENT Prompt string: "30464"
+.COMMENT Recognizer string: "30464"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1225 2520 0
+1215 2520 5
+1204 2520 10
+1204 2520 16
+1215 2531 21
+1225 2541 26
+1267 2552 31
+1308 2552 36
+1340 2552 42
+1371 2541 47
+1381 2531 52
+1371 2520 57
+1350 2500 62
+1308 2479 68
+1277 2479 73
+1277 2479 78
+1277 2479 83
+1308 2468 89
+1350 2458 94
+1392 2427 99
+1413 2406 104
+1423 2375 109
+1392 2354 115
+1350 2323 120
+1277 2302 125
+1235 2291 130
+1225 2302 135
+1235 2312 141
+.PEN_UP
+
+.PEN_DOWN
+1569 2500 549
+1569 2510 554
+1569 2520 559
+1558 2520 565
+1538 2510 570
+1496 2489 575
+1465 2437 580
+1454 2406 585
+1454 2385 591
+1485 2364 596
+1548 2354 601
+1600 2364 606
+1652 2385 612
+1673 2406 617
+1673 2458 622
+1652 2479 627
+1621 2489 632
+1590 2500 638
+.PEN_UP
+
+.PEN_DOWN
+1767 2552 989
+1756 2541 994
+1746 2520 999
+1746 2489 1005
+1746 2479 1010
+1767 2458 1015
+1788 2448 1020
+1840 2437 1025
+.PEN_UP
+
+.PEN_DOWN
+1902 2562 1154
+1892 2562 1159
+1881 2531 1164
+1871 2489 1170
+1860 2437 1175
+1860 2385 1180
+1871 2323 1185
+1871 2302 1190
+.PEN_UP
+
+.PEN_DOWN
+2142 2562 1428
+2131 2562 1433
+2100 2541 1438
+2058 2520 1444
+2027 2479 1449
+2006 2448 1454
+2006 2395 1459
+2027 2364 1464
+2048 2354 1470
+2100 2364 1475
+2152 2395 1480
+2152 2416 1485
+2152 2427 1490
+2110 2437 1496
+2038 2427 1501
+1985 2406 1506
+1965 2385 1511
+1965 2375 1517
+.PEN_UP
+
+.PEN_DOWN
+2277 2541 1923
+2267 2541 1928
+2267 2531 1933
+2246 2520 1939
+2246 2500 1944
+2246 2468 1949
+2267 2437 1954
+2277 2416 1959
+2298 2406 1965
+.PEN_UP
+
+.PEN_DOWN
+2402 2583 2142
+2381 2552 2147
+2340 2458 2152
+2319 2395 2158
+2298 2333 2163
+2288 2291 2168
+.PEN_UP
+
+.COMMENT End of File

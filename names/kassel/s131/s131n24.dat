@@ -1,0 +1,223 @@
+.VERSION 1.0
+.COMMENT File s131n24
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 131
+.STYLE PRINTED
+.HAND R
+.AGE 30
+.SEX F
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 99
+ Student: Yes
+ Where educated: NY
+ Home language: English & Cantonese
+ Name: Elaine
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "05521"
+.SEGMENT LETTER 0 ? "0"
+.SEGMENT LETTER 1 ? "5"
+.SEGMENT LETTER 2 ? "5"
+.SEGMENT LETTER 3 ? "2"
+.SEGMENT LETTER 4 ? "1"
+
+.COMMENT Prompt string: "05521"
+.COMMENT Recognizer string: "05521"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1548 1562 0
+1517 1583 5
+1496 1583 10
+1465 1552 16
+1423 1489 21
+1392 1406 26
+1381 1302 31
+1402 1177 36
+1444 1114 42
+1485 1093 47
+1558 1104 52
+1642 1156 57
+1683 1208 62
+1704 1270 68
+1725 1343 73
+1715 1437 78
+1694 1479 83
+1652 1510 89
+1610 1531 94
+1548 1552 99
+1517 1552 104
+.PEN_UP
+
+.PEN_DOWN
+2038 1573 440
+2006 1593 445
+1965 1593 450
+1933 1593 456
+1892 1593 461
+1871 1593 466
+1860 1593 471
+1850 1583 476
+1850 1541 482
+1840 1489 487
+1829 1437 492
+1829 1385 497
+1829 1375 502
+1829 1364 508
+1829 1364 513
+1840 1375 518
+1871 1385 523
+1923 1395 529
+1975 1395 534
+2038 1364 539
+2058 1333 544
+2069 1291 549
+2058 1260 555
+2017 1208 560
+1975 1177 565
+1913 1156 570
+1871 1145 575
+1840 1156 581
+.PEN_UP
+
+.PEN_DOWN
+2423 1552 989
+2402 1583 994
+2392 1593 999
+2340 1604 1005
+2288 1604 1010
+2235 1593 1015
+2225 1593 1020
+2215 1583 1025
+2215 1583 1031
+2215 1573 1036
+2204 1541 1041
+2194 1500 1046
+2194 1458 1052
+2183 1416 1057
+2173 1395 1062
+2173 1385 1067
+2183 1385 1072
+2183 1395 1078
+2225 1416 1083
+2277 1427 1088
+2329 1416 1093
+2360 1395 1098
+2392 1343 1104
+2402 1302 1109
+2392 1270 1114
+2371 1229 1119
+2308 1187 1124
+2256 1177 1130
+2225 1177 1135
+2225 1177 1140
+2215 1208 1145
+.PEN_UP
+
+.PEN_DOWN
+2558 1520 1538
+2569 1562 1543
+2600 1583 1548
+2663 1604 1554
+2704 1593 1559
+2746 1573 1564
+2767 1531 1569
+2767 1468 1574
+2735 1416 1580
+2673 1343 1585
+2600 1281 1590
+2579 1260 1595
+2569 1239 1600
+2569 1239 1606
+2600 1239 1611
+2642 1239 1616
+2715 1239 1621
+2777 1250 1627
+2819 1250 1632
+2850 1260 1637
+.PEN_UP
+
+.PEN_DOWN
+2996 1500 1977
+3006 1520 1982
+3038 1562 1987
+3048 1573 1993
+3058 1583 1998
+3058 1573 2003
+3058 1541 2008
+3069 1489 2013
+3069 1406 2019
+3069 1312 2024
+3069 1270 2029
+3069 1239 2034
+3069 1218 2040
+.PEN_UP
+
+.COMMENT End of File

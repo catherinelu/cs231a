@@ -1,0 +1,271 @@
+.VERSION 1.0
+.COMMENT File s085w26
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 85
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 125
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Jane
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Volcanic"
+.SEGMENT LETTER 0 ? "V"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "l"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "a"
+.SEGMENT LETTER 5 ? "n"
+.SEGMENT LETTER 6,8 ? "i"
+.SEGMENT LETTER 7 ? "c"
+
+.COMMENT Prompt string: "Volcanic"
+.COMMENT Recognizer string: "VukANIC?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1267 1468 0
+1277 1510 5
+1298 1541 10
+1319 1562 16
+1340 1562 21
+1340 1541 26
+1340 1489 31
+1319 1395 36
+1277 1270 42
+1256 1198 47
+1235 1156 52
+1235 1104 57
+1256 1073 62
+1277 1073 68
+1308 1073 73
+1340 1093 78
+1423 1166 83
+1496 1260 89
+1579 1364 94
+1652 1458 99
+1704 1531 104
+1725 1552 109
+1725 1573 115
+1725 1573 120
+.PEN_UP
+
+.PEN_DOWN
+1610 1239 549
+1579 1198 554
+1558 1156 559
+1558 1125 565
+1558 1093 570
+1579 1083 575
+1600 1083 580
+1631 1104 585
+1683 1135 591
+1735 1187 596
+1746 1208 601
+1746 1229 606
+1735 1229 612
+1683 1218 617
+1642 1208 622
+1610 1208 627
+1610 1208 632
+.PEN_UP
+
+.PEN_DOWN
+2100 1552 933
+2100 1552 938
+2100 1541 943
+2079 1489 949
+2017 1385 954
+1975 1291 959
+1933 1229 964
+1881 1145 969
+1860 1104 975
+1850 1083 980
+1850 1073 985
+1871 1062 990
+.PEN_UP
+
+.PEN_DOWN
+2194 1281 1208
+2194 1281 1213
+2173 1281 1218
+2142 1270 1224
+2100 1250 1229
+2058 1218 1234
+2017 1187 1239
+1996 1145 1244
+1996 1125 1250
+1996 1104 1255
+2017 1093 1260
+2048 1093 1265
+2110 1114 1270
+.PEN_UP
+
+.PEN_DOWN
+2371 1281 1537
+2371 1281 1542
+2350 1270 1547
+2308 1229 1553
+2246 1177 1558
+2215 1145 1563
+2204 1125 1568
+2204 1114 1573
+2204 1114 1579
+2235 1125 1584
+2277 1145 1589
+2340 1198 1594
+2360 1218 1600
+2371 1229 1605
+2360 1208 1610
+2350 1177 1615
+2319 1156 1620
+2308 1135 1626
+2308 1114 1631
+2329 1104 1636
+2340 1114 1641
+2381 1125 1646
+.PEN_UP
+
+.PEN_DOWN
+2579 1291 1922
+2569 1291 1927
+2558 1260 1932
+2527 1208 1938
+2496 1177 1943
+2475 1145 1948
+2465 1135 1953
+2454 1125 1958
+2465 1125 1964
+2475 1145 1969
+2506 1177 1974
+2569 1229 1979
+2610 1260 1984
+2663 1281 1990
+2694 1281 1995
+2704 1270 2000
+2704 1250 2005
+2694 1208 2011
+2673 1166 2016
+2652 1135 2021
+2642 1114 2026
+2642 1114 2031
+2642 1114 2037
+.PEN_UP
+
+.PEN_DOWN
+2892 1291 2361
+2881 1291 2366
+2871 1281 2371
+2860 1250 2377
+2819 1208 2382
+2798 1177 2387
+2777 1145 2392
+2756 1125 2397
+2756 1114 2403
+.PEN_UP
+
+.PEN_DOWN
+3100 1281 2636
+3100 1281 2641
+3110 1291 2646
+3110 1291 2652
+3100 1291 2657
+3079 1291 2662
+3048 1291 2667
+3017 1270 2672
+2996 1250 2678
+2985 1208 2683
+2975 1177 2688
+2975 1145 2693
+2996 1125 2698
+3017 1114 2704
+3069 1114 2709
+3142 1135 2714
+3204 1156 2719
+3256 1187 2725
+.PEN_UP
+
+.PEN_DOWN
+3183 1541 3075
+3152 1573 3080
+3142 1583 3085
+3142 1583 3091
+3142 1593 3096
+3142 1593 3101
+3142 1593 3106
+3142 1573 3111
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,207 @@
+.VERSION 1.0
+.COMMENT File s030w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 30
+.STYLE PRINTED
+.HAND R
+.AGE 32
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 156
+ Student: Yes
+ Where educated: RI
+ Home language: English
+ Name: William
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fuzz"
+.SEGMENT LETTER 0-1 ? "F"
+.SEGMENT LETTER 2 ? "u"
+.SEGMENT LETTER 3-4 ? "z"
+.SEGMENT LETTER 5-6 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "f?zz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1985 1656 0
+1985 1677 5
+1985 1677 10
+1985 1677 16
+1985 1656 21
+1996 1625 26
+2017 1562 31
+2017 1500 36
+2027 1468 42
+2027 1448 47
+2027 1448 52
+2027 1458 57
+2006 1479 62
+1985 1520 68
+1965 1604 73
+1965 1656 78
+1965 1687 83
+1965 1708 89
+1975 1729 94
+1996 1739 99
+2027 1750 104
+2058 1750 109
+2100 1750 115
+2121 1739 120
+2131 1729 125
+.PEN_UP
+
+.PEN_DOWN
+2006 1635 439
+2006 1635 444
+2069 1635 449
+2100 1635 455
+.PEN_UP
+
+.PEN_DOWN
+2173 1562 714
+2173 1562 719
+2183 1552 724
+2194 1520 730
+2225 1510 735
+2267 1510 740
+2288 1520 745
+2298 1541 750
+2298 1562 756
+2288 1573 761
+2288 1573 766
+2288 1573 771
+2288 1573 776
+2288 1573 782
+2288 1562 787
+2288 1562 792
+2288 1573 797
+2288 1573 803
+2288 1573 808
+2288 1562 813
+2288 1562 818
+2288 1562 823
+2288 1562 829
+.PEN_UP
+
+.PEN_DOWN
+2392 1593 1977
+2381 1593 1982
+2381 1593 1987
+2381 1593 1993
+2413 1583 1998
+2433 1583 2003
+2454 1573 2008
+2465 1562 2013
+2454 1531 2019
+2433 1510 2024
+2433 1489 2029
+2444 1489 2034
+2454 1489 2040
+2485 1489 2045
+2496 1489 2050
+2496 1489 2055
+.PEN_UP
+
+.PEN_DOWN
+2402 1531 2307
+2413 1531 2312
+2433 1531 2317
+2465 1541 2323
+2485 1541 2328
+.PEN_UP
+
+.PEN_DOWN
+2558 1583 2526
+2558 1583 2531
+2558 1583 2536
+2579 1593 2542
+2600 1593 2547
+2621 1593 2552
+2621 1593 2557
+2610 1562 2562
+2600 1531 2568
+2600 1520 2573
+2610 1510 2578
+2621 1500 2583
+2642 1500 2588
+2663 1489 2594
+.PEN_UP
+
+.PEN_DOWN
+2579 1541 2856
+2579 1541 2861
+2600 1541 2866
+2631 1552 2872
+2663 1552 2877
+.PEN_UP
+
+.COMMENT End of File

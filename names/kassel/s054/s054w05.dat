@@ -1,0 +1,220 @@
+.VERSION 1.0
+.COMMENT File s054w05
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 54
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 165
+ Student: Yes
+ Where educated: CA
+ Home language: Taiwanese
+ Name: Anthony
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Menu"
+.SEGMENT LETTER 0-1 ? "M"
+.SEGMENT LETTER 2 ? "e"
+.SEGMENT LETTER 3 ? "n"
+.SEGMENT LETTER 4 ? "u"
+
+.COMMENT Prompt string: "Menu"
+.COMMENT Recognizer string: "Menu"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1965 1687 0
+1965 1687 5
+1965 1698 10
+1965 1698 16
+1954 1687 21
+1954 1666 26
+1933 1604 31
+1881 1510 36
+1808 1343 42
+1767 1250 47
+1756 1218 52
+1756 1208 57
+1767 1229 62
+.PEN_UP
+
+.PEN_DOWN
+1944 1677 330
+1933 1677 335
+1933 1677 340
+1933 1645 346
+1923 1593 351
+1913 1500 356
+1913 1458 361
+1944 1448 366
+1985 1458 372
+2058 1520 377
+2090 1573 382
+2110 1625 387
+2142 1677 392
+2163 1718 398
+2163 1729 403
+2163 1729 408
+2163 1708 413
+2131 1656 419
+2100 1573 424
+2038 1458 429
+1985 1333 434
+1944 1229 439
+1944 1208 445
+1954 1208 450
+.PEN_UP
+
+.PEN_DOWN
+2163 1500 989
+2152 1500 994
+2152 1500 999
+2142 1489 1005
+2142 1458 1010
+2131 1416 1015
+2131 1385 1020
+2152 1375 1025
+2194 1395 1031
+2235 1437 1036
+2256 1468 1041
+2256 1500 1046
+2246 1520 1052
+2225 1520 1057
+2194 1510 1062
+2163 1479 1067
+2121 1427 1072
+2079 1343 1078
+2069 1260 1083
+2090 1208 1088
+2152 1208 1093
+2225 1229 1098
+.PEN_UP
+
+.PEN_DOWN
+2350 1500 1428
+2350 1520 1433
+2350 1520 1438
+2350 1489 1444
+2319 1437 1449
+2267 1333 1454
+2225 1260 1459
+2215 1218 1464
+2215 1218 1470
+2246 1260 1475
+2288 1312 1480
+2308 1375 1485
+2340 1437 1490
+2360 1489 1496
+2392 1520 1501
+2402 1520 1506
+2413 1520 1511
+2413 1500 1517
+2413 1468 1522
+2392 1406 1527
+2350 1323 1532
+2350 1270 1537
+2360 1239 1543
+.PEN_UP
+
+.PEN_DOWN
+2538 1510 1923
+2527 1520 1928
+2527 1520 1933
+2527 1520 1939
+2527 1510 1944
+2517 1489 1949
+2485 1437 1954
+2433 1354 1959
+2402 1260 1965
+2423 1239 1970
+2485 1239 1975
+2527 1270 1980
+2579 1312 1986
+2600 1354 1991
+2610 1406 1996
+2621 1468 2001
+2621 1520 2006
+2621 1531 2012
+2631 1541 2017
+2631 1541 2022
+2642 1541 2027
+2642 1531 2032
+2631 1520 2038
+2631 1479 2043
+2579 1395 2048
+2538 1312 2053
+2538 1250 2058
+2569 1229 2064
+2610 1229 2069
+.PEN_UP
+
+.COMMENT End of File

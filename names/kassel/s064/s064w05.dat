@@ -1,0 +1,209 @@
+.VERSION 1.0
+.COMMENT File s064w05
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 64
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 104
+ Student: Yes
+ Where educated: Hong Kong
+ Home language: Chinese
+ Name: Celia
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-3 ? "Menu"
+.SEGMENT LETTER 0 ? "M"
+.SEGMENT LETTER 1 ? "e"
+.SEGMENT LETTER 2 ? "n"
+.SEGMENT LETTER 3 ? "u"
+
+.COMMENT Prompt string: "Menu"
+.COMMENT Recognizer string: "Menu"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1152 1979 0
+1152 1979 5
+1152 1958 10
+1163 1916 16
+1163 1854 21
+1173 1812 26
+1173 1781 31
+1173 1770 36
+1173 1760 42
+1183 1760 47
+1173 1781 52
+1173 1812 57
+1173 1875 62
+1163 1937 68
+1163 1979 73
+1152 2010 78
+1152 2020 83
+1152 2010 89
+1163 1989 94
+1183 1948 99
+1194 1927 104
+1225 1916 109
+1246 1916 115
+1277 1927 120
+1288 1948 125
+1298 1968 130
+1308 2000 135
+1308 2041 141
+1308 2062 146
+1308 2062 151
+1308 2052 156
+1308 2020 161
+1308 1979 167
+1319 1937 172
+1329 1875 177
+1329 1854 182
+1340 1802 188
+1340 1791 193
+1340 1791 198
+1340 1802 203
+.PEN_UP
+
+.PEN_DOWN
+1423 1843 879
+1433 1854 884
+1444 1864 889
+1454 1895 895
+1465 1916 900
+1465 1937 905
+1465 1948 910
+1454 1958 915
+1444 1958 921
+1433 1948 926
+1423 1927 931
+1423 1875 936
+1423 1854 942
+1444 1833 947
+1454 1812 952
+1475 1802 957
+1485 1802 962
+1506 1802 968
+.PEN_UP
+
+.PEN_DOWN
+1569 1916 1264
+1548 1916 1269
+1548 1906 1274
+1558 1875 1280
+1558 1854 1285
+1569 1833 1290
+1569 1812 1295
+1569 1802 1300
+1569 1812 1306
+1569 1823 1311
+1569 1864 1316
+1579 1895 1321
+1590 1927 1326
+1600 1937 1332
+1610 1937 1337
+1610 1916 1342
+1621 1895 1347
+1631 1875 1353
+1631 1843 1358
+1642 1833 1363
+1652 1823 1368
+1663 1812 1373
+.PEN_UP
+
+.PEN_DOWN
+1715 1927 1758
+1704 1927 1763
+1704 1906 1768
+1704 1875 1774
+1715 1854 1779
+1725 1833 1784
+1735 1823 1789
+1756 1823 1794
+1777 1823 1800
+1788 1843 1805
+1798 1864 1810
+1808 1895 1815
+1808 1937 1820
+1808 1958 1826
+1808 1958 1831
+1808 1958 1836
+1808 1948 1841
+1808 1927 1847
+1808 1875 1852
+1819 1843 1857
+1829 1823 1862
+1850 1812 1867
+1871 1802 1873
+.PEN_UP
+
+.COMMENT End of File

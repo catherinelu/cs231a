@@ -1,0 +1,356 @@
+.VERSION 1.0
+.COMMENT File s056w19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 56
+.STYLE PRINTED
+.HAND L
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 160
+ Student: Yes
+ Where educated: CO
+ Home language: English
+ Name: Scott
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-18 ? "Accountability"
+.SEGMENT LETTER 0 ? "A"
+.SEGMENT LETTER 1 ? "c"
+.SEGMENT LETTER 2 ? "c"
+.SEGMENT LETTER 3 ? "o"
+.SEGMENT LETTER 4 ? "u"
+.SEGMENT LETTER 5 ? "n"
+.SEGMENT LETTER 6-7 ? "t"
+.SEGMENT LETTER 8 ? "a"
+.SEGMENT LETTER 9 ? "b"
+.SEGMENT LETTER 10-11 ? "i"
+.SEGMENT LETTER 12 ? "l"
+.SEGMENT LETTER 13-14 ? "i"
+.SEGMENT LETTER 15-16 ? "t"
+.SEGMENT LETTER 17-18 ? "y"
+
+.COMMENT Prompt string: "Accountability"
+.COMMENT Recognizer string: "?LC?untability"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+329 2510 0
+329 2500 5
+329 2510 10
+329 2531 16
+329 2583 21
+308 2614 26
+308 2635 31
+308 2656 36
+298 2656 42
+298 2645 47
+277 2635 52
+267 2593 57
+256 2562 62
+256 2541 68
+256 2531 73
+256 2541 78
+256 2562 83
+267 2573 89
+267 2583 94
+277 2593 99
+288 2593 104
+298 2593 109
+298 2583 115
+.PEN_UP
+
+.PEN_DOWN
+402 2593 604
+402 2593 609
+392 2604 614
+381 2604 620
+371 2593 625
+371 2593 630
+360 2593 635
+360 2573 640
+371 2562 646
+371 2552 651
+392 2552 656
+413 2552 661
+423 2552 666
+.PEN_UP
+
+.PEN_DOWN
+496 2593 989
+496 2604 994
+496 2604 999
+496 2614 1005
+485 2614 1010
+475 2604 1015
+465 2604 1020
+465 2593 1025
+465 2573 1031
+465 2562 1036
+475 2541 1041
+496 2541 1046
+506 2541 1052
+527 2552 1057
+.PEN_UP
+
+.PEN_DOWN
+569 2593 1319
+579 2593 1324
+579 2583 1329
+579 2573 1335
+569 2562 1340
+569 2552 1345
+558 2552 1350
+548 2562 1355
+548 2573 1361
+548 2583 1366
+548 2593 1371
+.PEN_UP
+
+.PEN_DOWN
+610 2604 1593
+610 2604 1598
+610 2593 1603
+610 2583 1609
+621 2573 1614
+621 2562 1619
+631 2562 1624
+642 2562 1629
+652 2562 1635
+663 2583 1640
+663 2593 1645
+663 2593 1650
+673 2593 1656
+673 2604 1661
+673 2593 1666
+663 2593 1671
+663 2583 1676
+663 2573 1682
+673 2573 1687
+694 2573 1692
+.PEN_UP
+
+.PEN_DOWN
+715 2604 1978
+715 2562 1983
+715 2573 1988
+725 2573 1994
+735 2583 1999
+746 2593 2004
+746 2593 2009
+756 2593 2014
+756 2583 2020
+767 2573 2025
+767 2562 2030
+767 2552 2035
+.PEN_UP
+
+.PEN_DOWN
+819 2666 2362
+819 2666 2367
+819 2656 2372
+819 2583 2378
+819 2562 2383
+819 2552 2388
+.PEN_UP
+
+.PEN_DOWN
+881 2593 2527
+860 2604 2532
+850 2604 2537
+808 2614 2543
+788 2614 2548
+777 2614 2553
+777 2614 2558
+.PEN_UP
+
+.PEN_DOWN
+892 2583 2747
+892 2583 2752
+892 2593 2757
+892 2604 2763
+892 2604 2768
+881 2593 2773
+871 2593 2778
+860 2583 2783
+860 2562 2789
+860 2562 2794
+871 2552 2799
+892 2552 2804
+902 2552 2810
+902 2573 2815
+913 2583 2820
+913 2593 2825
+913 2593 2830
+913 2573 2836
+913 2573 2841
+923 2562 2846
+923 2562 2851
+944 2573 2856
+.PEN_UP
+
+.PEN_DOWN
+975 2666 3241
+975 2656 3246
+975 2635 3251
+975 2604 3257
+975 2583 3262
+975 2583 3267
+975 2583 3272
+996 2593 3277
+1006 2604 3283
+1027 2604 3288
+1027 2583 3293
+1017 2562 3298
+996 2562 3304
+985 2562 3309
+975 2562 3314
+965 2562 3319
+.PEN_UP
+
+.PEN_DOWN
+1048 2625 4339
+1048 2625 4344
+1048 2625 4349
+1048 2614 4355
+1048 2614 4360
+1048 2593 4365
+1048 2583 4370
+1058 2583 4375
+.PEN_UP
+
+.PEN_DOWN
+1038 2687 4614
+1038 2687 4619
+1038 2677 4624
+.PEN_UP
+
+.PEN_DOWN
+1090 2698 4889
+1090 2687 4894
+1090 2687 4899
+1090 2666 4905
+1090 2635 4910
+1090 2593 4915
+1100 2583 4920
+1110 2573 4925
+.PEN_UP
+
+.PEN_DOWN
+1142 2625 5108
+1142 2604 5113
+1152 2583 5118
+1152 2573 5124
+.PEN_UP
+
+.PEN_DOWN
+1152 2677 5273
+1152 2687 5278
+1152 2687 5283
+1152 2698 5289
+.PEN_UP
+
+.PEN_DOWN
+1173 2698 5438
+1173 2677 5443
+1173 2645 5448
+1183 2625 5454
+1183 2593 5459
+1183 2583 5464
+.PEN_UP
+
+.PEN_DOWN
+1215 2635 5548
+1194 2645 5553
+1183 2645 5558
+1163 2656 5564
+1152 2656 5569
+.PEN_UP
+
+.PEN_DOWN
+1183 2645 5767
+1194 2635 5772
+1204 2614 5777
+1215 2604 5783
+1215 2604 5788
+1225 2604 5793
+.PEN_UP
+
+.PEN_DOWN
+1246 2625 5932
+1246 2614 5937
+1235 2593 5942
+1225 2562 5948
+1215 2531 5953
+1215 2500 5958
+1215 2479 5963
+.PEN_UP
+
+.COMMENT End of File

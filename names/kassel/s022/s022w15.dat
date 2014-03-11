@@ -1,0 +1,336 @@
+.VERSION 1.0
+.COMMENT File s022w15
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 22
+.STYLE PRINTED
+.HAND R
+.AGE 36
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 171
+ Student: No
+ Where educated: Italy
+ Home language: Italian
+ Name: Andrea
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-12 ? "Industria+l&iz+ed"
+.SEGMENT LETTER 0 ? "I"
+.SEGMENT LETTER 1 ? "n"
+.SEGMENT LETTER 2 ? "d"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "s"
+.SEGMENT LETTER 5-6 ? "t"
+.SEGMENT LETTER 7 ? "r"
+.SEGMENT LETTER 8-9 ? "i"
+.SEGMENT LETTER 10-10:14 ? "a"
+.SEGMENT LETTER 10:15-10:15 ? "+"
+.SEGMENT LETTER 10:16-10:28 ? "l"
+.SEGMENT LETTER 10:29-10:35 ? "&"
+.SEGMENT LETTER 10:36-10 ? "i"
+.SEGMENT LETTER 11-11:9 ? "z"
+.SEGMENT LETTER 11:10-11:10 ? "+"
+.SEGMENT LETTER 11:11-11 ? "e"
+.SEGMENT LETTER 12 ? "d"
+
+.COMMENT Prompt string: "Industrialized"
+.COMMENT Recognizer string: "lndultK??Ud"
+.COMMENT Transcriber Comment: "Alignment of second i unclear."
+
+.PEN_DOWN
+2527 677 0
+2527 677 5
+2527 687 10
+2527 677 16
+2527 635 21
+2527 593 26
+2517 552 31
+2517 489 36
+2517 468 42
+2506 468 47
+2506 468 52
+2506 468 57
+2517 489 62
+.PEN_UP
+
+.PEN_DOWN
+2579 573 330
+2579 573 335
+2579 520 340
+2579 500 346
+2579 489 351
+2579 489 356
+2579 500 361
+2590 510 366
+2600 541 372
+2600 562 377
+2610 562 382
+2621 562 387
+2621 552 392
+2621 500 398
+2621 479 403
+2621 468 408
+.PEN_UP
+
+.PEN_DOWN
+2725 677 714
+2735 666 719
+2735 645 724
+2735 573 730
+2735 531 735
+2735 510 740
+2735 510 745
+2735 510 750
+2735 520 756
+2735 531 761
+2715 552 766
+2704 562 771
+2694 562 776
+2694 562 782
+2683 552 787
+2683 531 792
+2694 510 797
+2694 500 803
+2704 500 808
+.PEN_UP
+
+.PEN_DOWN
+2767 573 1099
+2767 552 1104
+2767 520 1109
+2777 520 1115
+2788 520 1120
+2788 541 1125
+2798 562 1130
+2798 583 1135
+2808 583 1141
+2808 562 1146
+2798 531 1151
+2808 520 1156
+.PEN_UP
+
+.PEN_DOWN
+2913 604 1483
+2902 593 1488
+2892 573 1493
+2892 552 1499
+2892 531 1504
+2892 510 1509
+2892 500 1514
+2871 489 1519
+2860 479 1525
+2860 479 1530
+2860 500 1535
+.PEN_UP
+
+.PEN_DOWN
+2975 656 1703
+2965 625 1708
+2954 593 1713
+2944 552 1719
+2954 531 1724
+2965 531 1729
+2985 531 1734
+2996 531 1739
+.PEN_UP
+
+.PEN_DOWN
+2913 635 1923
+2902 645 1928
+2902 645 1933
+2913 645 1939
+2933 635 1944
+2954 635 1949
+2975 635 1954
+3006 635 1959
+.PEN_UP
+
+.PEN_DOWN
+3017 604 2087
+3017 573 2092
+3017 562 2097
+3017 552 2103
+3017 541 2108
+3017 541 2113
+3017 552 2118
+3017 583 2123
+3027 593 2129
+3038 604 2134
+3048 614 2139
+3058 614 2144
+.PEN_UP
+
+.PEN_DOWN
+3079 593 2417
+3079 562 2422
+3090 552 2427
+3090 541 2433
+3100 541 2438
+3110 541 2443
+.PEN_UP
+
+.PEN_DOWN
+3142 656 2582
+3131 666 2587
+3121 666 2592
+3110 666 2598
+.PEN_UP
+
+.PEN_DOWN
+3183 635 2966
+3183 635 2971
+3183 635 2976
+3194 635 2982
+3204 614 2987
+3204 593 2992
+3204 583 2997
+3204 573 3002
+3204 562 3008
+3204 573 3013
+3194 573 3018
+3173 573 3023
+3163 562 3028
+3163 552 3034
+3173 552 3039
+3204 552 3044
+3225 573 3049
+3256 593 3055
+3277 635 3060
+3288 687 3065
+3288 729 3070
+3267 739 3075
+3256 739 3081
+3246 708 3086
+3235 666 3091
+3246 635 3096
+3246 604 3101
+3267 573 3107
+3288 562 3112
+3308 573 3117
+3319 573 3122
+3319 573 3127
+3319 573 3133
+3329 562 3138
+3340 562 3143
+3350 562 3148
+3360 573 3154
+3360 593 3159
+3360 614 3164
+3360 635 3169
+3360 656 3174
+3350 666 3180
+3350 687 3185
+.PEN_UP
+
+.PEN_DOWN
+3413 656 3735
+3413 656 3740
+3423 656 3745
+3433 645 3751
+3454 645 3756
+3454 635 3761
+3444 614 3766
+3423 583 3771
+3413 562 3777
+3413 552 3782
+3444 552 3787
+3475 573 3792
+3506 593 3798
+3517 614 3803
+3517 635 3808
+3506 635 3813
+3475 625 3818
+3454 593 3824
+3465 573 3829
+3475 562 3834
+3496 562 3839
+.PEN_UP
+
+.PEN_DOWN
+3642 739 4284
+3652 750 4289
+3652 739 4294
+3642 687 4300
+3631 645 4305
+3631 614 4310
+3621 573 4315
+3621 562 4320
+3621 573 4326
+3621 593 4331
+3621 614 4336
+3610 625 4341
+3590 614 4346
+3590 604 4352
+3590 583 4357
+3600 573 4362
+3621 573 4367
+.PEN_UP
+
+.COMMENT End of File

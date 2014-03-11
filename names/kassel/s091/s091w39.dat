@@ -1,0 +1,293 @@
+.VERSION 1.0
+.COMMENT File s091w39
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 91
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Rejected
+ Weight: 135
+ Student: Yes
+ Where educated: India
+ Home language: Marathi
+ Name: Narendra
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Caf+e&te&ria"
+.SEGMENT LETTER 0 ? "C"
+.SEGMENT LETTER 1 ? "a"
+.SEGMENT LETTER 2-3:4 ? "f"
+.SEGMENT LETTER 3:5-3:5 ? "+"
+.SEGMENT LETTER 3:6-3:17 ? "e"
+.SEGMENT LETTER 3:18-3:24 ? "&"
+.SEGMENT LETTER 3:25-4 ? "t"
+.SEGMENT LETTER 5-5:15 ? "e"
+.SEGMENT LETTER 5:16-5:20 ? "&"
+.SEGMENT LETTER 5:21-5 ? "r"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8 ? "a"
+
+.COMMENT Prompt string: "Cafeteria"
+.COMMENT Recognizer string: "Calu?uia"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2006 1583 0
+1985 1604 5
+1933 1614 10
+1881 1583 16
+1829 1510 21
+1788 1406 26
+1756 1250 31
+1756 1145 36
+1788 1073 42
+1840 1020 47
+1923 968 52
+1975 958 57
+2038 958 62
+.PEN_UP
+
+.PEN_DOWN
+2131 1229 330
+2131 1239 335
+2131 1270 340
+2163 1281 346
+2194 1270 351
+2235 1208 356
+2256 1135 361
+2267 1093 366
+2277 1073 372
+2277 1062 377
+2267 1073 382
+2246 1104 387
+2215 1135 392
+2194 1145 398
+2183 1125 403
+2173 1104 408
+2163 1083 413
+2173 1073 419
+2183 1073 424
+2215 1083 429
+.PEN_UP
+
+.PEN_DOWN
+2485 1468 824
+2454 1510 829
+2433 1562 834
+2402 1593 840
+2371 1614 845
+2371 1614 850
+2360 1593 855
+2360 1531 860
+2371 1448 866
+2392 1302 871
+2402 1218 876
+2402 1156 881
+2402 1104 886
+.PEN_UP
+
+.PEN_DOWN
+2277 1198 1098
+2288 1187 1103
+2308 1187 1108
+2381 1198 1114
+2433 1218 1119
+2496 1229 1124
+2548 1250 1129
+2579 1270 1134
+2579 1270 1140
+2579 1281 1145
+2558 1281 1150
+2527 1260 1155
+2506 1218 1160
+2485 1187 1166
+2496 1156 1171
+2506 1135 1176
+2538 1135 1181
+2569 1156 1187
+2600 1177 1192
+2642 1229 1197
+2652 1270 1202
+2673 1323 1207
+2673 1375 1213
+2663 1437 1218
+2652 1468 1223
+2642 1489 1228
+2642 1468 1233
+2652 1395 1239
+2652 1333 1244
+2652 1250 1249
+2642 1187 1254
+2642 1145 1259
+2642 1125 1265
+.PEN_UP
+
+.PEN_DOWN
+2569 1302 1758
+2569 1302 1763
+2569 1302 1768
+2590 1302 1774
+2631 1323 1779
+2673 1333 1784
+.PEN_UP
+
+.PEN_DOWN
+2725 1250 2032
+2725 1229 2037
+2725 1239 2042
+2735 1239 2048
+2767 1250 2053
+2788 1260 2058
+2798 1281 2063
+2798 1291 2068
+2788 1291 2074
+2767 1291 2079
+2746 1260 2084
+2725 1218 2089
+2725 1198 2094
+2746 1177 2100
+2767 1166 2105
+2788 1177 2110
+2819 1198 2115
+2829 1218 2121
+2850 1250 2126
+2860 1302 2131
+2860 1323 2136
+2871 1323 2141
+2881 1302 2147
+2902 1250 2152
+2902 1208 2157
+2902 1166 2162
+2902 1145 2167
+2902 1135 2173
+2902 1135 2178
+2902 1156 2183
+2902 1187 2188
+2913 1229 2193
+2933 1270 2199
+2944 1281 2204
+2954 1291 2209
+.PEN_UP
+
+.PEN_DOWN
+2975 1291 2581
+2975 1302 2586
+2985 1291 2591
+2985 1270 2597
+2985 1239 2602
+2985 1198 2607
+2985 1156 2612
+2996 1135 2617
+2996 1125 2623
+.PEN_UP
+
+.PEN_DOWN
+2985 1448 2856
+2965 1448 2861
+2965 1427 2866
+2965 1406 2872
+2975 1395 2877
+2985 1395 2882
+2996 1416 2887
+3006 1448 2892
+3006 1458 2898
+2996 1468 2903
+2996 1458 2908
+.PEN_UP
+
+.PEN_DOWN
+3027 1260 3186
+3027 1281 3191
+3038 1302 3196
+3058 1333 3202
+3069 1343 3207
+3110 1343 3212
+3142 1323 3217
+3163 1291 3222
+3173 1250 3228
+3173 1218 3233
+3183 1187 3238
+3183 1177 3243
+3183 1187 3248
+3173 1208 3254
+3163 1229 3259
+3142 1239 3264
+3100 1239 3269
+3079 1229 3275
+3048 1198 3280
+3048 1177 3285
+3048 1166 3290
+3079 1166 3295
+3131 1177 3301
+3173 1198 3306
+.PEN_UP
+
+.COMMENT End of File

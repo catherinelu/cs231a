@@ -1,0 +1,219 @@
+.VERSION 1.0
+.COMMENT File s062n19
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 62
+.STYLE PRINTED
+.HAND R
+.AGE 44
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 150
+ Student: No
+ Where educated: NC
+ Home language: English
+ Name: Carol
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "10342"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "0"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3-4 ? "4"
+.SEGMENT LETTER 5 ? "2"
+
+.COMMENT Prompt string: "10342"
+.COMMENT Recognizer string: "10342"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1735 1125 0
+1735 1145 5
+1735 1145 10
+1725 1093 16
+1704 1062 21
+1673 1000 26
+1673 1000 31
+.PEN_UP
+
+.PEN_DOWN
+1892 1125 384
+1892 1135 389
+1881 1135 394
+1871 1125 400
+1860 1125 405
+1840 1104 410
+1829 1093 415
+1808 1062 420
+1798 1041 426
+1819 1020 431
+1850 1020 436
+1881 1041 441
+1913 1073 446
+1913 1104 452
+1902 1125 457
+1871 1135 462
+1850 1135 467
+.PEN_UP
+
+.PEN_DOWN
+2027 1145 824
+2027 1145 829
+2017 1145 834
+2006 1135 840
+1996 1135 845
+1985 1135 850
+1985 1135 855
+1985 1125 860
+1985 1135 866
+1996 1145 871
+2017 1145 876
+2027 1156 881
+2038 1156 886
+2058 1145 892
+2069 1145 897
+2069 1125 902
+2069 1104 907
+2048 1083 913
+2038 1083 918
+2038 1083 923
+2048 1083 928
+2069 1083 933
+2079 1083 939
+2090 1073 944
+2100 1062 949
+2100 1052 954
+2100 1041 959
+2079 1031 965
+2038 1020 970
+2006 1010 975
+1985 1010 980
+1985 1010 985
+.PEN_UP
+
+.PEN_DOWN
+2204 1166 1538
+2204 1166 1543
+2204 1156 1548
+2194 1135 1554
+2183 1125 1559
+2173 1104 1564
+2163 1093 1569
+2163 1083 1574
+2173 1083 1580
+2194 1083 1585
+2225 1083 1590
+2246 1073 1595
+2256 1073 1600
+.PEN_UP
+
+.PEN_DOWN
+2308 1125 1867
+2298 1135 1872
+2288 1125 1877
+2277 1114 1883
+2256 1083 1888
+2235 1062 1893
+2215 1041 1898
+2215 1031 1903
+2225 1020 1909
+.PEN_UP
+
+.PEN_DOWN
+2402 1125 2142
+2392 1114 2147
+2371 1104 2152
+2360 1093 2158
+2360 1093 2163
+2360 1093 2168
+2360 1104 2173
+2381 1114 2178
+2392 1125 2184
+2413 1135 2189
+2413 1125 2194
+2423 1114 2199
+2423 1104 2204
+2433 1083 2210
+2423 1062 2215
+2402 1041 2220
+2381 1020 2225
+2350 1010 2231
+2340 1010 2236
+2340 1020 2241
+2340 1020 2246
+2360 1020 2251
+2381 1020 2257
+2402 1020 2262
+2423 1010 2267
+2475 989 2272
+2506 968 2277
+2527 937 2283
+.PEN_UP
+
+.COMMENT End of File

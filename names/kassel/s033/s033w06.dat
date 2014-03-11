@@ -1,0 +1,183 @@
+.VERSION 1.0
+.COMMENT File s033w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 33
+.STYLE PRINTED
+.HAND R
+.AGE 31
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 120
+ Student: Yes
+ Where educated: Romania
+ Home language: Romanian
+ Name: Marina
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Taxi"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "IIAXi"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1735 885 0
+1725 906 5
+1725 906 10
+1725 885 16
+1735 843 21
+1777 750 26
+1788 677 31
+1808 604 36
+1819 562 42
+1829 531 47
+1819 541 52
+.PEN_UP
+
+.PEN_DOWN
+1548 812 275
+1548 823 280
+1590 875 285
+1631 927 291
+1704 968 296
+1767 1020 301
+1819 1062 306
+1850 1083 311
+1850 1083 317
+.PEN_UP
+
+.PEN_DOWN
+2027 927 604
+2017 937 609
+1996 937 614
+1965 916 620
+1944 885 625
+1913 843 630
+1892 760 635
+1892 718 640
+1902 687 646
+1933 677 651
+1975 687 656
+2006 718 661
+2027 760 666
+2048 802 672
+2058 854 677
+2048 875 682
+2038 906 687
+2017 916 693
+2017 885 698
+2027 854 703
+2048 823 708
+2090 791 713
+2121 791 719
+.PEN_UP
+
+.PEN_DOWN
+2152 1052 1098
+2142 1062 1103
+2152 1062 1108
+2183 1041 1114
+2215 1020 1119
+2246 989 1124
+2288 968 1129
+2319 958 1134
+2340 958 1140
+.PEN_UP
+
+.PEN_DOWN
+2267 1125 1318
+2246 1125 1323
+2225 1083 1328
+2204 1020 1334
+2194 968 1339
+2194 937 1344
+2204 916 1349
+.PEN_UP
+
+.PEN_DOWN
+2360 1250 1538
+2360 1208 1543
+2360 1135 1548
+2371 1093 1554
+2371 1062 1559
+2381 1052 1564
+.PEN_UP
+
+.PEN_DOWN
+2319 1354 1758
+2308 1375 1763
+2308 1375 1768
+.PEN_UP
+
+.COMMENT End of File

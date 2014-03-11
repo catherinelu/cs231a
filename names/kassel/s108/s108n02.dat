@@ -1,0 +1,218 @@
+.VERSION 1.0
+.COMMENT File s108n02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 108
+.STYLE PRINTED
+.HAND R
+.AGE 53
+.SEX M
+.WRITER_INFO
+ Group: Rejected
+ Weight: 180
+ Student: No
+ Where educated: MA
+ Home language: English
+ Name: Charles
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "12362"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "2"
+
+.COMMENT Prompt string: "13262"
+.COMMENT Recognizer string: "12562"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1746 1645 0
+1756 1666 5
+1756 1677 10
+1756 1614 16
+1746 1562 21
+1725 1510 26
+1694 1437 31
+1683 1406 36
+1673 1395 42
+1683 1395 47
+1694 1406 52
+1725 1448 57
+.PEN_UP
+
+.PEN_DOWN
+1944 1698 494
+1944 1698 499
+1933 1708 504
+1933 1708 510
+1933 1708 515
+1944 1718 520
+1965 1739 525
+1985 1750 530
+2017 1750 536
+2017 1750 541
+2017 1739 546
+2006 1708 551
+1985 1677 556
+1975 1645 562
+1965 1614 567
+1965 1573 572
+1975 1573 577
+1985 1573 583
+2006 1573 588
+2038 1604 593
+2079 1635 598
+.PEN_UP
+
+.PEN_DOWN
+2225 1823 933
+2194 1843 938
+2194 1843 943
+2183 1854 949
+2183 1854 954
+2204 1864 959
+2246 1875 964
+2256 1875 969
+2256 1864 975
+2246 1843 980
+2225 1823 985
+2215 1802 990
+2215 1791 996
+2225 1770 1001
+2225 1760 1006
+2235 1750 1011
+2235 1739 1016
+2225 1718 1022
+2204 1698 1027
+2173 1677 1032
+2131 1666 1037
+2090 1666 1042
+2090 1677 1048
+.PEN_UP
+
+.PEN_DOWN
+2433 2041 1647
+2433 2041 1652
+2433 2041 1657
+2433 2041 1663
+2423 2020 1668
+2413 2000 1673
+2392 1958 1678
+2392 1927 1683
+2381 1895 1689
+2381 1875 1694
+2402 1854 1699
+2423 1854 1704
+2444 1854 1710
+2475 1864 1715
+2485 1885 1720
+2496 1906 1725
+2485 1916 1730
+2475 1937 1736
+2444 1937 1741
+2423 1937 1746
+2413 1927 1751
+2413 1906 1756
+2423 1906 1762
+.PEN_UP
+
+.PEN_DOWN
+2621 2062 2087
+2621 2083 2092
+2621 2093 2097
+2610 2114 2103
+2610 2125 2108
+2610 2135 2113
+2600 2135 2118
+2621 2145 2123
+2621 2156 2129
+2652 2166 2134
+2683 2177 2139
+2704 2177 2144
+2715 2177 2150
+2715 2166 2155
+2694 2135 2160
+2673 2104 2165
+2642 2073 2170
+2631 2052 2176
+2621 2031 2181
+2621 2020 2186
+2631 2010 2191
+2652 2000 2196
+2683 2000 2202
+2715 2010 2207
+2756 2020 2212
+2777 2031 2217
+2808 2041 2222
+2819 2041 2228
+2829 2041 2233
+.PEN_UP
+
+.COMMENT End of File

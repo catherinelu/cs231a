@@ -1,0 +1,224 @@
+.VERSION 1.0
+.COMMENT File s034w04
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 34
+.STYLE PRINTED
+.HAND R
+.AGE 21
+.SEX M
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 160
+ Student: No
+ Where educated: CA
+ Home language: English
+ Name: Roland
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Skiing"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-2 ? "k"
+.SEGMENT LETTER 3-4 ? "i"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7 ? "n"
+.SEGMENT LETTER 8 ? "g"
+
+.COMMENT Prompt string: "Skiing"
+.COMMENT Recognizer string: "Skiing"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2288 1562 0
+2288 1593 5
+2235 1583 10
+2173 1552 16
+2100 1510 21
+2027 1468 26
+1954 1385 31
+1933 1343 36
+1944 1323 42
+1975 1291 47
+2048 1270 52
+2110 1239 57
+2173 1208 62
+2215 1187 68
+2235 1145 73
+2204 1104 78
+2142 1062 83
+2069 1031 89
+1985 1010 94
+.PEN_UP
+
+.PEN_DOWN
+2350 1520 439
+2350 1510 444
+2340 1468 449
+2319 1364 455
+2298 1270 460
+2288 1198 465
+2288 1145 470
+2288 1114 475
+.PEN_UP
+
+.PEN_DOWN
+2433 1291 714
+2433 1291 719
+2413 1291 724
+2371 1281 730
+2329 1260 735
+2298 1250 740
+2267 1239 745
+2267 1229 750
+2267 1218 756
+2288 1198 761
+2319 1166 766
+2371 1135 771
+2413 1114 776
+2433 1093 782
+.PEN_UP
+
+.PEN_DOWN
+2538 1239 1043
+2538 1239 1048
+2548 1218 1053
+2548 1177 1059
+2538 1125 1064
+2538 1083 1069
+2527 1062 1074
+.PEN_UP
+
+.PEN_DOWN
+2558 1406 1208
+2548 1416 1213
+.PEN_UP
+
+.PEN_DOWN
+2642 1218 1428
+2642 1218 1433
+2642 1187 1438
+2631 1135 1444
+2621 1083 1449
+2621 1052 1454
+2631 1020 1459
+.PEN_UP
+
+.PEN_DOWN
+2673 1385 1757
+.PEN_UP
+
+.PEN_DOWN
+2735 1218 1977
+2735 1166 1982
+2735 1114 1987
+2735 1031 1993
+2735 1020 1998
+2735 1020 2003
+2746 1041 2008
+2756 1083 2013
+2767 1145 2019
+2788 1198 2024
+2808 1239 2029
+2819 1239 2034
+2829 1218 2040
+2829 1125 2045
+2829 1093 2050
+2819 1062 2055
+2819 1052 2060
+.PEN_UP
+
+.PEN_DOWN
+2985 1187 2417
+2985 1187 2422
+2985 1187 2427
+2965 1177 2433
+2954 1145 2438
+2944 1083 2443
+2944 1062 2448
+2965 1041 2453
+2985 1031 2459
+3017 1041 2464
+3038 1073 2469
+3048 1093 2474
+3048 1135 2480
+3027 1177 2485
+3017 1187 2490
+3006 1187 2495
+3006 1166 2500
+3017 1114 2506
+3048 1062 2511
+3090 1020 2516
+3142 958 2521
+3183 875 2526
+3183 791 2532
+3163 708 2537
+3121 625 2542
+3058 531 2547
+.PEN_UP
+
+.COMMENT End of File

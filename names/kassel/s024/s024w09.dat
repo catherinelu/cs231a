@@ -1,0 +1,226 @@
+.VERSION 1.0
+.COMMENT File s024w09
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 24
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 205
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Luke
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "Revvin+g"
+.SEGMENT LETTER 0-1 ? "R"
+.SEGMENT LETTER 2 ? "e"
+.SEGMENT LETTER 3 ? "v"
+.SEGMENT LETTER 4 ? "v"
+.SEGMENT LETTER 5-6 ? "i"
+.SEGMENT LETTER 7-7:10 ? "n"
+.SEGMENT LETTER 7:11-7:11 ? "+"
+.SEGMENT LETTER 7:12-7 ? "g"
+
+.COMMENT Prompt string: "Revving"
+.COMMENT Recognizer string: "Revvi?"
+.COMMENT Transcriber Comment: "Questionable alignment of poorly formed n."
+
+.PEN_DOWN
+1506 1906 0
+1506 1916 5
+1506 1916 10
+1506 1812 16
+1506 1760 21
+1517 1708 26
+1517 1698 31
+.PEN_UP
+
+.PEN_DOWN
+1485 2000 220
+1496 2031 225
+1527 2052 230
+1548 2052 236
+1579 2052 241
+1590 2041 246
+1590 2000 251
+1579 1958 256
+1538 1906 262
+1506 1885 267
+1485 1875 272
+1496 1875 277
+1517 1885 282
+1538 1885 288
+1569 1875 293
+1590 1843 298
+1600 1812 303
+1610 1770 309
+1610 1739 314
+1621 1718 319
+.PEN_UP
+
+.PEN_DOWN
+1642 1802 604
+1652 1802 609
+1673 1802 614
+1694 1823 620
+1704 1833 625
+1704 1854 630
+1694 1854 635
+1683 1854 640
+1663 1843 646
+1663 1802 651
+1673 1750 656
+1694 1729 661
+1715 1718 666
+.PEN_UP
+
+.PEN_DOWN
+1767 1823 879
+1767 1791 884
+1788 1760 889
+1798 1750 895
+1808 1750 900
+1819 1750 905
+1840 1791 910
+1840 1823 915
+1840 1854 921
+1850 1875 926
+.PEN_UP
+
+.PEN_DOWN
+1892 1833 1208
+1892 1823 1213
+1902 1802 1218
+1902 1781 1224
+1913 1760 1229
+1923 1760 1234
+1944 1760 1239
+1954 1770 1244
+1965 1802 1250
+1975 1833 1255
+1975 1875 1260
+1975 1906 1265
+.PEN_UP
+
+.PEN_DOWN
+2038 1854 1483
+2038 1843 1488
+2038 1823 1493
+2038 1791 1499
+2038 1770 1504
+2038 1750 1509
+.PEN_UP
+
+.PEN_DOWN
+2048 1948 1703
+2048 1937 1708
+.PEN_UP
+
+.PEN_DOWN
+2100 1854 1758
+2100 1823 1763
+2100 1781 1768
+2100 1760 1774
+2110 1760 1779
+2121 1760 1784
+2131 1781 1789
+2163 1823 1794
+2173 1843 1800
+2194 1854 1805
+2225 1854 1810
+2235 1854 1815
+2235 1854 1820
+2235 1843 1826
+2225 1833 1831
+2225 1812 1836
+2225 1791 1841
+2225 1770 1847
+2235 1760 1852
+2246 1760 1857
+2246 1760 1862
+2246 1781 1867
+2246 1791 1873
+2246 1760 1878
+2267 1677 1883
+2288 1614 1888
+2308 1562 1893
+2308 1520 1899
+2288 1500 1904
+2256 1500 1909
+2215 1510 1914
+2183 1531 1919
+2163 1541 1925
+2163 1541 1930
+.PEN_UP
+
+.COMMENT End of File

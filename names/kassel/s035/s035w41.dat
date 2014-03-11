@@ -1,0 +1,209 @@
+.VERSION 1.0
+.COMMENT File s035w41
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 35
+.STYLE PRINTED
+.HAND R
+.AGE 25
+.SEX M
+.WRITER_INFO
+ Group: Rejected
+ Weight: 130
+ Student: No
+ Where educated: NM
+ Home language: English
+ Name: Michael
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Sh&adow"
+.SEGMENT LETTER 0 ? "S"
+.SEGMENT LETTER 1-1:14 ? "h"
+.SEGMENT LETTER 1:15-1:18 ? "&"
+.SEGMENT LETTER 1:19-1 ? "a"
+.SEGMENT LETTER 2-3 ? "d"
+.SEGMENT LETTER 4 ? "o"
+.SEGMENT LETTER 5 ? "w"
+
+.COMMENT Prompt string: "Shadow"
+.COMMENT Recognizer string: "s?d?w"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1944 1906 0
+1892 1906 5
+1850 1895 10
+1840 1895 16
+1840 1885 21
+1840 1875 26
+1871 1864 31
+1892 1843 36
+1913 1823 42
+1902 1791 47
+1881 1770 52
+1860 1760 57
+1840 1760 62
+1819 1760 68
+1808 1760 73
+.PEN_UP
+
+.PEN_DOWN
+1933 1958 330
+1933 1958 335
+1933 1937 340
+1933 1895 346
+1944 1833 351
+1944 1781 356
+1944 1770 361
+1954 1770 366
+1965 1791 372
+1985 1802 377
+1996 1812 382
+1996 1812 387
+1996 1802 392
+2006 1791 398
+2006 1770 403
+2006 1770 408
+2027 1791 413
+2058 1812 419
+2079 1833 424
+2079 1843 429
+2079 1843 434
+2069 1833 439
+2058 1823 445
+2048 1812 450
+2048 1812 455
+2069 1823 460
+2079 1843 465
+2090 1843 471
+2090 1833 476
+2090 1781 481
+2100 1781 486
+2110 1781 491
+.PEN_UP
+
+.PEN_DOWN
+2194 1854 879
+2183 1854 884
+2152 1833 889
+2142 1823 895
+2131 1812 900
+2131 1802 905
+2152 1802 910
+2173 1823 915
+2204 1843 921
+.PEN_UP
+
+.PEN_DOWN
+2215 1968 1044
+2215 2000 1049
+2215 2000 1054
+2204 1979 1060
+2204 1937 1065
+2204 1895 1070
+2204 1833 1075
+2204 1802 1080
+2215 1802 1086
+.PEN_UP
+
+.PEN_DOWN
+2288 1875 1263
+2267 1864 1268
+2246 1854 1273
+2246 1833 1279
+2246 1823 1284
+2277 1823 1289
+2298 1833 1294
+2319 1843 1299
+2319 1864 1305
+2308 1875 1310
+2256 1875 1315
+2256 1875 1320
+.PEN_UP
+
+.PEN_DOWN
+2360 1875 1538
+2360 1875 1543
+2340 1854 1548
+2340 1833 1554
+2350 1823 1559
+2360 1823 1564
+2381 1843 1569
+2381 1854 1574
+2392 1864 1580
+2392 1843 1585
+2392 1833 1590
+2402 1823 1595
+2423 1823 1600
+2444 1843 1606
+2465 1854 1611
+2465 1885 1616
+2465 1895 1621
+.PEN_UP
+
+.COMMENT End of File

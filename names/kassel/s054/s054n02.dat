@@ -1,0 +1,206 @@
+.VERSION 1.0
+.COMMENT File s054n02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 54
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 165
+ Student: Yes
+ Where educated: CA
+ Home language: Taiwanese
+ Name: Anthony
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "12362"
+.SEGMENT LETTER 0 ? "1"
+.SEGMENT LETTER 1 ? "2"
+.SEGMENT LETTER 2 ? "3"
+.SEGMENT LETTER 3 ? "6"
+.SEGMENT LETTER 4 ? "2"
+
+.COMMENT Prompt string: "13262"
+.COMMENT Recognizer string: "12362"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1871 1479 0
+1871 1489 5
+1871 1510 10
+1871 1510 16
+1860 1500 21
+1840 1458 26
+1819 1395 31
+1777 1312 36
+1767 1281 42
+1767 1281 47
+.PEN_UP
+
+.PEN_DOWN
+1923 1489 330
+1913 1510 335
+1913 1520 340
+1913 1531 346
+1933 1531 351
+1975 1531 356
+1996 1500 361
+2006 1468 366
+2006 1427 372
+1965 1364 377
+1913 1323 382
+1871 1291 387
+1860 1291 392
+1881 1312 398
+1913 1333 403
+1944 1343 408
+1965 1333 413
+1975 1323 419
+1996 1312 424
+1996 1312 429
+1996 1312 434
+.PEN_UP
+
+.PEN_DOWN
+2090 1510 1154
+2079 1510 1159
+2090 1520 1164
+2100 1531 1170
+2121 1552 1175
+2163 1552 1180
+2173 1531 1185
+2173 1500 1190
+2173 1479 1196
+2152 1437 1201
+2121 1427 1206
+2090 1416 1211
+2069 1416 1216
+2058 1427 1222
+2079 1437 1227
+2110 1448 1232
+2142 1448 1237
+2183 1427 1243
+2215 1406 1248
+2215 1385 1253
+2215 1364 1258
+2173 1333 1263
+2100 1302 1269
+2048 1281 1274
+2038 1281 1279
+2038 1323 1284
+.PEN_UP
+
+.PEN_DOWN
+2360 1500 1758
+2360 1520 1763
+2360 1541 1768
+2360 1541 1774
+2340 1510 1779
+2308 1479 1784
+2256 1406 1789
+2235 1343 1794
+2256 1312 1800
+2298 1302 1805
+2350 1323 1810
+2381 1343 1815
+2402 1375 1820
+2402 1385 1826
+2381 1395 1831
+2350 1385 1836
+2288 1343 1841
+2267 1302 1847
+2256 1281 1852
+.PEN_UP
+
+.PEN_DOWN
+2465 1479 2252
+2454 1500 2257
+2454 1510 2262
+2465 1531 2268
+2496 1531 2273
+2527 1520 2278
+2558 1510 2283
+2579 1479 2288
+2579 1437 2294
+2558 1395 2299
+2517 1364 2304
+2433 1312 2309
+2402 1302 2314
+2423 1312 2320
+2475 1343 2325
+2517 1354 2330
+2558 1343 2335
+2590 1323 2341
+2621 1291 2346
+2642 1270 2351
+.PEN_UP
+
+.COMMENT End of File

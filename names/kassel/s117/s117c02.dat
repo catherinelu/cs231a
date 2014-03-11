@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s117c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 117
+.STYLE PRINTED
+.HAND R
+.AGE 24
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 176
+ Student: Yes
+ Where educated: NY
+ Home language: English
+ Name: John
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fake"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "Fake"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1892 1635 0
+1892 1625 5
+1881 1552 10
+1871 1458 16
+1871 1375 21
+1871 1302 26
+1881 1281 31
+.PEN_UP
+
+.PEN_DOWN
+1829 1645 549
+1829 1645 554
+1860 1656 559
+1913 1666 565
+1985 1698 570
+2027 1708 575
+2058 1708 580
+2069 1698 585
+2079 1687 591
+.PEN_UP
+
+.PEN_DOWN
+1850 1479 824
+1850 1479 829
+1871 1489 834
+1913 1489 840
+1944 1500 845
+1985 1500 850
+2017 1510 855
+2038 1510 860
+.PEN_UP
+
+.PEN_DOWN
+2215 1479 1373
+2215 1489 1378
+2204 1500 1383
+2204 1500 1389
+2183 1500 1394
+2163 1468 1399
+2142 1427 1404
+2121 1364 1409
+2121 1343 1415
+2142 1343 1420
+2163 1354 1425
+2194 1406 1430
+2204 1448 1436
+2225 1479 1441
+2225 1489 1446
+2225 1500 1451
+2225 1479 1456
+2215 1437 1462
+2225 1395 1467
+2225 1385 1472
+2235 1375 1477
+.PEN_UP
+
+.PEN_DOWN
+2444 1760 1923
+2433 1750 1928
+2433 1708 1933
+2413 1656 1939
+2392 1573 1944
+2381 1489 1949
+2381 1437 1954
+2381 1416 1959
+2381 1416 1965
+2392 1416 1970
+.PEN_UP
+
+.PEN_DOWN
+2506 1614 2197
+2485 1614 2202
+2465 1593 2207
+2423 1573 2213
+2392 1562 2218
+2381 1562 2223
+2381 1562 2228
+2402 1552 2233
+2423 1541 2239
+2444 1531 2244
+2465 1500 2249
+2485 1468 2254
+2485 1448 2260
+2485 1448 2265
+2485 1437 2270
+2496 1427 2275
+2496 1427 2280
+.PEN_UP
+
+.PEN_DOWN
+2569 1562 2746
+2569 1562 2751
+2569 1552 2756
+2569 1552 2762
+2579 1541 2767
+2610 1541 2772
+2652 1552 2777
+2673 1573 2782
+2683 1583 2788
+2694 1604 2793
+2683 1614 2798
+2663 1635 2803
+2642 1635 2808
+2621 1625 2814
+2590 1583 2819
+2569 1541 2824
+2569 1500 2829
+2569 1479 2835
+2590 1458 2840
+2610 1448 2845
+2652 1458 2850
+2694 1468 2855
+2725 1479 2861
+2746 1479 2866
+.PEN_UP
+
+.COMMENT End of File

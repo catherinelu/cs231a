@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s095w05
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 95
+.STYLE PRINTED
+.HAND L
+.AGE 24
+.SEX F
+.WRITER_INFO
+ Group: Evaluation
+ Weight: 115
+ Student: No
+ Where educated: VA
+ Home language: English & Chinese
+ Name: Christine
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Menu"
+.SEGMENT LETTER 0 ? "M"
+.SEGMENT LETTER 1-2 ? "e"
+.SEGMENT LETTER 3 ? "n"
+.SEGMENT LETTER 4 ? "u"
+
+.COMMENT Prompt string: "Menu"
+.COMMENT Recognizer string: "Menu"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1465 1583 0
+1465 1583 5
+1465 1583 10
+1465 1604 16
+1465 1614 21
+1465 1635 26
+1465 1656 31
+1465 1687 36
+1465 1729 42
+1454 1781 47
+1444 1812 52
+1444 1812 57
+1444 1812 62
+1454 1791 68
+1454 1770 73
+1465 1750 78
+1475 1718 83
+1485 1698 89
+1485 1687 94
+1485 1687 99
+1485 1698 104
+1496 1708 109
+1506 1718 115
+1506 1739 120
+1517 1770 125
+1517 1823 130
+1517 1833 135
+1517 1833 141
+1527 1812 146
+1527 1791 151
+1538 1750 156
+1548 1687 161
+1548 1656 167
+1548 1625 172
+1558 1604 177
+1558 1583 182
+1548 1593 188
+1558 1593 193
+.PEN_UP
+
+.PEN_DOWN
+1663 1666 769
+1652 1677 774
+1652 1687 779
+1642 1687 785
+1642 1687 790
+1631 1687 795
+1621 1687 800
+1610 1677 805
+1610 1666 811
+1610 1645 816
+1610 1625 821
+1621 1614 826
+1631 1604 832
+1642 1593 837
+1663 1593 842
+1673 1604 847
+.PEN_UP
+
+.PEN_DOWN
+1652 1677 1153
+1652 1666 1158
+1642 1666 1163
+1631 1656 1169
+1631 1645 1174
+1621 1635 1179
+1621 1635 1184
+.PEN_UP
+
+.PEN_DOWN
+1694 1687 1428
+1694 1687 1433
+1694 1666 1438
+1694 1635 1444
+1694 1625 1449
+1694 1614 1454
+1694 1614 1459
+1694 1614 1464
+1694 1625 1470
+1704 1645 1475
+1704 1666 1480
+1715 1687 1485
+1725 1687 1490
+1725 1698 1496
+1735 1687 1501
+1735 1687 1506
+1746 1666 1511
+1746 1645 1517
+1746 1614 1522
+1756 1604 1527
+1756 1604 1532
+.PEN_UP
+
+.PEN_DOWN
+1798 1687 1867
+1798 1687 1872
+1788 1677 1877
+1788 1666 1883
+1788 1645 1888
+1788 1625 1893
+1798 1614 1898
+1808 1604 1903
+1808 1604 1909
+1819 1614 1914
+1829 1635 1919
+1840 1645 1924
+1840 1677 1930
+1840 1687 1935
+1840 1666 1940
+1840 1645 1945
+1850 1625 1950
+1871 1604 1956
+1881 1593 1961
+1881 1593 1966
+.PEN_UP
+
+.COMMENT End of File

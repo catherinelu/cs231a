@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s142w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 142
+.STYLE PRINTED
+.HAND R
+.AGE 34
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 116
+ Student: Yes
+ Where educated: VT
+ Home language: English & Yiddish
+ Name: Ruth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4 ? "z"
+.SEGMENT LETTER 5 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "i?uzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1142 2510 0
+1142 2520 5
+1142 2510 10
+1142 2510 16
+1142 2468 21
+1142 2416 26
+1142 2343 31
+1152 2291 36
+1152 2260 42
+1152 2239 47
+1152 2218 52
+1152 2229 57
+.PEN_UP
+
+.PEN_DOWN
+1090 2500 384
+1090 2500 389
+1079 2500 394
+1090 2500 400
+1090 2510 405
+1110 2520 410
+1152 2541 415
+1183 2562 420
+1215 2583 426
+1225 2593 431
+1225 2593 436
+.PEN_UP
+
+.PEN_DOWN
+1100 2437 659
+1100 2437 664
+1100 2437 669
+1110 2448 675
+1131 2468 680
+1173 2489 685
+1204 2500 690
+1204 2510 695
+1204 2500 701
+1204 2489 706
+.PEN_UP
+
+.PEN_DOWN
+1225 2385 1044
+1225 2343 1049
+1225 2312 1054
+1235 2291 1060
+1235 2270 1065
+1256 2250 1070
+1267 2250 1075
+1277 2260 1080
+1298 2281 1086
+1308 2312 1091
+1308 2343 1096
+1298 2375 1101
+1288 2395 1106
+1277 2406 1112
+1277 2406 1117
+1277 2406 1122
+1288 2406 1127
+.PEN_UP
+
+.PEN_DOWN
+1371 2406 1538
+1360 2406 1543
+1360 2406 1548
+1371 2406 1554
+1381 2416 1559
+1402 2416 1564
+1433 2416 1569
+1444 2406 1574
+1444 2395 1580
+1433 2375 1585
+1402 2343 1590
+1392 2312 1595
+1371 2281 1600
+1360 2270 1606
+1371 2260 1611
+1371 2260 1616
+1392 2260 1621
+1423 2281 1627
+1444 2291 1632
+1454 2291 1637
+1465 2291 1642
+1465 2291 1647
+.PEN_UP
+
+.PEN_DOWN
+1475 2395 1977
+1475 2395 1982
+1475 2395 1987
+1475 2395 1993
+1506 2406 1998
+1527 2406 2003
+1558 2416 2008
+1558 2416 2013
+1558 2416 2019
+1558 2395 2024
+1538 2354 2029
+1527 2323 2034
+1506 2291 2040
+1496 2270 2045
+1496 2260 2050
+1496 2250 2055
+1517 2250 2060
+1548 2260 2066
+1600 2281 2071
+1642 2291 2076
+1683 2302 2081
+1715 2312 2086
+1725 2312 2092
+1725 2312 2097
+1725 2312 2102
+1725 2312 2107
+1725 2302 2112
+.PEN_UP
+
+.COMMENT End of File

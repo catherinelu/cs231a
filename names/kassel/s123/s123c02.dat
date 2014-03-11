@@ -1,0 +1,210 @@
+.VERSION 1.0
+.COMMENT File s123c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 123
+.STYLE PRINTED
+.HAND R
+.AGE 31
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 185
+ Student: Yes
+ Where educated: PA
+ Home language: English
+ Name: Bronwen
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Fake"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "Fake"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+590 2687 0
+590 2687 5
+590 2677 10
+600 2666 16
+600 2614 21
+600 2573 26
+600 2552 31
+600 2520 36
+600 2500 42
+600 2500 47
+600 2500 52
+.PEN_UP
+
+.PEN_DOWN
+579 2687 439
+569 2698 444
+569 2698 449
+579 2698 455
+600 2698 460
+621 2698 465
+652 2708 470
+673 2708 475
+683 2708 481
+.PEN_UP
+
+.PEN_DOWN
+590 2593 879
+590 2604 884
+610 2604 889
+631 2604 895
+652 2604 900
+663 2604 905
+673 2604 910
+.PEN_UP
+
+.PEN_DOWN
+777 2583 1318
+777 2583 1323
+777 2593 1328
+767 2593 1334
+746 2593 1339
+735 2573 1344
+725 2562 1349
+725 2541 1354
+725 2520 1360
+725 2520 1365
+746 2520 1370
+746 2531 1375
+767 2541 1380
+767 2562 1386
+767 2573 1391
+767 2573 1396
+767 2573 1401
+767 2552 1407
+767 2541 1412
+777 2520 1417
+777 2510 1422
+777 2510 1427
+777 2510 1433
+.PEN_UP
+
+.PEN_DOWN
+881 2656 1922
+881 2656 1927
+881 2656 1932
+881 2645 1938
+871 2625 1943
+881 2593 1948
+881 2573 1953
+881 2552 1958
+881 2541 1964
+881 2541 1969
+.PEN_UP
+
+.PEN_DOWN
+944 2625 2197
+944 2625 2202
+933 2614 2207
+923 2604 2213
+902 2583 2218
+892 2583 2223
+892 2573 2228
+892 2573 2233
+902 2573 2239
+913 2562 2244
+923 2562 2249
+933 2552 2254
+944 2541 2260
+944 2531 2265
+944 2531 2270
+944 2531 2275
+.PEN_UP
+
+.PEN_DOWN
+996 2562 2691
+1006 2562 2696
+1017 2573 2701
+1027 2583 2707
+1048 2583 2712
+1048 2593 2717
+1058 2593 2722
+1058 2604 2727
+1048 2625 2733
+1048 2625 2738
+1027 2625 2743
+1027 2614 2748
+1006 2593 2754
+996 2573 2759
+996 2541 2764
+1017 2520 2769
+1027 2520 2774
+1058 2520 2780
+1079 2520 2785
+.PEN_UP
+
+.COMMENT End of File

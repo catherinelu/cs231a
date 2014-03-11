@@ -1,0 +1,242 @@
+.VERSION 1.0
+.COMMENT File s155w28
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 155
+.STYLE PRINTED
+.HAND R
+.AGE 22
+.SEX M
+.WRITER_INFO
+ Group: Training
+ Weight: 160
+ Student: Yes
+ Where educated: OH
+ Home language: English
+ Name: Gene
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-4 ? "Zero"
+.SEGMENT LETTER 0-1 ? "Z"
+.SEGMENT LETTER 2 ? "e"
+.SEGMENT LETTER 3 ? "r"
+.SEGMENT LETTER 4 ? "o"
+
+.COMMENT Prompt string: "Zero"
+.COMMENT Recognizer string: "Zero"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1090 1823 0
+1090 1823 5
+1100 1823 10
+1110 1823 16
+1131 1833 21
+1163 1833 26
+1215 1854 31
+1256 1854 36
+1298 1854 42
+1475 1854 47
+1517 1854 52
+1538 1854 57
+1548 1843 62
+1548 1843 68
+1548 1833 73
+1548 1823 78
+1538 1802 83
+1527 1770 89
+1496 1739 94
+1465 1708 99
+1423 1677 104
+1392 1645 109
+1360 1593 115
+1319 1552 120
+1298 1500 125
+1267 1458 130
+1235 1416 135
+1215 1395 141
+1215 1375 146
+1204 1364 151
+1204 1343 156
+1215 1333 161
+1235 1323 167
+1246 1312 172
+1277 1312 177
+1308 1323 182
+1340 1323 188
+1381 1333 193
+1444 1343 198
+1496 1354 203
+1527 1354 208
+1558 1364 214
+1569 1364 219
+1579 1364 224
+1590 1364 229
+.PEN_UP
+
+.PEN_DOWN
+1256 1583 1263
+1256 1583 1268
+1256 1583 1273
+1277 1583 1279
+1288 1583 1284
+1308 1593 1289
+1340 1593 1294
+1371 1593 1299
+1392 1604 1305
+1423 1604 1310
+1444 1604 1315
+1465 1604 1320
+1465 1614 1326
+1465 1604 1331
+.PEN_UP
+
+.PEN_DOWN
+1735 1510 2142
+1735 1489 2147
+1746 1489 2152
+1756 1479 2158
+1767 1479 2163
+1788 1468 2168
+1808 1479 2173
+1829 1489 2178
+1840 1489 2184
+1850 1500 2189
+1860 1510 2194
+1860 1520 2199
+1860 1531 2204
+1850 1552 2210
+1840 1552 2215
+1829 1552 2220
+1808 1552 2225
+1788 1541 2231
+1777 1531 2236
+1756 1510 2241
+1746 1489 2246
+1735 1468 2251
+1725 1437 2257
+1725 1385 2262
+1746 1364 2267
+1756 1343 2272
+1767 1333 2277
+1798 1333 2283
+1840 1343 2288
+1850 1354 2293
+1871 1354 2298
+.PEN_UP
+
+.PEN_DOWN
+1975 1510 2856
+1975 1489 2861
+1985 1479 2866
+1996 1458 2872
+2006 1427 2877
+2006 1395 2882
+2006 1375 2887
+1996 1364 2892
+1996 1375 2898
+2006 1385 2903
+2006 1416 2908
+2006 1448 2913
+2006 1468 2918
+2017 1489 2924
+2017 1510 2929
+2027 1520 2934
+2048 1531 2939
+2079 1531 2945
+2100 1531 2950
+2110 1520 2955
+2121 1510 2960
+2142 1510 2965
+.PEN_UP
+
+.PEN_DOWN
+2308 1531 3680
+2298 1531 3685
+2288 1520 3690
+2267 1500 3696
+2256 1489 3701
+2235 1468 3706
+2225 1437 3711
+2225 1416 3716
+2225 1395 3722
+2256 1375 3727
+2277 1364 3732
+2308 1364 3737
+2340 1375 3742
+2371 1395 3748
+2392 1427 3753
+2402 1458 3758
+2402 1489 3763
+2381 1520 3769
+2371 1531 3774
+2340 1531 3779
+2319 1531 3784
+.PEN_UP
+
+.COMMENT End of File

@@ -1,0 +1,211 @@
+.VERSION 1.0
+.COMMENT File s090n10
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 90
+.STYLE PRINTED
+.HAND R
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 0
+ Student: Yes
+ Where educated: India
+ Home language: English & Gujarati
+ Name: Gargi
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-5 ? "72898"
+.SEGMENT LETTER 0-1 ? "7"
+.SEGMENT LETTER 2 ? "2"
+.SEGMENT LETTER 3 ? "8"
+.SEGMENT LETTER 4 ? "9"
+.SEGMENT LETTER 5 ? "8"
+
+.COMMENT Prompt string: "72898"
+.COMMENT Recognizer string: "7?2898"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1340 1833 0
+1350 1833 5
+1371 1843 10
+1423 1864 16
+1465 1885 21
+1496 1885 26
+1506 1875 31
+1506 1812 36
+1485 1760 42
+1475 1677 47
+1454 1604 52
+1444 1520 57
+1444 1500 62
+1444 1500 68
+.PEN_UP
+
+.PEN_DOWN
+1402 1677 274
+1402 1677 279
+1423 1687 284
+1465 1729 290
+1506 1750 295
+1558 1781 300
+.PEN_UP
+
+.PEN_DOWN
+1683 1770 549
+1673 1770 554
+1683 1802 559
+1704 1833 565
+1725 1854 570
+1756 1854 575
+1777 1833 580
+1777 1770 585
+1767 1698 591
+1746 1625 596
+1735 1573 601
+1725 1552 606
+1735 1552 612
+1746 1562 617
+1777 1593 622
+1829 1625 627
+1860 1656 632
+.PEN_UP
+
+.PEN_DOWN
+2090 1895 933
+2069 1906 938
+2027 1895 943
+1996 1875 949
+1975 1843 954
+1975 1812 959
+1985 1791 964
+2006 1760 969
+2027 1739 975
+2069 1698 980
+2100 1656 985
+2100 1614 990
+2079 1593 996
+2038 1573 1001
+2006 1583 1006
+1996 1604 1011
+1996 1656 1016
+2027 1729 1022
+2058 1802 1027
+2090 1854 1032
+2110 1875 1037
+.PEN_UP
+
+.PEN_DOWN
+2360 1864 1483
+2340 1854 1488
+2329 1833 1493
+2277 1802 1499
+2215 1760 1504
+2183 1760 1509
+2173 1781 1514
+2173 1823 1519
+2194 1885 1525
+2215 1927 1530
+2246 1948 1535
+2267 1937 1540
+2298 1885 1546
+2298 1802 1551
+2288 1698 1556
+2267 1604 1561
+2246 1531 1566
+2235 1500 1572
+2235 1500 1577
+.PEN_UP
+
+.PEN_DOWN
+2496 1916 1867
+2454 1916 1872
+2413 1906 1877
+2392 1885 1883
+2381 1864 1888
+2381 1833 1893
+2392 1812 1898
+2402 1770 1903
+2433 1739 1909
+2475 1677 1914
+2485 1645 1919
+2475 1614 1924
+2444 1583 1930
+2402 1573 1935
+2381 1593 1940
+2381 1635 1945
+2381 1698 1950
+2444 1823 1956
+2506 1906 1961
+2569 1968 1966
+2600 2010 1971
+.PEN_UP
+
+.COMMENT End of File

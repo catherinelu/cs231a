@@ -1,0 +1,258 @@
+.VERSION 1.0
+.COMMENT File s051w26
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 51
+.STYLE PRINTED
+.HAND L
+.AGE 20
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 83
+ Student: Yes
+ Where educated: NY
+ Home language: Gujarati
+ Name: Anuja
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-8 ? "Volcanic"
+.SEGMENT LETTER 0 ? "V"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "l"
+.SEGMENT LETTER 3 ? "c"
+.SEGMENT LETTER 4 ? "a"
+.SEGMENT LETTER 5 ? "n"
+.SEGMENT LETTER 6-7 ? "i"
+.SEGMENT LETTER 8 ? "c"
+
+.COMMENT Prompt string: "Volcanic"
+.COMMENT Recognizer string: "V?lcanic"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+110 2760 0
+110 2760 5
+121 2750 10
+121 2729 16
+142 2698 21
+163 2645 26
+173 2604 31
+183 2562 36
+194 2541 42
+194 2531 47
+194 2531 52
+194 2531 57
+204 2552 62
+204 2573 68
+215 2604 73
+225 2645 78
+235 2687 83
+235 2729 89
+246 2750 94
+246 2770 99
+246 2750 104
+.PEN_UP
+
+.PEN_DOWN
+340 2666 604
+340 2666 609
+360 2666 614
+360 2666 620
+371 2645 625
+371 2604 630
+371 2573 635
+360 2562 640
+350 2562 646
+340 2562 651
+329 2573 656
+329 2593 661
+329 2614 666
+340 2645 672
+340 2656 677
+340 2666 682
+.PEN_UP
+
+.PEN_DOWN
+454 2770 1043
+454 2760 1048
+454 2645 1053
+454 2614 1059
+465 2573 1064
+465 2552 1069
+465 2552 1074
+475 2552 1079
+.PEN_UP
+
+.PEN_DOWN
+579 2698 1538
+579 2698 1543
+569 2698 1548
+558 2698 1554
+548 2687 1559
+538 2677 1564
+527 2645 1569
+527 2635 1574
+527 2625 1580
+527 2604 1585
+548 2593 1590
+569 2593 1595
+579 2604 1600
+600 2604 1606
+.PEN_UP
+
+.PEN_DOWN
+694 2666 1922
+704 2687 1927
+704 2698 1932
+694 2698 1938
+683 2698 1943
+663 2677 1948
+652 2656 1953
+642 2645 1958
+642 2614 1964
+652 2604 1969
+652 2593 1974
+673 2593 1979
+683 2614 1984
+683 2625 1990
+694 2645 1995
+694 2656 2000
+694 2666 2005
+694 2666 2011
+704 2677 2016
+704 2677 2021
+704 2666 2026
+704 2656 2031
+715 2645 2037
+715 2625 2042
+725 2604 2047
+735 2593 2052
+746 2593 2057
+.PEN_UP
+
+.PEN_DOWN
+756 2687 2471
+767 2677 2476
+767 2656 2481
+767 2625 2487
+777 2625 2492
+777 2635 2497
+777 2645 2502
+777 2666 2507
+777 2687 2513
+777 2698 2518
+788 2718 2523
+808 2729 2528
+819 2729 2534
+829 2718 2539
+850 2698 2544
+860 2677 2549
+860 2656 2554
+860 2635 2560
+860 2625 2565
+860 2614 2570
+871 2614 2575
+.PEN_UP
+
+.PEN_DOWN
+923 2698 2966
+923 2677 2971
+923 2656 2976
+923 2625 2982
+933 2604 2987
+933 2604 2992
+.PEN_UP
+
+.PEN_DOWN
+902 2760 3185
+902 2750 3190
+902 2750 3195
+913 2750 3201
+.PEN_UP
+
+.PEN_DOWN
+1058 2687 3735
+1058 2687 3740
+1048 2687 3745
+1048 2698 3751
+1038 2698 3756
+1027 2687 3761
+1006 2677 3766
+996 2666 3771
+996 2645 3777
+996 2625 3782
+1006 2604 3787
+1017 2604 3792
+1048 2604 3798
+1069 2614 3803
+1100 2625 3808
+1121 2625 3813
+.PEN_UP
+
+.COMMENT End of File

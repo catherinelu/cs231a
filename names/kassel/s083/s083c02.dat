@@ -1,0 +1,217 @@
+.VERSION 1.0
+.COMMENT File s083c02
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 83
+.STYLE PRINTED
+.HAND R
+.AGE 29
+.SEX F
+.WRITER_INFO
+ Group: Development
+ Weight: 125
+ Student: Yes
+ Where educated: CA
+ Home language: Spanish
+ Name: Minerva
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "F*ake"
+.SEGMENT LETTER 0-1 ? "F"
+.SEGMENT LETTER 2 ? "*"
+.SEGMENT LETTER 3 ? "a"
+.SEGMENT LETTER 4-5 ? "k"
+.SEGMENT LETTER 6 ? "e"
+
+.COMMENT Prompt string: "Fake"
+.COMMENT Recognizer string: "f?ake"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+2381 1333 0
+2381 1354 5
+2392 1333 10
+2402 1281 16
+2402 1208 21
+2413 1135 26
+2433 1073 31
+2433 1062 36
+2433 1083 42
+2413 1135 47
+2392 1187 52
+2381 1239 57
+2371 1291 62
+2360 1354 68
+2360 1395 73
+2381 1416 78
+2413 1437 83
+2475 1448 89
+2538 1448 94
+2600 1448 99
+2663 1437 104
+2683 1427 109
+2683 1416 115
+2683 1416 120
+.PEN_UP
+
+.PEN_DOWN
+2360 1260 495
+2402 1260 500
+2444 1270 505
+2496 1281 511
+2548 1291 516
+2579 1291 521
+.PEN_UP
+
+.PEN_DOWN
+2735 1187 879
+.PEN_UP
+
+.PEN_DOWN
+2767 1218 934
+2756 1239 939
+2746 1250 944
+2715 1239 950
+2673 1218 955
+2642 1187 960
+2631 1145 965
+2631 1104 970
+2652 1093 976
+2683 1093 981
+2715 1104 986
+2756 1145 991
+2767 1177 997
+2777 1208 1002
+2777 1229 1007
+2767 1229 1012
+2767 1218 1017
+2767 1198 1023
+2767 1166 1028
+2777 1125 1033
+2798 1104 1038
+2808 1083 1043
+2829 1083 1049
+2850 1083 1054
+.PEN_UP
+
+.PEN_DOWN
+2860 1437 1483
+2871 1427 1488
+2871 1375 1493
+2871 1302 1499
+2881 1239 1504
+2892 1177 1509
+2902 1125 1514
+2913 1093 1519
+2923 1073 1525
+2923 1073 1530
+2923 1073 1535
+.PEN_UP
+
+.PEN_DOWN
+2996 1291 1758
+2985 1291 1763
+2985 1281 1768
+2965 1260 1774
+2944 1229 1779
+2923 1208 1784
+2902 1177 1789
+2892 1166 1794
+2892 1145 1800
+2902 1125 1805
+2944 1114 1810
+2975 1114 1815
+3006 1125 1821
+3027 1125 1826
+3038 1125 1831
+.PEN_UP
+
+.PEN_DOWN
+3079 1166 2197
+3090 1166 2202
+3121 1166 2207
+3163 1177 2213
+3204 1187 2218
+3235 1218 2223
+3246 1239 2228
+3256 1260 2233
+3235 1270 2239
+3204 1270 2244
+3163 1260 2249
+3110 1229 2254
+3100 1187 2259
+3100 1145 2265
+3110 1104 2270
+3183 1083 2275
+3235 1083 2280
+3298 1093 2286
+3340 1114 2291
+3371 1145 2296
+.PEN_UP
+
+.COMMENT End of File

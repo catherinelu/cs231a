@@ -1,0 +1,229 @@
+.VERSION 1.0
+.COMMENT File s135w11
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 135
+.STYLE PRINTED
+.HAND R
+.AGE 27
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 120
+ Student: Yes
+ Where educated: CA
+ Home language: English & Taiwanese
+ Name: Julie
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-7 ? "Fuzz"
+.SEGMENT LETTER 0-2 ? "F"
+.SEGMENT LETTER 3 ? "u"
+.SEGMENT LETTER 4-5 ? "z"
+.SEGMENT LETTER 6-7 ? "z"
+
+.COMMENT Prompt string: "Fuzz"
+.COMMENT Recognizer string: "Fuzz"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+3006 906 0
+3006 864 5
+3017 843 10
+3017 802 16
+3017 781 21
+3017 739 26
+3027 718 31
+3027 677 36
+3027 666 42
+3027 635 47
+3027 635 52
+3027 656 57
+.PEN_UP
+
+.PEN_DOWN
+2975 927 1675
+2965 927 1680
+2965 937 1685
+2965 937 1691
+2975 937 1696
+2985 948 1701
+3017 937 1706
+3048 937 1711
+3090 948 1717
+3121 958 1722
+3173 958 1727
+3173 958 1732
+.PEN_UP
+
+.PEN_DOWN
+2996 823 2060
+2985 823 2065
+2985 823 2070
+3017 823 2076
+3048 823 2081
+3100 823 2086
+3142 823 2091
+3152 823 2096
+.PEN_UP
+
+.PEN_DOWN
+3204 854 2389
+3204 854 2394
+3194 854 2399
+3194 843 2405
+3183 802 2410
+3194 770 2415
+3194 729 2420
+3194 698 2425
+3204 666 2431
+3225 656 2436
+3256 656 2441
+3277 666 2446
+3288 687 2452
+3298 729 2457
+3308 760 2462
+3308 802 2467
+3308 833 2472
+3298 854 2478
+3298 854 2483
+3298 854 2488
+3298 823 2493
+3298 791 2498
+3298 760 2504
+3308 718 2509
+3319 687 2514
+3329 666 2519
+3340 656 2524
+3340 656 2530
+.PEN_UP
+
+.PEN_DOWN
+3423 823 2938
+3413 833 2943
+3465 833 2948
+3496 823 2954
+3538 823 2959
+3548 823 2964
+3548 812 2969
+3538 802 2974
+3527 770 2980
+3506 739 2985
+3475 708 2990
+3454 677 2995
+3444 656 3000
+3433 635 3006
+3454 625 3011
+3465 625 3016
+3496 625 3021
+3527 635 3027
+3558 645 3032
+3569 645 3037
+.PEN_UP
+
+.PEN_DOWN
+3413 739 3378
+3413 739 3383
+3454 739 3388
+3485 739 3394
+3527 739 3399
+.PEN_UP
+
+.PEN_DOWN
+3631 823 3598
+3631 833 3603
+3642 833 3608
+3673 843 3614
+3704 843 3619
+3746 843 3624
+3767 833 3629
+3777 823 3634
+3777 812 3640
+3756 791 3645
+3735 770 3650
+3715 739 3655
+3683 698 3660
+3663 666 3666
+3642 645 3671
+3642 635 3676
+3652 614 3681
+3663 604 3687
+3715 604 3692
+3746 614 3697
+.PEN_UP
+
+.PEN_DOWN
+3631 739 4092
+3631 739 4097
+3631 739 4102
+3694 739 4108
+3798 739 4113
+3840 739 4118
+.PEN_UP
+
+.COMMENT End of File

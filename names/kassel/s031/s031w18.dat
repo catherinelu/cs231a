@@ -1,0 +1,350 @@
+.VERSION 1.0
+.COMMENT File s031w18
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 31
+.STYLE PRINTED
+.HAND R
+.AGE 19
+.SEX F
+.WRITER_INFO
+ Group: Training
+ Weight: 110
+ Student: Yes
+ Where educated: MA
+ Home language: English
+ Name: Elizabeth
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-10 ? "Compa&r&at+ivel&y"
+.SEGMENT LETTER 0 ? "C"
+.SEGMENT LETTER 1 ? "o"
+.SEGMENT LETTER 2 ? "m"
+.SEGMENT LETTER 3 ? "p"
+.SEGMENT LETTER 4-4:17 ? "a"
+.SEGMENT LETTER 4:18-4:21 ? "&"
+.SEGMENT LETTER 4:22-4:32 ? "r"
+.SEGMENT LETTER 4:33-4:36 ? "&"
+.SEGMENT LETTER 4:37-4 ? "a"
+.SEGMENT LETTER 5-6:3 ? "t"
+.SEGMENT LETTER 6:4-6:4 ? "+"
+.SEGMENT LETTER 6:5-7 ? "i"
+.SEGMENT LETTER 8 ? "v"
+.SEGMENT LETTER 9 ? "e"
+.SEGMENT LETTER 10-10:6 ? "l"
+.SEGMENT LETTER 10:7-10:10 ? "&"
+.SEGMENT LETTER 10:11-10 ? "y"
+
+.COMMENT Prompt string: "Comparatively"
+.COMMENT Recognizer string: "Co?p?h?uu?"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1631 770 0
+1631 781 5
+1631 791 10
+1610 791 16
+1590 791 21
+1558 770 26
+1538 739 31
+1527 708 36
+1527 677 42
+1538 635 47
+1558 604 52
+1579 583 57
+1610 583 62
+1673 604 68
+1694 625 73
+.PEN_UP
+
+.PEN_DOWN
+1704 698 329
+1704 698 334
+1704 698 339
+1704 677 345
+1704 656 350
+1715 635 355
+1725 625 360
+1756 625 365
+1798 645 371
+1819 666 376
+1819 687 381
+1798 708 386
+1767 708 392
+1746 708 397
+1735 708 402
+1725 698 407
+1725 687 412
+.PEN_UP
+
+.PEN_DOWN
+1829 718 714
+1829 708 719
+1840 687 724
+1840 666 730
+1850 666 735
+1850 666 740
+1850 677 745
+1881 698 750
+1892 708 756
+1913 708 761
+1923 698 766
+1933 677 771
+1933 677 776
+1933 677 782
+1944 687 787
+1965 708 792
+1975 708 797
+1985 708 803
+1996 698 808
+2017 687 813
+2048 698 818
+2079 708 823
+.PEN_UP
+
+.PEN_DOWN
+2110 729 1153
+2121 708 1158
+2131 666 1163
+2152 614 1169
+2173 573 1174
+2173 562 1179
+2163 562 1184
+2152 593 1189
+2121 625 1195
+2121 666 1200
+2121 708 1205
+2152 750 1210
+2163 750 1216
+2183 729 1221
+2194 708 1226
+2183 677 1231
+2163 656 1236
+2142 645 1242
+2100 645 1247
+.PEN_UP
+
+.PEN_DOWN
+2235 739 1538
+2246 739 1543
+2246 750 1548
+2246 750 1554
+2235 739 1559
+2215 708 1564
+2194 687 1569
+2194 677 1574
+2204 677 1580
+2215 677 1585
+2235 698 1590
+2246 718 1595
+2246 739 1600
+2246 739 1606
+2246 739 1611
+2256 708 1616
+2267 687 1621
+2288 677 1627
+2308 677 1632
+2329 687 1637
+2350 708 1642
+2360 718 1647
+2360 729 1653
+2360 708 1658
+2360 698 1663
+2360 687 1668
+2360 687 1673
+2350 698 1679
+2350 708 1684
+2350 718 1689
+2360 729 1694
+2392 739 1699
+2413 750 1705
+2444 750 1710
+2465 760 1715
+2475 760 1720
+2475 760 1726
+2475 760 1731
+2475 760 1736
+2454 760 1741
+2444 739 1746
+2423 729 1752
+2402 698 1757
+2402 687 1762
+2413 677 1767
+2423 677 1772
+2444 708 1778
+2465 729 1783
+2475 750 1788
+2475 750 1793
+2475 750 1798
+2485 718 1804
+2496 698 1809
+2506 698 1814
+2538 698 1819
+2558 718 1824
+.PEN_UP
+
+.PEN_DOWN
+2569 875 2471
+2569 875 2476
+2569 854 2481
+2569 812 2487
+2579 739 2492
+2590 698 2497
+2590 677 2502
+.PEN_UP
+
+.PEN_DOWN
+2517 739 2636
+2517 750 2641
+2548 760 2646
+2590 781 2652
+2631 791 2657
+2652 770 2662
+2652 750 2667
+2663 708 2672
+2663 687 2678
+2663 687 2683
+2663 698 2688
+.PEN_UP
+
+.PEN_DOWN
+2610 823 2856
+2610 823 2861
+2610 823 2866
+2610 823 2872
+2621 812 2877
+.PEN_UP
+
+.PEN_DOWN
+2683 770 3021
+2683 750 3026
+2683 739 3031
+2704 718 3037
+2735 708 3042
+2746 708 3047
+2746 708 3052
+2756 718 3057
+2767 750 3063
+2767 770 3068
+2767 791 3073
+2756 802 3078
+.PEN_UP
+
+.PEN_DOWN
+2788 760 3295
+2808 760 3300
+2819 760 3305
+2829 760 3311
+2840 770 3316
+2840 781 3321
+2840 791 3326
+2829 791 3331
+2808 781 3337
+2798 760 3342
+2798 729 3347
+2808 708 3352
+2850 708 3358
+2881 718 3363
+2902 718 3368
+2923 739 3373
+2923 781 3378
+2913 812 3384
+.PEN_UP
+
+.PEN_DOWN
+2892 906 3625
+2892 906 3630
+2881 885 3635
+2881 802 3641
+2881 760 3646
+2892 729 3651
+2902 718 3656
+2923 729 3661
+2944 739 3667
+2965 760 3672
+2965 781 3677
+2965 781 3682
+2965 770 3688
+2975 750 3693
+2975 739 3698
+2985 739 3703
+2996 739 3708
+3017 760 3714
+3027 770 3719
+3038 770 3724
+3038 760 3729
+3038 718 3734
+3048 666 3740
+3038 625 3745
+3027 583 3750
+3006 552 3755
+2965 520 3760
+2944 520 3766
+.PEN_UP
+
+.COMMENT End of File

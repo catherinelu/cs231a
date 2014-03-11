@@ -1,0 +1,210 @@
+.VERSION 1.0
+.COMMENT File s010w06
+
+.COMMENT See "A Comparison of Approaches to On-line
+              Handwritten Character Recognition"
+             (Rob Kassel, MIT PhD Thesis, 1995)
+             for complete specifications and
+             benchmarks on this data.
+
+.DATA_SOURCE MIT_LCS_SLS
+.DATA_ID MIT_Natural_Handprint_95
+
+.DATA_CONTACT
+ Name: Rob Kassel
+ Email: rob@goldilocks.lcs.mit.edu
+ Phone: 1-617-253-3049
+ Fax: 1-617-258-8642
+ Address: Spoken Language Systems Group
+          Laboratory for Computer Science
+          Massachusetts Institute of Technology
+          Room NE43-601
+          Cambridge, MA  02139, USA
+
+.SETUP
+ Site: MIT
+ Writer motivation: Paid
+ Writer physical position: Seated at desk
+ Instructions given to the writer: Minimal; printing required;
+  capitalize initial letter; no correcting; writing to be
+  examined later.
+ Prompting: Aural prompts, both string and spelled
+ Recognizer feedback: no
+ Form layout: large writing area, no guides, minimal left/right bias
+
+.DATA_INFO
+ Alphabet: English alphanumerics plus symbols to indicate
+           connections, ligatures, embellishments, and pen skips
+.PAD
+ Machine name: Wacom 648A
+ Brand: Wacom
+ Type: 648A
+ Serial Nr.: 160039
+ Sensor: Electromagnetic, wireless pen
+ Pen: Untethered, tip switch only
+ Driver: Mircosoft Windows for Pen Computing V1.0
+ Sampling mode: Using Microsoft Visual Basic 2.0 controls
+ Sampling rate: 193 Hz
+ Resolution: 0.001 inches/unit
+ Accuracy: 0.01 inches
+ Display: Backlit LCD screen, 640x480
+ Inking: 1 pixel wide black on white
+.X_DIM 4975
+.Y_DIM 3058
+.X_POINTS_PER_INCH 100
+.Y_POINTS_PER_INCH 100
+
+.ALPHABET "A" "B" "C" "D" "E" "F" "G"
+          "H" "I" "J" "K" "L" "M" "N"
+          "O" "P" "Q" "R" "S" "T" "U"
+          "V" "W" "X" "Y" "Z"
+          "a" "b" "c" "d" "e" "f" "g"
+          "h" "i" "j" "k" "l" "m" "n"
+          "o" "p" "q" "r" "s" "t" "u"
+          "v" "w" "x" "y" "z"
+          "0" "1" "2" "3" "4"
+          "5" "6" "7" "8" "9"
+          "!" "&" "*" "+" 
+
+.WRITER_ID 10
+.STYLE PRINTED
+.HAND R
+.AGE 22
+.SEX M
+.WRITER_INFO
+ Group: Development
+ Weight: 145
+ Student: Yes
+ Where educated: MT
+ Home language: English
+ Name: Karl
+
+.COORD X Y T
+.HIERARCHY WORD LETTER
+.SEGMENT WORD 0-6 ? "Taxi"
+.SEGMENT LETTER 0-1 ? "T"
+.SEGMENT LETTER 2 ? "a"
+.SEGMENT LETTER 3-4 ? "x"
+.SEGMENT LETTER 5-6 ? "i"
+
+.COMMENT Prompt string: "Taxi"
+.COMMENT Recognizer string: "Taxi"
+.COMMENT Transcriber Comment: ""
+
+.PEN_DOWN
+1475 1854 0
+1475 1875 5
+1465 1864 10
+1465 1854 16
+1465 1823 21
+1465 1791 26
+1465 1708 31
+1465 1645 36
+1475 1593 42
+1475 1541 47
+1475 1500 52
+1485 1479 57
+1485 1468 62
+1485 1468 68
+1485 1468 73
+1465 1468 78
+1465 1468 83
+.PEN_UP
+
+.PEN_DOWN
+1131 1687 439
+1131 1687 444
+1131 1687 449
+1142 1687 455
+1152 1708 460
+1204 1739 465
+1277 1770 470
+1360 1802 475
+1475 1843 481
+1548 1854 486
+1600 1864 491
+1663 1875 496
+1704 1875 502
+1735 1875 507
+.PEN_UP
+
+.PEN_DOWN
+1829 1645 988
+1829 1645 993
+1829 1656 998
+1829 1666 1004
+1819 1677 1009
+1808 1677 1014
+1788 1677 1019
+1767 1666 1024
+1735 1645 1030
+1715 1614 1035
+1694 1573 1040
+1694 1541 1045
+1704 1520 1050
+1704 1510 1056
+1715 1500 1061
+1725 1500 1066
+1767 1520 1071
+1808 1562 1077
+1840 1604 1082
+1860 1645 1087
+1871 1656 1092
+1871 1666 1097
+1881 1656 1103
+1902 1645 1108
+1923 1614 1113
+1933 1583 1118
+1944 1552 1123
+1965 1510 1129
+1975 1479 1134
+.PEN_UP
+
+.PEN_DOWN
+2131 1698 1648
+2121 1698 1653
+2131 1687 1658
+2142 1666 1664
+2173 1635 1669
+2194 1593 1674
+2225 1573 1679
+2267 1541 1684
+2288 1520 1690
+2308 1500 1695
+2350 1489 1700
+.PEN_UP
+
+.PEN_DOWN
+2173 1437 1977
+2163 1448 1982
+2163 1458 1987
+2163 1479 1993
+2183 1520 1998
+2215 1562 2003
+2267 1614 2008
+2298 1645 2013
+2319 1656 2019
+2340 1656 2024
+.PEN_UP
+
+.PEN_DOWN
+2683 1677 2307
+2663 1687 2312
+2663 1687 2317
+2663 1666 2323
+2652 1625 2328
+2642 1583 2333
+2652 1520 2338
+2663 1448 2343
+2673 1416 2349
+2694 1385 2354
+.PEN_UP
+
+.PEN_DOWN
+2600 1843 2581
+2579 1885 2586
+2590 1875 2591
+2600 1843 2597
+.PEN_UP
+
+.COMMENT End of File
