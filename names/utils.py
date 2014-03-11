@@ -1,7 +1,7 @@
 import copy, math
 import pdb
 
-SIDE_LEN = 18
+SIDE_LEN = 72
 DECREASING_PIXEL_VALUE = 0.2
 MAX_PIXEL_VALUE = 255
 
@@ -26,7 +26,7 @@ def display(pixels):
 
 
 def blur_pixels(pixels):
-    return pixels  # TODO: Remove if don't want blur
+    # return pixels  # TODO: Remove if don't want blur
     def set_blur(row, col, pixels_copy):
         for i in xrange(-2, 3):
             for j in xrange(-2, 3):
@@ -172,14 +172,17 @@ def normalize(coordinates):
 
 
 def change_pixel_values(pixels):
-    min_value = min(min(pixels))
-    max_value = max(max(pixels))
+    """
+    Pass in a 1D list of the pixels. Returns list where values are normalized
+    to be between 0 and 255.
+    """
+    min_value = min(pixels)
+    max_value = max(pixels)
 
     resize_factor =  MAX_PIXEL_VALUE / float(max_value - min_value)
 
-    for i in xrange(SIDE_LEN):
-        for j in xrange(SIDE_LEN):
-            pixels[i][j] = int((pixels[i][j] - min_value) * resize_factor)
+    for i in xrange(len(pixels)):
+        pixels[i] = int((pixels[i] - min_value) * resize_factor)
 
     return pixels
 

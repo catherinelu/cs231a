@@ -42,6 +42,10 @@ class Classifier:
         self.PICKLED_LABELS_FILE = 'training_labels'
         self.PICKLED_SVM_FILE = 'svm'
 
+        self.detector = cv2.FeatureDetector_create('SIFT')
+        self.descriptor = cv2.DescriptorExtractor_create('SIFT')
+        self.matcher = cv2.DescriptorMatcher_create('FlannBased')
+
 
     def train(self, directory):
         """
@@ -68,17 +72,15 @@ class Classifier:
                 f.close()
 
 
-        self._add_feature_descriptors()
+        self._create_codewords()
+        for i, image in enumerate(self.training_images[:]):
+            self.training_images[i] += self._add_feature_descriptors(image)
 
         # Get training images in correct format
-        self.training_images = sparse.csr_matrix(np.array(self.training_images))
+        self.training_images = sparse.csr_matrix(np.array(self.training_images, dtype=np.uint8))
 
 
-    def _add_feature_descriptors(self):
-        self.detector = cv2.FeatureDetector_create('ORB')
-        self.descriptor = cv2.DescriptorExtractor_create('SIFT')
-        self.matcher = cv2.DescriptorMatcher_create('FlannBased')
-
+    def _create_codewords(self):
         # Get two of each label to build the codewords dictionary
         selected_images = defaultdict(list)
         for i, label in enumerate(self.training_labels):
@@ -89,22 +91,48 @@ class Classifier:
         # use the top N descriptors
         self.codewords = []
         for label in selected_images:
-            for image1, image2 in selected_images[label]:
-                image1_descriptor = self._get_descriptor(image1)
-                image2_descriptor = self._get_descriptor(image2)
+            image1, image2 = self.training_images[selected_images[label][0]], self.training_images[selected_images[label][1]]
+            image1_keypoints, image1_descriptors = self._get_descriptor(image1)
+            image2_keypoints, image2_descriptors = self._get_descriptor(image2)
+
+            if image1_descriptors == None and image2_descriptors == None:
+                print 'NO DESCRIPTORS FOUND'
+                continue
+            elif image1_descriptors == None:
+                self.codewords.append(image2_descriptors[0:NUM_DESCRIPTORS_PER_IMAGE])
+                print 'IMAGE1 DESCRIPTORS NOT FOUND'
+                continue
+            elif image2_descriptors == None:
+                self.codewords.append(image1_descriptors[0:NUM_DESCRIPTORS_PER_IMAGE])
+                print 'IMAGE2 DESCRIPTORS NOT FOUND'
+                continue
+
+            # pdb.set_trace()
+            matches = self.matcher.match(image1_descriptors, image2_descriptors)
+            top_matches = sorted(matches, key=lambda match: match.distance)[0:NUM_DESCRIPTORS_PER_IMAGE]
+            descriptors = [image1_descriptors[m.queryIdx] for m in top_matches]
+            self.codewords += descriptors
 
 
-                matches = self.matcher.match(image1_descriptor, image2_descriptor)
-                top_matches = sorted(matches, key=lambda match: match.distance)[0:NUM_DESCRIPTORS_PER_IMAGE]
-                self.codewords += top_matches
+    def _get_descriptor(self, image):
+        pixels = np.array(utils.change_pixel_values(image), dtype=np.uint8)
+        pixels.resize((utils.SIDE_LEN, utils.SIDE_LEN))
+        keypoints = self.detector.detect(pixels)
+        return self.descriptor.compute(pixels, keypoints)
+
+
+    def _add_feature_descriptors(self, image):
+        feature_descriptors = [0 for i in xrange(len(self.codewords))]
+        
+        keypoints, descriptors = self._get_descriptor(image)
+        for descriptor in descriptors:
+            distances = [np.linalg.norm(descriptor1 - descriptor2) for codeword in self.codewords]
+            min_index = min(xrange(len(values)),key=values.__getitem__)
+            feature_descriptors[min_index] = 1
 
         pdb.set_trace()
 
-
-    def _get_descriptor(image):
-        pixels = np.resize(image, (utils.SIDE_LEN, utils.SIDE_LEN))
-        keypoints = self.detector.detect(pixels)
-        page_kp, page_descriptor = self.descriptor.compute(pixels, keypoints)
+        return feature_descriptors
 
 
     def load_training_data(self):
@@ -149,9 +177,10 @@ class Classifier:
 
     def classify(self, characters):
         characters = [utils.normalize(c) for c in characters]
-
+        for character in characters:
+            character += self._add_feature_descriptors(character)
         characters = [list(itertools.chain(*c)) for c in characters]
-        characters = sparse.csr_matrix(np.array(characters))
+        characters = sparse.csr_matrix(np.array(characters, dtype=np.uint8))
         predicted = self.svm.predict(characters)
         predicted_name = ''.join([chr(p) for p in predicted])
         print 'Predicted:', predicted_name
