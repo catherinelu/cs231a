@@ -7,7 +7,7 @@ import os
 import pdb
 import pickle
 from scipy import sparse
-from sklearn import svm, metrics
+from sklearn import svm, metrics, cluster
 import utils
 
 DELETION_COST = 1
@@ -38,6 +38,7 @@ class Classifier:
 
         self.training_labels = []
         self.training_images = []
+        self.large_training_images = []  # Used for finding SIFT descriptors
         self.PICKLED_IMAGES_FILE = 'training_images'
         self.PICKLED_LABELS_FILE = 'training_labels'
         self.PICKLED_SVM_FILE = 'svm'
@@ -67,17 +68,41 @@ class Classifier:
                             chain = list(itertools.chain(*pixels))
                             self.training_labels.append(ord(line[comment_string_len]))
                             self.training_images.append(chain)
+
+                            original_side_len = utils.SIDE_LEN
+                            utils.SIDE_LEN = 72
+                            large_pixels = utils.inkml_to_pixels(inkml)
+                            chain = list(itertools.chain(*large_pixels))
+                            self.large_training_images.append(chain)
+                            utils.SIDE_LEN = original_side_len
                         else:
                             break
                 f.close()
 
 
-        self._create_codewords()
-        for i, image in enumerate(self.training_images[:]):
+        self._create_codewords_with_kmeans()
+
+        for i, image in enumerate(self.large_training_images[:]):
             self.training_images[i] += self._add_feature_descriptors(image)
 
         # Get training images in correct format
-        self.training_images = sparse.csr_matrix(np.array(self.training_images, dtype=np.uint8))
+        # self.training_images = sparse.csr_matrix(np.array(self.training_images, dtype=np.uint8))
+
+
+    def _create_codewords_with_kmeans(self):
+        all_descriptors = []
+        for image in self.large_training_images:
+            keypoints, descriptors = self._get_descriptor(image)
+            if descriptors != None:
+                for descriptor in descriptors:
+                    all_descriptors.append(descriptor)
+
+        pdb.set_trace()
+
+        kmeans = cluster.KMeans(n_clusters=26, init='k-means++', max_iter=100, n_init=1)
+        kmeans.fit(all_descriptors)
+
+        self.codewords  = kmeans.cluster_centers_
 
 
     def _create_codewords(self):
@@ -91,7 +116,7 @@ class Classifier:
         # use the top N descriptors
         self.codewords = []
         for label in selected_images:
-            image1, image2 = self.training_images[selected_images[label][0]], self.training_images[selected_images[label][1]]
+            image1, image2 = self.large_training_images[selected_images[label][0]], self.large_training_images[selected_images[label][1]]
             image1_keypoints, image1_descriptors = self._get_descriptor(image1)
             image2_keypoints, image2_descriptors = self._get_descriptor(image2)
 
@@ -107,7 +132,6 @@ class Classifier:
                 print 'IMAGE2 DESCRIPTORS NOT FOUND'
                 continue
 
-            # pdb.set_trace()
             matches = self.matcher.match(image1_descriptors, image2_descriptors)
             top_matches = sorted(matches, key=lambda match: match.distance)[0:NUM_DESCRIPTORS_PER_IMAGE]
             descriptors = [image1_descriptors[m.queryIdx] for m in top_matches]
@@ -125,12 +149,12 @@ class Classifier:
         feature_descriptors = [0 for i in xrange(len(self.codewords))]
         
         keypoints, descriptors = self._get_descriptor(image)
+        if descriptors == None:
+            return feature_descriptors
         for descriptor in descriptors:
-            distances = [np.linalg.norm(descriptor1 - descriptor2) for codeword in self.codewords]
-            min_index = min(xrange(len(values)),key=values.__getitem__)
+            distances = [np.linalg.norm(descriptor - codeword) for codeword in self.codewords]
+            min_index = min(xrange(len(distances)), key=distances.__getitem__)
             feature_descriptors[min_index] = 1
-
-        pdb.set_trace()
 
         return feature_descriptors
 
@@ -154,7 +178,7 @@ class Classifier:
 
     def train_svm(self):
         # Train based on the training labels and training images
-        self.svm = svm.SVC(gamma=0.001, probability=True)
+        self.svm = svm.SVC(gamma=0.001)  # TODO: Re-add probability=True
         self.svm.fit(self.training_images, self.training_labels)
 
 
@@ -173,6 +197,59 @@ class Classifier:
         s = open(self.PICKLED_SVM_FILE, 'w')
         pickle.dump(self.svm, s)
         s.close()
+
+
+    def cross_validate(self, n=10):
+        num_training_images = len(self.training_images)
+        n_training_image_groups = [None for i in xrange(n)]
+        n_training_label_groups = [None for i in xrange(n)]
+
+        for i in xrange(n):
+            start_index = int(float(i) / n * num_training_images)
+            end_index = int(float(i + 1) / n * num_training_images)
+            n_training_image_groups[i] = self.training_images[start_index:end_index]
+            n_training_label_groups[i] = self.training_labels[start_index:end_index]
+
+
+        num_total_correct = 0
+        num_total_incorrect = 0
+        for i in xrange(n):
+            print 'Testing fold %d...' % i
+
+            num_correct = 0
+            num_incorrect = 0
+
+            svm_i = svm.SVC(gamma=0.001, probability=False)
+            # pdb.set_trace()
+
+            train_images = []
+            train_labels = []
+            for j in xrange(n):
+                if j != i:
+                    train_images += n_training_image_groups[j]
+                    train_labels += n_training_label_groups[j]
+            svm_i.fit(sparse.csr_matrix(np.array(train_images, dtype=np.uint8)), train_labels)
+
+            test_images = sparse.csr_matrix(np.array(n_training_image_groups[i], dtype=np.uint8))
+            test_labels = n_training_label_groups[i]
+            predicted_labels = svm_i.predict(test_images)
+
+            for i, predicted_label in enumerate(predicted_labels):
+                if predicted_label == test_labels[i]:
+                    num_correct += 1
+                else:
+                    num_incorrect += 1
+
+            print '%d correct and %d incorrect (%d%% accuracy)' % (num_correct,
+                num_incorrect, int(num_correct / float(num_correct + num_incorrect) * 100))
+
+            num_total_correct += num_correct
+            num_total_incorrect += num_incorrect
+
+        print 'Final stats:'
+        print '%d total correct and %d total incorrect (%d%% accuracy)' % (num_total_correct,
+            num_total_incorrect, int(num_total_correct / float(num_total_correct + num_total_incorrect) * 100))
+
 
 
     def classify(self, characters):

@@ -1,7 +1,7 @@
 import copy, math
 import pdb
 
-SIDE_LEN = 72
+SIDE_LEN = 18
 DECREASING_PIXEL_VALUE = 0.2
 MAX_PIXEL_VALUE = 255
 
