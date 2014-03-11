@@ -8,7 +8,18 @@ import pdb
 import pickle
 from scipy import sparse
 from sklearn import svm, metrics, cluster
+from skimage.feature import hog
 import utils
+
+
+import pylab as pl
+
+from sklearn.svm import SVC
+from sklearn.preprocessing import Scaler
+from sklearn.datasets import load_iris
+from sklearn.cross_validation import StratifiedKFold
+from sklearn.grid_search import GridSearchCV
+
 
 DELETION_COST = 1
 INSERTION_COST = 1
@@ -47,6 +58,8 @@ class Classifier:
         self.descriptor = cv2.DescriptorExtractor_create('SIFT')
         self.matcher = cv2.DescriptorMatcher_create('FlannBased')
 
+        self.LARGE_IMAGE_SIZE = 72
+
 
     def train(self, directory):
         """
@@ -70,7 +83,7 @@ class Classifier:
                             self.training_images.append(chain)
 
                             original_side_len = utils.SIDE_LEN
-                            utils.SIDE_LEN = 72
+                            utils.SIDE_LEN = self.LARGE_IMAGE_SIZE
                             large_pixels = utils.inkml_to_pixels(inkml)
                             chain = list(itertools.chain(*large_pixels))
                             self.large_training_images.append(chain)
@@ -80,10 +93,20 @@ class Classifier:
                 f.close()
 
 
-        self._create_codewords_with_kmeans()
+        # KMeans:
+        # self._create_codewords_with_kmeans()
 
+        # for i, image in enumerate(self.large_training_images[:]):
+        #     self.training_images[i] += self._add_feature_descriptors(image)
+
+
+        # HOG:
         for i, image in enumerate(self.large_training_images[:]):
-            self.training_images[i] += self._add_feature_descriptors(image)
+            hog_features = self._add_hog_features(image)
+            # pdb.set_trace()
+            self.training_images[i] += hog_features.tolist()
+
+
 
         # Get training images in correct format
         # self.training_images = sparse.csr_matrix(np.array(self.training_images, dtype=np.uint8))
@@ -97,9 +120,7 @@ class Classifier:
                 for descriptor in descriptors:
                     all_descriptors.append(descriptor)
 
-        pdb.set_trace()
-
-        kmeans = cluster.KMeans(n_clusters=26, init='k-means++', max_iter=100, n_init=1)
+        kmeans = cluster.KMeans(n_clusters=52, init='k-means++', max_iter=100, n_init=1)
         kmeans.fit(all_descriptors)
 
         self.codewords  = kmeans.cluster_centers_
@@ -145,16 +166,27 @@ class Classifier:
         return self.descriptor.compute(pixels, keypoints)
 
 
+    def _add_hog_features(self, image):
+        # pdb.set_trace()
+        normalized_image = np.resize(np.array(image), (self.LARGE_IMAGE_SIZE, self.LARGE_IMAGE_SIZE))
+        hog_image = hog(normalized_image, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1))
+        hog_image.resize(hog_image.size)
+        return hog_image
+
+
     def _add_feature_descriptors(self, image):
-        feature_descriptors = [0 for i in xrange(len(self.codewords))]
+        feature_descriptors = [-1 for i in xrange(len(self.codewords))]
         
         keypoints, descriptors = self._get_descriptor(image)
+
         if descriptors == None:
             return feature_descriptors
+
         for descriptor in descriptors:
-            distances = [np.linalg.norm(descriptor - codeword) for codeword in self.codewords]
-            min_index = min(xrange(len(distances)), key=distances.__getitem__)
-            feature_descriptors[min_index] = 1
+            for i, codeword in enumerate(self.codewords):
+                distance = [np.linalg.norm(descriptor - codeword) for codeword in self.codewords]
+                if distance == -1 or distance < feature_descriptors[i]:
+                    feature_descriptors[i] = distance
 
         return feature_descriptors
 
@@ -199,6 +231,42 @@ class Classifier:
         s.close()
 
 
+    def tune_svm(self):
+        pdb.set_trace()
+        C_range = 10. ** np.arange(-2, 9)
+        gamma_range = 10. ** np.arange(-5, 4)
+
+        X = self.training_images
+        Y = self.training_labels
+
+        param_grid = dict(gamma=gamma_range, C=C_range)
+
+        grid = GridSearchCV(SVC(), param_grid=param_grid, cv=StratifiedKFold(y=Y, n_folds=5))
+
+        grid.fit(X, Y)
+
+        print("The best classifier is: ", grid.best_estimator_)
+
+        # plot the scores of the grid
+        # grid_scores_ contains parameter settings and scores
+        score_dict = grid.grid_scores_
+
+        # We extract just the scores
+        scores = [x[1] for x in score_dict]
+        scores = np.array(scores).reshape(len(C_range), len(gamma_range))
+
+        # Make a nice figure
+        pl.figure(figsize=(8, 6))
+        pl.subplots_adjust(left=0.15, right=0.95, bottom=0.15, top=0.95)
+        pl.imshow(scores, interpolation='nearest', cmap=pl.cm.spectral)
+        pl.xlabel('gamma')
+        pl.ylabel('C')
+        pl.colorbar()
+        pl.xticks(np.arange(len(gamma_range)), gamma_range, rotation=45)
+        pl.yticks(np.arange(len(C_range)), C_range)
+        pl.show()
+
+
     def cross_validate(self, n=10):
         num_training_images = len(self.training_images)
         n_training_image_groups = [None for i in xrange(n)]
@@ -220,7 +288,6 @@ class Classifier:
             num_incorrect = 0
 
             svm_i = svm.SVC(gamma=0.001, probability=False)
-            # pdb.set_trace()
 
             train_images = []
             train_labels = []
@@ -228,6 +295,7 @@ class Classifier:
                 if j != i:
                     train_images += n_training_image_groups[j]
                     train_labels += n_training_label_groups[j]
+            # pdb.set_trace()
             svm_i.fit(sparse.csr_matrix(np.array(train_images, dtype=np.uint8)), train_labels)
 
             test_images = sparse.csr_matrix(np.array(n_training_image_groups[i], dtype=np.uint8))
