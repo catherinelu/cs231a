@@ -9,6 +9,7 @@ import pickle
 from scipy import sparse
 from sklearn import svm, metrics, cluster
 from skimage.feature import hog
+from skimage import exposure
 import utils
 
 
@@ -19,6 +20,8 @@ from sklearn.preprocessing import Scaler
 from sklearn.datasets import load_iris
 from sklearn.cross_validation import StratifiedKFold
 from sklearn.grid_search import GridSearchCV
+
+import matplotlib.pyplot as plt
 
 
 DELETION_COST = 1
@@ -58,7 +61,7 @@ class Classifier:
         self.descriptor = cv2.DescriptorExtractor_create('SIFT')
         self.matcher = cv2.DescriptorMatcher_create('FlannBased')
 
-        self.LARGE_IMAGE_SIZE = 72
+        self.LARGE_IMAGE_SIZE = 64
 
 
     def train(self, directory):
@@ -76,11 +79,14 @@ class Classifier:
                     if comment_string in line:
                         if line[comment_string_len + 1] == '"' and line[comment_string_len].isalpha():
                             inkml = self._parse_inkml(f)
-                            pixels = utils.inkml_to_pixels(inkml)
-                            # Change the pixel 2D array into a 1D list
-                            chain = list(itertools.chain(*pixels))
+                            # TODO: Comment back in if you want to use the pixel features
+                            # pixels = utils.inkml_to_pixels(inkml)
+                            # # Change the pixel 2D array into a 1D list
+                            # chain = list(itertools.chain(*pixels))
                             self.training_labels.append(ord(line[comment_string_len]))
-                            self.training_images.append(chain)
+                            # self.training_images.append(chain)
+
+                            self.training_images.append([])
 
                             original_side_len = utils.SIDE_LEN
                             utils.SIDE_LEN = self.LARGE_IMAGE_SIZE
@@ -104,7 +110,7 @@ class Classifier:
         for i, image in enumerate(self.large_training_images[:]):
             hog_features = self._add_hog_features(image)
             # pdb.set_trace()
-            self.training_images[i] += hog_features.tolist()
+            self.training_images[i] = hog_features.tolist()
 
 
 
@@ -169,8 +175,28 @@ class Classifier:
     def _add_hog_features(self, image):
         # pdb.set_trace()
         normalized_image = np.resize(np.array(image), (self.LARGE_IMAGE_SIZE, self.LARGE_IMAGE_SIZE))
-        hog_image = hog(normalized_image, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(1, 1))
-        hog_image.resize(hog_image.size)
+        hog_image = hog(normalized_image, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(2, 2))
+
+
+        # To view the histogram, you can uncomment out this
+        # _, hog_image = hog(normalized_image, orientations=8, pixels_per_cell=(16, 16), cells_per_block=(2, 2), visualise=True)
+        # plt.figure(figsize=(8, 4))
+
+        # plt.subplot(121).set_axis_off()
+        # pdb.set_trace()
+        # plt.imshow(normalized_image, cmap=plt.cm.gray)
+        # plt.title('Input image')
+
+        # # Rescale histogram for better display
+        # hog_image_rescaled = exposure.rescale_intensity(hog_image, in_range=(0, 0.02))
+
+        # plt.subplot(122).set_axis_off()
+        # plt.imshow(hog_image_rescaled, cmap=plt.cm.gray)
+        # plt.title('Histogram of Oriented Gradients')
+        # plt.show()
+
+        # hog_image.resize(hog_image.size)
+
         return hog_image
 
 
@@ -287,7 +313,9 @@ class Classifier:
             num_correct = 0
             num_incorrect = 0
 
-            svm_i = svm.SVC(gamma=0.001, probability=False)
+            svm_i = SVC(C=10.0, cache_size=200, class_weight=None, coef0=0.0, degree=3,
+                        gamma=0.001, kernel='rbf', max_iter=-1, probability=False,
+                        random_state=None, shrinking=True, tol=0.001, verbose=False)
 
             train_images = []
             train_labels = []
@@ -295,7 +323,6 @@ class Classifier:
                 if j != i:
                     train_images += n_training_image_groups[j]
                     train_labels += n_training_label_groups[j]
-            # pdb.set_trace()
             svm_i.fit(sparse.csr_matrix(np.array(train_images, dtype=np.uint8)), train_labels)
 
             test_images = sparse.csr_matrix(np.array(n_training_image_groups[i], dtype=np.uint8))

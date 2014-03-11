@@ -26,8 +26,8 @@ def main():
 
     # Create pickled files
     classifier.train('kassel')
-    # classifier.cross_validate()
-    classifier.tune_svm()
+    classifier.cross_validate()
+    # classifier.tune_svm()
 
 
 
