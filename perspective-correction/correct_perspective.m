@@ -52,6 +52,9 @@ function corrected_image = correct_perspective(image, debug)
   % then we've found a good match
   box_size_threshold = min(image_size(1:2)) / 4;
 
+  max_area = 0;
+  best_corners = [];
+
   % employ RANSAC to find best square
   for i = 1 : iterations
     subset = vl_colsubset(1 : num_lines, 4);
@@ -87,18 +90,42 @@ function corrected_image = correct_perspective(image, debug)
         [x4, y4] = find_intersection(lines(:, 4), lines(:, 1));
 
         % order corners: top left -> bottom left -> top right -> bottom right
-        x_y_pairs = [x1 y1; x2 y2; x3 y3; x4 y4];
-        x_y_pairs = sortrows(x_y_pairs, 1);
-        x_y_pairs(1:2, :) = sortrows(x_y_pairs(1:2, :), 2);
-        x_y_pairs(3:4, :) = sortrows(x_y_pairs(3:4, :), 2);
+        corners = [x1 y1; x2 y2; x3 y3; x4 y4];
+        corners = sortrows(corners, 1);
+        corners(1:2, :) = sortrows(corners(1:2, :), 2);
+        corners(3:4, :) = sortrows(corners(3:4, :), 2);
 
-        % warp rectangle to fill image
-        target_pairs = [0 0; 0 image_size(1); image_size(2) 0; image_size(2) image_size(1)];
-        H = cv.getPerspectiveTransform(x_y_pairs, target_pairs);
+        height = sqrt(sum((corners(1, :) - corners(2, :)) .^ 2));
+        width = sqrt(sum((corners(1, :) - corners(3, :)) .^ 2));
 
-        corrected_image = cv.warpPerspective(image, H);
-        break;
+        area = width * height;
+
+        if area > max_area
+          max_area = area;
+          best_corners = corners;
+        end
       end
     end
   end
+
+  % % find bounding box around rectangle and crop the image
+  top_left = [min(best_corners(:, 1)), min(best_corners(:, 2))];
+  rectangle_width = max(best_corners(:, 1)) - min(best_corners(:, 1));
+  rectangle_height = max(best_corners(:, 2)) - min(best_corners(:, 2));
+
+  cropped_image = image(round(top_left(2)) : round(top_left(2) + rectangle_height), ...
+    round(top_left(1)) : round(top_left(1) + rectangle_width));
+
+  if debug
+    figure, imshow(cropped_image);
+  end
+
+  % correct perspective so rectangle fills the cropped image
+  best_corners = best_corners - repmat(top_left, 4, 1);
+  cropped_size = size(cropped_image);
+  target_corners = [0 0; 0 cropped_size(1); cropped_size(2) 0; ...
+    cropped_size(2) cropped_size(1)];
+
+  H = cv.getPerspectiveTransform(best_corners, target_corners);
+  corrected_image = cv.warpPerspective(cropped_image, H);
 end

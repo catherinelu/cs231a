@@ -1,7 +1,7 @@
 close all;
 clear all;
 
-image = imread('/Users/karthikv/Desktop/image2.jpg');
+image = imread('./page.jpg');
 figure, imshow(image);
 
 corrected_image = correct_perspective(image, true);
