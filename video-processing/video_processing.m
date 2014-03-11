@@ -4,7 +4,7 @@ close all;
 addpath('../perspective-correction');
 NUM_FRAMES_TO_SKIP = 10;
 
-video = cv.VideoCapture('./paper.mov');
+video = cv.VideoCapture('./paper-vertical.mov');
 pages = {};
 
 % the previous image taken from the video
