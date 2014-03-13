@@ -2,7 +2,7 @@ clear all;
 close all;
 
 % read all images
-image_paths = {'smaller-images/1.jpg', 'smaller-images/2.jpg', 'smaller-images/6.jpg'};
+image_paths = {'../smaller-images/1.jpg', '../smaller-images/2.jpg', '../smaller-images/6.jpg'};
 num_images = length(image_paths);
 
 images = {};

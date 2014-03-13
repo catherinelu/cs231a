@@ -39,7 +39,7 @@ function corrected_image = correct_perspective(image, debug)
     x2 = round(x0 + run * 10000);
     y2 = round(y0 + rise * 10000);
 
-    lined_image = cv.line(lined_image, [x1 y1], [x2 y2], 'Color', [0 255 0]);
+    lined_image = cv.line(lined_image, [x1 y1], [x2 y2], 'Color', [0 255 0], 'Thickness', 2);
   end
 
   if debug
@@ -107,6 +107,20 @@ function corrected_image = correct_perspective(image, debug)
       end
     end
   end
+
+  if debug
+    bounding_box_image = image;
+    bounding_box_image = cv.line(bounding_box_image, best_corners(1, :), best_corners(2, :), ...
+      'Color', [0 255 0], 'Thickness', 10);
+    bounding_box_image = cv.line(bounding_box_image, best_corners(2, :), best_corners(4, :), ...
+      'Color', [0 255 0], 'Thickness', 10);
+    bounding_box_image = cv.line(bounding_box_image, best_corners(4, :), best_corners(3, :), ...
+      'Color', [0 255 0], 'Thickness', 10);
+    bounding_box_image = cv.line(bounding_box_image, best_corners(3, :), best_corners(1, :), ...
+      'Color', [0 255 0], 'Thickness', 10);
+    figure, imshow(bounding_box_image);
+  end
+
 
   % % find bounding box around rectangle and crop the image
   top_left = [min(best_corners(:, 1)), min(best_corners(:, 2))];
