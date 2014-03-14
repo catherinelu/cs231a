@@ -1,6 +1,8 @@
+import classify
 from collections import defaultdict
 import cv2
 import fnmatch
+import itertools
 import math
 import numpy as np
 import os
@@ -8,27 +10,28 @@ from PIL import Image, ImageDraw
 import pdb
 import sys
 import random
-import utils
 
 
 
 class Segmenter:
     """ Given a file, outputs the segmented characters for it. """
 
-    def __init__(self, filename):
-        self.img = cv2.imread(filename, 0)
+    def __init__(self, image, classifier):
+        self.img = image
 
         self.WHITE_PIXEL = 255
 
         self.WHITE_THRESHOLD = 220
         self.NUM_CHAR_THRESHOLD = 40
         self.NUM_POINTS_FOR_LINE_THRESHOLD = 20
-        self.DISTANCE_TO_LINE_THRESHOLD = 2.0
+        self.DISTANCE_TO_LINE_THRESHOLD = 3.0
 
         self.MAX_WIDTH = 400
-        self.MAX_HEIGHT = 80
+        self.MAX_HEIGHT = 100
 
-        sys.setrecursionlimit(1500)
+        self.classifier = classifier
+
+        sys.setrecursionlimit(2000)
 
 
     def segment(self):
@@ -76,9 +79,106 @@ class Segmenter:
         self.characters.sort()
 
         # Possibly get rid of the name line.
-        # self._try_to_remove_line()
+        self._try_to_remove_line()
+
+        # If character has multiple separate parts, leave only largest
+        self._clean_characters()
+        self._remove_noise()
+        self._split_connected_characters()
+        self._remove_noise()
+        pdb.set_trace()
+        self.characters.sort()
 
         return self._create_images()
+
+
+    def _split_connected_characters(self):
+        widths = []
+        total_width = 0
+        for character in self.characters:
+            min_x = min(character, key=lambda c: c[0])[0]
+            max_x = max(character, key=lambda c: c[0])[0]
+            width = max_x - min_x
+            total_width += width
+            widths.append(width)
+        average_width = total_width / len(self.characters)
+        widths_std = np.std(widths)
+        lower_width_threshold = average_width - .8 * widths_std
+        print lower_width_threshold
+
+        for character in self.characters[:]:
+            min_x = min(character, key=lambda c: c[0])[0]
+            max_x = max(character, key=lambda c: c[0])[0]
+            min_y = min(character, key=lambda c: c[1])[1]
+            max_y = max(character, key=lambda c: c[1])[1]
+
+            new_image = np.copy(self.img)
+            height, width = new_image.shape
+            for x in xrange(width):
+                for y in xrange(height):
+                    if (x, y) not in character:
+                        new_image[y, x] = self.WHITE_PIXEL
+
+
+            # Get bounding box of the character
+            sub_image = np.copy(new_image[min_y:max_y, min_x:max_x])
+            sub_image_features = classify.compute_features(sub_image)
+
+            probabilities = self.classifier.predict_proba(sub_image_features)
+
+            if len(probabilities.nonzero()) > 1 and max_x - min_x > average_width:
+                new_characters = []
+                self._split_character(new_image, min_y, max_y, min_x, max_x, new_characters, character, lower_width_threshold)
+                if len(new_characters) > 0:
+                    self.characters.remove(character)
+                    for new_character in new_characters:
+                        self.characters.append(new_character)
+
+
+    def _split_character(self, image, min_y, max_y, min_x, max_x, new_characters, character, lower_width_threshold):
+        if min_x >= max_x: return
+
+        for x_end in range(min_x + 1, max_x + 1):
+            if x_end - min_x < lower_width_threshold: continue
+            sub_image = np.copy(image[min_y:max_y, min_x:x_end])
+            if sub_image.shape[0] == 0 or sub_image.shape[1] == 0:
+                pdb.set_trace()
+            sub_image_features = classify.compute_features(sub_image)
+            probabilities = self.classifier.predict_proba(sub_image_features)[0]
+            num_non_zero = len([a for a in probabilities if a != 0])
+
+            if num_non_zero == 1:
+                sub_characters = [c for c in character if c[0] <= x_end and c[0] >= min_x]
+                new_characters.append(sub_characters)
+                self._split_character(image, min_y, max_y, x_end + 1, max_x, new_characters, character, lower_width_threshold)
+                return
+
+
+        # pdb.set_trace()
+        # widths_std = np.std(widths)
+        # if widths_std > 10:
+        #     for i, character in enumerate(self.characters[:]):
+        #         if widths[i] > average_width + widths_std * 0.8:
+        #             self.characters.remove(character)
+        #             sorted_character = sorted(character)
+        #             self.characters.append(sorted_character[0:len(sorted_character) / 2])
+        #             self.characters.append(sorted_character[len(sorted_character) / 2:])
+
+
+    def _clean_characters(self):
+        # return  # TODO: Remove
+        height, width = self.img.shape
+        for i, character in enumerate(self.characters[:]):
+            character_set = set(character)
+            max_group = []
+            while len(character_set) > 0:
+                group = []
+                start_pixel = next(iter(character_set))
+                self._create_cluster(start_pixel[0], start_pixel[1], group, character_set, width, height)
+                if len(group) > len(max_group):
+                    max_group = group
+                character_set -= set(group)
+            self.characters[i] = max_group
 
 
 
@@ -106,7 +206,14 @@ class Segmenter:
         edges = cv2.Canny(self.img, 300, 500)
         # 50 = Hough threshold
         # Detect lines
-        polar_lines = [l[0] for l in cv2.HoughLines(edges, 1, np.pi / 180, 200)]
+        for i in xrange(3):
+            lines = cv2.HoughLines(edges, 1, np.pi / 180, (6 - i) * 50)
+            if lines != None:
+                break
+        if lines == None:
+            return
+
+        polar_lines = [l[0] for l in lines]
         if polar_lines == None:
             polar_lines = [];
         lines = [];
@@ -182,22 +289,29 @@ class Segmenter:
 
 
     def _create_images(self):
-      images = []
-      for character in self.characters:
-        min_x = min(character, key=lambda c: c[0])[0]
-        max_x = max(character, key=lambda c: c[0])[0]
-        min_y = min(character, key=lambda c: c[1])[1]
-        max_y = max(character, key=lambda c: c[1])[1]
+        images = []
+        for character in self.characters:
+            min_x = min(character, key=lambda c: c[0])[0]
+            max_x = max(character, key=lambda c: c[0])[0]
+            min_y = min(character, key=lambda c: c[1])[1]
+            max_y = max(character, key=lambda c: c[1])[1]
 
-        # Get bounding box of the character
-        sub_image = np.copy(self.img[min_y:max_y, min_x:max_x])
-        sub_image = cv2.GaussianBlur(sub_image, (5, 5), 8)
-        value, sub_image = cv2.threshold(sub_image, 200, 255, cv2.THRESH_BINARY)
+            new_image = np.copy(self.img)
+            height, width = new_image.shape
+            for x in xrange(width):
+                for y in xrange(height):
+                    if (x, y) not in character:
+                        new_image[y, x] = self.WHITE_PIXEL
 
-        images.append(sub_image)
 
+            # Get bounding box of the character
+            sub_image = np.copy(new_image[min_y:max_y, min_x:max_x])
 
-      return images
+            images.append(sub_image)
+            cv2.imshow('a', sub_image)
+            cv2.waitKey(0)
+
+        return images
 
 
     def show_image(self, filename='segmentation.png'):

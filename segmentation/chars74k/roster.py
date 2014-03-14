@@ -1,57 +1,106 @@
+# from collections import Counter
+
 DELETION_COST = 1
 INSERTION_COST = 1
 CHANGE_COST = 1
 
+LETTERS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
 class Roster:
-    def __init__(self, filename):
-        self.roster = []
-        self.roster.append('Adam Holmstead')  # TODO: Remove
-        f = open(filename)
-        for line in f:
-            self.roster.append(line.strip())
-        f.close()
+  def __init__(self, filename):
+    self.roster = []
+    self.roster.append('Adam Holmstead')  # TODO: Remove
+    f = open(filename)
+    for line in f:
+      self.roster.append(line.strip().replace(' ', ''))
+    f.close()
 
 
-    def get_closest_name(self, predicted_name):
-        shortest_edit_distance = float('Inf')
-        roster_name = None
+  def get_closest_name(self, predicted_name):
+    predicted_name = predicted_name.replace(' ', '')
+    max_value = float('-Inf')
+    closest_name = None
+    gap_penalties = (0, 0, 0, 0)
+    match_matrix = dict()
+    for letter1 in LETTERS:
+      for letter2 in LETTERS:
+        match_matrix[(letter1, letter2)] = (1 if letter1 == letter2 else 0)
 
-        for i, name in enumerate(self.roster):
-            print name
-            name = name.replace(' ', '')
-            cur_edit_distance = self._recursive_shortest_edit_distance(predicted_name,
-                len(predicted_name), name, len(name), 0, 0, 0, shortest_edit_distance)
-            cur_edit_distance /= float(len(name))  # Don't penalize long names
-            if cur_edit_distance < shortest_edit_distance:
-                shortest_edit_distance = cur_edit_distance
-                roster_name = self.roster[i]
+    for possible_name in self.roster:
+      m_score_matrix, Ix_score_matrix, Iy_score_matrix = self.initialize_score_matrices(
+        predicted_name, possible_name, gap_penalties)
 
-        print shortest_edit_distance, roster_name
-        return roster_name
+      rows = len(possible_name) + 1
+      cols = len(predicted_name) + 1
 
-    
-    def _recursive_shortest_edit_distance(self, predicted_name, predicted_name_length,
-        possible_name, possible_name_length, i, j, cur_edit_distance, shortest_edit_distance):
-        if i == predicted_name_length and j == possible_name_length:
-            return cur_edit_distance
-        elif i == predicted_name_length:
-            return cur_edit_distance + (possible_name_length - j) * INSERTION_COST
-        elif j == possible_name_length:
-            return cur_edit_distance + (predicted_name_length - i) * DELETION_COST
-        elif cur_edit_distance > shortest_edit_distance:  # Short-circuit
-            return float('Inf')
+      for row in range(1, rows):
+        for col in range(1, cols):
+          self.update_scores(m_score_matrix, Ix_score_matrix, Iy_score_matrix, row, col,
+            match_matrix, predicted_name[col-1], possible_name[row-1], gap_penalties)
 
-        if predicted_name[i].lower() == possible_name[j].lower():
-            return self._recursive_shortest_edit_distance(predicted_name, predicted_name_length,
-                possible_name, possible_name_length, i + 1, j + 1, cur_edit_distance, shortest_edit_distance)
-        else:
-            delete_edit_distance = self._recursive_shortest_edit_distance(predicted_name,
-                predicted_name_length, possible_name, possible_name_length, i + 1, j,
-                cur_edit_distance + DELETION_COST, shortest_edit_distance)
-            insertion_cost = self._recursive_shortest_edit_distance(predicted_name,
-                predicted_name_length, possible_name, possible_name_length, i, j + 1,
-                cur_edit_distance + INSERTION_COST, shortest_edit_distance)
-            change_edit_distance = self._recursive_shortest_edit_distance(predicted_name,
-                predicted_name_length, possible_name, possible_name_length, i + 1, j + 1,
-                cur_edit_distance + CHANGE_COST, shortest_edit_distance)
-            return min(delete_edit_distance, insertion_cost, change_edit_distance)
+      cur_max_value = self.find_max_value(m_score_matrix, Ix_score_matrix, Iy_score_matrix,
+        traceback_map, rows, cols, predicted_name, possible_name)
+
+      if max_value < cur_max_value:
+        max_value = cur_max_value
+        closest_name = possible_name
+
+      return closest_name
+
+  def initialize_score_matrices(self, predicted_name, possible_name, gap_penalties):
+    rows = len(possible_name) + 1
+    cols = len(predicted_name) + 1
+    m_score_matrix = create_matrix(rows, cols)
+    Ix_score_matrix = create_matrix(rows, cols)
+    Iy_score_matrix = create_matrix(rows, cols)
+
+    dx, ex, dy, ey = gap_penalties
+    for r in range(rows):
+      initial_gap_penalty = -1 * dx * r
+      Ix_score_matrix[r][0] = initial_gap_penalty
+      Iy_score_matrix[r][0] = initial_gap_penalty
+    for c in range(cols):
+      initial_gap_penalty = -1 * dy * c
+      Ix_score_matrix[0][c] = initial_gap_penalty
+      Iy_score_matrix[0][c] = initial_gap_penalty
+
+    return (m_score_matrix, Ix_score_matrix, Iy_score_matrix)
+
+
+  def update_scores(self, m_score_matrix, Ix_score_matrix, Iy_score_matrix, row, col,
+                    match_matrix, predicted_name_letter, possible_name_letter, gap_penalties):
+    # dx is gap open penalty of A, ex is gap extension penalty for A, dy is gap
+    # open penalty of B, ey is gap extension penalty for B
+    dx, ex, dy, ey = gap_penalties
+
+    # Update the score matrices
+    match_value = match_matrix[(predicted_name_letter, possible_name_letter)]
+    m_score_matrix[row][col] = max(m_score_matrix[row-1][col-1] + match_value,
+                                   Ix_score_matrix[row-1][col-1] + match_value,
+                                   Iy_score_matrix[row-1][col-1] + match_value)
+    Ix_score_matrix[row][col] = max(m_score_matrix[row][col-1] - dy,
+                                    Ix_score_matrix[row][col-1] - ey)
+    Iy_score_matrix[row][col] = max(m_score_matrix[row-1][col] - dx,
+                                    Iy_score_matrix[row-1][col] - ex)
+
+
+  def find_max_value(self, m_score_matrix, Ix_score_matrix, Iy_score_matrix, traceback_map,
+                     rows, cols, predicted_name, possible_name):
+    max_value = -1
+    # Search the margins for the max
+    for row in range(rows):
+      if m_score_matrix[row][cols-1] > max_value:
+        max_value = m_score_matrix[row][cols-1]
+    for col in range(cols):
+      if m_score_matrix[rows-1][col] > max_value:
+        max_value = m_score_matrix[rows-1][col]
+
+      # Output the maximum score
+      return max_value
+
+
+def create_matrix(rows, cols):
+  matrix = []
+  for i in range(rows):
+    matrix.append([0] * cols)
+  return matrix

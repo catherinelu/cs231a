@@ -1,6 +1,9 @@
 import os
 import glob
 import collections
+import math
+import numpy as np
+import pdb
 import pickle
 import cv2
 
@@ -51,25 +54,38 @@ def read_training_images():
 def compute_features(image):
   """ Returns the import features within the given image. """
   max_y, max_x = image.shape
+
+  # Ensure that image width and height are greater than 8 pixels
+  shortest_len = min(max_y, max_x)
+  if shortest_len < 9:
+    resize_ratio = 9.0 / shortest_len
+    new_width = int(math.ceil(max_x * resize_ratio))
+    new_height = int(math.ceil(max_y * resize_ratio))
+    image = cv2.resize(image, (new_width, new_height))
+    max_y, max_x = image.shape
+
   features = image_feature.hog(image, pixels_per_cell=(max_x / 3, max_y / 3),
     cells_per_block=(2, 2))
+  # print int(np.floor(shape_x // (shape_x / 3)))
+  # print int(np.floor(shape_y // (shape_y / 3)))
   return features
 
 
-def train(all_images):
+def train(all_images, training_vectors=[], training_labels=[]):
   """ Trains and returns a classifier on the given images. """
-  training_vectors = []
-  training_labels = []
+  if len(training_vectors) == 0:
+    training_vectors = []
+    training_labels = []
 
-  for letter in LETTERS:
-    letter_images = all_images[letter]
+    for letter in LETTERS:
+      letter_images = all_images[letter]
 
-    # determine training vector and label for each image
-    for image in letter_images:
-      features = compute_features(image)
+      # determine training vector and label for each image
+      for image in letter_images:
+        features = compute_features(image)
 
-      training_vectors.append(features)
-      training_labels.append(ord(letter))
+        training_vectors.append(features)
+        training_labels.append(ord(letter))
 
 
   # train an SVM classifier
