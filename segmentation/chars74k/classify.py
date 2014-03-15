@@ -51,8 +51,20 @@ def read_training_images():
   return images, gray_images
 
 
-def compute_features(image):
-  """ Returns the import features within the given image. """
+def compute_features(image, preprocess=False):
+  """
+  Returns the important features within the given image. If preprocess is true,
+  this function preprocesses the image in three steps before computing features:
+
+  1) Convert the image to grayscale
+  2) Apply a gaussian blur
+  3) Threshold the image
+  """
+  if preprocess:
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    image = cv2.GaussianBlur(image, (5, 5), 8)
+    value, image = cv2.threshold(image, 200, 255, cv2.THRESH_BINARY)
+
   max_y, max_x = image.shape
 
   # Ensure that image width and height are greater than 8 pixels

@@ -16,6 +16,12 @@ function corrected_image = correct_perspective(image, debug)
   polar_lines_cell = cv.HoughLines(edges, 'Threshold', 150);
   num_lines = length(polar_lines_cell);
 
+  % can't find rectangle with less than four lines 
+  if num_lines < 4
+    'must have four lines'
+    return
+  end
+
   % create matrix of polar lines from cell array
   polar_lines = zeros(2, num_lines);
   lined_image = image;
@@ -108,6 +114,12 @@ function corrected_image = correct_perspective(image, debug)
     end
   end
 
+  % must have four corners
+  if size(best_corners, 1) ~= 4
+    'must have four corners'
+    return
+  end
+
   if debug
     bounding_box_image = image;
     bounding_box_image = cv.line(bounding_box_image, best_corners(1, :), best_corners(2, :), ...
@@ -121,14 +133,25 @@ function corrected_image = correct_perspective(image, debug)
     figure, imshow(bounding_box_image);
   end
 
-
-  % % find bounding box around rectangle and crop the image
+  % find bounding box around rectangle and crop the image
   top_left = [min(best_corners(:, 1)), min(best_corners(:, 2))];
   rectangle_width = max(best_corners(:, 1)) - min(best_corners(:, 1));
   rectangle_height = max(best_corners(:, 2)) - min(best_corners(:, 2));
 
-  cropped_image = image(round(top_left(2)) : round(top_left(2) + rectangle_height), ...
-    round(top_left(1)) : round(top_left(1) + rectangle_width));
+  % compute top left corner, clamped to edges of image
+  top_left_clamped = [];
+  top_left_clamped(1) = max(min(top_left(1), image_size(2)), 1);
+  top_left_clamped(2) = max(min(top_left(2), image_size(1)), 1);
+  top_left_clamped = round(top_left_clamped);
+
+  % compute bottom right corner, clamped to edges of image
+  bottom_right_clamped = [];
+  bottom_right_clamped(1) = max(min(top_left(1) + rectangle_width, image_size(2)), 1);
+  bottom_right_clamped(2) = max(min(top_left(2) + rectangle_height, image_size(1)), 1);
+  bottom_right_clamped = round(bottom_right_clamped);
+
+  cropped_image = image(top_left_clamped(2) : bottom_right_clamped(2), ...
+    top_left_clamped(1) : bottom_right_clamped(1));
 
   if debug
     figure, imshow(cropped_image);

@@ -9,12 +9,10 @@ LETTERS = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 class Roster:
   def __init__(self, filename):
     self.roster = []
-    self.roster.append('Adam Holmstead')  # TODO: Remove
-    f = open(filename)
-    for line in f:
-      self.roster.append(line.strip().replace(' ', ''))
-    f.close()
 
+    with open(filename, 'r') as handle:
+      for line in handle:
+        self.roster.append(line.strip().lower().replace(' ', ''))
 
   def get_closest_name(self, predicted_name):
     predicted_name = predicted_name.replace(' ', '')
@@ -39,7 +37,7 @@ class Roster:
             match_matrix, predicted_name[col-1], possible_name[row-1], gap_penalties)
 
       cur_max_value = self.find_max_value(m_score_matrix, Ix_score_matrix, Iy_score_matrix,
-        traceback_map, rows, cols, predicted_name, possible_name)
+        rows, cols, predicted_name, possible_name)
 
       if max_value < cur_max_value:
         max_value = cur_max_value
@@ -84,7 +82,7 @@ class Roster:
                                     Iy_score_matrix[row-1][col] - ex)
 
 
-  def find_max_value(self, m_score_matrix, Ix_score_matrix, Iy_score_matrix, traceback_map,
+  def find_max_value(self, m_score_matrix, Ix_score_matrix, Iy_score_matrix,
                      rows, cols, predicted_name, possible_name):
     max_value = -1
     # Search the margins for the max
