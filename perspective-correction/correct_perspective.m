@@ -13,7 +13,14 @@ function corrected_image = correct_perspective(image, debug)
     figure, imshow(edges);
   end
 
-  polar_lines_cell = cv.HoughLines(edges, 'Threshold', 150);
+  threshold = 130;
+  polar_lines_cell = cv.HoughLines(edges, 'Threshold', threshold);
+
+  while length(polar_lines_cell) > 20
+    threshold = threshold + 10;
+    polar_lines_cell = cv.HoughLines(edges, 'Threshold', threshold);
+  end
+
   num_lines = length(polar_lines_cell);
 
   % can't find rectangle with less than four lines 
@@ -52,7 +59,7 @@ function corrected_image = correct_perspective(image, debug)
     figure, imshow(lined_image);
   end
 
-  iterations = 1000;
+  combinations = combnk(1 : num_lines, 4);
 
   % if the width and height of the bounding box are greater than this value,
   % then we've found a good match
@@ -62,9 +69,8 @@ function corrected_image = correct_perspective(image, debug)
   best_corners = [];
 
   % employ RANSAC to find best square
-  for i = 1 : iterations
-    subset = vl_colsubset(1 : num_lines, 4);
-    lines = polar_lines(:, subset);
+  for i = 1 : size(combinations, 1)
+    lines = polar_lines(:, combinations(i, :));
     theta0 = lines(2, 1);
 
     % find angles between lines; convert to degrees
@@ -83,7 +89,7 @@ function corrected_image = correct_perspective(image, debug)
     [angles, indexes] = sort(angles);
     lines = lines(:, [1, indexes + 1]);
 
-    if angles(1) < 30 && angles(2) > 60 && angles(3) > 60
+    if angles(1) < 20 && angles(2) > 70 && angles(3) > 70
       % we have two lines that are parallel, and two others 90 degrees apart; these
       % make a quadrilateral!
       dimensions = abs([lines(1, 1) - lines(1, 2), lines(1, 3) - lines(1, 4)]);
@@ -101,10 +107,15 @@ function corrected_image = correct_perspective(image, debug)
         corners(1:2, :) = sortrows(corners(1:2, :), 2);
         corners(3:4, :) = sortrows(corners(3:4, :), 2);
 
-        height = sqrt(sum((corners(1, :) - corners(2, :)) .^ 2));
-        width = sqrt(sum((corners(1, :) - corners(3, :)) .^ 2));
+        left_height = sqrt(sum((corners(1, :) - corners(2, :)) .^ 2));
+        right_height = sqrt(sum((corners(3, :) - corners(4, :)) .^ 2));
+        average_height = (left_height + right_height) / 2;
 
-        area = width * height;
+        left_width = sqrt(sum((corners(1, :) - corners(3, :)) .^ 2));
+        right_width = sqrt(sum((corners(2, :) - corners(4, :)) .^ 2));
+        average_width = (left_width + right_width) / 2;
+
+        area = average_width * average_height;
 
         if area > max_area
           max_area = area;
